@@ -1,0 +1,52 @@
+
+Instrumente, LOD, Wikibase etc.
+Einführungsvortrag
+
+Ziel: Erstellung eines geregelten Vokabulars für Instrumentalbesetzungen (im Rahmen von Forschung zu Forschungsdatenmanagement); Stichwort Open Data
+derzeit: Vokabulare, die versuchen, universell zu sein (z. B. von LOC), aber in der Praxis unzureichend sind
+
+Beispiele:
+
+    RISM: Feld „Besetzung“, aber von RISM-Seite aus nicht verlinkt
+    Bach digital: MEI-Metadaten mit <perfResList>, Verwendung von MARC-Identifikatoren
+    bloße Instrumentennamen teilweise nicht auf Anhieb zuordbar, Gefahr einer falschen oder zweifelhaften Zuordnungen durch Nutzer (Beispiel: Bach, „Was mir behagt, ist die edle Jagd“, Cor da Caccia vs. Corno da Caccia vs. Jagdzink)
+    Abhilfe bei Zweifeln: Nachschlagewerke wie MIMO (GitHub)
+
+Folgerungen:
+
+    genaue Angaben seitens der Editionen wünschenswert
+    Bibliographische Erschließungsdaten / Normdaten nicht unbedingt zuverlässig (sollen gewisse Unschärfe behalten, damit bei Suchen nicht zu kleine Treffermengen entstehen)
+    Mapping etwa zu MIMO-Datensätzen geht nicht immer maschinell
+    besseres Vokabular benötigt
+
+Vorteil eines LOD-Thesaurus: maximale Flexibilität, offenes Modell, beliebig erweiterbar
+
+Problem: eine Person allein überblickt nicht alle Bedürfnisse und Anwendungsfälle
+Deshalb: Einbezug der Community
+
+mögliche Lösungen für Architektur des Vokabulars: „Mini-Thesaurus“, Thesaurus mit Properties, „Data-Hub“ (siehe Folien)
+aber: Komplexität der Lösungen muss bedacht werden
+
+typischer Use Case für einen Data-Hub:
+
+    Nutzer*in „braucht“ bestimmtes Instrument, weil es im eigenen Korpus vorkommt
+    Nutzer*in kann Data-Hub nutzen, um Datensatz für Instrument anzulegen
+    Instrument steht ganzer Community zur Verfügung
+
+https://hackmd.io/5nptiTnARNmu6L-Y6Y2KJg
+
+Grundsätzliches Interesse – insbesondere die Möglichkeit, neue Normdatensätze zu implementieren ist interessant (z.B. "in F")
+
+
+
+
+D. h. Lösung wäre vielleicht so etwas wie: Thesaurus mit Vokabular zum Mappen, + eigene Properties + externe Klassifikation als Standard
+
+Der Worklflow wäre dann erstmal gucken/einigen, welches Vokabular am meisten Sinn machen würde, dann die Properties definieren (WB müsste als Plattform laufen)
+
+Dann Leute contacten: außer Stadler definitv noch Oleksej (Mozart), Bolz(?)(Zimmermann), Leipold.
+
+
+
+
+Daten-Aggregator statt Hub (laut Stadler)

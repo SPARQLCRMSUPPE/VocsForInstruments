@@ -1,0 +1,68 @@
+Museum:
+Inkompatibilität IFLA-LRM vs. Objektorientiert, Ereignisorientiert in Museum – das heißt z.B. "Werk" und Werk sind was anderes.
+
+"Ereignis" – auch für Editionen interessant?
+CIDOC CRM auch für Editionen gut. 
+
+Aber ist das ein Problem, wenn man lod verwendet?
+Man muss ja nicht alle Felder belegen? Muss man überhaupt irgendwelche Felder belegen? Nein! Andere müssen ihre eigenen Felder belegen.
+Naja, doch. Wenn alles verbunden ist, darf es nicht sein, dass
+Ja: die einzelnen Entitäten müssen auf theoretischer Ebene einigermaßen kompatibel sein.
+
+Nein! Eigentlich ist das Modell egal. Dann verwendet halt z.B. RISM 
+Werk als IFLA-LRM, mit Besetzung aus Instrumenten aus Wikidata oder GND, welche dann CIDOC-CRM property intanceOf Subjekt MIMO-Datensatz.
+
+Richtig! Man muss nur gucken, dass die Instanzen und Properties einander nicht wiedersprechen. Danach könnte man mappen, wenn man es wollte und somit dann zu den Konzepten, die man selbst institutionell verwendet.
+
+Interoperabilität also einmal technisch – einmal konzeptionell wichtig.
+S. etwa EDM lod-Aufbau um dies beides zu gewährleisten.
+
+
+
+
+1. Frage: Was brauchen Museen?
+
+Museen: Verlinkung zw. Objekten und musik. Werk
+
+"der Museumsdokumentation, die häufig nicht
+textbasierte Objekte zum Gegenstand hat, kann nicht 
+von den Ebenen der Formal­ und Sacherschließung ge
+sprochen  werden.  Stattdessen  geht  es  um  die  Siche­
+rung  des  materiell­historischen  Befunds,  um  Klassifi­
+zierung  anhand  funktionaler,  thematischer  oder  stil­
+geschichtlicher Kriterien, um die theoretisch­kritische 
+Einordnung  und  die  Herstellung  von  Bezügen  zu  an
+deren Objekten. Die dazu notwendigen Kontextinfor
+mationen müssen häufig erst ermittelt werden. (RDA und Kultureinrichtungen, S. 6)"
+
+"ür  unikale  Werke  
+der bildenden Kunst erscheint es als überdifferenziert, 
+da  über  das  Werk,  die  Expression  und  die  Manifesta­
+tion, die sich in einem einzigen Exemplar konkretisie­
+ren, nichts anderes zu sagen ist als über das Exemplar 
+selbst. Andererseits erscheint RDA in seiner aktuellen 
+Ausprägung  für  die  Dokumentation  der  Materialität  
+und Historizität der Sammlungsobjekte oder der viel­
+gestaltigen Bezüge zu anderen Werken nicht differen­
+ziert genug. (RDA und Kultureinrichtungen, S. 6)"
+
+sprich: Werk ist was anderes – und es gibt kein Raum für Ereignisse/Objektbeschreibung materiell
+
+MIMO verwendet LIDO und exportiert das in Europeana
+
+Vielleicht dann Vokabular in EDM schreiben? Weil mega kompatibel?
+
+
+
+
+
+
+Aggregation der gesamten Ontologie kann nicht ich machen (vermutlich nicht einmal eine Instrumentengruppe) – sondern muss durch diejenigen erfolgen, die es nutzen wollen. Das heißt, es müssen vor allem dann Regeln gemacht werden, wie die Normdaten auszusuchen sind. Bzw. ein Grundstock an nutzbaren URIs definiert werden.
+
+
+Die Frage nach dem Standard: um möglichst hohe Interoperabilität gewährleisten zu können, stellte sich zunächst die Frage nach einem für alle Zielgruppen kompatiblen Modell, sowie einem Datenstandard.
+
+
+
+
+

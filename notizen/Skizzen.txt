@@ -1,0 +1,68 @@
+Plan: Framework für linked-data-Thesaurus für Besetzungen
+
+1. Ebene: Klassifikation
+    Zuhilfenahme MIMO - organologisch 
+    Hier braucht es einen verbindlichen Standard!
+    
+2. Ebene: Ontologie-Modellierung
+Wie kann man ein Instrument beschreiben? Mehrere Ebenen: Objekt (Item/zugleich Work), abstrakte Entität (Expression), aber zugleich inhärent: Klangpotential, Stimmung
+
+
+    - Welche Properties sind wichtig? 
+    - Soviel wie möglich aus Bestehendem
+    - Jedoch evtl. neue Property-Identifier notwendig: z.B. <Klarinette> <hat Stimmung/ist notiert in> <B> / <hat Tonumfang> (Was ja nicht instrumentenbaulich umgesetzt ist) (Wer kann sowas hosten? Kann man in Wikimedia einbringen? GND?) Aber wegen User-Generated-Content nicht unmittelbar brauchbar.
+    - Welche Software zur Modellierung verwenden?
+
+3. Ebene: Mapping/Interoperabilität
+    Mapping laut Rettinghaus in XSLT schreiben
+    - MIMUL
+    - GND (keine normierten Besetzungen)
+    - MEI
+    - RISM (LoC)
+    - DOREMUS?
+    - IAML?
+    FORMATE!!!!!!!??
+	EDM?
+    
+4. Ebene: Vermarktung
+    - github
+    - MEI-Metadaten-Mailingliste
+
+
+
+Aufbau Arbeit:
+
+1. Bedarfsanalyse
+	- Bibliotheken (Bibframe neue Möglichkeiten?)
+	- Museen (wichtig: Events)
+	- Editionen
+
+
+x. Analyse der bestehenden Vokabularien, Bewertung hinsichtlich
+    - Interoperabilität
+    - Tiefe der Darstellungmöglichkeit
+    - Verwendung als linked data (vermutl. immer mögl.?)
+    
+x. vorläufiges Regelwerk zur Ansetzung der Tripel nötig (= Ontologiemodellierung)
+
+x. Beispielhafte Implementierung
+    - z. B. Blech in Weber-Gesamtausgabe
+    - Bach-Gesamtausgabe?
+    - MusiXplora
+
+x. Erweiterbarkeit
+    Wie kann die Weiterentwicklung der Ontologie vonstatten gehen?
+    - Crowdsourcing über die MEI-Community?
+    - Drittmittelprojekt?
+    - Einbindung in Erschließungsroutinen MIMUL?
+    
+
+
+
+###############################################################
+
+Bemerkungen
+
+- zu differenzieren: Datenmodell und Datenformat?
+
+- Ist die Tatsache, dass man Wikimedia ändern kann, ein Problem?
