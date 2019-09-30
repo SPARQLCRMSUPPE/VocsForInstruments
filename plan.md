@@ -9,7 +9,7 @@ Woche 1:
 
 Woche 2:
 * Kontaktaufnahme mit IAML, DOREMUS -> Wahl der endgültigen Taxonomie (?), Bedarfe/Kooperationen (?)
-  * (Modul Crowd-/Outsourcing: Kontaktaufnahme Kett, FID Muwi)
+  * (Modul Crowd-/Outsourcing: Kontaktaufnahme Kett, FID Muwi) -> Typ von SLUB! / LZA
 
 * Beginn der terminolog. Arbeit
   * Welche (generischen) Vokabulare wären sinnvoll?
