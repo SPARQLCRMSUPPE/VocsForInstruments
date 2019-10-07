@@ -6,7 +6,7 @@
   * Kein gemeinsamer spartenübergreifender Standard
 
 2. Lösungsherleitung (theoretisch)
-  * Besserer Thesaurus (MIMO? **WIE HEIßT DAS RISM-VOKABULAR?**)
+  * Besserer Thesaurus (MIMO? UNIMARC?)
   * LOD
   * Crowd Sourcing-Modul anreißen?
 
