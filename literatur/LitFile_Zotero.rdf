@@ -1,0 +1,767 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal><dc:title>Programming Historian</dc:title></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Williamson</foaf:surname>
+                        <foaf:givenName>Evan Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_3"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:date>2017-08-12</dc:date>
+        <dcterms:dateSubmitted>2019-05-20 18:14:30</dcterms:dateSubmitted>
+        <z:libraryCatalog>programminghistorian.org</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Fetching and Parsing Data from the Web with OpenRefine</dc:title>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_3">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine#parse-html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-05-20 18:14:39</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_5">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sillence</foaf:surname>
+                        <foaf:givenName>Dr Matthew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4"/>
+        <bib:pages>44</bib:pages>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Data Preparation with Open Reﬁne</dc:title>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://chasedigitalage.files.wordpress.com/2019/01/open-refine-workbook-1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-05-20 18:22:05</dcterms:dateSubmitted>
+        <dc:title>Sillence - Data Preparation with Open Reﬁne.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.digis-berlin.de/wp-content/uploads/2018/03/digis_Workshop_Metadaten_20180320MKL.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-05-20 18:22:16</dcterms:dateSubmitted>
+        <dc:title>digis_Workshop_Metadaten_20180320MKL.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.tandfonline.com/doi/abs/10.1080/19386389.2015.1007009">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1938-6389,%201937-5034"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Southwick</foaf:surname>
+                        <foaf:givenName>Silvia B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.tandfonline.com/doi/abs/10.1080/19386389.2015.1007009</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1-35</bib:pages>
+        <dc:date>2015-01-02</dc:date>
+        <dcterms:dateSubmitted>2019-05-20 18:22:32</dcterms:dateSubmitted>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>A Guide for Transforming Digital Collections Metadata into Linked Data Using Open Source Technologies</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1938-6389,%201937-5034">
+        <prism:volume>15</prism:volume>
+        <prism:number>1</prism:number>
+        <dc:title>Journal of Library Metadata</dc:title>
+        <dc:identifier>ISSN 1938-6389, 1937-5034</dc:identifier>
+        <dcterms:alternative>Journal of Library Metadata</dcterms:alternative>
+        <dc:identifier>DOI 10.1080/19386389.2015.1007009</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="#item_9">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pohl</foaf:surname>
+                        <foaf:givenName>Adrian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steeg</foaf:surname>
+                        <foaf:givenName>Fabian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Christoph</foaf:surname>
+                        <foaf:givenName>Pascal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <bib:pages>20</bib:pages>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <z:language>de</z:language>
+        <dc:title>lobid – Dateninfrastruktur für Bibliotheken</dc:title>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://informationspraxis.de/wp-content/uploads/sites/6/2018/09/Pohl_Steeg_Christoph_1018.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-05-20 18:22:53</dcterms:dateSubmitted>
+        <dc:title>Pohl et al. - lobid – Dateninfrastruktur für Bibliotheken.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://towardsdatascience.com/processing-xml-in-python-elementtree-c8992941efd2">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Towards Data Science</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nair</foaf:surname>
+                        <foaf:givenName>Deepesh</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_11"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://towardsdatascience.com/processing-xml-in-python-elementtree-c8992941efd2</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:date>2018-09-15T22:21:53.631Z</dc:date>
+        <dcterms:dateSubmitted>2019-05-20 18:23:19</dcterms:dateSubmitted>
+        <dcterms:abstract>A Beginner’s Guide</dcterms:abstract>
+        <dc:title>Processing XML in Python — ElementTree</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_11">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://towardsdatascience.com/processing-xml-in-python-elementtree-c8992941efd2</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-05-20 18:23:22</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.mimo-international.com/MIMO/how-to-join.aspx">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_14"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.mimo-international.com/MIMO/how-to-join.aspx</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-06-15 06:33:13</dcterms:dateSubmitted>
+        <z:language>en-US</z:language>
+        <dc:title>MIMO Metadata</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.mimo-international.com/MIMO/how-to-join.aspx</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-06-15 06:33:15</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.degruyter.com/view/j/bfup.2014.38.issue-3/bfp-2014-0055/bfp-2014-0055.xml">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1865-7648,%200341-4183"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stein</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_16"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.degruyter.com/view/j/bfup.2014.38.issue-3/bfp-2014-0055/bfp-2014-0055.xml</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:date>2014-01-19</dc:date>
+        <dcterms:dateSubmitted>2019-07-16 14:38:39</dcterms:dateSubmitted>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <z:language>de</z:language>
+        <dcterms:abstract>Since the beginning of the World Wide Web, there is the idea of universal networking of information in a simple, standardized way. However, computers are still very limited in the interpretation of natural language. The last generation of the Web, the Semantic Web, closes this gap and models semantics explicit and machine-readable –and opens up new possibilities.</dcterms:abstract>
+        <dc:title>Linked Open Data – Wie das Web zur Semantik kam</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1865-7648,%200341-4183">
+        <prism:volume>38</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Bibliothek Forschung und Praxis</dc:title>
+        <dc:identifier>ISSN 1865-7648, 0341-4183</dc:identifier>
+        <dc:identifier>DOI 10.1515/bfp-2014-0055</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.interdisciplinary-laboratory.hu-berlin.de/media/documents/Stein_Linked_Open_Data_OOirrh1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-07-16 14:38:30</dcterms:dateSubmitted>
+        <dc:title>Stein - 2014 - Linked Open Data – Wie das Web zur Semantik kam.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_20">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lisena</foaf:surname>
+                        <foaf:givenName>Pasquale</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Todorov</foaf:surname>
+                        <foaf:givenName>Konstantin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cecconi</foaf:surname>
+                        <foaf:givenName>Cecile</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leresche</foaf:surname>
+                        <foaf:givenName>Francoise</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Canno</foaf:surname>
+                        <foaf:givenName>Isabelle</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Puyrenier</foaf:surname>
+                        <foaf:givenName>Frederic</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Voisin</foaf:surname>
+                        <foaf:givenName>Martine</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Meur</foaf:surname>
+                        <foaf:givenName>Thierry Le</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Troncy</foaf:surname>
+                        <foaf:givenName>Raphael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_19"/>
+        <bib:pages>7</bib:pages>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dcterms:abstract>We present a set of music-speciﬁc controlled vocabularies, formalized using Semantic Web languages, describing topics like musical genres, keys, or medium of performance. We have collected a number of existing vocabularies in various formats, converted them to SKOS and performed the interconnection of their equivalent terms. In addition, novel vocabularies, not available online before, have been designed by an editorial team. Next to multilingual labels and deﬁnitions, we provide hierarchical relations as well as links to external resources. We also show the application of those vocabularies for the production of vector embeddings, allowing for the calculation of distances between keys or between instruments.</dcterms:abstract>
+        <dc:title>CONTROLLED VOCABULARIES FOR MUSIC METADATA</dc:title>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pdfs.semanticscholar.org/cbfc/ebe45d5d08c385e4e3bf0e14765bfe84086b.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-09-30 07:01:51</dcterms:dateSubmitted>
+        <dc:title>Lisena et al. - CONTROLLED VOCABULARIES FOR MUSIC METADATA.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://data.doremus.org/vocabularies/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_24"/>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://data.doremus.org/vocabularies/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-09-30 07:05:36</dcterms:dateSubmitted>
+        <dc:title>DOREMUS Vocabularies</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://data.doremus.org/vocabularies/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-09-30 07:05:40</dcterms:dateSubmitted>
+        <dc:title>DOREMUS Vocabularies</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/DOREMUS-ANR/knowledge-base">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>GitHub</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_26"/>
+        <dc:subject>alle Vocs</dc:subject>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://github.com/DOREMUS-ANR/knowledge-base</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-09-30 07:19:43</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <dcterms:abstract>Repository containing controlled vocabularies and data published by DOREMUS - DOREMUS-ANR/knowledge-base</dcterms:abstract>
+        <dc:title>DOREMUS-ANR/knowledge-base</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_26">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://github.com/DOREMUS-ANR/knowledge-base/tree/master/vocabularies</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-09-30 07:20:03</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://zotero.org/support/quick_start_guide">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Center for History and New Media</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_28"/>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://zotero.org/support/quick_start_guide</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:title>Schnelleinstieg</dc:title>
+    </bib:Document>
+    <bib:Memo rdf:about="#item_28">
+        <rdf:value>&lt;p&gt;&lt;strong&gt;Willkommen bei Zotero!&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Anhand des Schnelleinstiegs lässt sich das Sammeln, Handhaben, Zitieren und Teilen von Quellen erlernen.&lt;/p&gt;&lt;p&gt;Vielen Dank, dass Sie Zotero installiert haben.&lt;/p&gt;</rdf:value>
+    </bib:Memo>
+    <bib:Book rdf:about="urn:isbn:978-3-8376-4232-2">
+        <z:itemType>book</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Series>
+               <dc:title>Museum</dc:title><dc:identifier>Band 30</dc:identifier>
+            </bib:Series>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Bielefeld</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Transcript</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Niewerth</foaf:surname>
+                        <foaf:givenName>Dennis</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_31"/>
+        <dc:identifier>ISBN 978-3-8376-4232-2</dc:identifier>
+        <dc:date>2018</dc:date>
+        <z:libraryCatalog>Library of Congress ISBN</z:libraryCatalog>
+        <dc:title>Dinge-Nutzer-Netze: von der Virtualisierung des Musealen zur Musealisierung des Virtuellen</dc:title>
+        <z:shortTitle>Dinge-Nutzer-Netze</z:shortTitle>
+        <z:numPages>423</z:numPages>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_31">
+        <z:itemType>attachment</z:itemType>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.transcript-verlag.de/media/pdf/1e/5b/92/oa9783839442326rdjQwIsOmhpXx.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-03-25 17:25:47</dcterms:dateSubmitted>
+        <dc:title>oa9783839442326rdjQwIsOmhpXx.pdf</dc:title>
+        <z:linkMode>3</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ojs.univie.ac.at/index.php/voebm/article/view/1731">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1022-2588"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marković</foaf:surname>
+                        <foaf:givenName>Barbara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kmyta</foaf:surname>
+                        <foaf:givenName>Olga</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sucker</foaf:surname>
+                        <foaf:givenName>Irina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.univie.ac.at/index.php/voebm/article/view/1731</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>414</bib:pages>
+        <dc:date>2016-12-30</dc:date>
+        <dcterms:dateSubmitted>2019-03-25 17:30:36</dcterms:dateSubmitted>
+        <z:libraryCatalog>Crossref</z:libraryCatalog>
+        <dc:title>Objekterschließung an Bibliotheken, Museen und Archiven in Österreich. Ergebnisse einer Erhebung</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1022-2588">
+        <prism:volume>69</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Mitteilungen der Vereinigung Österreichischer Bibliothekarinnen und Bibliothekare</dc:title>
+        <dc:identifier>ISSN 1022-2588</dc:identifier>
+        <dc:identifier>DOI 10.31263/voebm.v69i3.1731</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://aibstudi.aib.it/article/view/11829">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:22809112"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Castro</foaf:surname>
+                        <foaf:givenName>Valeria Lo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://aibstudi.aib.it/article/view/11829</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:date>2018-11-19</dc:date>
+        <dcterms:dateSubmitted>2019-03-25 17:32:13</dcterms:dateSubmitted>
+        <z:libraryCatalog>mEDRA</z:libraryCatalog>
+        <z:language>ita</z:language>
+        <dcterms:abstract>This paper draws a balance – starting from the detailed analysis of the book edited by Roberto Raieli, Advances in information and progress in knowledge: granularity, interoperability and data integration – of the state of the art and of the practical experience of cultural institutions of different nature and provenance around the use of linked open data (LOD) and of the semantic web, and tries to identify the lines of future development.</dcterms:abstract>
+        <dc:title>The digital convergence of cultural institutions: reflections on the sidelines of Advances in information and progress in knowledge</dc:title>
+        <z:shortTitle>The digital convergence of cultural institutions</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:22809112">
+        <prism:number>2</prism:number>
+        <dc:title>AIB studi</dc:title>
+        <dc:identifier>ISSN 22809112</dc:identifier>
+        <dc:identifier>DOI 10.2426/aibstudi-11829</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://bibliothecae.unibo.it/article/view/6108">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>Vol 5</prism:volume>
+                <dc:title>Bibliothecae.it</dc:title>
+                <dc:identifier>DOI 10.6092/issn.2283-9364/6108</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Trombone</foaf:surname>
+                        <foaf:givenName>Antonella</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_35"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://bibliothecae.unibo.it/article/view/6108</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>N° 1 (2016)-</bib:pages>
+        <dc:date>May 4, 2016</dc:date>
+        <dcterms:dateSubmitted>2019-03-25 17:33:20</dcterms:dateSubmitted>
+        <z:libraryCatalog>DataCite</z:libraryCatalog>
+        <z:language>it</z:language>
+        <dcterms:abstract>L’adozione di nuovi modelli concettuali per i dati bibliografici e d’autorità, le novità per le strutture normative del catalogo, i linguaggi di codifica dei dati e la loro comunicazione nel web semantico, sono alcuni dei fattori che stanno trasformando i cataloghi, la catalogazione e la gestione dei dati bibliografici. Inoltre, tali cambiamenti sono connessi allo sviluppo di nuovi ambienti di scoperta, visualizzazione e diffusione delle informazioni bibliografiche. Il saggio propone un’analisi degli elementi che sono alla base di tali mutamenti attuata anche attraverso l’esame dei temi sviluppati dalla letteratura scientifica nella medesima area di interesse.</dcterms:abstract>
+        <dc:title>Cataloghi, modelli concettuali, data model: gli orientamenti della ricerca e gli ordinamenti tematici nella Library and information science</dc:title>
+        <z:shortTitle>Cataloghi, modelli concettuali, data model</z:shortTitle>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_35">
+        <rdf:value>&lt;p&gt;Warum dieser Artikel plötzlich auf ita ist, ist unklar. Link ansonsten nochmals unten.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;https://doaj.org/article/d02262f81dcd4d52855775b802ebd713&lt;/p&gt;</rdf:value>
+    </bib:Memo>
+    <bib:Article rdf:about="http://digital.casalini.it/10.4403/jlis.it-12447">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:20381026"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Possemato</foaf:surname>
+                        <foaf:givenName>Tiziana</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://digital.casalini.it/10.4403/jlis.it-12447</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:date>2018</dc:date>
+        <dcterms:dateSubmitted>2019-03-25 17:45:40</dcterms:dateSubmitted>
+        <z:libraryCatalog>mEDRA</z:libraryCatalog>
+        <dc:title>How RDA is essential in the reconciliation and conversion processes for quality Linked Data</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:20381026">
+        <dc:title>JLIS: Italian Journal of Library, Archives and Information Science = Rivista italiana di biblioteconomia, archivistica e scienza dell'informazione: 9, 1, 2018</dc:title>
+        <dc:identifier>ISSN 20381026</dc:identifier>
+        <dc:identifier>DOI 10.4403/jlis.it-12447</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://www.o-bib.de/article/view/5390">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>o-bib. Das offene Bibliotheksjournal / Herausgeber VDB</dc:title>
+                <dc:identifier>DOI 10.5282/o-bib/2018h4s127-140</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kasprzik</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kett</foaf:surname>
+                        <foaf:givenName>Jürgen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.o-bib.de/article/view/5390</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>Bd.-5 Nr. 4 (2018)-</bib:pages>
+        <dc:date>December 10, 2018</dc:date>
+        <dcterms:dateSubmitted>2019-03-25 17:20:35</dcterms:dateSubmitted>
+        <z:libraryCatalog>DataCite</z:libraryCatalog>
+        <z:language>de</z:language>
+        <dcterms:abstract>Aufgrund der fortgesetzten Publikationsflut stellt sich immer dringender die Frage, wie die Schwellen für die Titel- und Normdatenpflege gesenkt werden können – sowohl für die intellektuelle als auch die automatisierte Sacherschließung. Zu einer Verbesserung der Daten- und Arbeitsqualität in der Sacherschließung kann beigetragen werden a) durch eine flexible Visualisierung der Gemeinsamen Normdatei (GND) und anderer Wissensorganisationssysteme, so dass deren Graphstruktur intuitiv erfassbar wird, und b) durch eine investigative Analyse ihrer aktuellen Struktur und die Entwicklung angepasster automatisierter Methoden zur Ermittlung und Korrektur fehlerhafter Muster. Die Deutsche Nationalbibliothek (DNB) prüft im Rahmen des GND-Entwicklungsprogramms 2017–2021, welche Bedingungen für eine fruchtbare community-getriebene Open-Source-Entwicklung entsprechender Werkzeuge gegeben sein müssen. Weiteres Potential steckt in einem langfristigen Übergang zu einer Darstellung von Titel- und Normdaten in Beschreibungssprachen im Sinne des Semantic Web (RDF; OWL, SKOS). So profitiert die GND von der Interoperabilität mit anderen kontrollierten Vokabularen und von einer erleichterten Interaktion mit anderen Fach-Communities und kann umgekehrt auch außerhalb des Bibliothekswesens zu einem noch attraktiveren Wissensorganisationssystem werden. Darüber hinaus bieten die Ansätze aus dem Semantic Web die Möglichkeit, stärker formalisierte, strukturierende Satellitenvokabulare rund um die GND zu entwickeln. Daraus ergeben sich nicht zuletzt auch neue Perspektiven für die automatisierte Sacherschließung. Es wäre lohnend, näher auszuloten, wie und inwieweit semantisch-logische Verfahren den bestehenden Methodenmix bereichern können.</dcterms:abstract>
+        <dc:title>Vorschläge für eine Weiterentwicklung der Sacherschließung und Schritte zur fortgesetzten strukturellen Aufwertung der GND</dc:title>
+    </bib:Article>
+    <bib:Document rdf:about="https://pro.europeana.eu/page/mimo-edm">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Europeana Pro</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_48"/>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://pro.europeana.eu/page/mimo-edm</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-03-28 08:32:54</dcterms:dateSubmitted>
+        <z:language>en-GB</z:language>
+        <dcterms:abstract>MIMO delivered 43,234 records represented in EDM to Europeana. It was the first time an aggregator had delivered data to Europeana using the Europeana Data …</dcterms:abstract>
+        <dc:title>MIMO and EDM</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_48">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text (HTML)</dc:title>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.mimo-international.com/MIMO/about-mimo.aspx">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_50"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.mimo-international.com/MIMO/about-mimo.aspx</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2019-03-28 09:07:04</dcterms:dateSubmitted>
+        <z:language>en-US</z:language>
+        <dc:title>About MIMO</dc:title>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_50">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text (HTML)</dc:title>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_51">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:pages>284</bib:pages>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Definition of FRBRoo: A Conceptual Model for Bibliographic Information in Object-Oriented Formalism</dc:title>
+    </bib:Article>
+    <z:Collection rdf:about="#collection_17">
+        <dc:title>Kulturerbe Erschl.</dc:title>
+        <dcterms:hasPart rdf:resource="#item_9"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-8376-4232-2"/>
+        <dcterms:hasPart rdf:resource="https://ojs.univie.ac.at/index.php/voebm/article/view/1731"/>
+        <dcterms:hasPart rdf:resource="http://aibstudi.aib.it/article/view/11829"/>
+        <dcterms:hasPart rdf:resource="https://www.o-bib.de/article/view/5390"/>
+        <dcterms:hasPart rdf:resource="#item_51"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_16">
+        <dc:title>LOD allg.</dc:title>
+        <dcterms:hasPart rdf:resource="https://www.degruyter.com/view/j/bfup.2014.38.issue-3/bfp-2014-0055/bfp-2014-0055.xml"/>
+        <dcterms:hasPart rdf:resource="http://digital.casalini.it/10.4403/jlis.it-12447"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_18">
+        <dc:title>off_toppich</dc:title>
+        <dcterms:hasPart rdf:resource="http://zotero.org/support/quick_start_guide"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_4">
+        <dc:title>Python</dc:title>
+        <dcterms:hasPart rdf:resource="https://towardsdatascience.com/processing-xml-in-python-elementtree-c8992941efd2"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>Tools</dc:title>
+        <dcterms:hasPart rdf:resource="#collection_3"/>
+        <dcterms:hasPart rdf:resource="https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine"/>
+        <dcterms:hasPart rdf:resource="#item_5"/>
+        <dcterms:hasPart rdf:resource="#item_6"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_3">
+        <dc:title>linked_open_data</dc:title>
+        <dcterms:hasPart rdf:resource="http://www.tandfonline.com/doi/abs/10.1080/19386389.2015.1007009"/>
+        <rdf:type rdf:resource="http://www.zotero.org/namespaces/export#Collection"/>
+        <dc:title>linked_open_data</dc:title>
+        <dcterms:hasPart rdf:resource="http://www.tandfonline.com/doi/abs/10.1080/19386389.2015.1007009"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_15">
+        <dc:title>Vocs Music</dc:title>
+        <dcterms:hasPart rdf:resource="http://www.mimo-international.com/MIMO/how-to-join.aspx"/>
+        <dcterms:hasPart rdf:resource="#item_20"/>
+        <dcterms:hasPart rdf:resource="http://data.doremus.org/vocabularies/"/>
+        <dcterms:hasPart rdf:resource="https://github.com/DOREMUS-ANR/knowledge-base"/>
+        <dcterms:hasPart rdf:resource="https://pro.europeana.eu/page/mimo-edm"/>
+        <dcterms:hasPart rdf:resource="http://www.mimo-international.com/MIMO/about-mimo.aspx"/>
+    </z:Collection>
+</rdf:RDF>
