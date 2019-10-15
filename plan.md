@@ -1,15 +1,27 @@
 # Plan
 
-Woche 1:
+#KW 42:
 
-* Finalisierung der Arbeitsumgebung (GitHub, Technisches)
-* Definition der Arbeitsbereiche / Ziele
-* Aufstellen des Zeitplans
-* vorläufige Gliederung
+* Anpassung Exposé (16.10.–18.10.) -> Message an Betreuer A
+* Beginn Recherche Ontologieen
+* Kontaktaufnahme mit IAML, DOREMUS (17.10. **wichtig!!**)
 
-Woche 2:
-* Kontaktaufnahme mit IAML, DOREMUS -> Wahl der endgültigen Taxonomie (?), Bedarfe/Kooperationen (?)
-  * (Modul Crowd-/Outsourcing: Kontaktaufnahme Kett, FID Muwi)
+#KW 43:
+
+* Klärung Projekteinbettung mit Pers X
+  - davon abhängig: Arbeits(zeit)gestaltung
+
+#KW 44:
+
+
+
+
+
+#To Do:
+
+* Wahl der endgültigen Taxonomie (?) (abhängig von Kontaktaufnahme IAML/DOREMUS!)
+* Bedarfe/Kooperationen (?) (abhängig von Gespräch Pers X)
+  * (Modul Crowd-/Outsourcing: Kontaktaufnahme DNB)
 
 * Beginn der terminolog. Arbeit
   * Welche (generischen) Vokabulare wären sinnvoll?
@@ -17,15 +29,17 @@ Woche 2:
 * Community Building: über verschiedene Mailinglisten Projekt nochmal kurz outlinen und auf neuen Stand bringen (= 1 Tag!)
   (dafür am besten schon Mailingliste eingerichtet? Über FID Muwi laufen lassen?)
 
-Woche 3:
 
 * Community-Mail raus
 * Parallel Editionsleute persönlich anschreiben (zumind. Strauss, Zimmermann, Mozart)
 
-* Terminologische Arbeit intensivieren
 
 
-10.10. Termin mit pot. Betreuer A
+
+
+
+
+
 
 |:     Woche 1        :|:     Woche 1        :|:     Woche 1        :|:     Woche 1        :|
 |---------------|---------------|---------------|---------------|---------------|
