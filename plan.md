@@ -14,7 +14,12 @@
 #KW 44:
 
 
+#KW 45:
 
+
+#KW 46:
+
+* Deadline IAML Prag (15.11.)
 
 
 #To Do:
