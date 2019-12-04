@@ -22,7 +22,7 @@ Im Sinne des bereits erwähnten Spannungsfeldes zwischen bibliothekarischer und 
 
 
 
-
+---
 
 
 [^a]: Deutsche Forschungsgemeinschaft, *Einschätzungen und Beobachtungen des NFDI-Expertengremiums zur Planung von NFDI-Konsortien*, [Bonn] [2019], S.4, <dfg.de/download/pdf/foerderung/programme/nfdi/stellungnahme_nfdi_eg.pdf>(eingesehen am 04.12.2019).  
