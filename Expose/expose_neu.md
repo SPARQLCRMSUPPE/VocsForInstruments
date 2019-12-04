@@ -42,7 +42,7 @@ standards." als Förderkriterium im Zuge der NFDI-Ausschreibung: Deutsche Forsch
 
 
 
-
+########### Notizen ##############
 
 
 
