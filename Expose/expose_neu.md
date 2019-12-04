@@ -14,7 +14,7 @@ Im Sinne des bereits erwähnten Spannungsfeldes zwischen bibliothekarischer und 
 
 
 
-
+SPARQLCRMSUPPE
 
 
 
