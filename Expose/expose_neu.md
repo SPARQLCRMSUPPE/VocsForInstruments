@@ -25,7 +25,8 @@ Im Sinne des bereits erwähnten Spannungsfeldes zwischen bibliothekarischer und 
 ---
 
 
-[^a]: Deutsche Forschungsgemeinschaft, *Einschätzungen und Beobachtungen des NFDI-Expertengremiums zur Planung von NFDI-Konsortien*, [Bonn] [2019], S.4, <dfg.de/download/pdf/foerderung/programme/nfdi/stellungnahme_nfdi_eg.pdf> (eingesehen am 04.12.2019).  
+[^a]: Deutsche Forschungsgemeinschaft, *Einschätzungen und Beobachtungen des NFDI-Expertengremiums zur Planung von NFDI-Konsortien*, [Bonn] [2019], S.4,
+<dfg.de/download/pdf/foerderung/programme/nfdi/stellungnahme_nfdi_eg.pdf> (eingesehen am 04.12.2019).  
 [^b]: Ebd.  
 [^c]: Ebd.  
 [^d]: Zur Begriffserklärung s. etwa: Australian National Data Service (Hrsg.): *Metadata*, (= ANDS Guide), o.O. 2016, S. 6, <https://www.ands.org.au/__data/assets/pdf_file/0004/728041/Metadata-Workinglevel.pdf> (abgerufen am 04.12.2019).  
