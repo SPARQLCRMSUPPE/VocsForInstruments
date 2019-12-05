@@ -26,17 +26,26 @@ Im Sinne des bereits erwähnten Spannungsfeldes zwischen bibliothekarischer und 
 
 
 [^a]: Deutsche Forschungsgemeinschaft, *Einschätzungen und Beobachtungen des NFDI-Expertengremiums zur Planung von NFDI-Konsortien*, [Bonn] [2019], S.4,
-<dfg.de/download/pdf/foerderung/programme/nfdi/stellungnahme_nfdi_eg.pdf> (eingesehen am 04.12.2019).  
-[^b]: Ebd.  
-[^c]: Ebd.  
-[^d]: Zur Begriffserklärung s. etwa: Australian National Data Service (Hrsg.): *Metadata*, (= ANDS Guide), o.O. 2016, S. 6, <https://www.ands.org.au/__data/assets/pdf_file/0004/728041/Metadata-Workinglevel.pdf> (abgerufen am 04.12.2019).  
-[^e]: World Wide Web Consortium (Hrsg.): *RDF*, <https://www.w3.org/RDF/> (abgerufen am 04.12.2019).  
+<dfg.de/download/pdf/foerderung/programme/nfdi/stellungnahme_nfdi_eg.pdf> (eingesehen am 04.12.2019).
+
+[^b]: Ebd.
+
+[^c]: Ebd.
+
+[^d]: Zur Begriffserklärung s. etwa: Australian National Data Service (Hrsg.): *Metadata*, (= ANDS Guide), o.O. 2016, S. 6, <https://www.ands.org.au/__data/assets/pdf_file/0004/728041/Metadata-Workinglevel.pdf> (abgerufen am 04.12.2019).
+
+[^e]: World Wide Web Consortium (Hrsg.): *RDF*, <https://www.w3.org/RDF/> (abgerufen am 04.12.2019).
+
 [^f]: Bsp.: Beim RDF-Tripel *"Op.23456a" - "hat Besetzung" - "Triangel"* erscheint letztlich die Herkunft (hier wären eine Vielzahl möglicher, oftmals bereits gemappter Normdateien denkbar) der Entitäten *"Op.23456a"* und *"Triangel"* für die Bedeutung weniger sinnstiftend, als die eindeutige Definition der Beziehung *"hat Besetzung"*, die diese beiden Entitäten miteinander verbindet.
-Für diese Arbeit ergebe dies das folgende Schema: *"musikalisches Werk" - "hat Besetzung" - "Musikinstrument".*  
-[^g]: Die Standardbildung im Falle bereits etablierter heterogener Vokabulare und Schemata erscheint, falls überhaupt möglich, im Gegensatz zur Neuentwicklung von Schemata ein genuin fachwissenschaftliches Unterfangen zu sein - freilich auch hier mit bibliothekarischer Unterstützung.  
-[^h]: Bedarfe beschränken sich keinesfalls etwa auf den musikwissenschaftlichen Bereich, sondern reichen etwa auch von der Physik (Akkustik) über die Materialwissenschaften bis hin zu den Geisteswissenschaften und Kulturerbeeinrichtungen.  
+Für diese Arbeit ergebe dies das folgende Schema: *"musikalisches Werk" - "hat Besetzung" - "Musikinstrument".*
+
+[^g]: Die Standardbildung im Falle bereits etablierter heterogener Vokabulare und Schemata erscheint, falls überhaupt möglich, im Gegensatz zur Neuentwicklung von Schemata ein genuin fachwissenschaftliches Unterfangen zu sein - freilich auch hier mit bibliothekarischer Unterstützung.
+
+[^h]: Bedarfe beschränken sich keinesfalls etwa auf den musikwissenschaftlichen Bereich, sondern reichen etwa auch von der Physik (Akkustik) über die Materialwissenschaften bis hin zu den Geisteswissenschaften und Kulturerbeeinrichtungen.
+
 [^i]: Vgl. auch den Punkt "Added value to be achieved through the development of cross-disciplinary metadata
-standards." als Förderkriterium im Zuge der NFDI-Ausschreibung: Deutsche Forschungsgemeinschaft (Hrsg.), *Guidance Notes on Funding Criteria National Research Data Infrastructure (NFDI)*, o.O. o.J., S. 2, <https://www.dfg.de/formulare/nfdi120/nfdi120_en.pdf>(abgerufen am 04.12.2019).  
+standards." als Förderkriterium im Zuge der NFDI-Ausschreibung: Deutsche Forschungsgemeinschaft (Hrsg.), *Guidance Notes on Funding Criteria National Research Data Infrastructure (NFDI)*, o.O. o.J., S. 2, <https://www.dfg.de/formulare/nfdi120/nfdi120_en.pdf>(abgerufen am 04.12.2019).
+
 
 
 
@@ -50,7 +59,8 @@ standards." als Förderkriterium im Zuge der NFDI-Ausschreibung: Deutsche Forsch
 
 
 
-
+Despite its original focus on the web, the MD format has been proven to be well suited for academic writing (Ovadia 2014
+  https://pandoc-scholar.github.io/
 
 https://edoc.hu-berlin.de/bitstream/handle/18452/19876/DINI-Thesen_2018_2.pdf?sequence=1&isAllowed=y
 
