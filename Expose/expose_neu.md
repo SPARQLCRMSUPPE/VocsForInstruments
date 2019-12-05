@@ -36,8 +36,8 @@ Im Sinne des bereits erwähnten Spannungsfeldes zwischen bibliothekarischer und 
 
 [^e]: World Wide Web Consortium (Hrsg.): *RDF*, <https://www.w3.org/RDF/> (abgerufen am 04.12.2019).
 
-[^f]: Bsp.: Beim RDF-Tripel *"Op.23456a" - "hat Besetzung" - "Triangel"* erscheint letztlich die Herkunft (hier wären eine Vielzahl möglicher, oftmals bereits gemappter Normdateien denkbar) der Entitäten *"Op.23456a"* und *"Triangel"* für die Bedeutung weniger sinnstiftend, als die eindeutige Definition der Beziehung *"hat Besetzung"*, die diese beiden Entitäten miteinander verbindet.
-Für diese Arbeit ergebe dies das folgende Schema: *"musikalisches Werk" - "hat Besetzung" - "Musikinstrument".*
+[^f]: Bsp.: Beim RDF-Tripel "*Op.23456a*" - "*hat Besetzung*" - "*Triangel*" erscheint letztlich die Herkunft (hier wären eine Vielzahl möglicher, oftmals bereits gemappter Normdateien denkbar) der Entitäten *"Op.23456a"* und *"Triangel"* für die Bedeutung weniger sinnstiftend, als die eindeutige Definition der Beziehung "*hat Besetzung*", die diese beiden Entitäten miteinander verbindet.
+Für diese Arbeit ergäbe dies das folgende Schema: *"musikalisches Werk*" - "*hat Besetzung*" - "*Musikinstrument*".
 
 [^g]: Die Standardbildung im Falle bereits etablierter heterogener Vokabulare und Schemata erscheint, falls überhaupt möglich, im Gegensatz zur Neuentwicklung von Schemata ein genuin fachwissenschaftliches Unterfangen zu sein - freilich auch hier mit bibliothekarischer Unterstützung.
 
