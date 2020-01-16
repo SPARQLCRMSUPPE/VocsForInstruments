@@ -12,6 +12,7 @@ KW
   * Zeitplan
   * Gliederung
   * Termin Wiermann
+
   *Meilenstein: administrative Vorarbeiten sind erledigt, inhaltliche Arbeit kann beginnen*
 
 5
@@ -21,6 +22,7 @@ KW
   * Schärfung Problemstellung – Ausformulierung
   * Datenmodellierung: was fehlt?
   * **vorläufige** Arbeitsdefinitionen
+
   *Meilenstein: Ausgangslage/Zielsetzung ist endgültig definiert – 1 Kapitel*
 
 **Erkenntnisse FDM:
@@ -33,6 +35,7 @@ KW
 7
   * Vorarbeiten zu terminologischer Arbeit
     * Recherche: wie erstellt man ein LOD-Applikationsprofil? -> Kapitel "Methodik" / Datenmodellierung mit RDF
+
   *Meilenstein: Kapitel Methodik*
 
 8
@@ -56,6 +59,7 @@ KW
 
 12
   * Verschriftlichung
+
   *Meilenstein: Einschlägige Vokabulare sind ausgewertet, entsprechende Kapitel verfasst*
 
 **Erkenntnisse FDM:
@@ -85,13 +89,15 @@ KW
 15
   * Datenmodellierung
   * Erstellung von Arbeitsdefinitionen v. wichtigen Begriffen (in Einleitung)
+
   *Meilenstein: im Sinne eines Proof of Concepts sind die Erkenntnisse auf ein Tortenstück angewendet*
 
-_Erkenntnisse FDM:
-* PoC auch etwa zu Demonstrationszwecken nutzbar_
+**Erkenntnisse FDM:
+* PoC auch etwa zu Demonstrationszwecken nutzbar**
 
 16
 * Überarbeitung – Stringenz
+
   *Meilenstein: die Arbeit ist inhaltlich abgeschlossen*
 
 17
