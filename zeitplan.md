@@ -1,17 +1,22 @@
-#Zeitplan
+# Zeitplan
 
-##Jan
+## Jan
+
+KW
 
 3
   * **Finale** Absprache: 17.01.2019
+
 4
   * Exposé
   * Zeitplan
   * Gliederung
   * Termin Wiermann
   *Meilenstein: administrative Vorarbeiten sind erledigt, inhaltliche Arbeit kann beginnen*
+
 5
   * Schärfung Problemstellung – Ausformulierung
+
 6
   * Schärfung Problemstellung – Ausformulierung
   * Datenmodellierung: was fehlt?
@@ -24,17 +29,19 @@ _Erkenntnisse FDM:
 
 ---
 
-##Feb
+## Feb
 
 7
   * Vorarbeiten zu terminologischer Arbeit
     * Recherche: wie erstellt man ein LOD-Applikationsprofil? -> Kapitel "Methodik" / Datenmodellierung mit RDF
   *Meilenstein: Kapitel Methodik*
+
 8
   * Vorarbeiten zu terminolog. Arbeit - Recherche Vokabulare
     * Allgemeine Ontologien
     * Fachvokabulare
   * detaillierte inhaltliche Bewertung
+
 9
   * Vorarbeiten zu terminolog. Arbeit - Recherche Vokabulare
   * detaillierte inhaltliche Bewertung
@@ -42,10 +49,12 @@ _Erkenntnisse FDM:
 
   ---
 
-##Mar
+## Mar
 
 10 x
+
 11 x
+
 12
   * Verschriftlichung
   *Meilenstein: Einschlägige Vokabulare sind ausgewertet, entsprechende Kapitel verfasst*
@@ -59,6 +68,7 @@ _Erkenntnisse FDM:
 
 13
   * Technische Fragen (Tools, Infrastruktur -> Wikibase? Persistente URIs/Namespaces) <- Kapitel?
+
 14
   * Datenmodellierung
 
@@ -81,12 +91,13 @@ _Erkenntnisse FDM:
 _Erkenntnisse FDM:
 * PoC auch etwa zu Demonstrationszwecken nutzbar_
 
-
 16
 * Überarbeitung – Stringenz
   *Meilenstein: die Arbeit ist inhaltlich abgeschlossen*
+
 17
   * Korrekturschleifen
+
 18
   * Korrekturen, Abgabe
 
