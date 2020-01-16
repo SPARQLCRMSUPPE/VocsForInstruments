@@ -23,9 +23,8 @@ KW
   * **vorläufige** Arbeitsdefinitionen
   *Meilenstein: Ausgangslage/Zielsetzung ist endgültig definiert – 1 Kapitel*
 
-_Erkenntnisse FDM:
-* Definition und Begriffsschärfungen wichtiger Termini
-*_
+**Erkenntnisse FDM:
+* Definition und Begriffsschärfungen wichtiger Termini**
 
 ---
 
@@ -59,12 +58,12 @@ _Erkenntnisse FDM:
   * Verschriftlichung
   *Meilenstein: Einschlägige Vokabulare sind ausgewertet, entsprechende Kapitel verfasst*
 
-_Erkenntnisse FDM:
+**Erkenntnisse FDM:
 * Kenntnisse zur Architektur des Semantic Webs
 * Kenntnisse zur wissenschaftlichen Methodik und Routinen für die Erstellung von Thesauri
 * Kenntnis der gebräuchlichen und somit aussagekräftigsten allgemeinen Vokabularen
 * Kenntnis zur individuellen Aussagekraft gebräuchlicher Vokabulare aus dem geisteswissenschaftlichen Bereich / des Museums- Archivwesens
-* Verständnis verschiedener gebräuchlicher Datenmodelle_
+* Verständnis verschiedener gebräuchlicher Datenmodelle**
 
 13
   * Technische Fragen (Tools, Infrastruktur -> Wikibase? Persistente URIs/Namespaces) <- Kapitel?
@@ -72,12 +71,12 @@ _Erkenntnisse FDM:
 14
   * Datenmodellierung
 
-_Erkenntnisse FDM:
+**Erkenntnisse FDM:
 
 * Expertise bei der technischen Umsetzung von:
   1. Erstellung von Fachvokabularen
   2. Crowd Sourcing-Infrastrukturen
-  3. Implementierung entspr. Services_
+  3. Implementierung entspr. Services**
 
   ---
 
@@ -101,8 +100,8 @@ _Erkenntnisse FDM:
 18
   * Korrekturen, Abgabe
 
-_Erkenntnisse FDM:
+**Erkenntnisse FDM:
 * Ein "Do-it-yourself"-Handbuch zur Erstellung von Applikationsprofilen mit LOD - mit sowohl implizitem wie explizitem Fokus auf FDM - ist erstellt worden. Es kann intern wie auch extern weiterverwendet werden.
 * Eine Aufarbeitung der Intranet-Doku kann als Leitfaden für den FDM-Gebrauch in Bibliotheken ausgeführt + publiziert werden.
 
-**FDM-Projekt geht trotz abgeschlossener MA weiter!**_
+FDM-Projekt geht trotz abgeschlossener MA weiter!**_
