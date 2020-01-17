@@ -25,8 +25,9 @@ KW
 
   *Meilenstein: Ausgangslage/Zielsetzung ist endgültig definiert – 1 Kapitel*
 
-**Erkenntnisse FDM:
-* Definition und Begriffsschärfungen wichtiger Termini**
+---
+**Erkenntnisse FDM:**
+* Definition und Begriffsschärfungen wichtiger Termini
 
 ---
 
@@ -38,10 +39,12 @@ KW
 
   *Meilenstein: Kapitel Methodik*
 
-**Erkenntnisse FDM:
+---
+**Erkenntnisse FDM:**
 * Kenntnisse zur Architektur des Semantic Webs
 * Kenntnis der Möglichkeiten und Grenzen gängiger Metadatenschemata
-* Methodik der Modellierung von Metadatenapplikationsprofilen (insb. LOD)**
+* Methodik der Modellierung von Metadatenapplikationsprofilen (insb. LOD)
+---
 
 8
   * Vorarbeiten zu terminolog. Arbeit - Recherche Vokabulare
@@ -67,20 +70,22 @@ KW
 
   *Meilenstein: Einschlägige Vokabulare sind ausgewertet, entsprechende Kapitel verfasst*
 
-**Erkenntnisse FDM:
+---
+**Erkenntnisse FDM:**
 * Kenntnisse zur Architektur des Semantic Webs
 * Kenntnisse zur wissenschaftlichen Methodik und Routinen für die Erstellung von Thesauri
 * Kenntnis der gebräuchlichen und somit aussagekräftigsten allgemeinen Vokabulare
 * Kenntnis zur individuellen Aussagekraft gebräuchlicher Vokabulare aus dem geisteswissenschaftlichen Bereich / des Museums- / Archivwesens
-* Verständnis verschiedener gebräuchlicher Entity-Relationship-Modelle / Konzepte der Wissensstrukturierung**
+* Verständnis verschiedener gebräuchlicher Entity-Relationship-Modelle / Konzepte der Wissensstrukturierung
+---
 
 13
   * Technische Fragen (Tools, Infrastruktur -> Wikibase? Persistente URIs/Namespaces) <- Kapitel?
 
 14
   * Datenmodellierung
-
-**Erkenntnisse FDM:
+---
+**Erkenntnisse FDM:**
 
 * Expertise bei der technischen Umsetzung von:
   1. Erstellung von Fachvokabularen
@@ -89,7 +94,8 @@ KW
     - Anbindung an das Semantic Web
     -
   2. Crowd Sourcing-Infrastrukturen
-  3. Implementierung entspr. Services**
+  3. Implementierung entspr. Services
+
 
   ---
 
@@ -101,8 +107,10 @@ KW
 
   *Meilenstein: im Sinne eines Proof of Concepts sind die Erkenntnisse auf ein Tortenstück angewendet*
 
-**Erkenntnisse FDM:
-* PoC auch etwa zu Demonstrationszwecken nutzbar**
+---
+**Erkenntnisse FDM:**
+* PoC auch etwa zu Demonstrationszwecken nutzbar
+---
 
 16
 * Überarbeitung – Stringenz
@@ -114,9 +122,9 @@ KW
 
 18
   * Korrekturen, Abgabe
-
-**Erkenntnisse FDM:
+---
+**Erkenntnisse FDM:**
 * Ein "Do-it-yourself"-Handbuch zur Erstellung von Applikationsprofilen mit LOD - mit sowohl implizitem wie explizitem Fokus auf FDM - ist erstellt worden. Es kann intern wie auch extern weiterverwendet werden.
 * Eine Aufarbeitung der Intranet-Doku kann als Leitfaden für den FDM-Gebrauch in Bibliotheken ausgeführt + publiziert werden.
 
-FDM-Projekt geht trotz abgeschlossener MA weiter!**_
+**FDM-Projekt geht trotz abgeschlossener MA weiter!**
