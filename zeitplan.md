@@ -38,6 +38,11 @@ KW
 
   *Meilenstein: Kapitel Methodik*
 
+**Erkenntnisse FDM:
+* Kenntnisse zur Architektur des Semantic Webs
+* Kenntnis der Möglichkeiten und Grenzen gängiger Metadatenschemata
+* Methodik der Modellierung von Metadatenapplikationsprofilen (insb. LOD)**
+
 8
   * Vorarbeiten zu terminolog. Arbeit - Recherche Vokabulare
     * Allgemeine Ontologien
@@ -65,9 +70,9 @@ KW
 **Erkenntnisse FDM:
 * Kenntnisse zur Architektur des Semantic Webs
 * Kenntnisse zur wissenschaftlichen Methodik und Routinen für die Erstellung von Thesauri
-* Kenntnis der gebräuchlichen und somit aussagekräftigsten allgemeinen Vokabularen
-* Kenntnis zur individuellen Aussagekraft gebräuchlicher Vokabulare aus dem geisteswissenschaftlichen Bereich / des Museums- Archivwesens
-* Verständnis verschiedener gebräuchlicher Datenmodelle**
+* Kenntnis der gebräuchlichen und somit aussagekräftigsten allgemeinen Vokabulare
+* Kenntnis zur individuellen Aussagekraft gebräuchlicher Vokabulare aus dem geisteswissenschaftlichen Bereich / des Museums- / Archivwesens
+* Verständnis verschiedener gebräuchlicher Entity-Relationship-Modelle / Konzepte der Wissensstrukturierung**
 
 13
   * Technische Fragen (Tools, Infrastruktur -> Wikibase? Persistente URIs/Namespaces) <- Kapitel?
@@ -79,6 +84,10 @@ KW
 
 * Expertise bei der technischen Umsetzung von:
   1. Erstellung von Fachvokabularen
+    - Tools
+    - Infrastruktur
+    - Anbindung an das Semantic Web
+    -
   2. Crowd Sourcing-Infrastrukturen
   3. Implementierung entspr. Services**
 
