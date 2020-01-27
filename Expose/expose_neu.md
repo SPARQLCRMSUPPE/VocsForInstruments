@@ -15,6 +15,8 @@ Als technischer Standard empfiehlt sich hierfür insbesondere das sog. *Research
 
 Es entsteht so als wissenschaftliches Beiprodukt neben dem eigentlichen *Proof of Concept* auch ein Leitfaden zur technischen Implementierung eines *Linked Open Data*-basierten Normvokabulars.
 
+---
+# Notizen
 
 Neben der diskursiven wissenschaftlichen Dokumentation in Form dieser Arbeit erf
 
@@ -162,19 +164,31 @@ Klassifikationsproblem wird man nicht lösen können, aber Beziehungsproblem!
 N.B.: Eigentlich ja nicht nur Besetzungen, sondern "Vokabular musikinstrumentaler Beziehungen!" <- yes!
 
 
-
+---
 
 
 [^16ea]: Verlinkung
+
 [^4360]: Zugleich existieren etwa durch das Projekt DOREMUS (**Link**) allerdings bereits Mappings, die Querverbindungen zwischen Vokabularen herzustellen imstande sind.
+
 [^3ae0]: Es ist die Überzeugung des Autors, dass zum einen muss von community selbst, ist eh schwierig, gitb schon mappings
+
 [^9db5]: Zugleich exisitieren durch das DOREMUS-Projekt (link) bereits Mappings zwischen unterschiedlichen gebräuchlichen Klassifikationen, sodass viele gängige Klassifikationen bereits miteinander verlinkt sind.
+
 [^036d]: Neben den einschlägigen Vokabularen – allen voran UNIMARC (link), GND (Link), LCSH – betrifft dies ab
+
 [^eb9a]: Flankiert soll diese Arbeit von koordinatorischen Maßnahmen werden, die diesen Prozess ebenfalls in Gang setzen.
+
 [^0455]: Bsp. Bibl. Museum Edition etc.
+
 [^670b]: Es liegt auf der Hand, dass die sehr weiten Bedürfnisse einer öffentlichen Musikbibliothek von den außerordentlich spezifischen Bedürfnissen einer wissenschaftlichen Edition oder eines Museums differieren.
+
 [^8e5b]: Etwa materiell, immateriell, referentiell, unmittelbar etc.
+
 [^263b]: link
+
 [^5cb5]: DINI AG KIM oder so
+
 [^d6e8]: welche? generische, aber auch fachspezifische
+
 [^5637]: Bsp. Verbindung Museumsobjekt mit CD
