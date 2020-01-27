@@ -4,6 +4,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Despite its original focus on the web, the MD format has been proven to be well suited for academic writing (Ovadia 2014
   https://pandoc-scholar.github.io/
 
@@ -136,3 +151,44 @@ Soll die Weichen legen für die generische Anknüpfbarkeit
 
 
 Anknüpfungspunkte an andere Disziplinen hervorheben
+
+
+
+
+# 20200127
+
+Problem der heterogenen Bedürfnisse
+
+zwei ebenen : organisatorisch / formal, von denen nur die eine interessiert
+
+
+
+
+
+
+
+
+Wie in so vielen Disziplinen herrscht auch in der Musikwissenschaft derzeit ein Mangel an standardisierten Vokabularen. Während der Bereich der Personen dank der verfügbaren Ressourcen (GND, NAF, VIAF etc.) bereits recht gut abgedeckt ist, wird dieses Defizit insbesondere im Bereich musikalischer Instrumente deutlich spürbar, dessen gebräuchliche Vokabulare (insb. UNIMARC[^16ea]) in der Tendenz oberflächlich, inakkurat oder inkonsistent ausfallen.[^4360] Doch diese Arbeit widmet sich nicht etwa der Standardisierung von Thesauri, Taxonomien und Klassifikationen von Instrumenten, wie man es womöglich erwarten könnte [^3ae0]
+
+Vielmehr macht sie es sich zum Ziel, eine erste Skizze für ein Vokabular – in diesem Falle ein sog. *Metadatenapplikationsprofil* – zu entwerfen, das besser als bisherige zu beschreiben imstande ist, welche komplexen Beziehungen zwischen Instrument und Werk existieren können.
+
+
+
+
+Diese Arbeit möchte daher einen Beitrag zur Füllung dieses Desiderats beitragen. Dabei wirkt die Tatsache, dass zukünftige Nutzer (etwa Bibliotheken, Museen, Archive) musikinstrumentenspezifischer Vokabulare durchaus unterschiedlich gelagerte Nutzungsszenarien erfüllt sehen wollen und daher sehr heterogene Anforderungen an Vokabulare stellen, erschwerend für eine gemeinsame Standardbildung.
+
+
+
+
+ Es erscheint daher logisch, dass jener Standardisierungsprozess, der – will er generische, spartenübergreifende Anwendbarkeit anbieten können – nur aus seinem künftigen Nutzerkreis selbst generiert werden darf.
+
+
+
+
+
+4. Gewünschter Outcome: Wie könnte ein erster Ansatz für ein Vokabular für Beziehungen aussehen?
+
+
+
+
+N.B.: Eigentlich ja nicht nur Besetzungen, sondern "Vokabular musikinstrumentaler Beziehungen!" <- yes!
