@@ -1,45 +1,180 @@
+Im Umgang mit musikinstrumentenbezogenen Vokabularen begngnet eine Reihe von Defiziten:
+* Es erweisen sich die gebräuchlichen Vokabulare[^036d] hinsichtlich Präzision, Darstellungstiefe und Konsistenz oftmals als unzureichend.
+* Es exisitiert – gerade hinsichtlich der Klassifikation von Musikinstrumenten – kein interdisziplinär anerkannter Standard.
+* Standardbildung wird durch die Heterogenität von sparten- oder disziplinspezifischer Bedürfnisse und etablierter historisch gewachsener Praktiken erschwert.[^0455]
+
+Aus diesen Defiziten ergeben sich zwei vornehmliche Anknüpfungsbereiche:
+* Zum einen erscheint eine spartenübegreifende und interdisziplinäre Ausbildung einer Standardklassifikation von Musikinstrumenten geboten.
+* Zum anderen stellt die Weiterentwicklung der zur Verfügung stehenden musikinstrumentenbezogenen Terminologie ein wichtiges Desiderat dar.
+
+Eingedenk der Überzeugung, dass Standardbildung ein Unterfangen darstellt, das notwendig seine Verankerung innerhalb einer Fachgemeinschaft unterhalten muss, klammert diese Arbeit den Komplex um die Klassifikation von Musikinstrumenten aus[^9db5] und widmet sich der Erweiterung bestehender Terminologie. Doch auch hierbei gilt die notwendige Bedingung einer fachgemeinschasftlichen Einbettung in gleichem Maße. So gibt sich diese Arbeit keineswegs der Vermesseheit hin, eine endgültige Version aus sich selbst heraus generieren zu wollen. Vielmehr versteht sie sich als Impuls, der durch dokumentierte, wissenschaftlich fundierte terminologische Vorarbeiten – seine Validität und Anschlussfähigkeit in einem *Proof of Concepts* erprobend und zur Disposition stellend – das Feld für eine kooperative, fachgebundene Weiterentwicklung bereitet.[^eb9a]
+
+Eine besondere Herausforderung liegt in der bereits erwähnten enormen Heterogenität potentieller Anwenderkreise sowie ihrer spezifischen Nutzungsszenarien und Bedürfnisse.[^670b] Hinter diesen verbergen sich ganz und gar individuell ausgestaltete konzeptuelle Bezugnahmen auf Musikinstrumente.[^8e5b] Diese Bezüge terminologisch kontrolliert zu erfassen und referenzierbar zu machen bietet die große Chance, ein semantische Netz aus Beziehungen zu knüpfen, das empirisch erfasste Entitäten (Musikinstrumente) – gleich ihrer Klassifikation – miteinander zu verbinden imstande ist.[^5637]
+
+Als technischer Standard empfiehlt sich hierfür insbesondere das sog. *Research Description Framework*.[^263b] Er erlaubt die Repräsentation hochkomplexer, multidimensionaler Beziehungen bei größtmöglicher Interoperabilität und konzeptueller Erweiterbarkeit. Zugleich wird das Vokabular – oder genauer: das Metadatenapplikationsprofil[^5cb5] – kraft seiner Ausstattung mit *Uniform Ressource Identifiern* und seiner Publikation im Internet maschinenlesbar in das sog. *Semantic Web* integriert. Um dies umzusetzen müssen zunächst bestehende einschlägige Ontologien auf ihr semantisches Potential für die Darstellung treffender Bezüge (sog. *Properties*) ausgewertet werden.[^d6e8] Auf Grundlage der gewonnenen Erkenntnisse erfolgt anschließend die Modellierung des Applikationsprofils, wobei bis dato fehlende Properties ebenfalls anzulegen sein werden.
+
+Es entsteht so als wissenschaftliches Beiprodukt neben dem eigentlichen *Proof of Concept* auch ein Leitfaden zur technischen Implementierung eines *Linked Open Data*-basierten Normvokabulars.
 
 
-# Exposé Masterarbeit Alan Riedel
-
-Ein zentrales Anliegen an eine künftige Nationale Forschungsdateninfrastruktur (NFDI) besteht laut Deutscher Forschungsgemeinschaft (DFG) darin, "Datenqualität und Metadaten, Standardbildung, [...] Interoperabilität und Transfer"[^a] zu fördern. Ganz dezidiert werden diese Themen von der DFG dabei trotz notwendiger "fachspezifischer Verankerung"[^b] keineswegs als domänenspezifische, intern-ausgerichtete Aufgaben begriffen, sondern als interkonsortiale, verbindende "Querschnittsthemen"[^c], die es gilt, wo immer möglich auf generische Anwendbarkeit und Validität auszurichten.[^i] Der hiermit implizit exisitierende Wunsch nach ultimativer interdisziplinärer Nachnutzbarkeit von Daten mag angesichts der fachlichen Heterogenität innerhalb der deutschen Forschungslandschaft als überaus ambitioniert erscheinen, unterscheiden sich doch Methoden und Forschungsgegenstände substantiell bzw. fehlen wissenschaftlich nutzbare Standards und Vokabulare in einer Vielzahl von Disziplinen noch weitestgehend. **[da muss ein Bsp. verlinkt werden – idealerweise sagen, das insb. in Naturwiss.]** Zugleich aber muss die Verwendung von gemeinsamen Schemata und Vokabularen als zentrale Prämisse für die Möglichkeit einer Vernetzung interdisziplinärer Daten verstanden werden. Begreift man die NFDI-Ausschreibung als Steuerungsmaßnahme und somit als Indikator einer zukünftigen Wissenschaftskultur, so wird deutlich, dass die Weiter- und Neuntwicklung von interoperablen Vokabularen und Metadatenschemata in der Wissenschaft der kommenden Jahre eine stark zunehmende Priorität einnehmen wird.  
-Während die Rolle der Bibliotheken innerhalb dieser neuen Wissenschaftskultur noch nicht endgültig ausdefiniert ist, ist es angesichts der Tatsache, dass Standardisierung und terminologische Arbeit seit jeher zu den zentralsten  bibliothekarischen Kernkompetenz gehören, geradezu naheliegend, dass Bibliotheken bzw. Forschungsdatenmanager ihre Kompetenzen in diesem Feld in die disziplinäre Ausbildung entsprechender Strukturen beisteuern werden. Hierbei wird es gelten, geeignete Mittel zu finden, fachspezifische Expertise und bibliothekarisches Generalistentum miteinander auszutarieren.
-
-Auch diese Arbeit bewegt sich innerhalb dieses oftmals nicht trennbaren Spannungsfelds, indem sie es sich zum Ziel macht, ein semantisches Framework für die Entwicklung eines Schemas in Form einer sogenannten *Application Profile*[^d] – in diesem Fall im Feld der musikalischen Besetzungen – zu schaffen, das interdisziplinär anschlussfähig und weiterverwendbar ist, und somit einen fachübergreifenden, generischen Mehrwert bieten kann. Dieser generische Mehrwert beschränkt sich dabei keineswegs auf die terminologische Arbeit, sondern bemisst sich mittelbar auch gerade etwa in der Generierung von allgemeinen Erkenntnissen bezüglich der Modellierung und Entwicklung von spezifischen Metadatenschemata auf Basis vorhandener Vokabulare und Standards, Routinen zur Neuanlage und technischen Verfügbarmachung von Namespaces, einer Fokussierung der Trennschärfe zwischen fachbibliothekarischer und fachwissenschaftlicher Arbeit bei der Modellierung von Applikationsprofilen, oder der Verwendung geeigneter Werkzeuge und Routinen zur kooperativen, gemeinschaftsbasierten Arbeit – allesamt Bestandteile nachfolgender Publikationen.
-
-Es liegt dabei auf der Hand, dass angesichts des Anspruchs nach interdisziplinärer Nutzbarkeit ein technischer Standard Verwendung finden muss, der gleichermaßen in der Musikwissenschaft, wie in jeder anderen denkbaren wissenschaftlichen Domäne anerkannt und je operabel ist. Diese scheinbar nicht einzuhaltende Maßgabe wird jedoch kraft sogennanter *Semantic Web-Technologien* und des Ressource Description Framework (RDF)[^e] erfüllbar. Durch die Verwendung von maschinenlesbaren Bedeutungsträgern (Namespaces), deren Semantik durch ihre allgemein anerkannte – im Gegensatz zu einer disziplinär hochspezifizierten und somit eingeschränkten Nutzung – im Semantic Web bereits etabliert ist, kann hier auf ein erweiterbares und je anpassbares Metadatenschema zurückgegriffen werden, das bereits imstande ist, komplexe, heterogene Sachverhalte maschinenlesbar und interoperabel darzustellen und damit auch Daten von vormals weit entfernten Disziplinen miteinander sprechen zu lassen **[in Beziehung zu setzen (?)]**.
-
-Die musikalische Fokussierung dieser Arbeit geschieht dabei vor allem aus pragmatischen Gründen: einerseits aus der Lagerung eigener fachlicher Expertise heraus, andererseits, da die Entwicklung eines semantischen Frameworks musikalischer Besetzungen momentan ein ausgesprochen vielversprechendes Desiderat ausfüllt, da die bis dato vorhandenen Erschließungsmittel in ihrer Differenziertheit als ungenügend oder als ungenau zu betrachten sind. Zugleich wird bei diesem Beispiel dem interdisziplinären spartenübergreifenden Anspruch an eine NFDI in besonderem Maße Rechnung getragen.[^h]  
-Im Sinne des bereits erwähnten Spannungsfeldes zwischen bibliothekarischer und fachwissenschaftlicher Arbeit maßt es sich diese Arbeit dabei keinesfalls etwa an, einen erschöpfenden, präskriptiven Standard für die Erschließung musikalischer Besetzungen vorzulegen. Vielmehr glaubt sie, den geeigneten forschungsdatenmanagerialen Beitrag im Modellieren eines Metadatenapplikationsprofils in Form eines semantischen Grundgerüsts, bestehend aus möglichen Beziehungen (properties) identifiziert zu haben **[redundant?]**, der einen ersten Impuls an die Fachgesellschaft zur weiteren Ausarbeitung - freilich mit kuratorischer bibliothekarischer Mitwirkung - liefern will. Indem sich die Arbeit also bei der Ausarbeitung auf die Ebene der semantischen Bezüge beschränkt, klammert sie zunächst ganz bewusst die Entitätsebene (Datenebene) aus. Eine Standardisierung von verwendeten Vokabularen erscheint hier zwar als ähnlich wichtig, stellt jedoch einen separaten Arbeitsbereich dar, der zum einen nicht gleichermaßen akut[^f] und zum anderen im fachwissenschaftlichen Diskurs am sinnvollsten aufgehoben zu sein scheint[^g].
+Neben der diskursiven wissenschaftlichen Dokumentation in Form dieser Arbeit erf
 
 
 
+Eine besondere Herausforderung stellt die bereits erwähnte enorme Heterogenität potentieller Anwender sowie ihrer spezifischen Nutzungsszenarien und Bedürfnisse dar.[^670b]
 
+es muss also ein erweiterbares, Vokabular her.
+
+also muss verschiedene blickwinkel auf instr. abbilden können -> geht nur mit LOD
+- zugleich aber dann dazu fähig, heterogene Vokabulare miteinander zu verbinden
+
+
+dann kommt Vorgehen:
 
 
 
 
+Problem der heterogenen Bedürfnisse
 
----
+zwei ebenen : organisatorisch / formal, von denen nur die eine interessiert
 
 
-[^a]: Deutsche Forschungsgemeinschaft, *Einschätzungen und Beobachtungen des NFDI-Expertengremiums zur Planung von NFDI-Konsortien*, [Bonn] [2019], S.4,
-<https://www.dfg.de/download/pdf/foerderung/programme/nfdi/stellungnahme_nfdi_eg.pdf> (eingesehen am 04.12.2019).
 
-[^b]: Ebd.
 
-[^c]: Ebd.
 
-[^d]: Zur Begriffserklärung s. etwa: Australian National Data Service (Hrsg.): *Metadata*, (= ANDS Guide), o.O. 2016, S. 6, <https://www.ands.org.au/__data/assets/pdf_file/0004/728041/Metadata-Workinglevel.pdf> (abgerufen am 04.12.2019).
 
-[^e]: World Wide Web Consortium (Hrsg.): *RDF*, <https://www.w3.org/RDF/> (abgerufen am 04.12.2019).
 
-[^f]: Bsp.: Beim RDF-Tripel "*Op.23456a*" - "*hat Besetzung*" - "*Triangel*" erscheint letztlich die Herkunft (hier wären eine Vielzahl möglicher, oftmals bereits gemappter Normdateien denkbar) der Entitäten *"Op.23456a"* und *"Triangel"* für die Bedeutung weniger sinnstiftend, als die eindeutige Definition der Beziehung "*hat Besetzung*", die diese beiden Entitäten miteinander verbindet.
-Für diese Arbeit ergäbe dies das folgende Schema: *"musikalisches Werk*" - "*hat Besetzung*" - "*Musikinstrument*". Lediglich "*hat Besetzung*" wäre dabei durch die Bezugnahme auf einen Namespace (etwa MusicOntology) semantisch eindeutig spezifiziert. Standardvokabulare für die Datenwerte "*Werk*" und "*Instrument*" (bspw. GND und Unicode) zu definieren, ist also explizit noch kein Ziel dieser Arbeit.
 
-[^g]: Die Standardbildung im Falle bereits etablierter heterogener Vokabulare und Schemata erscheint, falls überhaupt möglich, im Gegensatz zur Neuentwicklung von Schemata ein genuin fachwissenschaftliches Unterfangen zu sein - freilich auch hier mit bibliothekarischer Unterstützung˘.
 
-[^h]: Bedarfe beschränken sich keinesfalls etwa auf den musikwissenschaftlichen Bereich, sondern reichen etwa auch von der Physik (Akkustik) über die Materialwissenschaften bis hin zu den Geisteswissenschaften und Kulturerbeeinrichtungen.
 
-[^i]: Vgl. auch den Punkt "Added value to be achieved through the development of cross-disciplinary metadata
-standards." als Förderkriterium im Zuge der NFDI-Ausschreibung: Deutsche Forschungsgemeinschaft (Hrsg.), *Guidance Notes on Funding Criteria National Research Data Infrastructure (NFDI)*, o.O. o.J., S. 2, <https://www.dfg.de/formulare/nfdi120/nfdi120_en.pdf>(abgerufen am 04.12.2019).
+
+
+
+
+
+
+
+
+
+
+
+
+möchte sie verschiedene  "Proof of Concept" Vorarbeit das Feld bereiten
+
+
+das feld bereiten
+
+jetzt eins ums andere abarbeiten.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Liste von Problemen:
+
+1. Vokabulare schlecht
+2. keine Standards
+3. heterogene Anforderungen <-> interoperable Lösung wichtig
+
+2 Herangehensweisen:
+1. standards
+2. versuchen heterogene Vokabulare miteinander zu verbinden
+
+
+
+
+
+
+
+
+
+
+Wie in so vielen Disziplinen herrscht auch in der Musikwissenschaft derzeit ein Mangel an standardisierten Vokabularen. Während der Bereich der Personen dank der verfügbaren Ressourcen (GND, NAF, VIAF etc.) bereits recht gut abgedeckt ist, wird dieses Defizit insbesondere im Bereich musikalischer Instrumente deutlich spürbar, dessen gebräuchliche Vokabulare (insb. UNIMARC[^16ea]) in der Tendenz oberflächlich, inakkurat oder inkonsistent ausfallen.[^4360] Doch diese Arbeit widmet sich nicht etwa der Standardisierung von Thesauri, Taxonomien und Klassifikationen von Instrumenten, wie man es womöglich erwarten könnte [^3ae0]
+
+Vielmehr macht sie es sich zum Ziel, eine erste Skizze für ein Vokabular – in diesem Falle ein sog. *Metadatenapplikationsprofil* – zu entwerfen, das besser als bisherige zu beschreiben imstande ist, welche komplexen Beziehungen zwischen Instrument und Werk existieren können.
+
+
+
+
+Diese Arbeit möchte daher einen Beitrag zur Füllung dieses Desiderats beitragen. Dabei wirkt die Tatsache, dass zukünftige Nutzer (etwa Bibliotheken, Museen, Archive) musikinstrumentenspezifischer Vokabulare durchaus unterschiedlich gelagerte Nutzungsszenarien erfüllt sehen wollen und daher sehr heterogene Anforderungen an Vokabulare stellen, erschwerend für eine gemeinsame Standardbildung.
+
+Es muss daher eine geben, die besser ist – LOD
+
+gleichzeitig sehr heterogen –
+
+
+ Es erscheint daher logisch, dass jener Standardisierungsprozess, der – will er generische, spartenübergreifende Anwendbarkeit anbieten können – nur aus seinem künftigen Nutzerkreis selbst generiert werden darf.
+
+Dieser Umstand
+
+2. Linked Open Data ist aufrgund genannter Heterogenität das Mittel der Wahl zur
+-> Hier fehlt es an Beziehungen bzw. standardisierterm Metadatenapplikation...
+
+
+-> Community-Effort. Aber
+
+Aus Überzeugung heraus, dass LOD heterogene Bedürfnisse befridigen kann, wird hier
+
+
+
+
+
+Das Schaffen einer tragfähigen, standardiserten Taxonomie wird jedoch durch die heterogenen Bedürfnisse erschwert, die die verschiedenen Sparten an eine standardisierte Lösung stellen
+
+Während nur die Community aus sich heraus imstande sein kann, die Lücke eines standardisierten Vokabulars auf dem Gebiet der Musikinstrumente zu füllen,
+
+Aus der Überzeugung heraus, dass das Schaffen eines Standardvokabulars für Musik
+
+
+
+
+
+Exposé
+
+alles so verständlich wie möglich. Alles so plastisch wie möglich ( = viele Beispiele)
+
+
+1. Problemstellung: fehlede Standardvokabulare, heterogene Bedürfnisse (1 konkretes Bsp.?)
+
+2. Lösung: LOD
+Klassifikationsproblem wird man nicht lösen können, aber Beziehungsproblem!
+-> standardisiertes Applikationsprofil (Rücksprache André) mit eigenen Anteilen
+
+3. Vorgehensweise
+
+  1
+  2
+  3
+  ...
+
+4. Gewünschter Outcome: Wie könnte ein erster Ansatz für ein Vokabular für Beziehungen aussehen?
+
+
+
+
+N.B.: Eigentlich ja nicht nur Besetzungen, sondern "Vokabular musikinstrumentaler Beziehungen!" <- yes!
+
+
+
+
+
+[^16ea]: Verlinkung
+[^4360]: Zugleich existieren etwa durch das Projekt DOREMUS (**Link**) allerdings bereits Mappings, die Querverbindungen zwischen Vokabularen herzustellen imstande sind.
+[^3ae0]: Es ist die Überzeugung des Autors, dass zum einen muss von community selbst, ist eh schwierig, gitb schon mappings
+[^9db5]: Zugleich exisitieren durch das DOREMUS-Projekt (link) bereits Mappings zwischen unterschiedlichen gebräuchlichen Klassifikationen, sodass viele gängige Klassifikationen bereits miteinander verlinkt sind.
+[^036d]: Neben den einschlägigen Vokabularen – allen voran UNIMARC (link), GND (Link), LCSH – betrifft dies ab
+[^eb9a]: Flankiert soll diese Arbeit von koordinatorischen Maßnahmen werden, die diesen Prozess ebenfalls in Gang setzen.
+[^0455]: Bsp. Bibl. Museum Edition etc.
+[^670b]: Es liegt auf der Hand, dass die sehr weiten Bedürfnisse einer öffentlichen Musikbibliothek von den außerordentlich spezifischen Bedürfnissen einer wissenschaftlichen Edition oder eines Museums differieren.
+[^8e5b]: Etwa materiell, immateriell, referentiell, unmittelbar etc.
+[^263b]: link
+[^5cb5]: DINI AG KIM oder so
+[^d6e8]: welche? generische, aber auch fachspezifische
+[^5637]: Bsp. Verbindung Museumsobjekt mit CD
