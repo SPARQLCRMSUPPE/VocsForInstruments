@@ -192,3 +192,45 @@ Diese Arbeit möchte daher einen Beitrag zur Füllung dieses Desiderats beitrage
 
 
 N.B.: Eigentlich ja nicht nur Besetzungen, sondern "Vokabular musikinstrumentaler Beziehungen!" <- yes!
+
+
+
+
+
+
+####
+
+to do Arbeit:
+
+Lizenz für Github?
+
+Vorteil github: ie Möglichkeit, über eine Schnittstelle (API) auf die Inhalte von anderen Diensten zuzugreifen und eigene Inhalte anderen Applikationen zur Ver-fügung zu stellen
+
+-> was bringt mir die API?
+
+
+
+Obwohl nach Evaluation aller webbasierten Schreibplattformen zunächst eine geeignete Lösung gefunden worden war, war es ohne eigene Programmierarbeit nicht möglich, den gesamten Inhalt der Arbeit jeder-zeit offen einsehbar und verfügbar zu halten. Demnach wird davon aus-gegangen, dass der Erstellungsprozess einer Dissertation schon an den aktuellen technischen Möglichkeiten von Standardlösungen scheitern kann, wenn der Wissenschaftler und die Wissenschaftlerin nicht über aus-reichende (Programmier-)Kenntnisse zur Bewältigung technischer Heraus-forderungen verfügen.
+-> das wird sich zeigen (?)
+
+Kontakt auf Github?
+
+DSGVO: Namen müssen entfernt werden
+
+Weder die Forschungsinstitutionen noch private Anbieter sind bisher in der Lage, Plattformen für die Öffnung des gesamten wissenschaftlichen Prozesses anzubieten.
+
+
+Die gegebenenfalls positiven Folgen der offenen Publikation von Inhalten und Daten sowie deren Nachnutzung können im Rahmen dieser Arbeit nicht betrachtet werden. Es ist jedoch davon auszugehen, dass die Reichweite dieser Arbeit und der dazugehörigen Daten, die von Arbeiten im geschlossenen Raum übersteigt. Weitere Experimente mit der offenen For-schungsarbeit sind demnach notwendig, um abschließend zu evaluieren, ob eine solche Art des Verfassens von Forschungs- und Qualifizierungs-arbeiten einen fundamentalen Vorteil für die Wissenschaft und die Öffent-lichkeit bringt.
+
+
+
+as soziale Umfeld des Autors oder der Autorin sollte auf die Dokumentation der Arbeit hingewiesen werden, da so positiver Druck im Rahmen des Zeitplans entstehen kann. Das motiviert und erhöht die Arbeitsmoral.
+
+
+
+
+#######
+
+
+"RDF languages are typically known as vocabularies, which refer to definitionsof both classes and properties. Formal standardization is not the norm for most RDF vocabularies; instead, communities tend to build vocabularies that are useful to them, then promote theiruse through a combination of documentation and open sharing of data that uses these vocabularies."
+https://guides.lib.utexas.edu/ld.php?content_id=29091241 S.16

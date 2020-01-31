@@ -1,5 +1,5 @@
 # Exposé Masterarbeit Alan Riedel
-## Musikinstrumentale Beziehungen - Skizzen für ein Metadatenprofil (Arbeitstitel)
+## Musikinstrumentale Beziehungen - Vorarbeiten für ein Metadatenprofil (Arbeitstitel)
 
 Bei der näheren Betrachtung musikinstrumentenbezogener Vokabulare fallen eine Reihe von Defiziten auf:
 * Es erweisen sich die gebräuchlichen Vokabulare[^036d] hinsichtlich Präzision, Darstellungstiefe und Konsistenz oftmals als unzureichend.
