@@ -1,10 +1,8 @@
 # 1. Einleitung
 
-# 2. Problemstellung
-
-* Vorgehensweise
 * warum nicht Klassifikation?
-* Methodik
+
+# 2. Problemstellung
 
 ## 2.1 Ist-Zustand
 
@@ -14,6 +12,10 @@
 
 * spartenübergreifende Standardisierung
 * vieldimensionale, maschinenlesbare und kontrollierte Darstellbarkeit
+
+## 2.3 Vorgehensweise
+
+* Methodik
 
 *15 Seiten* -> dazu Arbeitsdefinitionen
 
