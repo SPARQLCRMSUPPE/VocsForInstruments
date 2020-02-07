@@ -31,7 +31,7 @@ Gleichwohl eine solche Erschließungstiefe nicht notwendigerweise bei der Katalo
 
 Mit Blick auf die am Beispiel des RISM-Datensatzes identifizierten Mängel und Chancen lassen sich mehrere Schlüsse ziehen:
 
-1. Es liegt auf der Hand, dass das verwendete Vokabular nicht ideal ist. Abgesehen von der offenbarten Unschärfe ist das Vokabular nicht öffentlich einsehbar[^c1f9] – termonologische Kontrolle somit nicht nachvollziehbar. Eine philologische Auswertung verfügbarer Klassifikationen und Taxonomien bzw. entsprechender Crosskonkordanzen hinsichtlich ihrer Präszision und Anwendbarkeit wäre daher erfolgsversprechend.
+1. Es liegt auf der Hand, dass das verwendete Vokabular nicht ideal ist. Abgesehen von der offenbarten Unschärfe ist das Vokabular nicht öffentlich einsehbar[^c1f9] – termonologische Kontrolle somit nicht nachvollziehbar. Um ein alternatives Vokabular zu verwenden, wäre eine philologische Auswertung verfügbarer Klassifikationen und Taxonomien bzw. entsprechender Crosskonkordanzen hinsichtlich ihrer Präszision und Anwendbarkeit erfolgsversprechend.
 2. Es sind noch eine Vielzahl weiterer – wie gezeigt wurde: durchaus signifikanter – Aussagen zum verwendeten Instrumentarium sinnvoll.
 3. Leider mangelt es an etabliertem, geschweige denn maschinenlesbarem Vokabular, solcherlei Aussagen in eindeutiger Weise treffen zu können.
 
@@ -39,17 +39,21 @@ Wie bereits dargestellt ist eine ausführliche Auseinandersetzung mit musikinstr
 
 Für den Fortgang dieser Arbeit erscheint dabei die Klärung der folgenden Fragestellungen als insbesondere relevant:
 
-1. Welche Eigenschaften fehlen?
-2. Gibt es bereits Vokabulare, die prinzipiell imstande wären, sie darzustellen?
+1. Welche Eigenschaften fehlen in den einschlägigen Vokabularen?
+2. Gibt es bereits Vokabulare, die prinzipiell imstande wären, diese Eigenschaften abzubilden?
 3. Welche Aussagen können vermöge der untersuchten Vokabularen nicht getroffen werden?
 4. Welche Mittel können ergriffen werden, um diese Aussagen doch zu ermöglichen?
 
-Zu 1.: Es existieren zahllose Musikinstrumente. Diese wiederum besitzen unzählige charakteristische Eigenschaften. Es erscheint daher unumgänglich, sich auf ein Instrument oder auf eine Instrumentengruppe zu beschränken. Dieser Schritt ist auch insofern legitimiert, indem die Demonstration grundsätzlicher ontologischer Zusammenhänge eine heuristische Übertragbarkeit des in der Arbeit entwickelten Modells zulässt. Dieser Legitimierung eingedenk bedient sich diese Arbeit deshalb auch in ihrem weiteren Fortgang exemplarisch vornehmlich des bereits eingeführten Beispiels.
+Zu 1.: Es existieren zahllose Musikinstrumente. Diese wiederum besitzen unzählige charakteristische Eigenschaften. Es erscheint daher unumgänglich, sich in dieser Arbeit auf ein Instrument oder auf eine Instrumentengruppe zu beschränken. Dieser Schritt ist auch insofern legitimiert, indem die Demonstration grundsätzlicher ontologischer Zusammenhänge eine heuristische Übertragbarkeit des in der Arbeit entwickelten Modells zulässt. Dieser Legitimierung eingedenk bedient sich diese Arbeit deshalb auch in ihrem weiteren Fortgang exemplarisch vornehmlich des bereits eingeführten Beispiels.
+
 Bereits im vorhergehenden Kapitel waren einige Eigenschaften benannt worden, die als bestimmende Eigenschaften des *cor da caccia* (und zwar jenes Typs, der in BWV 208 Verwendung finden sollte) identifiziert wurden. Dies waren etwa:
 
 * Stimmung[^4ee1]
-* Instrumententyp (gemäß Hornbostel und Sachs: **xxxxx**[^17ba])
-* Ambitus, Grundton[^1389]
+  * sowohl relative Stimmung[^d355]
+  * als auch absolute Stimmung[^3141]
+  * als auch Temperatur[^fd29]
+* Instrumententyp (also etwa als Mapping zu einer Hornbostel und Sachs-Klassifikation: **xxxxx**[^17ba])
+* Ambitus[^1389]
 * historische Äquivalente, oder, falls bekannt, Objekt
 * daraus: Material
 
@@ -61,12 +65,27 @@ Darüber hinaus wären weitere Eigenschaften denkbar, wie:
 
 Die kontrollierte, maschinenlesbare Darstellbarkeit dieser Eigenschaften in Bezug zu einer ohne sie allzu undifferenzierten und unspezifischen Entität *cor da caccia* wird es sein, die als Indikator für ein Gelingen des Ziels dieser Arbeit auf praktischer Ebene herhält. Zugleich trägt die gemeinsame Anwendung von Aspekten aus unterschiedlichen Domänen, wie sie oben abgebildet sind[^429c], eine implizite Aussage zur Vernetzbarkeit und den Chancen, die diese birgt, in sich.
 
+Am Beispiel des RISM-Datensatzes exemplifiziert wäre etwa das folgende Szenario denkbar: Entweder innerhalb des Datensatzes eingeblendet, oder als Verlinkung aus dem String *cor da caccia* heraus ließe sich die Kombination geeigneter Eigenschaften aufrufen. Möglich wären weitere Verlinkungen etwa zu ähnlichen Sammlungsobjekten, zu disambiguierenden Namespaces oder zu weiteren nützlichen Informationen. Umgekehrt erzielte eine Suche mit einer entsprechenden Kombination indizierter Terme – etwa über die RISM SPARQL-Schnittstelle – zumindest den erwähnten Datensatz als Treffer. Eine wesentlich differenziertere und vielfältigere Suche wäre somit ermöglicht.
+
+
+
+
+
+So würde etwa
 
 
 
 
 
 
+
+1 Bsp., was dann der fassbare Vorteil ist (z.B. ich klicke im RISM-Datensatz auf das Instrument, sehe, welches es eigentlich ist, dergleichen)
+
+
+
+
+
+Tatsächlich ist die Frage nach der Klassifikation dann ja auch egal: das unscharfe Ding ist dann anhand seiner je spezifischen Eigenschaften definiert bzw. verdeutlicht.
 
 
 
@@ -119,16 +138,20 @@ dass es diese Vokabulare nicht gibt! diesen Kontext geben muss –
 [^1807]: Es scheint sich hier um einen multilingualen synthetischen Neologismus aus den französischen und italienischen Begriffen *cor de chasse* und *corno da caccia* zu handeln.
 [^eaa6]: Sie sind daher selbstverständlich auch nicht über den RISM SPARQL Endpoint suchbar.
 [^43a9]: Durchgeführt am 31.01.2020 LINK
-[^8646]: Vgl. **xxxxx**
+[^8646]: Vgl. etwa Gisela Csiba und Jozsef Csiba, *Die Blechblasinstrumente in Johann Sebastian Bachs Werken*, Kassel 1994.
 [^714c]: Wie bereits erwähnt, ist es nicht Ziel dieser Arbeit, klassifikatorische Fragestellungen zu Musikinstrumenten zu untersuchen.
 [^cbf9]: Johann Sebastian Bach, "Was mir behagt ist nur die muntre Jagd", in: *3 Kantaten, 1 Instrumentalstück*, D-B Mus.ms. Bach P 42, S. 77.
 [^008d]: Vgl. http://www.mimo-db.eu/InstrumentsKeywords/4138
 [^aafd]: x **das muss näher erklärt werden, durch Literatur abgesichert werden.**
 
 [^c1f9]: RISM selbst konnte zunächst keine Angaben zu dem verwendeten Vokabular geben – vermutlich habe eine Kollegin eine Datei gespeichert (Anfrage und Korrespondenz am 31.01.2020).
-[^4ee1]: **Literatur? MGG?**
+[^4ee1]: Wolfgang Auhagen, Art. "Stimmung und Temperatur, Tasteninstrumente und Bundinstrumente, Temperatur", in: *MGG Online*, Kassel u.a. 2016ff., <https://www.mgg-online.com/mgg/stable/55149> 07.02.2020.
 [^17ba]:
 [^1389]: s. o.
 
 [^23b1]: Es handelt sich um den RISM-Datensatz... **s. Zotero** zu BWV 208 (http://d-nb.info/gnd/300009178) **<- Fußnote bearbeiten!!**
 [^429c]: Stimmung, Werk aus dem bibliographischen Bereich; Objekt, Material, Instrumententyp aus dem organologischen, musealen Bereich; Fragen zu Werk, Interpretation aus dem Bereich der historischen Musikwissenschaft bzw. dem Editionswesen.
+
+[^d355]: Wie sie etwa in der Bezeichnung "in F" (der Grundton *f* also nicht anhand seiner Frequenz fest definiert) gemeint ist.
+[^3141]: Etwa *a* = 440 Hz.
+[^fd29]: Etwa die mitteltönige Stimmung einer Orgel.
