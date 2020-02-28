@@ -6,7 +6,7 @@
 
 ## 2.1 Ist-Zustand
 
-* Überblick über die vorhandenen Darstellungsmöglichkeiten
+* Überblick über die derzeitigen Darstellungsmöglichkeiten
 
 ## 2.2 Soll-Zustand
 
@@ -16,6 +16,12 @@
 ## 2.3 Vorgehensweise
 
 * Methodik
+*
+* 3.2 Wie erstellt man ein RDF-Metadatenprofil?
+
+* Auswertung von Vokabularen
+* Technische Implementierung
+* Formate
 
 *15 Seiten* -> dazu Arbeitsdefinitionen
 
@@ -24,12 +30,6 @@
 # 3. Musikinstrumente im Semantic Web
 
 ## 3.1 Kurzdefinition / Funktionsweise
-
-## 3.2 Wie erstellt man ein RDF-Metadatenprofil?
-
-* Auswertung von Vokabularen
-* Technische Implementierung
-* Formate
 
 ## 3.3 Auswertung von Vokabularen für die Anwendung
 

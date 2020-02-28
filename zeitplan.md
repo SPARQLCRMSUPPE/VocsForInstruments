@@ -18,6 +18,9 @@ KW
 5
   * Schärfung Problemstellung – Ausformulierung
 
+
+## Feb
+
 6
   * Schärfung Problemstellung – Ausformulierung
   * Datenmodellierung: was fehlt?
@@ -31,7 +34,7 @@ KW
 
 ---
 
-## Feb
+
 
 7
   * Vorarbeiten zu terminologischer Arbeit
