@@ -4,6 +4,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Despite its original focus on the web, the MD format has been proven to be well suited for academic writing (Ovadia 2014
   https://pandoc-scholar.github.io/
 
@@ -136,3 +151,86 @@ Soll die Weichen legen für die generische Anknüpfbarkeit
 
 
 Anknüpfungspunkte an andere Disziplinen hervorheben
+
+
+
+
+# 20200127
+
+Problem der heterogenen Bedürfnisse
+
+zwei ebenen : organisatorisch / formal, von denen nur die eine interessiert
+
+
+
+
+
+
+
+
+Wie in so vielen Disziplinen herrscht auch in der Musikwissenschaft derzeit ein Mangel an standardisierten Vokabularen. Während der Bereich der Personen dank der verfügbaren Ressourcen (GND, NAF, VIAF etc.) bereits recht gut abgedeckt ist, wird dieses Defizit insbesondere im Bereich musikalischer Instrumente deutlich spürbar, dessen gebräuchliche Vokabulare (insb. UNIMARC[^16ea]) in der Tendenz oberflächlich, inakkurat oder inkonsistent ausfallen.[^4360] Doch diese Arbeit widmet sich nicht etwa der Standardisierung von Thesauri, Taxonomien und Klassifikationen von Instrumenten, wie man es womöglich erwarten könnte [^3ae0]
+
+Vielmehr macht sie es sich zum Ziel, eine erste Skizze für ein Vokabular – in diesem Falle ein sog. *Metadatenapplikationsprofil* – zu entwerfen, das besser als bisherige zu beschreiben imstande ist, welche komplexen Beziehungen zwischen Instrument und Werk existieren können.
+
+
+
+
+Diese Arbeit möchte daher einen Beitrag zur Füllung dieses Desiderats beitragen. Dabei wirkt die Tatsache, dass zukünftige Nutzer (etwa Bibliotheken, Museen, Archive) musikinstrumentenspezifischer Vokabulare durchaus unterschiedlich gelagerte Nutzungsszenarien erfüllt sehen wollen und daher sehr heterogene Anforderungen an Vokabulare stellen, erschwerend für eine gemeinsame Standardbildung.
+
+
+
+
+ Es erscheint daher logisch, dass jener Standardisierungsprozess, der – will er generische, spartenübergreifende Anwendbarkeit anbieten können – nur aus seinem künftigen Nutzerkreis selbst generiert werden darf.
+
+
+
+
+
+4. Gewünschter Outcome: Wie könnte ein erster Ansatz für ein Vokabular für Beziehungen aussehen?
+
+
+
+
+N.B.: Eigentlich ja nicht nur Besetzungen, sondern "Vokabular musikinstrumentaler Beziehungen!" <- yes!
+
+
+
+
+
+
+####
+
+to do Arbeit:
+
+Lizenz für Github?
+
+Vorteil github: ie Möglichkeit, über eine Schnittstelle (API) auf die Inhalte von anderen Diensten zuzugreifen und eigene Inhalte anderen Applikationen zur Ver-fügung zu stellen
+
+-> was bringt mir die API?
+
+
+
+Obwohl nach Evaluation aller webbasierten Schreibplattformen zunächst eine geeignete Lösung gefunden worden war, war es ohne eigene Programmierarbeit nicht möglich, den gesamten Inhalt der Arbeit jeder-zeit offen einsehbar und verfügbar zu halten. Demnach wird davon aus-gegangen, dass der Erstellungsprozess einer Dissertation schon an den aktuellen technischen Möglichkeiten von Standardlösungen scheitern kann, wenn der Wissenschaftler und die Wissenschaftlerin nicht über aus-reichende (Programmier-)Kenntnisse zur Bewältigung technischer Heraus-forderungen verfügen.
+-> das wird sich zeigen (?)
+
+Kontakt auf Github?
+
+DSGVO: Namen müssen entfernt werden
+
+Weder die Forschungsinstitutionen noch private Anbieter sind bisher in der Lage, Plattformen für die Öffnung des gesamten wissenschaftlichen Prozesses anzubieten.
+
+
+Die gegebenenfalls positiven Folgen der offenen Publikation von Inhalten und Daten sowie deren Nachnutzung können im Rahmen dieser Arbeit nicht betrachtet werden. Es ist jedoch davon auszugehen, dass die Reichweite dieser Arbeit und der dazugehörigen Daten, die von Arbeiten im geschlossenen Raum übersteigt. Weitere Experimente mit der offenen For-schungsarbeit sind demnach notwendig, um abschließend zu evaluieren, ob eine solche Art des Verfassens von Forschungs- und Qualifizierungs-arbeiten einen fundamentalen Vorteil für die Wissenschaft und die Öffent-lichkeit bringt.
+
+
+
+as soziale Umfeld des Autors oder der Autorin sollte auf die Dokumentation der Arbeit hingewiesen werden, da so positiver Druck im Rahmen des Zeitplans entstehen kann. Das motiviert und erhöht die Arbeitsmoral.
+
+
+
+
+#######
+
+
+"RDF languages are typically known as vocabularies, which refer to definitionsof both classes and properties. Formal standardization is not the norm for most RDF vocabularies; instead, communities tend to build vocabularies that are useful to them, then promote theiruse through a combination of documentation and open sharing of data that uses these vocabularies."
+https://guides.lib.utexas.edu/ld.php?content_id=29091241 S.16
