@@ -64,12 +64,67 @@ Darüber hinaus wären – je nach Verwendungskontext – weitere Eigenschaften 
 * Interpret
 * etc.
 
+[Modell! (schematisch)]
+
 Die kontrollierte, maschinenlesbare Darstellbarkeit dieser Eigenschaften in Bezug zu einer ohne sie allzu undifferenzierten und unspezifischen Entität *cor da caccia* wird es sein, die als Indikator für ein Gelingen des Ziels dieser Arbeit auf praktischer Ebene fungiert. Zugleich trägt die gemeinsame Anwendung von Aspekten aus unterschiedlichen Domänen, wie sie oben abgebildet sind[^429c], eine implizite vorläufige Aussage zur Vernetzbarkeit und den Chancen, die diese birgt, in sich.
 
-Am Beispiel des RISM-Datensatzes exemplifiziert wäre etwa das folgende Szenario denkbar: Entweder innerhalb des Datensatzes eingeblendet, oder als Verlinkung aus dem String *cor da caccia* heraus ließe sich die Kombination geeigneter Eigenschaften aufrufen. Möglich wären weitere Verlinkungen etwa zu ähnlichen Sammlungsobjekten, zu disambiguierenden Namespaces oder zu weiteren nützlichen Informationen. Umgekehrt erzielte eine Suche mit einer entsprechenden Kombination indizierter Terme – etwa über die RISM SPARQL-Schnittstelle – zumindest den erwähnten Datensatz als Treffer. Eine wesentlich differenziertere und vielfältigere Suche wäre somit ermöglicht.
+
+## Anwendungsbeispiel
+
+Am Beispiel des RISM-Datensatzes exemplifiziert wäre etwa das folgende Szenario denkbar: Entweder innerhalb des Datensatzes eingeblendet, oder als Verlinkung aus dem String *cor da caccia* heraus ließe sich die Kombination geeigneter Eigenschaften aufrufen. Möglich wären weitere Verlinkungen etwa zu ähnlichen Sammlungsobjekten, zu **disambiguierenden Namespaces [falsche Verwendung]** oder zu weiteren nützlichen Informationen. Umgekehrt erzielte eine Suche mit einer entsprechenden Kombination indizierter Terme – etwa über die RISM SPARQL-Schnittstelle – zumindest den erwähnten Datensatz als Treffer. Eine wesentlich differenziertere und vielfältigere Suche über Spartengrenzen hinweg wäre somit ermöglicht.
+
+[Modell]
+
+—
+"The Web that we are accustomed to is made up of documents that are linked to one another. Any connection between a document and the thing(s) in the world it describes is made only by the person who reads the document. There could be a link from a document about Shakespeare to a document about Stratford-upon-Avon, but there is no notion of an entity that is Shakespeare or linking it to the thing that is Stratford." (Allemang 27)
+illustrativ zur Sinnhaftigkeit der Verlinkung von Dingen innerhalb von Datensätzen (= documents)
+—
 
 
-# Methodik
+
+# Methodik I
+
+Die Umsetzung des zuletzt skizzierten Fallbeispiels erfolgt insbesondere auf zwei mehr oder weniger voneinander trennbaren Ebenen:
+
+1. Technische Ebene – etwa: welche Netzprotokolle spielen bei der Umsetzung eine Rolle, wie lässt sich der Fall in die jeweilige gegebene Infrastruktur (etwa unterschiedliche Datenformate) integrieren etc.
+2. Semantische Ebene: wie lassen sich die Beziehungen zwischen relevanten "Dinge" modellieren.
+
+Obwohl diese Arbeit ihr Augenmerk insbesondere auf die "semantische Ebene" richtet, werden mitunter auch technische Aspekte zu berücksichtigen sein.
+
+Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel [Desiderat] angerissenen Anforderungen nochmals zu schärfen und aus ihnen ein Modell zu generieren, das in seiner Abstraktion als diskursive Grundlage für die spätere "dokumentationssprachliche" Ausarbeitung herhalten kann.
+So wird außerdem gewährleistet, dass sich das Anwendungsprofil an den tatsächlichen in der Praxis vorgefundenen Erfordernissen ausrichtet und sich nicht etwa "in vorauseilendem Gehorsam" anhand der bereits etablierten Darstellungsmöglichkeiten selbst zensiert und beschneidet. (In Vorgriff auf die terminologische Ausarbeitung heißt dies etwa: domänen-spezifische Vokabulare dahingehend zu untersuchen, ob sie in der Lage sind, das Geforderte abzubilden und andernfalls nach Möglichkeiten zu suchen, diese Darstellungsmöglichkeiten selbst zu schaffen.)
+
+
+
+
+
+Es folgt, wie kann man das technisch umsetzen? – RDF! - warum? Gut beschrieben in Allemang, RDF Primer
+
+
+Danach weiterer Methodikteil: wie macht man weiter? Also eigentliche 
+
+
+kann man das irgendwie kommunizieren, dass das alles nicht auf den ersten Blick besonders logisch/eingängig erscheint?
+
+
+
+
+[In Kenntnis der praktischen Anforderungen lassen sich in einem Folgeschritt Überlegungen hinsichtlich eines angemessenen Modells für die Wissensrepräsentation bzw. einer sinnvollen Datenstruktur anstellen. 
+Diese bilden ihrerseits wiederum die Grundlage für die Ausarbeitung]
+
+RDF bei Graphen
+Welcher Standard der Wissensrepräsentation macht Sinn?  Konzeptuelle
+hier auch: interoperabilität
+
+
+
+
+
+
+
+
+
+
 
 diskursiv machen irgendwie? Wenn ja, dann wie? 
 
