@@ -91,9 +91,10 @@ Die Umsetzung des zuletzt skizzierten Fallbeispiels erfolgt insbesondere auf zwe
 
 Obwohl diese Arbeit ihr Augenmerk insbesondere auf die "semantische Ebene" richtet, werden mitunter auch technische Aspekte zu berücksichtigen sein.
 
-Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel [Desiderat] angerissenen Anforderungen nochmals zu schärfen und aus ihnen ein Modell zu generieren, das in seiner Abstraktion als diskursive Grundlage für die spätere "dokumentationssprachliche" Ausarbeitung herhalten kann.
+Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel [Desiderat] angerissenen Anforderungen nochmals zu schärfen und aus ihnen ein Modell zu generieren, das künftig als diskursive Grundlage für die spätere "dokumentationssprachliche" Ausarbeitung herhalten kann.
 So wird außerdem gewährleistet, dass sich das Anwendungsprofil an den tatsächlichen in der Praxis vorgefundenen Erfordernissen ausrichtet und sich nicht etwa "in vorauseilendem Gehorsam" anhand der bereits etablierten Darstellungsmöglichkeiten selbst zensiert und beschneidet. (In Vorgriff auf die terminologische Ausarbeitung heißt dies etwa: domänen-spezifische Vokabulare dahingehend zu untersuchen, ob sie in der Lage sind, das Geforderte abzubilden und andernfalls nach Möglichkeiten zu suchen, diese Darstellungsmöglichkeiten selbst zu schaffen.)
 
+![Datenmodell](20200318_Datenmodell_Skizze.png)
 
 
 
