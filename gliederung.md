@@ -1,19 +1,33 @@
 # 1. Einleitung
 
-* warum nicht Klassifikation?
+* Terminologie
+* Methodik?
+
 
 # 2. Problemstellung
 
-## 2.1 Ist-Zustand
+## 2.1 Erschließungspraxis bei Instrumentalbesetzungen
 
-* Überblick über die derzeitigen Darstellungsmöglichkeiten
-
-## 2.2 Soll-Zustand
+## 2.2 Desiderat
 
 * spartenübergreifende Standardisierung
 * vieldimensionale, maschinenlesbare und kontrollierte Darstellbarkeit
 
-## 2.3 Vorgehensweise
+## 2.3 Anwendungsbeispiel
+
+## 2.4 Datenschema
+
+### 2.4.1 Domäne
+
+### 2.4.2 Mapping
+
+### 2.4.3 Anreicherung
+
+---
+
+# 3. Modellierung
+
+# 3.1 Vorgehensweise
 
 * Methodik
 *
@@ -23,56 +37,14 @@
 * Technische Implementierung
 * Formate
 
-*15 Seiten* -> dazu Arbeitsdefinitionen
+## 3.2 Modellierung
 
----
-
-# 3. Musikinstrumente im Semantic Web
-
-## 3.1 Kurzdefinition / Funktionsweise
-
-## 3.3 Auswertung von Vokabularen für die Anwendung
-
-### 3.3.1 RDFS
-
-### 3.3.2 OWL
-
-### 3.3.3 Wikidata
-
-### 3.3.4 CIDOC-CRM
-
-### 3.3.5 SKOS
-
-### 3.3.6 DOREMUS
-
-### 3.3.7 MusicOntology
-
-*25 Seiten (mind.)* **muss weniger!**
-
----
-
-# 4. Anwendung
-
-## 4.1 Fall 1
-
-## 4.2 Fall 2
-
-etc.
+* nach den "Domänen" vorgehen? (vermutl. sinnvoll, da jede untersch. Anforderung – jeweils untersch. Vokabulare spielen 1 Rolle)
 
 ---
 
 # 5. Erkenntisse
 
-*5 Seiten*
-
 ---
 
 # 6. Verwendete Literatur
-
-*5 Seiten*
-
-
-
-
----
-***60 Seiten insg.***
