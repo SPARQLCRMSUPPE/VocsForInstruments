@@ -1,5 +1,6 @@
-## Methodik I
+Mehtodik: Das Modellieren ist an sich kein genuin wissenschaftlicher Akt, sondern auch ein intuitiver (heuristischer? iterativer?) – das ist eine Herausforderung
 
+---
 Die Umsetzung des zuletzt skizzierten Fallbeispiels erfolgt insbesondere auf zwei mehr oder weniger voneinander trennbaren Ebenen:
 
 1. Technische Ebene – etwa: welche Netzprotokolle spielen bei der Umsetzung eine Rolle, wie lässt sich der Fall in die jeweilige gegebene Infrastruktur (etwa unterschiedliche Datenformate) integrieren etc.

@@ -43,7 +43,7 @@
 
 ---
 
-# 5. Erkenntisse
+# 5. Erkenntisse / Ergebnisse(?) (z.B. SheX, Shaql)
 
 ---
 
