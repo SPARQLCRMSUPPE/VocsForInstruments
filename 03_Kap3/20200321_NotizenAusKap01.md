@@ -76,3 +76,33 @@ Dann würde dank Webclients der Name "James Dean" angezeigt.
 
 "The Web that we are accustomed to is made up of documents that are linked to one another. Any connection between a document and the thing(s) in the world it describes is made only by the person who reads the document. There could be a link from a document about Shakespeare to a document about Stratford-upon-Avon, but there is no notion of an entity that is Shakespeare or linking it to the thing that is Stratford." (Allemang 27)
 illustrativ zur Sinnhaftigkeit der Verlinkung von Dingen innerhalb von Datensätzen (= documents)
+
+
+
+
+
+Federation = merging datasets in 1 triple store
+however, not necessarily necessary: "But, in contrast to conventional data-backed web portals, and because of the distributed nature of the RDF store that backs a Semantic Web portal, information on a single RDF-backed web page typically comes from multiple sources. The merge capability of an RDF store supports this sort of information distribution as part of the infrastructure of the web portal. When the portal is backed by RDF, there is no difference between building a distributed web portal and one in which all the information is local. Using RDF, federated web portals are as easy as siloed portals." (Allemang 58)
+Es folgt1 Kapitel: "Data Federation"
+Folgendes "Summary" sehr gut!
+
+
+
+Ganz allgemein: "One of the great powers of the Semantic Web is that information that has been specified by one person in one context can be reused either by that person or by others in different contexts." (Allemang 222)
+
+
+1 Schwierigkeit Methodik: Verwendung von Vokabularen ist intuitiv. Gibt keine "Regeln"/Verbindliches sehr vage -> Auswertung erfolgt nicht systematisch. Aber muss auch, da Bedeutung insb. dadurch, dass viele eine sprache verwenden (nicht unbedingt messbar).
+
+##### Umwandlung zu LOD:
+
+1. Das Bisschen, was verbindlich ist, umsetzen.
+    - Entitäten – classes oder instances?
+        - dazu is a
+
+
+"defining classes in the ontology,  
+arranging the classes in a taxonomic (subclass–superclass) hierarchy, 
+defining slots and describing allowed values for these slots,  
+filling in the values for slots for instances." [@noy_ontology_nodate, S.3] 
+
+" 2)  Ontology development is necessarily an iterative process." [@noy_ontology_nodate, S.4] 

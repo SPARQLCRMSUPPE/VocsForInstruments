@@ -1,4 +1,13 @@
+Es kann nicht das Ziel sein, eine fertige Ontologie bereitzustellen
+* Open World Assumption – eh nicht möglich...
+
+Es liegt in der Natur der Sache, dass fehlerhaft sein wird – muss anwendungsbezogen entwickelt, verbessert werden.
+
+---
+
 Mehtodik: Das Modellieren ist an sich kein genuin wissenschaftlicher Akt, sondern auch ein intuitiver (heuristischer? iterativer?) – das ist eine Herausforderung
+
+Das Paradox: man muss im Grunde schon alle Ontologien bzw. Sprachen (z.B. RDFS) kennen, um zu modellieren. Kann sich nicht einfach deduktiv weiter vortasten.
 
 ---
 Die Umsetzung des zuletzt skizzierten Fallbeispiels erfolgt insbesondere auf zwei mehr oder weniger voneinander trennbaren Ebenen:
