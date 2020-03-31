@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lcgft: <http://id.loc.gov/authorities/genreForms/> .
+@prefix ma: <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#> .
+@prefix taxonomie: <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/taxonomie#> .
+
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/taxonomie#> a lcgft:gf2014026070 ;
+	dc:title "Klassifikatorisches-Vokabular für MA Alan Riedel" ;
+	dc:date "2020-03-31" ;
+	dc:description "Hier finden sich relevante Terme zur Klassifikation von Musikinstrumenten für meine MA in Bibl.- u- Inf'wiss. Sie sollten prinzipiell ausschließlich für dieses Projekt verwendet werden" .
+
+
+  taxonomie:barockhorn rdf:type owl:Class .
