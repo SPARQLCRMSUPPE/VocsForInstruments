@@ -47,7 +47,7 @@
 	ma:vermutlAbsoluteStimmung rdf:type owl:ObjectProperty .
 
 
-	ma#vermutlAbsoluteStimmung rdf:type owl:ObjectProperty .
+	ma:vermutlAbsoluteStimmung rdf:type owl:ObjectProperty .
 
 
 	ma:inF rdf:type owl:Class .
@@ -68,16 +68,16 @@
 	ma:person rdf:type owl:NamedIndividual .
 
 
-	ma#a'' rdf:type owl:NamedIndividual .
+	ma:a'' rdf:type owl:NamedIndividual .
 
 
-	ma#a'=115Hz rdf:type owl:NamedIndividual .
+	ma:a'=115Hz rdf:type owl:NamedIndividual .
 
 
-	ma#c' rdf:type owl:NamedIndividual .
+	ma:c' rdf:type owl:NamedIndividual .
 
 
-	ma#d'' rdf:type owl:NamedIndividual .
+	ma:d'' rdf:type owl:NamedIndividual .
 
 
-	mimul#1663 rdf:type owl:NamedIndividual .
+	mimul:1663 rdf:type owl:NamedIndividual .
