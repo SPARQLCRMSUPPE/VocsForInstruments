@@ -1,0 +1,430 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "baseIris": [
+      "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/taxonomie",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/rism"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "ma": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "mimul": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/mimul#",
+      "": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/tutenundblasen.ttl#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "taxonomie": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/taxonomie#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "rism": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/rism#"
+    },
+    "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/tutenundblasen.ttl"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.67",
+      "translation": [
+        222.43,
+        140.11
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "1",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "1",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        751.8,
+        563.73
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/taxonomie#barockhorn",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/taxonomie",
+      "label": {
+        "IRI-based": "barockhorn"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        168.02,
+        378.01
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/rism#corDaCaccia",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/rism",
+      "label": {
+        "IRI-based": "corDaCaccia"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        184.79,
+        93.31
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#inF",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "inF"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        510.81,
+        -43.96
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "2",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "3",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "4",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "5",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "6",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "7",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "8",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "10",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "13",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "0",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#klingt",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "klingt"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        609.73,
+        487.89
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#entsprichtUngefähr",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "entsprichtUngefähr"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        897.88,
+        633.03
+      ]
+    },
+    {
+      "id": "3",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#tonvorrat",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "tonvorrat"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        681.75,
+        709.72
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#klangbeispiel",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "klangbeispiel"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        766.76,
+        724.84
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#entsprichtGenau",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "entsprichtGenau"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        886.38,
+        472.92
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#grundstimmung",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "grundstimmung"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        590.51,
+        573.86
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#typ",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "typ"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        843.8,
+        696.44
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#vermutlAbsoluteStimmung",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "vermutlAbsoluteStimmung"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        745.31,
+        401.82
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#stimmungssystem",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "stimmungssystem"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        618.22,
+        655.16
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#hoechsterTon",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "hoechsterTon"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        825.87,
+        419.3
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#tiefsterTon",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "tiefsterTon"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        913.56,
+        552.38
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#interpret",
+      "baseIri": "https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma",
+      "label": {
+        "IRI-based": "interpret"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "1",
+      "pos": [
+        666.72,
+        426.96
+      ]
+    }
+  ]
+}
