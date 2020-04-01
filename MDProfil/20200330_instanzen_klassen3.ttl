@@ -1,14 +1,14 @@
-@prefix : <http://www.semanticweb.org/alanriedel/ontologies/2020/2/untitled-ontology-4#> .
+@prefix : <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/tutenundblasen.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rism: <file:/Users/alanriedel/Desktop/vocmaster/MDProfil/rism#> .
+@prefix rism: <rism#> .
 @prefix mimul: <file:/Users/alanriedel/Desktop/vocmaster/MDProfil/mimul#> .
-@base <http://www.semanticweb.org/alanriedel/ontologies/2020/2/untitled-ontology-4> .
+@base <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/tutenundblasen.ttl> .
 
-<http://www.semanticweb.org/alanriedel/ontologies/2020/2/untitled-ontology-4> rdf:type owl:Ontology .
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/tutenundblasen.ttl> rdf:type owl:Ontology .
 
 #################################################################
 #    Classes
