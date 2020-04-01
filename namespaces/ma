@@ -6,6 +6,7 @@
 
 
 <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#> a lcgft:gf2014026070 ;
+	owl:versionInfo "draft" ;
 	dc:title "MA-Vokabular Alan Riedel" ;
 	dc:date "2020-03-31" ;
 	dc:description "Hier finden sich die relevanten Terme für meine MA in Bibl.- u- Inf'wiss. Sie sollten prinzipiell ausschließlich für dieses Projekt verwendet werden" .
@@ -68,13 +69,13 @@
 	ma:person rdf:type owl:NamedIndividual .
 
 
-	ma:a'' rdf:type owl:NamedIndividual .
+	ma:a\'\' rdf:type owl:NamedIndividual .
 
 
-	ma:a'=115Hz rdf:type owl:NamedIndividual .
+	ma:a\'\=115Hz rdf:type owl:NamedIndividual .
 
 
-	ma:c' rdf:type owl:NamedIndividual .
+	ma:c\' rdf:type owl:NamedIndividual .
 
 
-	ma:d'' rdf:type owl:NamedIndividual .
+	ma:d\'\' rdf:type owl:NamedIndividual .

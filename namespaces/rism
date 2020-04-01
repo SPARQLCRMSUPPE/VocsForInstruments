@@ -7,6 +7,7 @@
 
 
 <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/rism#> a lcgft:gf2014026070 ;
+	owl:versionInfo "draft" ;
 	dc:title "RISM-Vokabular für MA Alan Riedel" ;
 	dc:date "2020-03-31" ;
 	dc:description "Hier finden sich die relevanten RISM-Terme für meine MA in Bibl.- u- Inf'wiss. Sie sollten prinzipiell ausschließlich für dieses Projekt verwendet werden" .

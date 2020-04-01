@@ -6,10 +6,11 @@ ma#typ rdf:type owl:ObjectProperty .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix lcgft: <http://id.loc.gov/authorities/genreForms/> .
 @prefix ma: <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#> .
-@prefix rism: <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/mimul#> .
+@prefix mimul: <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/mimul#> .
 
 
 <hhttps://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/mimul#> a lcgft:gf2014026070 ;
+	owl:versionInfo "draft" ;
 	dc:title "Vokabular für Objekte des Musikinstrumentenmuseums der Universität Leipzig in der MA v. Alan Riedel" ;
 	dc:date "2020-03-31" ;
 	dc:description "Hier finden sich die relevanten Terme für meine MA in Bibl.- u- Inf'wiss aus dem Musikinstrumentenmuseums der Universität Leipzig. Sie sollten prinzipiell ausschließlich für dieses Projekt verwendet werden" .
