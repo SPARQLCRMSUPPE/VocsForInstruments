@@ -8,6 +8,8 @@ Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab
 
 Literatur bezieht sich eigentlich fast nie auf das Technische, das man braucht, um selbst Daten zu publizieren.
 
+Indem Klassen zugewiese wird hier im eigtl. Sinne "klassifiziert"
+
 # Klassen und Instanzen
 
 > "Deciding whether a particular concept is a class in an ontology or an individual instance depends on what the potential applications of the ontology are. Deciding where classes end and individual instances begin starts with deciding what is the lowest level of granularity in the representation. The level of granularity is in turn determined by a potential application of the ontology. In other words, what are the most specific items that are going to be represented in the knowledge base?" [@gangler_semantic_nodate, S.18]
@@ -137,6 +139,7 @@ Es liegt nahe, die zuletzt mit den Ontologiesprachen OWL und RDF beschriebenen u
 Die Funktion terminologischer Kontrolle erfüllen in der Informatik sogenannte *Namespaces*. 
 
 —
+
 # Notizen
 
 Nachdem bereits vorläufige "Domains" in Form von Präfixen (*ma:*, *rism:*, *taxonomie:*, *mimul*) definiert worden waren, scheint es denkbar, die nun mit RDF ausgezeichneten Terme im Internet zu verankern und somit in das Semantic Web einzubetten. 

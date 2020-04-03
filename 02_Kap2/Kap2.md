@@ -1,4 +1,5 @@
 **+++ ACHTUNG: zu überarbeiten: klingend/notiert ist falsch / Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt? +++**
+
 # Erschließungspraxis bei Instrumentalbesetzungen
 
 Im folgenden Kapitel soll, ausgehend von der derzeitigen Praxis bei der Erschließung von Quellen mit musikinstrumentenbezogenen Metadaten, eine exemplarische Bestandsaufnahme der Problemstellung – hier am Beispiel eines RISM-Datensatzes[^8661] versucht werden. Die Kenntnis dieser bildet die Grundlage für das Entwickeln denkbarer Lösungsansätze.
