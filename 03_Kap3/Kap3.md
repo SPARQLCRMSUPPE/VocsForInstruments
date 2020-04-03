@@ -1,16 +1,57 @@
-Namespaces
+1. "intellektuelle" Klassenzuordnung
+2. Fixierung der klassifizierten Entitäten mithilfe einer Semantic Web-Sprache – Übersetzung in ihr "Weltbild" <- wird so verständlich
+    -Auswahl Syntax
+    -Auswahl Sprache!!
+4. Verfügbarmachen: Einfügen dieser Entitäten in die Architektur des Semantic Webs
+        eigentlich erst später – macht aber Sinn jetzt schon
+        
+        
+ Literatur bezieht sich eigentlich fast nie auf das Technische, das man braucht, um selbst Daten zu publizieren.
 
-was man hier macht, ist ja vor allem auch die Dinger in dieses RDF-Gebäude /-Architektur einzufügen, die eben mit den Konzepten Klasse / Instanz / Beziehung agiert. Das heißt, es ist klar, dass das der erste Schritt sein muss.
 
-Erstmal erstellen wir einfach ein Vokabular
+# Klassifikatorische Erschließung
+
+
+Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem eigenen Datenmodell zu einer Semantic Web-kompatiblen Metadatenprofil zu beschreiten. Gemäß Noy und McGuinness[^8] steht ganz zu Beginn dieses langen Prozesses zunächst eine Klassierung[^9] der benötigten Typen nach folgendem Schema:
+
+> 1. "Define the classes and the class hierarchy"
+							2. "Define the properties of classes [...]"
+
+Dieser Vorgehensweise liegt zugrunde, dass bereits in RDF bestimmte Klassen angelegt sind – in Folgevokabularen[^10] um weitere ergänzt –, die bestimmte Klassen vorgegeben.[^13] Dabei erscheinen angesichts des zuvor ausgearbeiteten Datenmodells die gebräuchlichsten drei Klassen[^12] für die Zwecke dieser Arbeit ausreichend. Diese sind:
+
+1. Klassen
+2. Instanzen[^11]
+3. Eigenschaften
+
+Durch die Aufteilung in Entitäten und Beziehungen lassen sich so also bereits RDF-Tripel bilden – zusätzlich gelingt es, dank der qualitativen Unterscheidung in Individuum und Klasse, einfache hierarchische Sachverhalte nachzubilden. In den folgenden Unterkapiteln wird es entsprechend darum gehen, eine entsprechende Klassierung vorzunehmen.
+
+Doch worin besteht an dieser Stelle der tiefere Sinn einer Klassifikation? Neben der Funktion des reinen "Ordnens" führt Bertram auch die "erkenntnisvermittelnde Aufgabe" von Klassifikationen ins Feld, die in der "Aufhellung von Zusammenhängen anhand geordneten Wissens" besteht.[^14] Diese hermeneutische Dimension erscheint auch hier ganz zentral: Das Modell, das in seiner gegenwärtigen Form auf einem subjektiv geprägtem Verständnis, Wertesystem und Denkweisen des Autors beruht, wird in ein objektives, standardisiertes Modell überführt. Gewissermaßen findet so eine "Übersetzung" statt, die den Erkenntnishorizont zwischen Mensch und Maschine überwindet. Das eigene Denkmodell wird dabei mithilfe der sprachlichen Ausdruckmittel des Semantic Web erfasst und ausgezeichnet, und so in das von RDF-vorgegebene Erkenntnisschema eingepflegt. Die dem Modell inhärente Semantik wird – freilich zunächst auf einer sehr oberflächlichen Ebene – dadurch objektiviert und gemeinhin auslegbar.
+
+Diese Übersetzung geht mithilfe entsprechend standardiserter, sich ergänzender Modellierungssprachen, den sogenannten "Ontologiesprachen", vonstatten.[^16] Dabei richtet sich diese Arbeit insbesondere an der Ontologiesprache OWL[^17], der "inzwischen [...] meistbenutzen Ontologiesprache aller Zeiten"[^19] aus. Dies geschieht sowohl aus pragmatischen Gründen – der Ontologie-Editor *Protégé*[^18] basiert auf dieser Sprache – als auch aus fachlichen, die es wert sein wird, in einem nachfolgenden Unterkapitel für sich kurz zu skizzieren.
+
+**wichtig, dass kein Informationsverlust durch diese Wahl!**
+
+Die formale Interpretierbarkeit der durch die Sprache ausgedrückte semantischen Komponente wird durch eine Syntax, also einer  "Menge von Regeln, um Programme oder Dokumente mit bestimmten Eigenschaften [...] zu erzeugen", ermöglicht. Die Entscheidung für eine bestimmte Syntax ist dabei im Falle nach RDF strukturierter Daten zwar letztlich arbiträr, bilden sie doch gewissermaßen nur die "Verpackung und Beipackzettel" für den eigentlichen semantischen Inhalt. Doch fällt hier die Wahl auf das sogenannte *Turtle*-Format ("Terse RDF Triple Language")[^20] aufgrund der Einfachheit und Übersichtlichkeit dieser Syntax.
+
+So entsteht zunächst ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute*. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um "[a] list of terms that have been enumerated explicitly. This list is controlled by and is available from a controlled vocabulary registration authority. All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21]
+Diese Disambiguierung erfolgt dabei analog zur Klassifizierung ind der folgenden Form (s. auch Kapitel #klassenundinstanzen):
+
+Typ ist eine Klasse
+Typ ist eine Instanz
+Typ ist eine Eigenschaft
+
+
+
+
+!Erstmal erstellen wir einfach ein Vokabular – denn keine Relationen – nur Definitionen
 
 Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab21631588, S. 130 ff.]
 
-Literatur bezieht sich eigentlich fast nie auf das Technische, das man braucht, um selbst Daten zu publizieren.
 
-Indem Klassen zugewiese wird hier im eigtl. Sinne "klassifiziert"
 
-# Klassen und Instanzen
+## Klassen und Instanzen
+
+Hier wird auch Serialisiert!
 
 > "Deciding whether a particular concept is a class in an ontology or an individual instance depends on what the potential applications of the ontology are. Deciding where classes end and individual instances begin starts with deciding what is the lowest level of granularity in the representation. The level of granularity is in turn determined by a potential application of the ontology. In other words, what are the most specific items that are going to be represented in the knowledge base?" [@gangler_semantic_nodate, S.18]
 
@@ -86,7 +127,7 @@ Mit RDF in OWL2 ausgedrückt ergibt das den folgenden Zusammenhang:
 <mimul#1663> rdf:type owl:NamedIndividual .
 ```
 
-# Properties
+## Properties
 
 Analog zu den Entitäten müssen auch die Properties in das Schema des Semantic Webs eingebettet werden. Auch hier geschieht dies, indem sie in der Sprache des Semantic Webs erfasst und als Properties definiert werden. Im Gegensatz zu den Entitäten müssen diese (zumindest im hier behandelten Beispiel) jedoch zunächst nicht klassifiziert werden.[^5]
 
@@ -132,7 +173,10 @@ Analog zu den Entitäten müssen auch die Properties in das Schema des Semantic 
 <ma#vermutlAbsoluteStimmung> rdf:type owl:ObjectProperty .
 ```
 
-# Terminologische Kontrolle / Semantic Web-Anbindung
+**"Dieser Schrittist notwendig, da die Kenntnis der zur Verf ̈ugung stehendenRelationen Voraussetzung f ̈ur die Formalisierung der Klassendurch notwendige und hinreichende Bedingungen im n ̈achstenSchritt ist."**[^15]
+
+# Semantic Web-Anbindung
+**terminolomuss evtl. anders aufgezogen werden – mehr Ablauf-orientiert im Kontext mit dem Zeug oben.**
 
 Es liegt nahe, die zuletzt mit den Ontologiesprachen OWL und RDF beschriebenen und somit in das schematisch-ontologische Gefüge von RDF für das Semantic Web handhabbar gemachten Terme in Form kontrollierter Vokabulare zu speichern. Dabei beschränkt sich die "terminologische Kontrolle" hier zunächst auf Maßnahmen, "die direkt oder indirekt der Definition und Abgrenzung von Begriffen"[^7] im allerweitesten Sinne dienen. In diesem Sinne reicht es zu diesem Zeitpunkt – zunächst! – aus, eine einfache Liste der Terme und der – freilich außerordentlich vagen – eben erfolgten Spezifikation ihrer Natur als potentielle "Dinge" im Semantic Web zu erstellen.
 
@@ -231,3 +275,26 @@ Was sind Klassen, was sind Instanzen?
 [^6]: [@TN_libero_mab21631588, S. 27–28.]
 
 [^7]: [@TN_libero_mab213864266, S. 128]
+
+[^8]: [@noy_ontology_nodate]
+Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
+
+[^9]: Zum Begriff siehe [@ TN_libero_mab213864266, S. 150]
+
+[^10]: Für diese Arbeit spielen insbesondere RDFS ([@ noauthor_rdfs_nodate]) und OWL ([@ noauthor_owl_nodate-3]) eine Rolle.
+
+[^11]: "Individualbegriffe"  [@ stock_wissensreprasentation_2008, S. 84].
+
+[^12]: In "Semantic Web-Sprache" augedrückt, wären das die Klassen *rdfs:class*, *rdfs:instanceOf* und *rdf:property*.
+
+[^13]: Auf eine Übersicht der gängigen Klassen muss an dieser Stelle verzichtet werden.
+
+[^14]: [@TN_libero_mab213864266, S. 151]
+[^15]: [@alma9913393902586, S. 166]
+[^16]: S. hierzu etwa: [@alma9913393902586, S. 95–99]
+[^17]: [@noauthor_owl_nodate-3]
+[^18]: 
+
+[^19]:  [@alma9913393902586, S. 146]
+[^20]: Vgl.: [@noauthor_rdf_nodate-2]
+[^21]: [@national_information_standards_organization_u.s._guidelines_2005, S. 3]
