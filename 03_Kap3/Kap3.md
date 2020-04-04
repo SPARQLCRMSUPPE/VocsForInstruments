@@ -7,43 +7,44 @@
         
         
  Literatur bezieht sich eigentlich fast nie auf das Technische, das man braucht, um selbst Daten zu publizieren.
+ darunter: Noy, Allemang, Schneckengruber
 
 
 # Klassifikatorische Erschließung
 
 
-Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem eigenen Datenmodell zu einer Semantic Web-kompatiblen Metadatenprofil zu beschreiten. Gemäß Noy und McGuinness[^8] steht ganz zu Beginn dieses langen Prozesses zunächst eine Klassierung[^9] der benötigten Typen nach folgendem Schema:
+Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem eigenen Datenmodell zu einem Semantic Web-kompatiblen Metadatenprofil zu beschreiten. [vielleicht noch etwas darüber, dass es keine wirkliche Lit. gibt, die einen Leitfaden von Anfang bis Ende bildet] Gemäß Noy und McGuinness[^8] steht dabei ganz zu Beginn dieses Prozesses zunächst eine Klassierung[^9] der benötigten Typen nach folgendem Schema:
 
-> 1. "Define the classes and the class hierarchy"
-							2. "Define the properties of classes [...]"
+> "Define the classes and the class hierarchy"
 
-Dieser Vorgehensweise liegt zugrunde, dass bereits in RDF bestimmte Klassen angelegt sind – in Folgevokabularen[^10] um weitere ergänzt –, die bestimmte Klassen vorgegeben.[^13] Dabei erscheinen angesichts des zuvor ausgearbeiteten Datenmodells die gebräuchlichsten drei Klassen[^12] für die Zwecke dieser Arbeit ausreichend. Diese sind:
+> "Define the properties of classes [...]"
+
+> "Create instances"[^22]
+
+Dieser Vorgehensweise liegt zugrunde, dass bereits in RDF bestimmte Klassen angelegt sind – in Folgevokabularen[^10] um weitere ergänzt –, die bestimmte Klassen vorgegeben.[^13] Dabei erscheinen angesichts des zuvor ausgearbeiteten Datenmodells die allgemein gebräuchlichsten drei Klassen[^12] für die Zwecke dieser Arbeit ausreichend. Diese sind:
 
 1. Klassen
 2. Instanzen[^11]
-3. Eigenschaften
+3. Eigenschaften [Relationen? vg. Stuckschmidt]
 
-Durch die Aufteilung in Entitäten und Beziehungen lassen sich so also bereits RDF-Tripel bilden – zusätzlich gelingt es, dank der qualitativen Unterscheidung in Individuum und Klasse, einfache hierarchische Sachverhalte nachzubilden. In den folgenden Unterkapiteln wird es entsprechend darum gehen, eine entsprechende Klassierung vorzunehmen.
+Durch die Aufteilung in Entitäten und Beziehungen lassen sich so also bereits RDF-Tripel bilden – zusätzlich gelingt es, dank der qualitativen Unterscheidung in Instanz und Klasse, einfache hierarchische Sachverhalte nachzubilden. In den folgenden Unterkapiteln wird es entsprechend darum gehen, eine entsprechende Klassierung vorzunehmen.
 
-Doch worin besteht an dieser Stelle der tiefere Sinn einer Klassifikation? Neben der Funktion des reinen "Ordnens" führt Bertram auch die "erkenntnisvermittelnde Aufgabe" von Klassifikationen ins Feld, die in der "Aufhellung von Zusammenhängen anhand geordneten Wissens" besteht.[^14] Diese hermeneutische Dimension erscheint auch hier ganz zentral: Das Modell, das in seiner gegenwärtigen Form auf einem subjektiv geprägtem Verständnis, Wertesystem und Denkweisen des Autors beruht, wird in ein objektives, standardisiertes Modell überführt. Gewissermaßen findet so eine "Übersetzung" statt, die den Erkenntnishorizont zwischen Mensch und Maschine überwindet. Das eigene Denkmodell wird dabei mithilfe der sprachlichen Ausdruckmittel des Semantic Web erfasst und ausgezeichnet, und so in das von RDF-vorgegebene Erkenntnisschema eingepflegt. Die dem Modell inhärente Semantik wird – freilich zunächst auf einer sehr oberflächlichen Ebene – dadurch objektiviert und gemeinhin auslegbar.
+Doch worin besteht an dieser Stelle der tiefere Sinn einer Klassifikation? Direkt assoziativ ist die Funktion des Klassierens – sofern man sie nicht als reinen Selbstzweck betreibt – insbesondere zur Ordnung von Ressourcen und deren Retrieval. Doch neben dieser "pragmatischen Aufgabe"[^23] führt Bertram auch die "erkenntnisvermittelnde Aufgabe" von Klassifikationen ins Feld, die in der "Aufhellung von Zusammenhängen anhand geordneten Wissens" besteht.[^14] Diese hermeneutische Dimension erscheint auch hier ganz zentral: Das Modell, das in seiner gegenwärtigen Form auf einem subjektiv geprägtem Verständnis, Wertesystem und persönlichen Denkstrukturen des Autors beruht, wird in ein objektives, standardisiertes Modell überführt. Gewissermaßen findet so eine Übersetzung statt, die den Erkenntnishorizont zwischen Mensch und Maschine überwindet. Das eigene Denkmodell wird dabei mithilfe der sprachlichen Ausdruckmittel des Semantic Web erfasst und ausgezeichnet, und so in das von RDF-vorgegebene Erkenntnisschema eingepflegt. Die dem Modell inhärente Semantik wird – wie zu sehen sein wird, freilich zunächst auf einer sehr oberflächlichen Ebene – dadurch objektiviert und gemeinhin auslegbar.
 
-Diese Übersetzung geht mithilfe entsprechend standardiserter, sich ergänzender Modellierungssprachen, den sogenannten "Ontologiesprachen", vonstatten.[^16] Dabei richtet sich diese Arbeit insbesondere an der Ontologiesprache OWL[^17], der "inzwischen [...] meistbenutzen Ontologiesprache aller Zeiten"[^19] aus. Dies geschieht sowohl aus pragmatischen Gründen – der Ontologie-Editor *Protégé*[^18] basiert auf dieser Sprache – als auch aus fachlichen, die es wert sein wird, in einem nachfolgenden Unterkapitel für sich kurz zu skizzieren.
+Diese Übersetzung geht mithilfe entsprechend standardiserter, sich ergänzender Modellierungssprachen, den sogenannten "Ontologiesprachen", vonstatten.[^16] Wobei sich diese Arbeit insbesondere an der Ontologiesprache OWL[^17], der "inzwischen [...] meistbenutzen Ontologiesprache aller Zeiten"[^19] ausrichtet. Dies geschieht sowohl aus pragmatischen Gründen – der Ontologie-Editor *Protégé*[^18] basiert auf dieser Sprache – als auch aus fachlichen, die es wert sein werden, in einem nachfolgenden Unterkapitel für sich kurz zu skizzieren.
 
-**wichtig, dass kein Informationsverlust durch diese Wahl!**
+**wichtig, dass kein Informationsverlust durch diese Wahl!** -> im Folgekapitel.
 
-Die formale Interpretierbarkeit der durch die Sprache ausgedrückte semantischen Komponente wird durch eine Syntax, also einer  "Menge von Regeln, um Programme oder Dokumente mit bestimmten Eigenschaften [...] zu erzeugen", ermöglicht. Die Entscheidung für eine bestimmte Syntax ist dabei im Falle nach RDF strukturierter Daten zwar letztlich arbiträr, bilden sie doch gewissermaßen nur die "Verpackung und Beipackzettel" für den eigentlichen semantischen Inhalt. Doch fällt hier die Wahl auf das sogenannte *Turtle*-Format ("Terse RDF Triple Language")[^20] aufgrund der Einfachheit und Übersichtlichkeit dieser Syntax.
+Die formale Interpretierbarkeit der durch die Sprache ausgedrückten semantischen Komponente wird durch eine Syntax, also einer  "Menge von Regeln, um Programme oder Dokumente mit bestimmten Eigenschaften [...] zu erzeugen", ermöglicht. Die Entscheidung für eine bestimmte Syntax ist dabei im Falle nach RDF strukturierter Daten zwar letztlich arbiträr, bilden sie doch im übertragenen Sinne gewissermaßen lediglich "Verpackung und Beipackzettel" für den eigentlichen semantischen Inhalt. Doch fällt aufgrund seiner Einfachheit und Übersichtlichkeit in dieser Arbeit die Wahl auf das sogenannte *Turtle*-Format ("Terse RDF Triple Language")[^20].
 
-So entsteht zunächst ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute*. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um "[a] list of terms that have been enumerated explicitly. This list is controlled by and is available from a controlled vocabulary registration authority. All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21]
-Diese Disambiguierung erfolgt dabei analog zur Klassifizierung ind der folgenden Form (s. auch Kapitel #klassenundinstanzen):
+So entsteht in Folge dieser Klassifizierung zunächst ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um ein "[...] list of terms that have been enumerated explicitly. [...] All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21]
+Dabei erfolgt die Disambiguierung der Lemmata analog zur Klassifizierung in folgender Form (s. auch Kapitel #klassenundinstanzen):
 
 Typ ist eine Klasse
 Typ ist eine Instanz
 Typ ist eine Eigenschaft
 
-
-
-
-!Erstmal erstellen wir einfach ein Vokabular – denn keine Relationen – nur Definitionen
+## OWL
 
 Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab21631588, S. 130 ff.]
 
@@ -51,15 +52,15 @@ Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab
 
 ## Klassen und Instanzen
 
-Hier wird auch Serialisiert!
+Hier wird auch Serialisiert! Evtl schon vorher sagen, dass der Prozess der Serialisierung vollzogen wird, indem in die Syntax gepresst?
 
 > "Deciding whether a particular concept is a class in an ontology or an individual instance depends on what the potential applications of the ontology are. Deciding where classes end and individual instances begin starts with deciding what is the lowest level of granularity in the representation. The level of granularity is in turn determined by a potential application of the ontology. In other words, what are the most specific items that are going to be represented in the knowledge base?" [@gangler_semantic_nodate, S.18]
 
-Die hier zur Differenzierung zwischen Klasse und Instanz implizit vorgeschlagene Vorgehensweise,[^2] bei der die niedrigste Entität eines hierarchischen Strangs, bestehend aus Klassen, als Instanz zu werten ist, erscheint im Falle einer in sich abgeschlossenen Ontologie als durchaus sinnvoll. Doch muss der Blickwinkel im Fall der hier beabsichtigten Anwendung als verbindendes Metadatenprofil auch auf potentielle Anknüpfungspunkte, aber vor allem auf die Anwendungsfälle und Vokabulare, die hinter diesen liegen, erweitert werden. Die Frage also, ob etwas eine Instanz oder eine Klasse ist, muss nicht notwendigerweise anhand des Datenmodells selbst zu beantworten sein. Zugleich bedeutet dies aber auch ganz allgemein, dass bestimmte ontologische Beschaffenheiten den untersuchten Entitäten nicht bereits a priori inhärent sind: Entitäten können grundsätzlich – je nach Kontext – mal als Klassen, mal als Instanzen begriffen werden. Diese Unschärfe gilt es sich auch während der folgenden Modellierungen immer wieder prüfend vor Augen zu halten.
+Die hier zur Differenzierung zwischen Klasse und Instanz implizit vorgeschlagene Vorgehensweise,[^2] bei der die niedrigste Entität eines aus Klassen bestehenden hierarchischen Strangs als Instanz zu werten ist, erscheint im Falle einer in sich abgeschlossenen Ontologie als durchaus sinnvoll. Doch muss der Blickwinkel im Fall der hier beabsichtigten Anwendung als verbindendes Metadatenprofil auch auf potentielle Anknüpfungspunkte, aber vor allem auf die Anwendungsfälle und Vokabulare, die gewissermaßen "außerhalb" des Profils liegen, erweitert werden. Die Frage also, ob etwas eine Instanz oder eine Klasse ist, muss nicht notwendigerweise anhand des Datenmodells selbst zu beantworten sein. Zugleich bedeutet dies aber auch ganz allgemein, dass bestimmte ontologische Beschaffenheiten den untersuchten Entitäten nicht bereits a priori inhärent sind: Entitäten können grundsätzlich – je nach Kontext – mal als Klassen, mal als Instanzen begriffen werden. Diese Unschärfe gilt es sich auch während der folgenden Modellierungen immer wieder prüfend vor Augen zu halten. 
 
 OWL2 differenziert, anders als etwa RDFS, nicht lediglich zwischen Klassen und Instanzen, sondern zwischen Klassen und Individuen,[^3] wobei letztere nochmals in *owl:namedIndividual* und *owl:anonymousIndividual* unterschieden werden. Über letztere heißt es: "Named individuals are given an explicit name that can be used in any ontology to refer to the same object. _Anonymous individuals_ do not have a global name and are thus local to the ontology they are contained in."[^4]
 
-Auf den ersten Blick finden sich im Modellentwurf in erster Linie Instanzen:[^1]
+Auf den ersten Blick finden sich im Modellentwurf in erster Linie Instanzen, wobei zu beachten ist, dass aufgrund des uneinheitlichen Datenmodells viele der Instanzen mit einem Überbegriff als Klassen definiert worden sind (dies betrifft die Klassenbezeichner *ma:klangbeispiel* und *ma:Person*):[^1]
 
 * *mimul:1663*
 * *ma:klangbeispiel* manifestiert sich in Form eines spezifischen Audiofiles.
@@ -68,14 +69,14 @@ Auf den ersten Blick finden sich im Modellentwurf in erster Linie Instanzen:[^1]
 * *ma:natuerlichesStimmungssystem* kann ebenfalls nicht als Klasse verwendet werden. Obwohl es denkbar wäre, die Grundstimmung *ma:inF*als Instanz einer Klasse *ma:natuerlichesStimmungssystem* zu betrachten, ist ein Instrument in F nicht zugleich notwendigerweise in natürlich gestimmt (vgl. etwa das *Englischhorn*).
 * Sowohl *ma:ambitus* wie auch die ihn definierenden Töne lassen sich nicht weiter differenzieren.
 
-Über die Sinnhaftigkeit weitere übergeordnete Klassen für die Instanzen zu kreieren, wird an späterer Stelle nochmals zu sprechen sein.
+Über die Sinnhaftigkeit weitere übergeordnete Klassen für die Instanzen zu kreieren, wird an späterer Stelle nochmals zu sprechen sein. [Stichwort einerseits – dadurch Semantic Web-Anbindung, andererseits aber Scope soll laut Lit schön kleingehalten werden.]
 
 
 * *ma:inF* läßt sich hingegen als Klasse definieren: Ein Anwendungsfall, in dem etwa die Tonhöhe des ersten Naturtons Aussagen zu Intervallverteilung und Tonhöhen zuließen – die Entität weiter teilbar ist –, lässt sich durchaus vorstellen. Instanzen dieser Klassen wären dann die jeweiligen Grundtöne.
 * *rism:corDaCaccia* ist – insbesondere in seinem Verhältnis zu seiner Instanz *mimul:1663* als Klasse zu bewerten.
 * Dies trifft auch für die Entität *taxonomie:barockhorn* zu.
 
-Mit RDF in OWL2 ausgedrückt ergibt das den folgenden Zusammenhang:
+Mit RDF in OWL2 ausgedrückt und in der *Turtle*-Syntax serialisiert[^24] ergibt das den folgenden Zusammenhang:
 
 
 ```
@@ -129,7 +130,7 @@ Mit RDF in OWL2 ausgedrückt ergibt das den folgenden Zusammenhang:
 
 ## Properties
 
-Analog zu den Entitäten müssen auch die Properties in das Schema des Semantic Webs eingebettet werden. Auch hier geschieht dies, indem sie in der Sprache des Semantic Webs erfasst und als Properties definiert werden. Im Gegensatz zu den Entitäten müssen diese (zumindest im hier behandelten Beispiel) jedoch zunächst nicht klassifiziert werden.[^5]
+Analog zu den Entitäten müssen auch die Properties schematisch in das Wissensrepräsentationskonzept des Semantic Webs eingebettet werden. Auch hier geschieht dies, indem sie in der Sprache des Semantic Webs erfasst und als Properties definiert werden. Im Gegensatz zu den Entitäten müssen diese (zumindest im hier behandelten Beispiel) jedoch zunächst nicht klassifiziert werden.[^5] 
 
 ```
 #################################################################
@@ -173,7 +174,13 @@ Analog zu den Entitäten müssen auch die Properties in das Schema des Semantic 
 <ma#vermutlAbsoluteStimmung> rdf:type owl:ObjectProperty .
 ```
 
-**"Dieser Schrittist notwendig, da die Kenntnis der zur Verf ̈ugung stehendenRelationen Voraussetzung f ̈ur die Formalisierung der Klassendurch notwendige und hinreichende Bedingungen im n ̈achstenSchritt ist."**[^15]
+**"Dieser Schrittist notwendig, da die Kenntnis der zur Verf ̈ugung stehendenRelationen Voraussetzung f ̈ur die Formalisierung der Klassendurch notwendige und hinreichende Bedingungen im n ̈achstenSchritt ist."**[^15] <- Mist – warum mache ich es anders? und warum ist das auch ok?
+
+Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss diese na ̈her beschrieben werden. Hier- bei ist zuna ̈chst die Beziehung der gefundenen Relationen zu den im Vorfeld identifizierten Klassen zu bestimmen. Dies erfolgt in der Regel durch die in den Kapiteln 4.1.1 und 4.2.1 beschriebe- nen Domain- und Range Einschra ̈nkungen. Fu ̈r jede Relation ist also festzulegen, welche Art von Objekten diese potenziell ver- binden kann.[^25]
+
+"Ahnlich verha ̈lt es sich mit der Beschreibung charakteristi-
+
+scher Eigenschaften von Objekten, die zu einer bestimmten Ka- tegorie geho ̈ren. Diese werden ja, wie oben beschrieben, in der Philosophie als ,,differentiae“ bezeichnet. In den anderen rele- vanten Disziplinen wird ha ̈ufig von Eigenschaften und Attri- buten gesprochen. Diese wiederum werden oft durch ,,Relatio- nen“ dargestellt. Zusa ̈tzlich werden in bestimmten Gebieten spe- zielle Bezeichnungen verwendet. So wird vor Allem im Kon- text von Beschreibungslogiken und semantischen Netzen oft von ,,Slots“ gesprochen."[^26]
 
 # Semantic Web-Anbindung
 **terminolomuss evtl. anders aufgezogen werden – mehr Ablauf-orientiert im Kontext mit dem Zeug oben.**
@@ -215,47 +222,7 @@ Many namespaces have been created in the context of Semantic Web projects to dis
 
 ---
 
-zuvor: Methodik – warum OWL? Protégé!
 
-
-Auf den ersten Blick finden sich im Modellentwurf sehr wenige Klassen. Lediglich*rism:corDaCaccia* sowie *ma:barockhorn*scheinen eine 
-
-"we usually start by defining classes." [@noy_ontology_nodate, S.7] 
-
-Erstmal Aussagen zu der "ontologischen" Beschaffenheit der Entitäten treffen.
-
-Das heißt in OWL-Form bringen
-
-Es fällt auf, dass es wenige taxonomische Beziehungen gibt. Ist das schlimm? Ist ja keine Ontologie, will also nicht alle Verhältnisse in der Domäne abbilden, sondern nur die, die für den Anwendungsfall: Mapping / Anreicherung. Allerdings evtl. sinnvoll: Modell noch etwas ausweiten (dadurch aussagekräftiger machen): z.B. "natürliches Stimmungssystem" subclassOf "Stimmungssystem"
-
-Es scheint so, dass weitere taxonomische Beziehungen lediglich miteinbezogen werden müssten, wenn es darum ginge, eigens kreierte Entitäten in Beziehung zu allgemeineren, bereits etablierten Konzepten zu stellen und sie somit ins Semantic Web einzubinden.
--> es ist nicht nötig, sich mit diesem ganzen Kram einen abzubrechen!!!!
-
-"One of the greatest challenges when designing a semantic model is determining when something should be modeled as a class and when it should be modeled as an individual."
-
-Dieses Bedenken erscheint im hier verwendeten Beispiel sich zunächst nicht zu bestätigen:
-
-Entitäten stehen zumeinst nicht in taxonomischer Relation zueinander.
-
-
-
-was zuerst? man ist, wenn man protege verwendet doch an owl gebunden (bzw. die Differenzierung zwischen Klassen und Instanzen). Ist aber ja eigentlich nicht schlimm.
-
-ok, also erstmal owl
-
-
-
-
-An dieser Stelle gerät man bereits an die Grenzen des Datenmodellentwurfs: rism:corDaCaccia wird in diesem Beispiel als Klasse geführt. Im Sinne einer Disambiguierung ist es daher sinnvoll, mithilfe von owl:equivalentClass eine Äquivalenz auszudrücken. So ergibt sich jedoch durch Inferenzierung eine erste Einschränkung gegenüber dem Entwurf, denn dies bedeutet, dass wenn rism:corDaCaccia ebenfalls eine Instanz ist (also etwa der "Salzburger Stier"), sowohl die Beziehungen 
-
-
-
-
-a = 415 Hz ließe sich auch als Tripel abbilden!
-
-
-
-Was sind Klassen, was sind Instanzen?
 
 
 **heute noch ändern: klingend/notiert ist falsch / Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?**
@@ -287,14 +254,30 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^12]: In "Semantic Web-Sprache" augedrückt, wären das die Klassen *rdfs:class*, *rdfs:instanceOf* und *rdf:property*.
 
-[^13]: Auf eine Übersicht der gängigen Klassen muss an dieser Stelle verzichtet werden.
+[^13]: Auf eine Übersicht der gängigen übergeordneten Klassen – etwa "Literals", "Datatypes", "Blank nodes" etc. – muss an dieser Stelle verzichtet werden.
 
 [^14]: [@TN_libero_mab213864266, S. 151]
+
 [^15]: [@alma9913393902586, S. 166]
+
 [^16]: S. hierzu etwa: [@alma9913393902586, S. 95–99]
+
 [^17]: [@noauthor_owl_nodate-3]
+
 [^18]: 
 
 [^19]:  [@alma9913393902586, S. 146]
+
 [^20]: Vgl.: [@noauthor_rdf_nodate-2]
+
 [^21]: [@national_information_standards_organization_u.s._guidelines_2005, S. 3]
+
+[^22]: Die relative Einfachheit des Datenmodells gestattet es hier, Schritte 1 und 3 zusammenzufassen und gleich zu Beginn vorzunehmen.
+
+[^23]: [@TN_libero_mab213864266, S. 151]
+
+[^24]: Die Serialisierung erfolgt am einfachsten, indem etwa der Ontologieeditor *Protégé* zu Hilfe genommen wird. Er ermöglicht den Export von Ontologien in vielfältigen Formaten.
+
+[^25]:  [@alma9913393902586, S. 169]
+
+[^26]: [@alma9913393902586, S. 24]
