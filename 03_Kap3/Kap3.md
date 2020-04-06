@@ -52,15 +52,13 @@ Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab
 
 ## Klassen und Instanzen
 
-Hier wird auch Serialisiert! Evtl schon vorher sagen, dass der Prozess der Serialisierung vollzogen wird, indem in die Syntax gepresst?
-
 > "Deciding whether a particular concept is a class in an ontology or an individual instance depends on what the potential applications of the ontology are. Deciding where classes end and individual instances begin starts with deciding what is the lowest level of granularity in the representation. The level of granularity is in turn determined by a potential application of the ontology. In other words, what are the most specific items that are going to be represented in the knowledge base?" [@gangler_semantic_nodate, S.18]
 
 Die hier zur Differenzierung zwischen Klasse und Instanz implizit vorgeschlagene Vorgehensweise,[^2] bei der die niedrigste Entität eines aus Klassen bestehenden hierarchischen Strangs als Instanz zu werten ist, erscheint im Falle einer in sich abgeschlossenen Ontologie als durchaus sinnvoll. Doch muss der Blickwinkel im Fall der hier beabsichtigten Anwendung als verbindendes Metadatenprofil auch auf potentielle Anknüpfungspunkte, aber vor allem auf die Anwendungsfälle und Vokabulare, die gewissermaßen "außerhalb" des Profils liegen, erweitert werden. Die Frage also, ob etwas eine Instanz oder eine Klasse ist, muss nicht notwendigerweise anhand des Datenmodells selbst zu beantworten sein. Zugleich bedeutet dies aber auch ganz allgemein, dass bestimmte ontologische Beschaffenheiten den untersuchten Entitäten nicht bereits a priori inhärent sind: Entitäten können grundsätzlich – je nach Kontext – mal als Klassen, mal als Instanzen begriffen werden. Diese Unschärfe gilt es sich auch während der folgenden Modellierungen immer wieder prüfend vor Augen zu halten. 
 
 OWL2 differenziert, anders als etwa RDFS, nicht lediglich zwischen Klassen und Instanzen, sondern zwischen Klassen und Individuen,[^3] wobei letztere nochmals in *owl:namedIndividual* und *owl:anonymousIndividual* unterschieden werden. Über letztere heißt es: "Named individuals are given an explicit name that can be used in any ontology to refer to the same object. _Anonymous individuals_ do not have a global name and are thus local to the ontology they are contained in."[^4]
 
-Auf den ersten Blick finden sich im Modellentwurf in erster Linie Instanzen, wobei zu beachten ist, dass aufgrund des uneinheitlichen Datenmodells viele der Instanzen mit einem Überbegriff als Klassen definiert worden sind (dies betrifft die Klassenbezeichner *ma:klangbeispiel* und *ma:Person*):[^1]
+Auf den ersten Blick finden sich im Modellentwurf vor allem Instanzen, wobei zu beachten ist, dass aufgrund des uneinheitlichen Datenmodells viele der Instanzen mit einem Überbegriff als Klassen definiert worden sind (dies betrifft die Klassenbezeichner *ma:klangbeispiel* und *ma:Person*):[^1]
 
 * *mimul:1663*
 * *ma:klangbeispiel* manifestiert sich in Form eines spezifischen Audiofiles.
@@ -76,7 +74,7 @@ Auf den ersten Blick finden sich im Modellentwurf in erster Linie Instanzen, wob
 * *rism:corDaCaccia* ist – insbesondere in seinem Verhältnis zu seiner Instanz *mimul:1663* als Klasse zu bewerten.
 * Dies trifft auch für die Entität *taxonomie:barockhorn* zu.
 
-Mit RDF in OWL2 ausgedrückt und in der *Turtle*-Syntax serialisiert[^24] ergibt das den folgenden Zusammenhang:
+Mit RDF in OWL2 ausgedrückt und in der *Turtle*-Syntax serialisiert[^24] ergibt sich der folgende Zusammenhang:
 
 
 ```
@@ -128,6 +126,9 @@ Mit RDF in OWL2 ausgedrückt und in der *Turtle*-Syntax serialisiert[^24] ergibt
 <mimul#1663> rdf:type owl:NamedIndividual .
 ```
 
+
+
+
 ## Properties
 
 Analog zu den Entitäten müssen auch die Properties schematisch in das Wissensrepräsentationskonzept des Semantic Webs eingebettet werden. Auch hier geschieht dies, indem sie in der Sprache des Semantic Webs erfasst und als Properties definiert werden. Im Gegensatz zu den Entitäten müssen diese (zumindest im hier behandelten Beispiel) jedoch zunächst nicht klassifiziert werden.[^5] 
@@ -174,7 +175,29 @@ Analog zu den Entitäten müssen auch die Properties schematisch in das Wissensr
 <ma#vermutlAbsoluteStimmung> rdf:type owl:ObjectProperty .
 ```
 
-**"Dieser Schrittist notwendig, da die Kenntnis der zur Verf ̈ugung stehendenRelationen Voraussetzung f ̈ur die Formalisierung der Klassendurch notwendige und hinreichende Bedingungen im n ̈achstenSchritt ist."**[^15] <- Mist – warum mache ich es anders? und warum ist das auch ok?
+#  Relationen definieren / Anpassung des Datenmodells
+
+Nachdem kontrollierte Vokabulare erstellt worden sind, liegt es nahe, Relationen, die bislang höchstens im Vorhandensein kontingenter Klassen bestanden, zu erstellen. Auch dies geschieht laut Stuckenschmidt idealerweise zunächst auf einer Metaebene, indem die Properties gemäß ihrer Abhängigkeit zu den Entitäten näher beschrieben werden.[^33] Dies kann geschehen, indem zwei neue Properties eingeführt werden: *rdfs:range*[^31] und *rdfs:domain*[^32].[^27]        
+
+Diese fungieren als "semantische[s] Bindeglied zwischen Klassen und Propertys".[^30] indem sie definieren, welche Properties sich auf welche Klassen in welcher Weise beziehen können. 
+
+So besitzt z.B. das Prädikat in der folgenden Aussage[^28]
+```
+rism:corDaCaccia ma:typ taxonomie:barockhorn
+```
+die Domäne rism:corDaCaccia – das Subjekt der Aussage.[^29]  Zugleich besitzt das Property *ma:typ* das *rdfs:range* Barockhorn. Es lassen sich daher die Aussagen treffen, dass das Property bedeutet, dass jede Entität, die als Subjekt oder Objekt mit dem Property *ma:typ* verbunden ist, ein Barockhorn oder ein 
+
+
+die Aussage ist schon richtig, aber nur für das spezielle Modell. -> man sollte schon noch übergeordnete Klassen vergeben.
+
+
+**WICHTIG:** Nächster Schritt bei der Modellierung: [<- ja, erst jetzt wird Kontext konstruiert]
+
+>"Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss diese na ̈her beschrieben werden. Hier- bei ist zuna ̈chst die Beziehung der gefundenen Relationen zu den im Vorfeld identifizierten Klassen zu bestimmen. Dies erfolgt in der Regel durch die in den Kapiteln 4.1.1 und 4.2.1 beschriebe- nen Domain- und Range Einschra ̈nkungen. Fu ̈r jede Relation ist also festzulegen, welche Art von Objekten diese potenziell ver- binden kann. Hierbei ist stets die allgemeinste Klasse zu wa ̈hlen, um nicht unno ̈tigerweise Mo ̈glichkeiten auszuschließen. Kom- men mehrere Klassen als Doma ̈ne oder Range einer Relation in Betracht, so sind die jeweilige Semantik der verwendeten Spra- che und leider zum Teil auch die Eigenschaften des verwende- ten Tools zu beru ̈cksichtigen, da diese zu unerwu ̈nschten Effek- ten fu ̈hren ko ̈nnen." [@alma9913393902586, S. 169]
+
+Dabei stellt sich heraus, dass das Datenmodell noch weiter spezifiziert werden muss, indem weitere Klassen vergeben werden. z.B. "natürliche Stimmung" rdfs:domain "Stimmung" (dabei mittelbar ja auch Anbindung an weitere Vokabulare möglich.)
+
+**"Dieser Schrittist notwendig, da die Kenntnis der zur Verf ̈ugung stehendenRelationen Voraussetzung f ̈ur die Formalisierung der Klassen durch notwendige und hinreichende Bedingungen im n ̈achstenSchritt ist."**[^15] <- Mist – warum mache ich es anders? und warum ist das auch ok? Wohl weil keine ganze Domäne modelliere, sondern nur einen ganz bestimmten Ausschnitt, der auch nicht die Funktion hat, vollständig zu sein, sondern nur spezifische Infos anzureichern bzw. zu Mappen.
 
 Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss diese na ̈her beschrieben werden. Hier- bei ist zuna ̈chst die Beziehung der gefundenen Relationen zu den im Vorfeld identifizierten Klassen zu bestimmen. Dies erfolgt in der Regel durch die in den Kapiteln 4.1.1 und 4.2.1 beschriebe- nen Domain- und Range Einschra ̈nkungen. Fu ̈r jede Relation ist also festzulegen, welche Art von Objekten diese potenziell ver- binden kann.[^25]
 
@@ -183,7 +206,7 @@ Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss d
 scher Eigenschaften von Objekten, die zu einer bestimmten Ka- tegorie geho ̈ren. Diese werden ja, wie oben beschrieben, in der Philosophie als ,,differentiae“ bezeichnet. In den anderen rele- vanten Disziplinen wird ha ̈ufig von Eigenschaften und Attri- buten gesprochen. Diese wiederum werden oft durch ,,Relatio- nen“ dargestellt. Zusa ̈tzlich werden in bestimmten Gebieten spe- zielle Bezeichnungen verwendet. So wird vor Allem im Kon- text von Beschreibungslogiken und semantischen Netzen oft von ,,Slots“ gesprochen."[^26]
 
 # Semantic Web-Anbindung
-**terminolomuss evtl. anders aufgezogen werden – mehr Ablauf-orientiert im Kontext mit dem Zeug oben.**
+**terminolomuss evtl. anders aufgezogen werden – mehr Ablauf-orientiert im Kontext mit dem Zeug oben. Eventuell erst viel später?**
 
 Es liegt nahe, die zuletzt mit den Ontologiesprachen OWL und RDF beschriebenen und somit in das schematisch-ontologische Gefüge von RDF für das Semantic Web handhabbar gemachten Terme in Form kontrollierter Vokabulare zu speichern. Dabei beschränkt sich die "terminologische Kontrolle" hier zunächst auf Maßnahmen, "die direkt oder indirekt der Definition und Abgrenzung von Begriffen"[^7] im allerweitesten Sinne dienen. In diesem Sinne reicht es zu diesem Zeitpunkt – zunächst! – aus, eine einfache Liste der Terme und der – freilich außerordentlich vagen – eben erfolgten Spezifikation ihrer Natur als potentielle "Dinge" im Semantic Web zu erstellen.
 
@@ -281,3 +304,11 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 [^25]:  [@alma9913393902586, S. 169]
 
 [^26]: [@alma9913393902586, S. 24]
+
+[^27]: Auch in OWL verfügt über entsprechende (noch mächtigere) Möglichkeiten, diese Beziehungen auszudrücken (vgl. hierzu etwa: [@allemang_semantic_2011, S. 238-239.]) Allerdings erscheint für die Belange dieser Arbeit die Terminologie von RDFS als genügend.
+[^28]: Wörtlich also: "Das Objekt mit der Signatur 1663 hat den Typ eines Barockhorns".
+[^29]: [@alma9913393902586, S. 106]
+[^30]: [@TN_libero_mab21631588, S. 77]
+[^31]: [@noauthor_rdf_nodate-3]
+[^32]: [@noauthor_rdf_nodate-4]
+[^33]: [@alma9913393902586, S. 169]
