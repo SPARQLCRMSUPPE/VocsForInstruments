@@ -3,6 +3,9 @@
 * Terminologie
 * Methodik?
 
+* spartenübergreifende Standardisierung
+* vieldimensionale, maschinenlesbare und kontrollierte Darstellbarkeit
+* übergeordnete Ziele – Offene Wissenschaft / in wie weit ist die Anbindung von Forschung ans SW für einfache Wissenschaftler möglich?
 
 # 2. Problemstellung
 
@@ -10,41 +13,46 @@
 
 ## 2.2 Desiderat
 
-* spartenübergreifende Standardisierung
-* vieldimensionale, maschinenlesbare und kontrollierte Darstellbarkeit
-
 ## 2.3 Anwendungsbeispiel
 
-## 2.4 Datenschema
-
-### 2.4.1 Domäne
-
-### 2.4.2 Mapping
-
-### 2.4.3 Anreicherung
-
----
+## 2.4 Semantic Web
 
 # 3. Modellierung
 
-# 3.1 Vorgehensweise
+# 3.1 Methodik – wie erstellt man ein RDF-Metadatenprofil?
 
-* Methodik
-*
-* 3.2 Wie erstellt man ein RDF-Metadatenprofil?
+## 3.2 Anwendungsbeispiel
 
-* Auswertung von Vokabularen
-* Technische Implementierung
-* Formate
+### 3.2.1 Domäne
 
-## 3.2 Modellierung
+### 3.2.2 Mapping
 
-* nach den "Domänen" vorgehen? (vermutl. sinnvoll, da jede untersch. Anforderung – jeweils untersch. Vokabulare spielen 1 Rolle)
+### 3.2.3 Anreicherung
+
+## 3.3 ERM
+
+## 3.4 Klassifikatorische Erschließung
+
+### 3.4.1 Web Ontology Language
+
+### 3.4.2 Klassen
+
+### 3.4.3 Properties
+
+### 3.4.4 Instanzen
+
+## 3.5 Fachdomäne
+
+### 3.5.1 Bereich "Domäne"
+
+### 3.5.2 Bereich "Mapping"
+
+### 3.5.3 Bereich "Anreicherung"
 
 ---
 
-# 5. Erkenntisse / Ergebnisse(?) (z.B. SheX, Shaql)
+# 4. Erkenntisse / Ergebnisse(?) (z.B. SheX, Shaql)
 
 ---
 
-# 6. Verwendete Literatur
+# 5. Verwendete Literatur
