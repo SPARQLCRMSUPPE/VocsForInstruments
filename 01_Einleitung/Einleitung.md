@@ -11,7 +11,7 @@ Zieht man nun – zwölf Jahre später – Bilanz, mag man einerseits geneigt se
 
 Doch zeigt sich andererseits: so manches aus diesem Traum ging in Erfüllung. Es existieren mittlerweile etliche Datenaggregatoren und Portale, die jeweils genau einen jener zentralen Einstiege für die Suche in (Teil-)Beständen ihrer partizipierenden Institutionen ermöglichen, deren Ebenbild Jahre zuvor erträumt worden war. Technisch bieten dabei Standards wie das *Europeana Data Model*, *FRBRoo* oder Austauschformate wie *METS*, *MODS*, *LIDO* etc. eine Handhabe für weitere Vernetzung.
 
-Und doch erscheint das volle Potential, wie es etwa im Satz "Any desirable unit of information is never more than “two clicks away,” allowing easy navigation through resources[...]" anklingt, noch lange nicht erreicht. Eine wirklich umfassende "horizontale" sparten- und institutionenübergreifende Vernetzung von Ressourcen – kraft ihrer Metadaten – ist überwiegend noch nicht eingelöst – es bleibt noch viel zu tun.
+Und doch erscheint das volle Potential, wie es etwa im Satz "Any desirable unit of information is never more than “two clicks away,” allowing easy navigation through resources[...]" anklingt, noch lange nicht erreicht. Eine wirklich umfassende "horizontale" sparten- und institutionenübergreifende Vernetzung von Ressourcen – kraft ihrer Metadaten – ist überwiegend noch nicht eingelöst, sodass mancher geneigt sein mag, von einer neuen Form des Datensilotums, einer "plattform insularity"[^14] zu sprechen. es bleibt noch viel zu tun.
 
 Haben sich aber eingedenk dieser Nichteinlösung Ernüchterung und Resignation breitgemacht? – im Gegenteil: Das Anliegen einer flächendeckenden Vernetzung von (Kultur-)Daten erscheint so akutell wie nie zuvor. 
 Dies wird etwa angesichts des Projekts *GND4C*[^4] deutlich, in dem die *Gemeinsame Normdatei*[^5] – mit der *Deutschen Nationalbibliothek* als Data Hub – das "Rückgrat" bilden soll, "inhaltliche Verbindungen zwischen Kulturgütern, Bibliotheksbeständen, Forschungsdaten und assoziierten Personen, Einrichtungen, Orten, Ereignissen, Projekten, etc. auszuweisen und maschinell auswertbar zu machen, die sonst im Verborgenen bleiben würden."[^6] Dabei bildet neben der technischen Vernetzung insbesondere auch der "Community"-Gedanke ein zentraler Aspekt des Konzepts: Nutzer der *GND* werden ermächtigt, einen Teil aktiv mitzugestalten und gemäß ihrer eigenen Bedürfnisse zu entwickeln.
@@ -35,10 +35,11 @@ Dabei klammert diese Arbeit Fragen im Bereich der Klassifikation von Musikinstru
 Aber wie sähe der konkrete, fassbare Nutzen einer solchen Vernetzung von Daten aus? 
 Das folgende Szenario mag eine vorläufige Ahnung aus Nutzersicht vermitteln: Man stelle sich etwa vor, man clickte etwa in einer digitalen Edition auf eine – sehr spezifische – Besetzungsangabe eines musikalischen Werks, gelänge anschließend zu einer Übersichtsseite, die dem Nutzer die Möglichkeit böte, disambiguierende Informationen zum Instrumententyp zu erhalten, per Link entsprechende (historische) Instrumente im Bestand eines Museums zu betrachten, musikalische Quellen mit entsprechender (historischer) Instrumentalbesetzung in Archiven und Bibliotheken zu entdecken, Aufnahmen eines entsprechenden Museumsobjekts oder entsprechend bestetzter Musik abzuspielen… 
 Es scheint, dass dieses Szenario der Idee "[a]ny desirable unit of information is never more than “two clicks away,” allowing easy navigation through resources[...]"[^13] schon recht nahe kommt.
+[und für Forscher?]
 
 Neben transparenten und performanten Suchmöglichkeiten und erhöhter Sichtbarkeit ziehen Datenpublizierende weiteren Nutzen, indem ihre Daten durch die Vernetzung mit anderen aussagekräftigen Daten kontextuell aufgewertet werden, bzw. profitieren sie durch die Erschließung ihrer Bestände aus einem Pool externer, qualitativ hochwertiger Metadaten der Community. Dieses kooperative, community-getriebene wissenschaftliche Konzept ist es dabei auch, das dem bereits erwähnten *GND4C*-Projekt oder der NFDI-Initiative zu Grunde liegt.
 
-
+Doch wenn das alles Community-Maßnahmen sind, was kann dann aber diese Arbeit, überhaupt zu leisten / beitragen hoffen?
 
 
 
@@ -162,15 +163,7 @@ S.1
 "Collaborations also must face the fact that archives, libraries, and museums lack common standards for describing data, have different methods of cataloging holdings, and take different approaches to object registration[...]", [@10.2307/43737382, S. 79]
 
 
-    
-
-
-
-
-
-
-
-    * NFDI
+   	* NFDI
     * hier Verbindungsmöglichkeiten herstellen
         * Chance: LOD
     * was ist notwendig? Standardisierung
@@ -185,9 +178,10 @@ S.1
 2. was macht man, wenn Terminologie fehlt?
 beides exemplarisch angerissen
 
-* Terminologieproblem
 
-* Methodik
+	* Terminologieproblem
+
+	* Methodik
     * Terminologische Arbeit
     * (technische Aspekte)
 
@@ -219,3 +213,4 @@ beides exemplarisch angerissen
 [^12]: 
 
 [^13]: [@zorich_beyond_2008, S. 13]
+[^14]: [@ziku_digital_2020, S. 12]
