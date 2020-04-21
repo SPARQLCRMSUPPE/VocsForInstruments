@@ -18,7 +18,7 @@ Dies wird etwa angesichts des Projekts *GND4C*[^4] deutlich, in dem die *Gemeins
 Eine ähnliche Zielsetzung – freilich nicht explizit auf den Kulturerbebereich ausgerichtet – bildet einen wichtigen Aspekt der Bestrebungen zur Begründung einer nationalen Forschungsdateninfrastruktur (*NFDI*)[^7]. Auch hier spielt die Vernetzung von Daten und Ressourcen zwischen den teils durchaus interdisziplinär zusammengestellten "Konsortien" eine durchaus übergeordnete Rolle.[^8] Für den Kulturbereich weist dabei insbesondere das Konsortium *NFDI4Culture*[^9] eine Vielzahl äußerst heterogener Kulturerbeinstitutionen als Konsortialpartner auf. Und auch im Rahmen der *NFDI*-Initiative stand das Konzept einer "Community", die die jeweilige Ausformung "ihrer" Infrastruktur trug, im Vordergrund.[^10]
 Deutlich wird: "community driven" spartenübergreifende Datenvernetzung hat derzeit Konjunktur!
 
----
+***
 
 Auch für diese Arbeit bildet das Konzept Community-getriebener Vernetzung einen ideellen Überbau – den thematischen wiederum bildet die Musik. 
 In etlichen Gesprächen des Verfassers mit Vertretern dieses Bereichs aus dem Museums-, Bibliotheks-, und Editionswesen, einem vom Verfasser durchgeführten "Workshop" im Rahmen der *Edirom Summer School*[^11] und einem Vortrag[^12] im Rahmen der *IAML Deutschland*-Tagung 2019 wurde immer wieder Folgendes deutlich:
@@ -50,18 +50,35 @@ Für die datengetriebe Wissenschaft –  sachgemäß sind dies hier insbesondere
 - vielleicht ist es aber auch sinnlos, hiergegen anzuschreiben – sollen die doch machen, was sie wollen
     - > es geht hier nur darum, Daten, die bislang noch nicht verbunden werden können, für bestimmte Beschreibungsszenarien zu verbinden.
     - Das ist der Unterschied – globaler Ansatz der Portale – es muss eine Möglichkeit geben, heterogene Konzepte durch generische Modellierung zusammenzuführen -> das Modellkorsett muss alle Szenarien fassen können – muss für alle gültig sein
-    - vs. wird von Anfang an als Community-Effort so entwickelt, dass heterogene Modelle nebeneinander bestehen – ultimativ  flexibel / ist ausgestaltbar, da der Anwendungsfall noch nicht existiert.
----
+    - vs. wird von Anfang an als Community-Effort so entwickelt, dass heterogene Modelle nebeneinander bestehen – ultimativ  flexibel / ist ausgestaltbar, da der Anwendungsfall noch nicht existiert.]
+***
 
-Eine zentrale Erkenntnis aus dem Kontext der bereits mehrfach erwähnten Bemühungen von *OCLC* und dem *Research Libraries Group* während der 2000er-Jahre[^18] scheint die folgende gewesen zu sein: Eine technische Zusammenführung von Daten aus dem "LAM"-Sektor ist gar nicht so einfach.[^15] Dies leuchtet unmittelbar ein, handelt es sich doch bei Kulturerbe im Allgemeinen und somit notwendigerweise auch bei der mit ihrer Bewahrung mandantierten "*GLAM*"-Einrichtungen (ein Akronym für die bereits bekannten *LAM*s, institutionell verstärkt um die *Galleries*) um außerordentlich heterogene Dingse. So mag es denn auch nicht Wunder nehmen, dass "[m]anaging publication of such richness and variation of content on the Web, and at the same time supporting distributed, interoperable content creation processes, poses challenges where traditional publication approaches need to be re-thought."[^17] Beim hier nur angedeuteten Problem handelt es sich um das zentrale Defizit mangelnder Interoperabilität.[^19] Dieses liegt nach Hyvonen insbesondere im "multi-organizational nature in which CH content is collected, maintained, and published. The content is provided by different museums, libraries, and archives with their own established standards and best practices, by media organizations, cultural associations, and individual citizens in a Web 2.0 fashion."[^20] So erscheint das Silotum im Kulturerbebereich gewissermaßen systemisch angelegt und strukturell fest verankert, und der Verdienst, der Initiativen, wie der *Deutschen Digitalen Bibliothek* und ihren Aggregatoren bei der Transformation ihrer Daten Interoperabilität zukommt, nicht zu überschätzen.[^21] 
+Eine zentrale Erkenntnis aus dem Kontext der bereits mehrfach erwähnten Bemühungen von *OCLC* und dem *Research Libraries Group* während der 2000er-Jahre[^18] scheint die folgende gewesen zu sein: Eine technische Zusammenführung von Daten aus dem "LAM"-Sektor ist gar nicht so einfach.[^15] Dies leuchtet unmittelbar ein, handelt es sich doch bei Kulturerbe im Allgemeinen und somit notwendigerweise auch bei der mit ihrer Bewahrung mandantierten "*GLAM*"-Einrichtungen (ein Akronym für die bereits bekannten *LAM*s, institutionell verstärkt um die *Galleries*) um außerordentlich heterogene Welten. So mag es denn auch nicht Wunder nehmen, dass "[m]anaging publication of such richness and variation of content on the Web, and at the same time supporting distributed, interoperable content creation processes, poses challenges where traditional publication approaches need to be re-thought."[^17] Beim hier nur angedeuteten Mißstand handelt es sich um das ganze zentrale Problem mangelnder Interoperabilität.[^19] Dieses liegt nach Hyvonen insbesondere im "multi-organizational nature in which CH content is collected, maintained, and published. The content is provided by different museums, libraries, and archives with their own established standards and best practices, by media organizations, cultural associations, and individual citizens in a Web 2.0 fashion."[^20] So erscheint das Silo-Mäßige im Kulturerbebereich gewissermaßen systemisch angelegt und strukturell fest verankert. Eine Verbindung von Datensätzen durch "Mapping" mag daher durchaus als aussichtslos erscheinen, wie es dieser etwas defätistische Schluss – wiederum aus dem Umfeld der mehrfach erwähnten *OCLC*/*RLG*-Bemühungen zeigt: "it’s not about the mapping; that’s a red herring. Stop trying to do it better; it can’t be done."[^27]
 
-Doch mit welchen Mitteln lässt sich das Problem fehlender Interoperabilität lösen?[^22]
+Zu verstehen in Web 2.0-Kontext – heute mehr Möglichkeiten. Was kam dazwischen? Das Web 3.0! ->
+
+
+und der Verdienst, der Initiativen, wie der *Deutschen Digitalen Bibliothek* und ihren Aggregatoren bei der Transformation ihrer Daten Interoperabilität zukommt, nicht zu überschätzen.[^21] 
+
+
+
+
+
+Doch mit welchen Mitteln wird das Problem fehlender Interoperabilität handhabbar?[^22]
+
+Ein sehr wirkmächtiges Werkzeug bilden sog. *Semantic Web-Technologien*.[^26] Diese fußen, wie der Name schon sagt, auf der Idee des *Semantic Web*[^24] – auch etwa mit der Bezeichnung *Web 3.0*[^25] geadelt – ein Netz aus Verlinkungen zwischen Daten, eben den *Linked (Open) Data*. Eine erschöpfende Einführung in das teils nachgerade banale wie zugleich hochgradig komplexe Konzept und die Technologien des *Semantic Web* kann an dieser Stelle nicht erfolgen, sondern darf sich – bis auf einige für das Verständnis der folgenden Arbeit wesentliche Punkte – auf die Rolle des *Semantic Web* im Kontext des Untersuchungsgegenstandes, dem Kulturerbebereich, beschränken. [Literatur findet sich ansonsten bei...]
+
+
+
+
+
+
 
 ---
 
 man kann wohl schon davon ausgehen, dass zu der Zeit das Semantic Web noch nicht so wahnsinnig etabliert war.
 
-
+Ein herausragendes Problem in diesem Kontext ergibt sich hierbei insbesondere aus der Vielzahl Domänen-spezifischer und daher nur ungenügend kompatibler Referenzmodelle[^23] (etwa *FRBR* und *IFLA LRM* im bibliothekarischen, *CIDOC-CRM* im Museumsbereich, *EAD* im Archivwesen – ganz abgesehen von den unzähligen institutionsspezifischen "Insellösungen" und "Provisoria").
 
 "In summary, Linked Data is simply about using the Web to create typed links between datafrom different sources."[@madoc34762, S. 2]
 
@@ -73,7 +90,7 @@ man kann wohl schon davon ausgehen, dass zu der Zeit das Semantic Web noch nicht
     - Modell / Technologie
 2. Problem des Datenmodells
 
-Ein herausragendes Problem in diesem Kontext ergibt sich hierbei insbesondere aus der Vielzahl Domänen-spezifischer und daher nur ungenügend kompatibler Referenzmodelle[^23] (etwa *FRBR* und *IFLA LRM* im bibliothekarischen, *CIDOC-CRM* im Museumsbereich, *EAD* im Archivwesen – ganz abgesehen von den unzähligen institutionsspezifischen "Insellösungen" und "Provisoria").
+
 
 Bei Portal war Prinzip Überstülpung – Herausforderung kleinster gemeinsamer Nenner – hier nicht nötig, da von unten aufgebaut – kann dann auch sehr komplex werden.
 
@@ -323,3 +340,7 @@ beides exemplarisch angerissen
 [^21]: Es bleibt zu hoffen, dass dies im Wissenschaftsbereich dank der *NFDI* auch zunehmend der Fall sein wird.
 [^22]: Für eine umfassende Übersicht der Möglichkeiten sowie eine Bewertung dieser s. [@cs79]
 [^23]: Definition – warum nicht Konzeptmodelle oder irgendwie sowas?
+[^24]: Nachweis Begriff
+[^25]: Nachweis Begriff
+[^26]: Überblick bei W3C?
+[^27]: [@noauthor_library_2019]
