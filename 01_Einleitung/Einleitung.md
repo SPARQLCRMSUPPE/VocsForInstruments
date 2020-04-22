@@ -20,7 +20,7 @@ Deutlich wird: "community driven" spartenübergreifende Datenvernetzung hat derz
 
 ***
 
-Auch für diese Arbeit bildet das Konzept Community-getriebener Vernetzung einen ideellen Überbau – den thematischen wiederum bildet die Musik. 
+Auch für diese Arbeit bildet das Konzept Community-getriebener Vernetzung einen ideellen Überbau – den thematischen wiederum bildet die Musik. [es muss mehr zum Community-Gedanken. z.b. hier: ][@ziku_digital_2020]
 In etlichen Gesprächen des Verfassers mit Vertretern dieses Bereichs aus dem Museums-, Bibliotheks-, und Editionswesen, einem vom Verfasser durchgeführten "Workshop" im Rahmen der *Edirom Summer School*[^11] und einem Vortrag[^12] im Rahmen der *IAML Deutschland*-Tagung 2019 wurde immer wieder Folgendes deutlich:
 
 1. Der Wunsch nach spartenübergreifender Datenvernetzung und -austausch ist in den genannten Feldern stark ausgeprägt.
@@ -53,20 +53,37 @@ Für die datengetriebe Wissenschaft –  sachgemäß sind dies hier insbesondere
     - vs. wird von Anfang an als Community-Effort so entwickelt, dass heterogene Modelle nebeneinander bestehen – ultimativ  flexibel / ist ausgestaltbar, da der Anwendungsfall noch nicht existiert.]
 ***
 
-Eine zentrale Erkenntnis aus dem Kontext der bereits mehrfach erwähnten Bemühungen von *OCLC* und dem *Research Libraries Group* während der 2000er-Jahre[^18] scheint die folgende gewesen zu sein: Eine technische Zusammenführung von Daten aus dem "LAM"-Sektor ist gar nicht so einfach.[^15] Dies leuchtet unmittelbar ein, handelt es sich doch bei Kulturerbe im Allgemeinen und somit notwendigerweise auch bei der mit ihrer Bewahrung mandantierten "*GLAM*"-Einrichtungen (ein Akronym für die bereits bekannten *LAM*s, institutionell verstärkt um die *Galleries*) um außerordentlich heterogene Welten. So mag es denn auch nicht Wunder nehmen, dass "[m]anaging publication of such richness and variation of content on the Web, and at the same time supporting distributed, interoperable content creation processes, poses challenges where traditional publication approaches need to be re-thought."[^17] Beim hier nur angedeuteten Mißstand handelt es sich um das ganze zentrale Problem mangelnder Interoperabilität.[^19] Dieses liegt nach Hyvonen insbesondere im "multi-organizational nature in which CH content is collected, maintained, and published. The content is provided by different museums, libraries, and archives with their own established standards and best practices, by media organizations, cultural associations, and individual citizens in a Web 2.0 fashion."[^20] So erscheint das Silo-Mäßige im Kulturerbebereich gewissermaßen systemisch angelegt und strukturell fest verankert. Eine Verbindung von Datensätzen durch "Mapping" mag daher durchaus als aussichtslos erscheinen, wie es dieser etwas defätistische Schluss – wiederum aus dem Umfeld der mehrfach erwähnten *OCLC*/*RLG*-Bemühungen zeigt: "it’s not about the mapping; that’s a red herring. Stop trying to do it better; it can’t be done."[^27]
+Eine zentrale Erkenntnis aus dem Kontext der bereits mehrfach erwähnten Bemühungen von *OCLC* und dem *Research Libraries Group* während der 2000er-Jahre[^18] scheint die folgende gewesen zu sein: Eine technische Zusammenführung von Daten aus dem "LAM"-Sektor ist gar nicht so einfach.[^15] Dies leuchtet unmittelbar ein, handelt es sich doch bei Kulturerbe im Allgemeinen und somit notwendigerweise auch bei der mit ihrer Bewahrung mandantierten "*GLAM*"-Einrichtungen (ein Akronym für die bereits bekannten *LAM*s, institutionell verstärkt um die *Galleries*) um außerordentlich heterogene Welten. So mag es denn auch nicht Wunder nehmen, dass "[m]anaging publication of such richness and variation of content on the Web, and at the same time supporting distributed, interoperable content creation processes, poses challenges where traditional publication approaches need to be re-thought."[^17] Beim hier nur angedeuteten Mißstand handelt es sich um das ganze zentrale Problem mangelnder Interoperabilität.[^19] Dieses liegt nach Hyvonen insbesondere im "multi-organizational nature in which CH content is collected, maintained, and published. The content is provided by different museums, libraries, and archives with their own established standards and best practices, by media organizations, cultural associations, and individual citizens in a Web 2.0 fashion."[^20] So erscheint das Silo-Mäßige im Kulturerbebereich gewissermaßen systemisch angelegt und strukturell fest verankert. Eine Verbindung von Datensätzen durch "Mapping" mag daher durchaus als aussichtslose Sackgasse erscheinen, wie es etwa in diesem einigermaßen defätistischen Schluss – wiederum aus dem Umfeld der mehrfach erwähnten *OCLC*/*RLG*-Bemühungen – zu Tage tritt: "it’s not about the mapping; that’s a red herring. Stop trying to do it better; it can’t be done."[^27]
+
+Und doch erfreut sich das Mapping von Kulturdaten in der Praxis – immerhin zwölf Jahre nach der eben zitierten Bankrott-Erklärung – unverminderter Beliebtheit, und es bildet sogar die eigentliche strukturelle Grundlage für Projekte wie das bereits erwähnte GND4C.
+Doch was hat sich mittlerweile gegenüber den technischen Möglichkeiten von 2008 verändert, dass als dermaßen aussichtsreich erscheint, Daten miteinander in Beziehung zu setzen, sodass zukunftsweisende Projekte und Initiativen wie die NFDI oder GND4C zu einem sehr erheblichen Teil auf dieses Konzept bauen?
+
+Ein sehr wirkmächtiges Werkzeug bilden sog. *Semantic Web-Technologien*.[^26] Diese fußen, wie der Name schon nahelegt, auf der Idee des *Semantic Web*[^24] – auch etwa mit der Bezeichnung *Web 3.0*[^25] geadelt. Dieses bildet ein Netz aus Verlinkungen zwischen im Internet gelagerte Daten, eben dem *Linked (Open) Data*. 
+Eine erschöpfende Einführung in die teils nachgerade banalen wie zugleich hermetisch komplexen Konzepte und Technologien des *Semantic Web* kann an dieser Stelle nicht erfolgen, sondern sie darf sich – bis auf einige für das Verständnis der folgenden Arbeit wesentliche Punkte – auf die Chancen des *Semantic Web* im Kontext des Untersuchungsgegenstandes, dem Kulturerbebereich, beschränken. [Literatur findet sich ansonsten bei...]
+
+Doch was macht dieses Werkzeug so wirkmächtig? Das *W3C* erklärt die Grundidee des *Semantic Webs* folgendermaßen: "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."[^28] Dabei wird das Grundprinzip des Internet – verschiedene mittels *HTML*-Links miteinander *vernetzter* Seiten –, dem *Web of Documents*[^29], auf den Inhalt dieser Seiten erweitert. Dabei ist des *Web of Documents* lediglich ein "[...] set of interlinked documents with heterogeneous syntax and semantics and uncontrolled content[...]":[^31] Dieser Inhalt ist jedoch leider nicht einheitlich und daher nicht interoperabel.[^30] Im *Web of Data*[^35] können jedoch auch der Inhalte einer Seite (also "Data" innerhalb eines "Documents") dank einer standardiserten Syntax, dem sog. *Ressource Description Framework* (RDF),[^32] in vielfältige Beziehung zum Inhalt anderer Seiten gesetzt und mit passenden Informationen innerhalb dieser verlinkt werden. Durch die Definition der Beziehungen dieser Daten zueinander ergeben sich so mithilfe von RDF Aussagen mit semantischem Gehalt in der Form *Subjekt* - *Prädikat* - *Objekt*.[^36] 
+Die vormals auf die banale Beziehung *Seite A* - *verlinkt auf* - *Seite B* semantische Aussagekraft von HTML wird um komplexe Aussagemöglichkeiten erweitert, die kreuz und quer durch das Netz Aussagen jeder Art über "Dinge"[^38] gleich welcher Art zu treffen imstande sind. Diese sind zudem dank der Verwendung von RDF und der bestehenden Webinfrastruktur maschinenlesbar und interoperabel.
+
+Zwar gilt der Traum des *Semantic Web* in seiner Manifestation als vollumfänglich von Mensch und Maschine durchsuch- und "verstehbares", kleinstgranular verlinkten Netz (zumindest vorerst) als gescheitert,[^37] 
+
+
+
+Die Idee ist…
+gilt als gescheitert
+Aber: Framework zur Verlinkung – dadurch oben genannter Sachverhalt ermöglicht.
 
 Zu verstehen in Web 2.0-Kontext – heute mehr Möglichkeiten. Was kam dazwischen? Das Web 3.0! ->
 
 
 und der Verdienst, der Initiativen, wie der *Deutschen Digitalen Bibliothek* und ihren Aggregatoren bei der Transformation ihrer Daten Interoperabilität zukommt, nicht zu überschätzen.[^21] 
 
-
-
+bei interoperabilität:
+"In summary, Linked Data is simply about using the Web to create typed links between data from different sources."[^34] 
 
 
 Doch mit welchen Mitteln wird das Problem fehlender Interoperabilität handhabbar?[^22]
 
-Ein sehr wirkmächtiges Werkzeug bilden sog. *Semantic Web-Technologien*.[^26] Diese fußen, wie der Name schon sagt, auf der Idee des *Semantic Web*[^24] – auch etwa mit der Bezeichnung *Web 3.0*[^25] geadelt – ein Netz aus Verlinkungen zwischen Daten, eben den *Linked (Open) Data*. Eine erschöpfende Einführung in das teils nachgerade banale wie zugleich hochgradig komplexe Konzept und die Technologien des *Semantic Web* kann an dieser Stelle nicht erfolgen, sondern darf sich – bis auf einige für das Verständnis der folgenden Arbeit wesentliche Punkte – auf die Rolle des *Semantic Web* im Kontext des Untersuchungsgegenstandes, dem Kulturerbebereich, beschränken. [Literatur findet sich ansonsten bei...]
+
 
 
 
@@ -81,6 +98,8 @@ man kann wohl schon davon ausgehen, dass zu der Zeit das Semantic Web noch nicht
 Ein herausragendes Problem in diesem Kontext ergibt sich hierbei insbesondere aus der Vielzahl Domänen-spezifischer und daher nur ungenügend kompatibler Referenzmodelle[^23] (etwa *FRBR* und *IFLA LRM* im bibliothekarischen, *CIDOC-CRM* im Museumsbereich, *EAD* im Archivwesen – ganz abgesehen von den unzähligen institutionsspezifischen "Insellösungen" und "Provisoria").
 
 "In summary, Linked Data is simply about using the Web to create typed links between datafrom different sources."[@madoc34762, S. 2]
+
+Daten ins Netz!
 
 1. Semantic Web RDF etc.
     - Open World und so Kram? Wohin damit?
@@ -344,3 +363,16 @@ beides exemplarisch angerissen
 [^25]: Nachweis Begriff
 [^26]: Überblick bei W3C?
 [^27]: [@noauthor_library_2019]
+[^28]: [@noauthor_w3c_nodate]
+[^29]: 
+
+[^30]: PDF, HTML, Video
+[^31]: [@szeredi_lukácsy_benkő_nagy_2014, S. 21]
+[^32]: 
+
+[^34]: [@madoc34762, S. 2]
+[^35]: 
+
+[^36]: Das Verhältnis zwischen der *Wikipedia* und *Wikidata* mag an dieser Stelle zur Verdeutlichung hilfreich sein: ...
+[^37]: [@noauthor_why_nodate]
+[^38]: Concepts? S. Hyvonen irgendwo recht am Anfang
