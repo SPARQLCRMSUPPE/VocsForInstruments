@@ -5,5 +5,5 @@
 In diesem Ordner:
 
 * Aktuelle Fassung des Kapitels (Kap3.md)
-* Medien des Kapitels
+* Ordner mit kapitelspezifischen Medien
 * Notizen

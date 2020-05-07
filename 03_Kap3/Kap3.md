@@ -6,7 +6,7 @@ Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel #Desiderat an
 Dieses Vorgehen gewährleistet außerdem, dass sich das Anwendungsprofil an den tatsächlichen in der Praxis vorgefundenen Erfordernissen ausrichtet und sich nicht etwa "in vorauseilendem Gehorsam" anhand der bereits etablierten Darstellungsmöglichkeiten selbst zensiert und beschneidet. (In Vorgriff auf die terminologische Ausarbeitung heißt dies etwa: domänenspezifische Vokabulare dahingehend zu untersuchen, ob sie in der Lage sind, das Geforderte abzubilden und andernfalls nach Möglichkeiten zu suchen, diese Darstellungsmöglichkeiten selbst zu schaffen.)
 Jedoch darf diese scheinbare Übersimplifizierung, die zunächst also jederlei Eindeutigkeit – etwa in Form von Normdaten – vermeidet, keineswegs als solche missverstanden werden. Vielmehr bildet sie die eigentliche Prämisse für spätere grundsätzliche terminologische Anschlussfähigkeit und Interoperabilität, indem sie sich nicht auf bestimmte gebräuchliche Datenstrukturen oder eine bestimmte Domäne fixiert. 
 
-![Datenmodell – Beziehungen ausgedrückt als Verbindungslinien zwischen den umkreisten Entitäten](20200320_Datenmodell_Skizze2.png)
+![Datenmodell – Beziehungen ausgedrückt als Verbindungslinien zwischen den umkreisten Entitäten](medien_Kap3/20200320_Datenmodell_Skizze2.png)
 
 
 
@@ -68,7 +68,7 @@ sowie
 
 gebündelt werden.
 
-![Funktionsbereiche](20200321_datenmodell_skizze.png)
+![Funktionsbereiche](medien_Kap3/20200321_datenmodell_skizze.png)
 
 
 ### Entity Relationship Model
@@ -76,7 +76,7 @@ gebündelt werden.
 
 Ein weiterer Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein *Entity Relationship Model* (ERM). Hiebei sollen die obigen anwendungsspezifischen Aussagen auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander gesetzt werden.[^8661] Dabei fungieren besondere Schlüsseleigenschaften ("Primärschlüssel") als eindeutige Identifier einer Entität.[^8662] Mengenverhältnisse zwischen Entitäten werden im ERM zudem durch "Kardinalitäten" miteinbezogen und dadurch fixierbar.[^8663]
 
-![Entity Relationship Modell: farbige Markierung der externen Vokabulare. Schlüsseleigenschaften durch Unterstreichung gekennzeichnet.](20200507_ERM2.png)
+![Entity Relationship Modell: farbige Markierung der externen Vokabulare. Schlüsseleigenschaften durch Unterstreichung gekennzeichnet.](medien_Kap3/20200507_ERM2.png)
 
 Einige wesentliche Entwicklungen gegenüber dem Anwendungsmodell sowie weitere Überlegungen sind es wert, nochmals kurz erläutert und erörtert zu werden.
 
