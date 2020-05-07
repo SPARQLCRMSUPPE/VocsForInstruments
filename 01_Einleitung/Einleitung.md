@@ -58,13 +58,23 @@ Eine zentrale Erkenntnis aus dem Kontext der bereits mehrfach erwähnten Bemühu
 Und doch erfreut sich das Mapping von Kulturdaten in der Praxis – immerhin zwölf Jahre nach der eben zitierten Bankrott-Erklärung – unverminderter Beliebtheit, und es bildet sogar die eigentliche strukturelle Grundlage für Projekte wie das bereits erwähnte GND4C.
 Doch was hat sich mittlerweile gegenüber den technischen Möglichkeiten von 2008 verändert, dass als dermaßen aussichtsreich erscheint, Daten miteinander in Beziehung zu setzen, sodass zukunftsweisende Projekte und Initiativen wie die NFDI oder GND4C zu einem sehr erheblichen Teil auf dieses Konzept bauen?
 
-Ein sehr wirkmächtiges Werkzeug bilden sog. *Semantic Web-Technologien*.[^26] Diese fußen, wie der Name schon nahelegt, auf der Idee des *Semantic Web*[^24] – auch etwa mit der Bezeichnung *Web 3.0*[^25] geadelt. Dieses bildet ein Netz aus Verlinkungen zwischen im Internet gelagerte Daten, eben dem *Linked (Open) Data*. 
-Eine erschöpfende Einführung in die teils nachgerade banalen wie zugleich hermetisch komplexen Konzepte und Technologien des *Semantic Web* kann an dieser Stelle nicht erfolgen, sondern sie darf sich – bis auf einige für das Verständnis der folgenden Arbeit wesentliche Punkte – auf die Chancen des *Semantic Web* im Kontext des Untersuchungsgegenstandes, dem Kulturerbebereich, beschränken. [Literatur findet sich ansonsten bei...]
+Ein sehr wirkmächtiges Werkzeug bilden sog. *Semantic Web-Technologien*.[^26] Diese fußen, wie der Name schon nahelegt, auf der Idee des *Semantic Web*[^24] – auch etwa mit der Bezeichnung *Web 3.0*[^25] geadelt. Dieses Netz setzt sich aus Verlinkungen zwischen im Internet gelagerten Daten, eben dem *Linked (Open) Data* zusammen. 
 
-Doch was macht dieses Werkzeug so wirkmächtig? Das *W3C* erklärt die Grundidee des *Semantic Webs* folgendermaßen: "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."[^28] Dabei wird das Grundprinzip des Internet – verschiedene mittels *HTML*-Links miteinander *vernetzter* Seiten –, dem *Web of Documents*[^29], auf den Inhalt dieser Seiten erweitert. Dabei ist des *Web of Documents* lediglich ein "[...] set of interlinked documents with heterogeneous syntax and semantics and uncontrolled content[...]":[^31] Dieser Inhalt ist jedoch leider nicht einheitlich und daher nicht interoperabel.[^30] Im *Web of Data*[^35] können jedoch auch der Inhalte einer Seite (also "Data" innerhalb eines "Documents") dank einer standardiserten Syntax, dem sog. *Ressource Description Framework* (RDF),[^32] in vielfältige Beziehung zum Inhalt anderer Seiten gesetzt und mit passenden Informationen innerhalb dieser verlinkt werden. Durch die Definition der Beziehungen dieser Daten zueinander ergeben sich so mithilfe von RDF Aussagen mit semantischem Gehalt in der Form *Subjekt* - *Prädikat* - *Objekt*.[^36] 
-Die vormals auf die banale Beziehung *Seite A* - *verlinkt auf* - *Seite B* semantische Aussagekraft von HTML wird um komplexe Aussagemöglichkeiten erweitert, die kreuz und quer durch das Netz Aussagen jeder Art über "Dinge"[^38] gleich welcher Art zu treffen imstande sind. Diese sind zudem dank der Verwendung von RDF und der bestehenden Webinfrastruktur maschinenlesbar und interoperabel.
+Eine erschöpfende Einführung in die paradoxerweise teils nachgerade banalen wie zugleich hermetisch komplexen Konzepte und Technologien des *Semantic Web* kann an dieser Stelle nicht erfolgen, sondern sie darf sich – bis auf einige für das Verständnis der folgenden Arbeit wesentliche Punkte – auf die Chancen des *Semantic Web* im Kontext des Untersuchungsgegenstandes, dem Kulturerbebereich, beschränken. [Literatur findet sich ansonsten bei...]
 
-Zwar gilt der Traum des *Semantic Web* in seiner Manifestation als vollumfänglich von Mensch und Maschine durchsuch- und "verstehbares", kleinstgranular verlinkten Netz (zumindest vorerst) als gescheitert,[^37] 
+Doch was macht dieses Werkzeug so wirkmächtig? Das *W3C* erklärt die Grundidee des *Semantic Webs* folgendermaßen: "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."[^28] Dabei wird das Grundprinzip des Internet – verschiedene mittels *HTML*-Links miteinander *vernetzter* Seiten –, dem *Web of Documents*[^29], auf den Inhalt dieser Seiten übertragen und erweitert. Dabei ist das *Web of Documents* lediglich ein "[...] set of interlinked documents with heterogeneous syntax and semantics and uncontrolled content[...]":[^31] Dieser Inhalt ist also leider nicht einheitlich und daher nicht interoperabel.[^30] Im *Web of Data*[^35] können jedoch auch der Inhalte einer Seite (also "Data" innerhalb eines "Documents") dank einer standardiserten Syntax, dem sog. *Ressource Description Framework* (RDF),[^32] in vielfältige Beziehung zum Inhalt anderer Seiten gesetzt und mit passenden Informationen wiederum innerhalb dieser verlinkt werden. Durch die Charakterisierung der Beziehungen dieser Daten zueinander ergeben sich so mithilfe von RDF Aussagen mit semantischem Gehalt in der Form 
+
+*Subjekt* - *Prädikat* - *Objekt*.[^36] 
+
+Die vormals auf die recht banale Beziehung 
+
+*Seite A* - *verlinkt auf* - *Seite B* 
+
+beschränkte  Aussagekraft von HTML wird um komplexe Aussagemöglichkeiten erweitert, die kreuz und quer durch das Netz Aussagen jeder Art über "Dinge"[^38] jeder Art zu treffen imstande sind. Diese sind zudem dank der Verwendung von RDF und der bestehenden Webinfrastruktur maschinenlesbar und interoperabel. 
+
+
+
+Zwar gilt der Traum des *Semantic Web* in seiner Konzeption als vollumfänglich von Mensch wie Maschine gleichermaßen durchsuch- und "verstehbares", kleinstgranular verlinktes Netz (zumindest vorerst) als ausgeträumt.[^37] Doch ändert dieses "Scheitern" paradoxerweise kaum etwas an den unheimlich wirkmächtigen Prinzipien von RDF und *Linked Open Data*. Denn durch das Zunutzemachen von bereits etablierten Webtechnologien und Standards wie HTTP und der eindeutigen Indexierung von "Dingen" mit URIs sind die technischen  "Neben der Klärung der Konzepte für den menschlichen Nutzer macht eine solche Referenzierung auch für automatische Systeme (sogenannte Agenten) „Sinn“. Sie verstehen zwar nicht die Definition oder Erläuterung, die dort gegeben wird, wohl aber, dass alles, was auf dieses Konzept referenziert, „das Selbe“ sein muss." S. 72
 
 
 
@@ -332,47 +342,77 @@ beides exemplarisch angerissen
 * implizite Fragestellung:	 (wie) kann auch ein einfacher Geisteswissenschaftler LOD machen?
 
 [^1]: [@zorich_beyond_2008]
+
 [^2]: [@zorich_beyond_2008, S. 13]
+
 [^3]: [@zorich_beyond_2008, S. 15]
+
 [^4]: 
 
 [^5]: 
 
 [^6]: [@gobel_gnd_2017, S. 1]
+
 [^7]: 
 
 [^8]: So sei eine der sechs Erfolgsprämissen zur Aufbau einer NFDI Interdisziplinarität und Vernetzung: "Die notwendige Abbildung der bestehenden fachlichen Organisiertheit der Wissenschaften auf die neu zu schaffenden (nationalen) Strukturen des Forschungsdatenmanagements ist wesentlich und erfordert fachübergreifende Verständigung." [@deutsche_forschungsgesellschaft_guidance_2019, S. 2]"
+
 [^9]: [@noauthor_nfdi4culture_nodate]
+
 [^10]: [@deutsche_forschungsgesellschaft_guidance_2019, S2]
+
 [^11]: 
 
 [^12]: 
 
 [^13]: [@zorich_beyond_2008, S. 13]
+
 [^14]: [@ziku_digital_2020, S. 12]
+
 [^15]: [@erway_quest_2008]
+
 [^16]: [@cs79, S. 19-23]
+
 [^17]: [@hyvonen_publishing_2012, vi]
+
 [^18]: [@noauthor_library_2019]
+
 [^19]: S. hierzu sowie zur Begriffsklärung insb.  [@cs79, S. 19-23]
+
 [^20]: [@hyvonen_publishing_2012, S. 5] Dabei ist die mitunter generellen Skepsis gegenüber Digitalisierung und Datenveröffentlichung bzw. der mitunter nicht vorhandene/nicht mögliche politische Druck, die sich selbstverständlich gleichermaßen hinderlich auswirken. Diese zu überkommen bzw. für den Sinn offener Kulturdaten zu sensibilisieren, leisten Projekte, wie *Coding da Vinci* ganz Erstaunliches.
+
 [^21]: Es bleibt zu hoffen, dass dies im Wissenschaftsbereich dank der *NFDI* auch zunehmend der Fall sein wird.
+
 [^22]: Für eine umfassende Übersicht der Möglichkeiten sowie eine Bewertung dieser s. [@cs79]
+
 [^23]: Definition – warum nicht Konzeptmodelle oder irgendwie sowas?
+
 [^24]: Nachweis Begriff
+
 [^25]: Nachweis Begriff
+
 [^26]: Überblick bei W3C?
+
 [^27]: [@noauthor_library_2019]
+
 [^28]: [@noauthor_w3c_nodate]
+
 [^29]: 
 
 [^30]: PDF, HTML, Video
+
 [^31]: [@szeredi_lukácsy_benkő_nagy_2014, S. 21]
+
 [^32]: 
 
 [^34]: [@madoc34762, S. 2]
+
 [^35]: 
 
-[^36]: Das Verhältnis zwischen der *Wikipedia* und *Wikidata* mag an dieser Stelle zur Verdeutlichung hilfreich sein: ...
+[^36]: Das Verhältnis zwischen der *Wikipedia* und *Wikidata* mag an dieser Stelle zur Verdeutlichung hilfreich sein: …
+
 [^37]: [@noauthor_why_nodate]
+
 [^38]: Concepts? S. Hyvonen irgendwo recht am Anfang
+
+[^39]: 
