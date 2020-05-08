@@ -1,81 +1,246 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ma: <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix lcgft: <http://id.loc.gov/authorities/genreForms/> .
-@prefix ma: <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29> .
+
+<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  ma#Entsprechungsgrad
+<ma#Entsprechungsgrad> rdf:type owl:ObjectProperty .
 
 
-<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/ma#> a lcgft:gf2014026070 ;
-	owl:versionInfo "draft" ;
-	dc:title "MA-Vokabular Alan Riedel" ;
-	dc:date "2020-03-31" ;
-	dc:description "Hier finden sich die relevanten Terme für meine MA in Bibl.- u- Inf'wiss. Sie sollten prinzipiell ausschließlich für dieses Projekt verwendet werden" .
+###  ma#Interpret
+<ma#Interpret> rdf:type owl:ObjectProperty .
 
 
-	ma:entsprichtGenau rdf:type owl:ObjectProperty .
+###  ma#Typ
+<ma#Typ> rdf:type owl:ObjectProperty .
 
 
-	ma:entsprichtUngefähr rdf:type owl:ObjectProperty .
+###  ma#entspricht
+<ma#entspricht> rdf:type owl:ObjectProperty .
 
 
-	ma:grundstimmung rdf:type owl:ObjectProperty .
+###  ma#genaue_Entsprechung
+<ma#genaue_Entsprechung> rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <ma#Entsprechungsgrad> .
 
 
-	ma:hoechsterTon rdf:type owl:ObjectProperty .
+###  ma#hat_Ambitus
+<ma#hat_Ambitus> rdf:type owl:ObjectProperty .
 
 
-	ma:interpret rdf:type owl:ObjectProperty .
+###  ma#hat_Klangbeispiel
+<ma#hat_Klangbeispiel> rdf:type owl:ObjectProperty .
 
 
-	ma:klangbeispiel rdf:type owl:ObjectProperty .
+###  ma#hat_Stimmungssystem
+<ma#hat_Stimmungssystem> rdf:type owl:ObjectProperty .
 
 
-	ma:klingt rdf:type owl:ObjectProperty .
+###  ma#ungefähre_Entsprechung
+<ma#ungefähre_Entsprechung> rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <ma#Entsprechungsgrad> .
 
 
-	ma:stimmungssystem rdf:type owl:ObjectProperty .
+###  ma#Ereignis_(Domäne)
+<ma#Ereignis_(Domäne)> rdf:type owl:ObjectProperty .
 
 
-	ma:tiefsterTon rdf:type owl:ObjectProperty .
+###  ma#hat_Besetzung_(Domäne)
+<ma#hat_Besetzung_(Domäne)> rdf:type owl:ObjectProperty .
 
 
-	ma:tonvorrat rdf:type owl:ObjectProperty .
+###  ma#hat_Stimmung_(absolut)
+<ma#hat_Stimmung_(absolut)> rdf:type owl:ObjectProperty .
 
 
-	ma:typ rdf:type owl:ObjectProperty .
+###  ma#hat_Stimmung_(notierte)
+<ma#hat_Stimmung_(notierte)> rdf:type owl:ObjectProperty .
 
 
-	ma:vermutlAbsoluteStimmung rdf:type owl:ObjectProperty .
+###  ma#hat_Stimmung_(relativ)
+<ma#hat_Stimmung_(relativ)> rdf:type owl:ObjectProperty .
 
 
-	ma:vermutlAbsoluteStimmung rdf:type owl:ObjectProperty .
+#################################################################
+#    Classes
+#################################################################
+
+###  ma#Ambitus
+<ma#Ambitus> rdf:type owl:Class .
 
 
-	ma:inF rdf:type owl:Class .
+###  ma#Bezeichnung
+<ma#Bezeichnung> rdf:type owl:Class .
 
 
-	ma:ambitus rdf:type owl:NamedIndividual .
+###  ma#Dauer
+<ma#Dauer> rdf:type owl:Class .
 
 
-	ma:f rdf:type owl:NamedIndividual .
+###  ma#Format
+<ma#Format> rdf:type owl:Class .
 
 
-	ma:klangbeispiel rdf:type owl:NamedIndividual .
+###  ma#Frequenz
+<ma#Frequenz> rdf:type owl:Class .
 
 
-	ma:natuerlichesStimmungssystem rdf:type owl:NamedIndividual .
+###  ma#Identifikator
+<ma#Identifikator> rdf:type owl:Class .
 
 
-	ma:person rdf:type owl:NamedIndividual .
+###  ma#Kammerton
+<ma#Kammerton> rdf:type owl:Class .
 
 
-	ma:a\'\' rdf:type owl:NamedIndividual .
+###  ma#Klangbeispiel
+<ma#Klangbeispiel> rdf:type owl:Class .
 
 
-	ma:a\'\=115Hz rdf:type owl:NamedIndividual .
+###  ma#Lebensdaten
+<ma#Lebensdaten> rdf:type owl:Class .
 
 
-	ma:c\' rdf:type owl:NamedIndividual .
+###  ma#Lizenz
+<ma#Lizenz> rdf:type owl:Class .
 
 
-	ma:d\'\' rdf:type owl:NamedIndividual .
+###  ma#Name
+<ma#Name> rdf:type owl:Class .
+
+
+###  ma#Ort
+<ma#Ort> rdf:type owl:Class .
+
+
+###  ma#Person
+<ma#Person> rdf:type owl:Class .
+
+
+###  ma#Sammlung
+<ma#Sammlung> rdf:type owl:Class .
+
+
+###  ma#Signatur
+<ma#Signatur> rdf:type owl:Class .
+
+
+###  ma#Stimmung
+<ma#Stimmung> rdf:type owl:Class .
+
+
+###  ma#Stimmungssystem
+<ma#Stimmungssystem> rdf:type owl:Class .
+
+
+###  ma#Zeitpunk
+<ma#Zeitpunk> rdf:type owl:Class .
+
+
+###  ma#cor_da_caccia
+<ma#cor_da_caccia> rdf:type owl:Class ;
+                   rdfs:subClassOf <ma#Instrument_nach_Vokabular_(Domäne)> .
+
+
+###  ma#höchster_Ton
+<ma#höchster_Ton> rdf:type owl:Class .
+
+
+###  ma#tiefster_Ton
+<ma#tiefster_Ton> rdf:type owl:Class .
+
+
+###  ma#Aufführung_(Domäne)
+<ma#Aufführung_(Domäne)> rdf:type owl:Class .
+
+
+###  ma#Barockhorn_(Mitteldeutschland)
+<ma#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class ;
+                                    rdfs:subClassOf <ma#Instrument_(Klassifikation)> .
+
+
+###  ma#ID_(WerkVZ)
+<ma#ID_(WerkVZ)> rdf:type owl:Class .
+
+
+###  ma#ID_(intern)
+<ma#ID_(intern)> rdf:type owl:Class .
+
+
+###  ma#Instrument_(Klassifikation)
+<ma#Instrument_(Klassifikation)> rdf:type owl:Class .
+
+
+###  ma#Instrument_nach_Vokabular_(Domäne)
+<ma#Instrument_nach_Vokabular_(Domäne)> rdf:type owl:Class .
+
+
+###  ma#Objekt_(Domäne)
+<ma#Objekt_(Domäne)> rdf:type owl:Class .
+
+
+###  ma#Werk_(Domäne)
+<ma#Werk_(Domäne)> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  ma#BWV_208
+<ma#BWV_208> rdf:type owl:NamedIndividual ,
+                      <ma#Werk_(Domäne)> .
+
+
+###  ma#MIMUL_1663
+<ma#MIMUL_1663> rdf:type owl:NamedIndividual ,
+                         <ma#Signatur> .
+
+
+###  ma#MIMUL_Inv.-Nr._1663
+<ma#MIMUL_Inv.-Nr._1663> rdf:type owl:NamedIndividual ,
+                                  <ma#Objekt_(Domäne)> .
+
+
+###  ma#Person_a
+<ma#Person_a> rdf:type owl:NamedIndividual ,
+                       <ma#Person> .
+
+
+###  ma#Track_No_2
+<ma#Track_No_2> rdf:type owl:NamedIndividual ,
+                         <ma#Klangbeispiel> .
+
+
+###  ma#in_F
+<ma#in_F> rdf:type owl:NamedIndividual ,
+                   <ma#Stimmung> .
+
+
+###  ma#natürliches_Stimmungssystem
+<ma#natürliches_Stimmungssystem> rdf:type owl:NamedIndividual ,
+                                          <ma#Stimmungssystem> .
+
+
+###  ma#a''
+<ma#a''> rdf:type owl:NamedIndividual ,
+                  <ma#höchster_Ton> .
+
+
+###  ma#a'_=_415_Hz
+<ma#a'_=_415_Hz> rdf:type owl:NamedIndividual ,
+                          <ma#Kammerton> .
+
+
+###  ma#c'
+<ma#c'> rdf:type owl:NamedIndividual ,
+                 <ma#tiefster_Ton> .
