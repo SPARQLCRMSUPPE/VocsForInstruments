@@ -71,14 +71,32 @@ gebündelt werden.
 ![Funktionsbereiche](medien_Kap3/20200321_datenmodell_skizze.png)
 
 
+# Klassifikatorische Erschließung [umbenennen?]
+
+
+Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem Anwendungsszenario zu einem Semantic Web-kompatiblen Metadatenprofil zu beschreiten. [vielleicht noch etwas darüber, dass es keine wirkliche Lit. gibt, die einen Leitfaden von Anfang bis Ende bildet] Gemäß Noy und McGuinness[^8] steht dabei ganz zu Beginn des Prozesses hin zur Ontologie zunächst eine Klassierung[^9] der benötigten Typen nach folgendem Schema:
+
+> "Define the classes and the class hierarchy"
+
+> "Define the properties of classes [...]"
+
+> "Create instances"
+
+Das Produkt dieser Vorgehensweise bildet, wie oben angedeutet, eine zunächst auf den Anwendungsbereich beschränkte "Ontologie", die nicht mit den Sprachen des Semantic Web ausgezeichnet ist.
+Tatsächlich hat sich im Verlauf dieser Arbeit ganz organisch eine andere Reihenfolge ergeben: Nach dem exemplarischen Auffinden eines Defizits wurde ein spezifisches Szenario entworfen, um dieses zu beheben: Einige wichtige Instanzen[^11] wurden bereits im vorhergehenden Kapitel identifiziert und aufgeführt.
+
 ### Entity Relationship Model
 
+Ein erster sinnvoller Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein *Entity Relationship Model* (ERM). Hierbei sollen die anwendungsspezifischen Szenarien strukturiert und auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander stehen.[^8661] So werden Klassen definiert und erste einfache hierarchische Relationen zwischen Klassen und untergeordneten, "beschreibenden" Klassen (Eigenschaften) hergestellt.
 
-Ein weiterer Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein *Entity Relationship Model* (ERM). Hiebei sollen die obigen anwendungsspezifischen Aussagen auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander gesetzt werden.[^8661] Dabei fungieren besondere Schlüsseleigenschaften ("Primärschlüssel") als eindeutige Identifier einer Entität.[^8662] Mengenverhältnisse zwischen Entitäten werden im ERM zudem durch "Kardinalitäten" miteinbezogen und dadurch fixierbar.[^8663]
+Beziehungen ("properties" s.o.) wiederum können in diesem ERM ebenfalls zunächst als potentielle zukünftige "Eigenschaftsklassen" verstanden werden, die zukünftig Container für weitere "Untereigenschaften" darstellen können.[^8668]
+Im ERM fungieren besondere Schlüsseleigenschaften ("Primärschlüssel") als eindeutige Identifier einer Entität. Es ist zu erwarten, dass diese in einer RDF-Modellierung keine Rolle spielen werden, da dort eindeutige Referenzierbarkeit bereits dank URIs gegeben ist. [^8662] Mengenverhältnisse zwischen Entitäten werden im ERM zudem durch "Kardinalitäten" miteinbezogen und dadurch fixierbar.[^8663] 
 
-![Entity Relationship Modell: farbige Markierung der externen Vokabulare. Schlüsseleigenschaften durch Unterstreichung gekennzeichnet.](medien_Kap3/20200507_ERM2.png)
+![Entity Relationship Modell: farbige Markierung der externen Vokabulare. Entitäten stehen in Rechtecken, Eigenschaften in Ovalen, Beziehungen in Rauten. Schlüsseleigenschaften sind durch Unterstreichung gekennzeichnet.](medien_Kap3/20200507_ERM2.png)
 
 Einige wesentliche Entwicklungen gegenüber dem Anwendungsmodell sowie weitere Überlegungen sind es wert, nochmals kurz erläutert und erörtert zu werden.
+
+* Wie bereits erwähnt sind den Entitäten des ERM gegenüber denen der Anwendungsmodellierung weitere sie beschreibende Eigenschaften hinzugefügt worden (etwa *Name* zu *Person*)
 
 * Neben dem verwendeten Instrument *Instrument nach Vokabular (Domäne)* muss die Entität *Interpret* auch immer an ein Ereignis, in der Regel eine *Aufführung* geknüpft sein (diesem Umstand wurde durch die Zusätze im linken Domänenbereich Rechnung getragen). Dabei sind folgende Szenarien berücksichtigt: ein *Instrument* kann sowohl mehrfach ("n Mal") mit beliebig vielen *Interpreten* besetzt sein (entspricht beispielsweise der Bezeichnung "2 Oboen" oder "Celli" in einer Partitur) als auch gesondert aufgeführt werden (entspricht etwa dem Sachverhalt "Musiker a und Musiker b spielen vierhändig Klavier").
 
@@ -90,17 +108,19 @@ Einige wesentliche Entwicklungen gegenüber dem Anwendungsmodell sowie weitere �
 
 * Grundsätzlich ist wünschenswert – wie im Fall des *Interpreten* oder dem Umstimmen von Instrumenten – bestimmte Entitäten mit Ereignissen verknüpfen zu können. Dies gilt insbesondere für die Entitäten *Stimmungssystem* (wird mit historisch akkurater gespielt, oder wohltemperierter Stimmung gespielt?) , *Kammerton* (wird mit den heute üblichen 440 Hz musiziert, oder mit einer historischen Stimmung, z.B. gemäß dem sog. *Cornettton*[^8667]?), *Klangbeispiel* (Das Klangbeispiel stammt aus der und der Aufnahme) und *Instrument (Klassifikation)* (bei der Uraufführung fand Instrument a Verwendung, in der Aufnahme x ein typverschiedenes). 
 
-Für die Zwecke dieser Arbeit reicht es, die zuletzt genannten Anwendungsszenarien im ERM lediglich einmal exemplarisch im Kontext des *Interpreten* anzudeuten. 
+Für die Zwecke dieser Arbeit ist es ausreichend, die zuletzt genannten Anwendungsszenarien im ERM lediglich einmal exemplarisch im Kontext des *Interpreten* anzudeuten.
+
+
+2 große Sachen folgen: die Klassifikation mit RDF
+die Umwandlung der unspezifischen Beziehungen zu semantisch festgelegten mit OWL
 
 
 
 
 
 
-
-
-
-
+**Konzept als Oberbegriff zu  Property, class usw. verwendet – gut?**
+**Entität als Oberbegriff zu class, instance?**
 
 ---
 
@@ -121,24 +141,18 @@ Für die Zwecke dieser Arbeit reicht es, die zuletzt genannten Anwendungsszenari
  darunter: Noy, Allemang, Schneckengruber
 
 
-# Klassifikatorische Erschließung
+# Klassifikation mit RDF, RDFS und OWL
 
+Die zuletzt ausgearbeitete "Ontologie" befindet sich gewissermaßen noch außerhalb des Erkenntnishorizonts des Semantic Web. Zwar ist ihre Tripelstruktur bereits RDF-konform, doch verschließen sie sich einer Deutung im Semantic Web-Kontext. Diesen Erkenntnishorizont zu überwinden und eine minimale semantische – wenn auch zunächst keine technische – Anschlussfähigkeit zu erreichen, ist Thema dieses Kapitels.
 
-Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem eigenen Datenmodell zu einem Semantic Web-kompatiblen Metadatenprofil zu beschreiten. [vielleicht noch etwas darüber, dass es keine wirkliche Lit. gibt, die einen Leitfaden von Anfang bis Ende bildet] Gemäß Noy und McGuinness[^8] steht dabei ganz zu Beginn dieses Prozesses zunächst eine Klassierung[^9] der benötigten Typen nach folgendem Schema:
-
-> "Define the classes and the class hierarchy"
-
-> "Define the properties of classes [...]"
-
-> "Create instances"[^22]
-
-Dieser Vorgehensweise liegt zugrunde, dass bereits in RDF bestimmte Klassen angelegt sind – in Folgevokabularen[^10] um weitere ergänzt –, die bestimmte Klassen vorgegeben.[^13] Dabei erscheinen angesichts des zuvor ausgearbeiteten Datenmodells die allgemein gebräuchlichsten drei Klassen[^12] für die Zwecke dieser Arbeit ausreichend. Diese sind:
+Der Vorgehensweise im weiteren Verlauf liegt zugrunde, dass in RDF bereits bestimmte Klassen angelegt sind – in Folgevokabularen[^10] um weitere ergänzt –, die verwendet werden können, um Konzepte zu klassifizieren.[^13] Dabei erscheinen angesichts der zuvor ausgearbeiteten Anwendungsmodellierung die allgemein gebräuchlichsten drei Klassen[^12] für die Zwecke dieser Arbeit ausreichend. Diese sind:
 
 1. Klassen
-2. Instanzen[^11]
-3. Eigenschaften [Relationen? vg. Stuckschmidt]
+2. Instanzen
+3. Relationen [Relationen? vg. Stuckschmidt]
 
-Durch die Aufteilung in Entitäten und Beziehungen lassen sich so also bereits RDF-Tripel bilden – zusätzlich gelingt es, dank der qualitativen Unterscheidung in Instanz und Klasse, einfache hierarchische Sachverhalte nachzubilden. In den folgenden Unterkapiteln wird es entsprechend darum gehen, eine entsprechende Klassierung vorzunehmen.
+Es mag an dieser Stelle auffallen, dass das Konzept von Attributen gegenüber dem ERM keine ausgezeichnete Klasse mehr bildet. Das Konzept Attribut ist in RDF nicht mehr vorgesehen. Dies ist unmittelbar einleuchtend, kann doch jede RDF-Entität auch als Subjekt eines Tripels agieren (somit ist das von seiner Bezugsentität abhängige Attribut mit RDF inkompatibel).[^8670]
+Durch die Aufteilung in Entitäten und Beziehungen lassen sich bereits RDF-Tripel bilden – zusätzlich gelingt es, dank der qualitativen Unterscheidung in Instanz und Klasse, einfache hierarchische Sachverhalte nachzubilden. In den folgenden Unterkapiteln wird es entsprechend darum gehen, eine entsprechende Klassierung vorzunehmen.
 
 Doch worin besteht an dieser Stelle der tiefere Sinn einer Klassifikation? Direkt assoziativ ist die Funktion des Klassierens – sofern man sie nicht als reinen Selbstzweck betreibt – insbesondere zur Ordnung von Ressourcen und deren Retrieval. Doch neben dieser "pragmatischen Aufgabe"[^23] führt Bertram auch die "erkenntnisvermittelnde Aufgabe" von Klassifikationen ins Feld, die in der "Aufhellung von Zusammenhängen anhand geordneten Wissens" besteht.[^14] Diese hermeneutische Dimension erscheint auch hier ganz zentral: Das Modell, das in seiner gegenwärtigen Form auf einem subjektiv geprägtem Verständnis, Wertesystem und persönlichen Denkstrukturen des Autors beruht, wird in ein objektives, standardisiertes Modell überführt. Gewissermaßen findet so eine Übersetzung statt, die den Erkenntnishorizont zwischen Mensch und Maschine überwindet. Das eigene Denkmodell wird dabei mithilfe der sprachlichen Ausdruckmittel des Semantic Web erfasst und ausgezeichnet, und so in das von RDF-vorgegebene Erkenntnisschema eingepflegt. Die dem Modell inhärente Semantik wird – wie zu sehen sein wird, freilich zunächst auf einer sehr oberflächlichen Ebene – dadurch objektiviert und gemeinhin auslegbar.
 
@@ -148,12 +162,30 @@ Diese Übersetzung geht mithilfe entsprechend standardiserter, sich ergänzender
 
 Die formale Interpretierbarkeit der durch die Sprache ausgedrückten semantischen Komponente wird durch eine Syntax, also einer  "Menge von Regeln, um Programme oder Dokumente mit bestimmten Eigenschaften [...] zu erzeugen", ermöglicht. Die Entscheidung für eine bestimmte Syntax ist dabei im Falle nach RDF strukturierter Daten zwar letztlich arbiträr, bilden sie doch im übertragenen Sinne gewissermaßen lediglich "Verpackung und Beipackzettel" für den eigentlichen semantischen Inhalt. Doch fällt aufgrund seiner Einfachheit und Übersichtlichkeit in dieser Arbeit die Wahl auf das sogenannte *Turtle*-Format ("Terse RDF Triple Language")[^20].
 
-So entsteht in Folge dieser Klassifizierung zunächst ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um ein "[...] list of terms that have been enumerated explicitly. [...] All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21]
+So entsteht in Folge dieser Klassifizierung zunächst 
 Dabei erfolgt die Disambiguierung der Lemmata analog zur Klassifizierung in folgender Form (s. auch Kapitel #klassenundinstanzen):
 
 Typ ist eine Klasse
 Typ ist eine Instanz
 Typ ist eine Eigenschaft
+
+Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um ein "[...] list of terms that have been enumerated explicitly. [...] All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert:
+
+[hier mit Protegé Vokabular erstellen]
+
+Dabei sind die folgenden Besonderheiten zu bedenken:
+
+* Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese Koppelung von Termen mit ihrer semantischen Reichweite durch das Schaffen sogenannter *Namensräume* – referenzierbare kontrollierte Vokabulare – festzulegen. Der Namensraum der Terme dieser Arbeit lautet zunächst: *ma:*.[^8669]
+* URIs nicht mitgenommen
+* Dasselbe mit *Label*
+* "cor da caccia" ist nicht Instanz, sonder Subclass
+* Frequenz unsinnig auszulagern → Stimmton mit Hz
+* Subproperty 
+* fehlen noch Properties für Attribute
+
+[Klangbeispiel anpassen in Anwendungsmodell
+ebenso Person a
+höchster /tiefster Ton falsch]
 
 ## OWL
 
@@ -406,7 +438,7 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^21]: [@national_information_standards_organization_u.s._guidelines_2005, S. 3]
 
-[^22]: Die relative Einfachheit des Datenmodells gestattet es hier, Schritte 1 und 3 zusammenzufassen und gleich zu Beginn vorzunehmen.
+
 
 [^23]: [@TN_libero_mab213864266, S. 151]
 
@@ -468,3 +500,9 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 [^8666]: Tatsächlich kann diese Entität in Zusammenhang mit Objekten lediglich in Verbindung mit Instrumenten Verwendung finden, die etwa aus baulichen, physikalischen Gründen eine solche "Grundstimmung" vorweisen.
 
 [^8667]: Vgl. [@haynes_stimmton_2016]
+
+[^8668]: So etwa im Falle der Eigenschaft *Entsprechungsgrad* angelegt: Es lassen sich unterschiedliche Grade vorstellen.
+
+[^8669]: Er ist unter der Adresse :https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma abgelegt und referenzierbar.
+
+[^8670]: Der Umstand, dass die Attribute als jetzige "gleichberechtigte" Klassen von "ihrer" ehemaligen Entität entkoppelt sind, wird es zu späterem Zeitpunkt notwendig machen, sie durch neue verbindende Properties abermals zu verknüpfen.
