@@ -85,7 +85,7 @@ Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem Anwendun
 Das Produkt dieser Vorgehensweise bildet, wie oben angedeutet, eine zunächst auf den Anwendungsbereich beschränkte "Ontologie", die nicht mit den Sprachen des Semantic Web ausgezeichnet ist.
 Tatsächlich hat sich im Verlauf dieser Arbeit ganz organisch eine andere Reihenfolge ergeben: Nach dem exemplarischen Auffinden eines Defizits wurde ein spezifisches Szenario entworfen, um dieses zu beheben: Einige wichtige Instanzen[^11] wurden bereits im vorhergehenden Kapitel identifiziert und aufgeführt.
 
-### Entity Relationship Model
+### Entity Relationship Model [es muss klar werden, dass das nur eine Hilfestellung ist – die aber nicht kompatibel mit RDF ist]
 
 Ein erster sinnvoller Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein *Entity Relationship Model* (ERM). Hierbei sollen die anwendungsspezifischen Szenarien strukturiert und auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander stehen.[^8661] So werden Klassen definiert und erste einfache hierarchische Relationen zwischen Klassen und untergeordneten, "beschreibenden" Klassen (Eigenschaften) hergestellt.
 
@@ -169,16 +169,210 @@ Typ ist eine Klasse
 Typ ist eine Instanz
 Typ ist eine Eigenschaft
 
-Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um ein "[...] list of terms that have been enumerated explicitly. [...] All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert:
+Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt. Diesemzufolge handelt es sich bei einem kontrollierten Vokabular um ein "[...] list of terms that have been enumerated explicitly. [...] All terms in a controlled vocabulary must have an unambiguous, non-redundant definition."[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert.
 
-[hier mit Protegé Vokabular erstellen]
+## Taxonomie [Visualisierung muss optimiert werden]
+
+```
+@prefix ma: <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29> .
+
+<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology .
+
+
+#    Object Properties
+
+###  ma#Entsprechungsgrad
+<ma#Entsprechungsgrad> rdf:type owl:ObjectProperty .
+
+###  ma#Interpret
+<ma#Interpret> rdf:type owl:ObjectProperty .
+
+###  ma#Typ
+<ma#Typ> rdf:type owl:ObjectProperty .
+
+###  ma#entspricht
+<ma#entspricht> rdf:type owl:ObjectProperty .
+
+###  ma#genaue_Entsprechung
+<ma#genaue_Entsprechung> rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <ma#Entsprechungsgrad> .
+                         
+###  ma#hat_Ambitus
+<ma#hat_Ambitus> rdf:type owl:ObjectProperty .
+
+###  ma#hat_Klangbeispiel
+<ma#hat_Klangbeispiel> rdf:type owl:ObjectProperty .
+
+###  ma#hat_Stimmungssystem
+<ma#hat_Stimmungssystem> rdf:type owl:ObjectProperty .
+
+###  ma#ungefähre_Entsprechung
+<ma#ungefähre_Entsprechung> rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <ma#Entsprechungsgrad> .
+
+###  ma#Ereignis_(Domäne)
+<ma#Ereignis_(Domäne)> rdf:type owl:ObjectProperty .
+
+###  ma#hat_Besetzung_(Domäne)
+<ma#hat_Besetzung_(Domäne)> rdf:type owl:ObjectProperty .
+
+###  ma#hat_Stimmung_(absolut)
+<ma#hat_Stimmung_(absolut)> rdf:type owl:ObjectProperty .
+
+###  ma#hat_Stimmung_(notierte)
+<ma#hat_Stimmung_(notierte)> rdf:type owl:ObjectProperty .
+
+###  ma#hat_Stimmung_(relativ)
+<ma#hat_Stimmung_(relativ)> rdf:type owl:ObjectProperty .
+
+
+# Classes
+
+###  ma#Ambitus
+<ma#Ambitus> rdf:type owl:Class .
+
+###  ma#Bezeichnung
+<ma#Bezeichnung> rdf:type owl:Class .
+
+###  ma#Dauer
+<ma#Dauer> rdf:type owl:Class .
+
+###  ma#Format
+<ma#Format> rdf:type owl:Class .
+
+###  ma#Frequenz
+<ma#Frequenz> rdf:type owl:Class .
+
+###  ma#Identifikator
+<ma#Identifikator> rdf:type owl:Class .
+
+###  ma#Kammerton
+<ma#Kammerton> rdf:type owl:Class .
+
+###  ma#Klangbeispiel
+<ma#Klangbeispiel> rdf:type owl:Class .
+
+###  ma#Lebensdaten
+<ma#Lebensdaten> rdf:type owl:Class .
+
+###  ma#Lizenz
+<ma#Lizenz> rdf:type owl:Class .
+
+###  ma#Name
+<ma#Name> rdf:type owl:Class .
+
+###  ma#Ort
+<ma#Ort> rdf:type owl:Class .
+
+###  ma#Person
+<ma#Person> rdf:type owl:Class .
+
+###  ma#Sammlung
+<ma#Sammlung> rdf:type owl:Class .
+
+###  ma#Signatur
+<ma#Signatur> rdf:type owl:Class .
+
+###  ma#Stimmung
+<ma#Stimmung> rdf:type owl:Class .
+
+###  ma#Stimmungssystem
+<ma#Stimmungssystem> rdf:type owl:Class .
+
+###  ma#Zeitpunk
+<ma#Zeitpunk> rdf:type owl:Class .
+
+###  ma#cor_da_caccia
+<ma#cor_da_caccia> rdf:type owl:Class ;
+                   rdfs:subClassOf <ma#Instrument_nach_Vokabular_(Domäne)> .
+
+###  ma#höchster_Ton
+<ma#höchster_Ton> rdf:type owl:Class .
+
+###  ma#tiefster_Ton
+<ma#tiefster_Ton> rdf:type owl:Class .
+
+###  ma#Aufführung_(Domäne)
+<ma#Aufführung_(Domäne)> rdf:type owl:Class .
+
+###  ma#Barockhorn_(Mitteldeutschland)
+<ma#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class ;
+                                    rdfs:subClassOf <ma#Instrument_(Klassifikation)> .
+
+###  ma#ID_(WerkVZ)
+<ma#ID_(WerkVZ)> rdf:type owl:Class .
+
+###  ma#ID_(intern)
+<ma#ID_(intern)> rdf:type owl:Class .
+
+###  ma#Instrument_(Klassifikation)
+<ma#Instrument_(Klassifikation)> rdf:type owl:Class .
+
+###  ma#Instrument_nach_Vokabular_(Domäne)
+<ma#Instrument_nach_Vokabular_(Domäne)> rdf:type owl:Class .
+
+###  ma#Objekt_(Domäne)
+<ma#Objekt_(Domäne)> rdf:type owl:Class .
+
+###  ma#Werk_(Domäne)
+<ma#Werk_(Domäne)> rdf:type owl:Class .
+
+
+#    Individuals
+
+###  ma#BWV_208
+<ma#BWV_208> rdf:type owl:NamedIndividual ,
+                      <ma#Werk_(Domäne)> .
+
+###  ma#MIMUL_1663
+<ma#MIMUL_1663> rdf:type owl:NamedIndividual ,
+                         <ma#Signatur> .
+
+###  ma#MIMUL_Inv.-Nr._1663
+<ma#MIMUL_Inv.-Nr._1663> rdf:type owl:NamedIndividual ,
+                                  <ma#Objekt_(Domäne)> .
+
+###  ma#Person_a
+<ma#Person_a> rdf:type owl:NamedIndividual ,
+                       <ma#Person> .
+
+###  ma#Track_No_2
+<ma#Track_No_2> rdf:type owl:NamedIndividual ,
+                         <ma#Klangbeispiel> .
+
+###  ma#in_F
+<ma#in_F> rdf:type owl:NamedIndividual ,
+                   <ma#Stimmung> .
+
+###  ma#natürliches_Stimmungssystem
+<ma#natürliches_Stimmungssystem> rdf:type owl:NamedIndividual ,
+                                          <ma#Stimmungssystem> .
+
+###  ma#a''
+<ma#a''> rdf:type owl:NamedIndividual ,
+                  <ma#höchster_Ton> .
+
+###  ma#a'_=_415_Hz
+<ma#a'_=_415_Hz> rdf:type owl:NamedIndividual ,
+                          <ma#Kammerton> .
+
+###  ma#c'
+<ma#c'> rdf:type owl:NamedIndividual ,
+                 <ma#tiefster_Ton> .               
+```
 
 Dabei sind die folgenden Besonderheiten zu bedenken:
 
 * Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese Koppelung von Termen mit ihrer semantischen Reichweite durch das Schaffen sogenannter *Namensräume* – referenzierbare kontrollierte Vokabulare – festzulegen. Der Namensraum der Terme dieser Arbeit lautet zunächst: *ma:*.[^8669]
 * URIs nicht mitgenommen
 * Dasselbe mit *Label*
-* "cor da caccia" ist nicht Instanz, sonder Subclass
+* "cor da caccia" ist nicht Instanz, sondern Subclass
 * Frequenz unsinnig auszulagern → Stimmton mit Hz
 * Subproperty 
 * fehlen noch Properties für Attribute
