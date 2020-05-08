@@ -369,13 +369,14 @@ Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus
 
 Dabei sind die folgenden Besonderheiten zu bedenken:
 
-* Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese Koppelung von Termen mit ihrer semantischen Reichweite durch das Schaffen sogenannter *Namensräume* – referenzierbare kontrollierte Vokabulare – festzulegen. Der Namensraum der Terme dieser Arbeit lautet zunächst: *ma:*.[^8669]
+* Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese Koppelung von Termen mit ihrer semantischen Reichweite durch das Schaffen sogenannter *Namensräume* – referenzierbare kontrollierte Vokabulare – in entsprechender Weise festzulegen. Die Namensraumzugehörigkeit der Terme dieser Arbeit wird im Folgenden zunächst durch das Präfix *ma:* gekennzeichnet.[^8669]
 * URIs nicht mitgenommen
 * Dasselbe mit *Label*
 * "cor da caccia" ist nicht Instanz, sondern Subclass
 * Frequenz unsinnig auszulagern → Stimmton mit Hz
 * Subproperty 
 * fehlen noch Properties für Attribute
+* Instanz entspricht owl:NamedIndividual
 
 [Klangbeispiel anpassen in Anwendungsmodell
 ebenso Person a
