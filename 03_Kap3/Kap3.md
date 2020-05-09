@@ -170,7 +170,7 @@ Typ ist eine Instanz
 Typ ist eine Eigenschaft
 
 Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt.[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert. 
-Die Eigenschaft
+Die Klassifizierung mithilfe der Eigenschaft
 ```
 rdf:type
 ```
