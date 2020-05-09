@@ -4,10 +4,12 @@
 
 - [ ] ebenso Person a
 
-- [ ] höchster /tiefster Ton falsch transponiert]
+- [ ] höchster /tiefster Ton falsch transponiert
 
-- [ ] [in ERM  "Label rausnehmen"]
+- [ ] *genaue Entsprechung* und *ungefähre Entsprechung* in Anwendungsmodell einpflegen
 
-- [ ] allgemein: es muss "Stimmton" heißen -> Klasse vgl. MGG "Stimmton":
+- [ ] in ERM  "Label" rausnehmen
+
+- [ ] allgemein: es muss "Stimmton" statt "Kammerton" heißen -> Klasse vgl. MGG "Stimmton":
 ma:Stimmton ma:hat_Ton ma:a' ;
                       ma:hat_Frequenz ma:415Hz .

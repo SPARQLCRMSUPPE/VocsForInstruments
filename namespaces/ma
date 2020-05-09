@@ -238,17 +238,17 @@ ma:natürliches_Stimmungssystem rdf:type owl:NamedIndividual ,
                                           ma:Stimmungssystem .
 
 ###  ma:a''
-ma:a'' rdf:type owl:NamedIndividual ,
+ma:a\'\' rdf:type owl:NamedIndividual ,
                   ma:höchster_Ton .
 
 ###  ma:a'_=_415_Hz
-ma:a'_=_415_Hz rdf:type owl:NamedIndividual ,
+ma:a\'_=_415_Hz rdf:type owl:NamedIndividual ,
                           ma:Kammerton .
 
 ###  ma:c'
-ma:c' rdf:type owl:NamedIndividual ,
+ma:c\' rdf:type owl:NamedIndividual ,
                  ma:tiefster_Ton .
 
 ###  ma:d''
-ma:d'' rdf:type owl:NamedIndividual ,
+ma:d\'\' rdf:type owl:NamedIndividual ,
                   ma:Ton_(klingend) .

@@ -1,6 +1,6 @@
-## Datenmodell
+# Modellierung
 
-### Anwendungsmodellierung
+## Anwendungsmodellierung
 
 Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel #Desiderat angerissenen Anforderungen nochmals zu schärfen und aus ihnen ein Modell zu generieren, das künftig als diskursive Grundlage für die spätere "dokumentationssprachliche" Ausarbeitung herhalten kann. Dies soll in einem zweistufigen Prozess geschehen, in dem zunächst ein informelles Anwendungsmodell generiert wird, aus dem wiederum ein verbindliches Datenmodell in Form eines *ERM*s (Entity Relationship Model) abgeleitet werden kann, das die Grundlage für die RDF-Modellierung bietet.
 Dieses Vorgehen gewährleistet außerdem, dass sich das Anwendungsprofil an den tatsächlichen in der Praxis vorgefundenen Erfordernissen ausrichtet und sich nicht etwa "in vorauseilendem Gehorsam" anhand der bereits etablierten Darstellungsmöglichkeiten selbst zensiert und beschneidet. (In Vorgriff auf die terminologische Ausarbeitung heißt dies etwa: domänenspezifische Vokabulare dahingehend zu untersuchen, ob sie in der Lage sind, das Geforderte abzubilden und andernfalls nach Möglichkeiten zu suchen, diese Darstellungsmöglichkeiten selbst zu schaffen.)
@@ -71,7 +71,7 @@ gebündelt werden.
 ![Funktionsbereiche](medien_Kap3/20200321_datenmodell_skizze.png)
 
 
-# Klassifikatorische Erschließung [umbenennen?]
+## Klassifikatorische Erschließung [umbenennen?]
 
 
 Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem Anwendungsszenario zu einem Semantic Web-kompatiblen Metadatenprofil zu beschreiten. [vielleicht noch etwas darüber, dass es keine wirkliche Lit. gibt, die einen Leitfaden von Anfang bis Ende bildet] Gemäß Noy und McGuinness[^8] steht dabei ganz zu Beginn des Prozesses hin zur Ontologie zunächst eine Klassierung[^9] der benötigten Typen nach folgendem Schema:
@@ -85,7 +85,7 @@ Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem Anwendun
 Das Produkt dieser Vorgehensweise bildet, wie oben angedeutet, eine zunächst auf den Anwendungsbereich beschränkte "Ontologie", die nicht mit den Sprachen des Semantic Web ausgezeichnet ist.
 Tatsächlich hat sich im Verlauf dieser Arbeit ganz organisch eine andere Reihenfolge ergeben: Nach dem exemplarischen Auffinden eines Defizits wurde ein spezifisches Szenario entworfen, um dieses zu beheben: Einige wichtige Instanzen[^11] wurden bereits im vorhergehenden Kapitel identifiziert und aufgeführt.
 
-### Entity Relationship Model [es muss klar werden, dass das nur eine Hilfestellung ist – die aber nicht kompatibel mit RDF ist]
+#### Entity Relationship Model [es muss klar werden, dass das nur eine Hilfestellung ist – die aber nicht kompatibel mit RDF ist]
 
 Ein erster möglicher Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein Hilfskonstrukts in Form eines *Entity Relationship Models* (ERM). Hierbei sollen die anwendungsspezifischen Szenarien strukturiert und auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander stehen.[^8661] So werden Klassen definiert und erste einfache hierarchische Relationen zwischen Klassen und untergeordneten, "beschreibenden" Klassen (Eigenschaften) hergestellt.
 
@@ -94,7 +94,7 @@ Im ERM fungieren besondere Schlüsseleigenschaften ("Primärschlüssel") als ein
 
 ![Entity Relationship Modell: farbige Markierung der externen Vokabulare. Entitäten stehen in Rechtecken, Eigenschaften in Ovalen, Beziehungen in Rauten. Schlüsseleigenschaften sind durch Unterstreichung gekennzeichnet.](medien_Kap3/20200507_ERM2.png)
 
-Einige wesentliche Entwicklungen gegenüber dem Anwendungsmodell sowie weitere Überlegungen sind es wert, nochmals kurz erläutert und erörtert zu werden.
+Einige wesentlichen Entwicklungen gegenüber dem Anwendungsmodell sowie weitere Überlegungen sind es wert, nochmals kurz erläutert und erörtert zu werden.
 
 * Wie bereits erwähnt sind den Entitäten des ERM gegenüber denen der Anwendungsmodellierung weitere sie beschreibende Eigenschaften hinzugefügt worden (etwa *Name* zu *Person*)
 
@@ -111,8 +111,8 @@ Einige wesentliche Entwicklungen gegenüber dem Anwendungsmodell sowie weitere �
 Für die Zwecke dieser Arbeit ist es ausreichend, die zuletzt genannten Anwendungsszenarien im ERM lediglich einmal exemplarisch im Kontext des *Interpreten* anzudeuten.
 
 
-2 große Sachen folgen: die Klassifikation mit RDF
-die Umwandlung der unspezifischen Beziehungen zu semantisch festgelegten mit OWL
+
+
 
 
 
@@ -122,26 +122,24 @@ die Umwandlung der unspezifischen Beziehungen zu semantisch festgelegten mit OWL
 **Konzept als Oberbegriff zu  Property, class usw. verwendet – gut?**
 **Entität als Oberbegriff zu class, instance?**
 
----
 
 
+Notizen Methodik
+
+2 große Sachen folgen: 
+1) die Klassifikation mit RDF
+
+2) die Umwandlung der unspezifischen Beziehungen zu semantisch festgelegten mit OWL
+
+3) Die Anbindung ans Semantic Web durch Austausch entsprechender etablierter Terme bzw. die Verbindung zu ähnlichen Konzepten – z.B. ma:natürliche Stimmung a gnd:Stimmungssystem – oder so
+= "Einfügen dieser Entitäten in die Architektur des Semantic Webs"
 
 
-
-
-1. "intellektuelle" Klassenzuordnung
-2. Fixierung der klassifizierten Entitäten mithilfe einer Semantic Web-Sprache – Übersetzung in ihr "Weltbild" <- wird so verständlich
-    -Auswahl Syntax
-    -Auswahl Sprache!!
-4. Verfügbarmachen: Einfügen dieser Entitäten in die Architektur des Semantic Webs
-        eigentlich erst später – macht aber Sinn jetzt schon
-        
-        
  Literatur bezieht sich eigentlich fast nie auf das Technische, das man braucht, um selbst Daten zu publizieren.
  darunter: Noy, Allemang, Schneckengruber
 
 
-# Klassifikation mit RDF, RDFS und OWL
+## Klassifikation und Transformation mit RDF, RDFS und OWL
 
 Die zuletzt ausgearbeitete "Ontologie" befindet sich gewissermaßen noch außerhalb des Erkenntnishorizonts des Semantic Web. Zwar ist ihre Tripelstruktur bereits in Teilen RDF-konform, doch verschließt sie sich einer Deutung im Semantic Web-Kontext. Diesen Erkenntnishorizont zu überwinden und eine minimale semantische – wenn auch zunächst keine technische – Anschlussfähigkeit zu erreichen, ist Anliegen dieses Kapitels. Dazu wird es gelten, die Konzepte des ERM nochmals zu hinterfragen
 
@@ -167,16 +165,16 @@ Dabei erfolgt die Disambiguierung der Lemmata analog zur Klassifizierung in folg
 
 Typ ist eine Klasse
 Typ ist eine Instanz
-Typ ist eine Eigenschaft
+Typ ist eine Eigenschaft[^5] 
 
-Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt.[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert. 
-Die Klassifizierung mithilfe der Eigenschaft
+Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt.[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert.[^24] 
+Vermöge der Klassifizierung mithilfe der Eigenschaft
 ```
 rdf:type
 ```
-ermöglicht zudem, dass alle konzeptuell-kategorialen Verhältnisse innerhalb des Erkenntnishorizonts des Semantic Web übersetzt und erfahrbar sind.
+werden ontologische Aussagen zu den Konzepten getroffen. So werden alle konzeptuell-kategorialen Verhältnisse innerhalb des Erkenntnishorizonts des Semantic Web formalsprachlich übersetzt und verstehbar.
 
-## Vokabular
+### Vokabular
 
 ```
 ##########################
@@ -405,34 +403,29 @@ ma:natürliches_Stimmungssystem rdf:type owl:NamedIndividual ,
                                           ma:Stimmungssystem .
 
 ###  ma:a''
-ma:a'' rdf:type owl:NamedIndividual ,
+ma:a\'\' rdf:type owl:NamedIndividual ,
                   ma:höchster_Ton .
 
 ###  ma:a'_=_415_Hz
-ma:a'_=_415_Hz rdf:type owl:NamedIndividual ,
+ma:a\'_=_415_Hz rdf:type owl:NamedIndividual ,
                           ma:Kammerton .
 
 ###  ma:c'
-ma:c' rdf:type owl:NamedIndividual ,
+ma:c\' rdf:type owl:NamedIndividual ,
                  ma:tiefster_Ton .
 
 ###  ma:d''
-ma:d'' rdf:type owl:NamedIndividual ,
+ma:d\'\' rdf:type owl:NamedIndividual ,
                   ma:Ton_(klingend) .               
 ```
 
-### Bemerkungen zum Vokabular
+#### Bemerkungen zum Vokabular
 
-#### Namensraum
+##### Namensraum
 
-Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese freilich nicht außerordentlich aussagekräftige, doch trotzdem definierte und abgrenzbare semantische Reichweite von Vokabular im Bezug zu sogenannten*Namensräumen*[^8670] – referenzierbare kontrollierte Vokabulare – festzulegen. Die Namensraumzugehörigkeit der Terme dieser Arbeit wird im Folgenden zunächst durch das Präfix *ma:* definiert.[^8669]
+Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese freilich bislang nicht außerordentlich aussagekräftige, doch trotzdem definierte und abgrenzbare semantische Reichweite von Vokabular im Bezug zu sogenannten*Namensräumen*[^8670] – referenzierbare kontrollierte Vokabulare – festzulegen. Die Namensraumzugehörigkeit der Terme dieser Arbeit wird im Folgenden zunächst durch das Präfix *ma:* definiert.[^8669] Eine menschenlesbare Definition der einzelnen Terme, wie es als gute Praxis gemäß dem W3C (*World Wide Web Consortium*) nahegelegt wird,[^8673] wäre zum gegenwärtigen Zeitpunkt jedoch noch verfrüht.
 
-### 
-
-* Frequenz unsinnig auszulagern → Stimmton mit Hz
-* Subproperty 
-
-#### Instanzen (owl:NamedIndividuals) und Klassen (owl:Class, rdfs:subClassOf)
+##### Instanzen (owl:NamedIndividuals) und Klassen (owl:Class, rdfs:subClassOf)
 >"Deciding whether a particular concept is a class in an ontology or an individual instance depends on what the potential applications of the ontology are. Deciding where classes end and individual instances begin starts with deciding what is the lowest level of granularity in the representation. The level of granularity is in turn determined by a potential application of the ontology. In other words, what are the most specific items that are going to be represented in the knowledge base?" [@gangler_semantic_nodate, S.18]
 
 Die hier zur Differenzierung zwischen Klasse und Instanz (owl:NamedIndividual)[^8672] implizit vorgeschlagene Vorgehensweise,[^2] bei der die niedrigste Entität eines aus Klassen bestehenden hierarchischen Strangs als Instanz zu werten ist, erscheint im Falle einer in sich abgeschlossenen Ontologie als durchaus sinnvoll. Doch muss der Blickwinkel im Fall der hier beabsichtigten Anwendung als verbindendes Metadatenprofil auch auf potentielle Anknüpfungspunkte, aber vor allem auf die Anwendungsfälle und Vokabulare, die gewissermaßen "außerhalb" des Profils liegen, erweitert werden. Die Frage also, ob etwas eine Instanz oder eine Klasse ist, liegt nicht notwendigerweise in der hierarchischen Ebene begründet. Im Falle des *Barockhorns* wird dies insbesondere deutlich:
@@ -442,7 +435,7 @@ ma:Barockhorn_(Mitteldeutschland) rdf:type owl:Class ;
 ```
 Es ist einleuchtend, dass die Bestimmung einer Klasse (Barockhorn) als Instanz, auch wenn sie sich auf der untersten hierarchischen Ebene befindet, unsinnig ist.
 
-#### Identifier
+##### Identifier
 
 Während in einer relationalen Datenbank das Schlüsselattribut einer Entität variabel sein kann, erfolgt die eindeutige Referenzierung von Konzepten – darunter auch Entitäten – im Semantic Web anhand von URIs (Uniform Ressource Identifier).[^8671] Eine konzeptuelle Trennung zwischen Entität und seinem eindeutigen Identifier, wie im ERM, ist im Semantic Web nicht möglich: Die URI selbst erscheint vielmehr gewissermaßen als digitale Manifestation, als verdigitalisierter "Wesenskern" des durch sie repräsentierten real existierenden Konzepts. URIs sind also im Gegensatz zur Repräsentation im ERM keine eigenständigen Elemente mehr, sondern sie "sind" die Elemente, und ihre Anwendung ist auch nicht auf Entitäten beschränkt:
 
@@ -450,29 +443,21 @@ Bei den syntaktischen Elementen der Aussage
 ```
 ma:Klangbeispiel rdf:type owl:Class .
 ```
-etwa handelt es sich bei jedem Element tatsächlich um eine URI, die mittels Präfix auf einen bestimmten Namensraum verweist.
+etwa handelt es sich bei jedem Element um eine URI, die mittels Präfix auf einen bestimmten Namensraum verweist. Sie ist notwendig, um das immaterielle Konzept handhabbar zu machen.
 
-#### Attribute und Properties
+##### Attribute und Properties
 
-Ein Nebeneffekt der Transformation des ERM nach RDF ist, dass Attribute von Entitäten von diesen als nunmehr eigenständige Entitäten entkoppelt sind, und somit dem ERM entsprechende Tripelbeziehunge nicht möglich sind. Dieses Problem lässt sich einfach lösen, indem Properties gemäß den Schema
+Ein Nebeneffekt der Transformation des ERM nach RDF ist, dass Attribute von Entitäten von diesen als nunmehr eigenständige Entitäten entkoppelt sind, und somit dem ERM entsprechende Tripelbeziehungen nicht möglich sind. Dieses Problem lässt sich in der Regel einfach lösen, indem Properties  gemäß den Schema
 
 ```
-ma:hat[Attribut]
+ma:hat_[Attribut]
 ```
 
 erschaffen werden.
 
-#### Weitere Anmerkungen
+##### Weitere Anmerkungen
 
-
-
-
-
-[Klangbeispiel anpassen in Anwendungsmodell
-ebenso Person a
-höchster /tiefster Ton falsch]
-
-[in ERM  "Label rausnehmen"]
+* Analog zur Defintion von Klassen (owl:Class) und Unterklassen (rdfs:subclassOf) ist es mit *rdfs* möglich, Untereigenschaften (rdfs:subProperty) zu Eigenschaften zu bilden.[^8674] Dies ist im Falle der Eigenschaften *genaue Entsprechung* und *ungefähre Entsprechung* nützlich, indem sie der Eigenschaft *Entsprechungsgrad* subsumiert werden.
 
 
 
@@ -483,136 +468,17 @@ höchster /tiefster Ton falsch]
 
 
 
-## OWL
+
+
+---
+
+## OWL <- sollte man auf die einzelnen Vokabulare noch eingehen?
 
 Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab21631588, S. 130 ff.]
 
 
 
-## Klassen und Instanzen
-
->  
-
- wobei letztere nochmals in *owl:namedIndividual* und *owl:anonymousIndividual* unterschieden werden. Über letztere heißt es: "Named individuals are given an explicit name that can be used in any ontology to refer to the same object. _Anonymous individuals_ do not have a global name and are thus local to the ontology they are contained in."[^4]
-
-Auf den ersten Blick finden sich im Modellentwurf vor allem Instanzen, wobei zu beachten ist, dass aufgrund des uneinheitlichen Datenmodells viele der Instanzen mit einem Überbegriff als Klassen definiert worden sind (dies betrifft die Klassenbezeichner *ma:klangbeispiel* und *ma:Person*):[^1]
-
-* *mimul:1663*
-* *ma:klangbeispiel* manifestiert sich in Form eines spezifischen Audiofiles.
-* *ma:Person* manifestiert sich in Form einer spezifischen Person (etwa in Gestalt seiner Repräsentation als GND Tp-Datensatz).
-* *ma:a'=415Hz* erscheint als Klasse nicht sinnvoll (auch wenn sich Frequenzen weiter subsumieren ließen).
-* *ma:natuerlichesStimmungssystem* kann ebenfalls nicht als Klasse verwendet werden. Obwohl es denkbar wäre, die Grundstimmung *ma:inF*als Instanz einer Klasse *ma:natuerlichesStimmungssystem* zu betrachten, ist ein Instrument in F nicht zugleich notwendigerweise in natürlich gestimmt (vgl. etwa das *Englischhorn*).
-* Sowohl *ma:ambitus* wie auch die ihn definierenden Töne lassen sich nicht weiter differenzieren.
-
-Über die Sinnhaftigkeit weitere übergeordnete Klassen für die Instanzen zu kreieren, wird an späterer Stelle nochmals zu sprechen sein. [Stichwort einerseits – dadurch Semantic Web-Anbindung, andererseits aber Scope soll laut Lit schön kleingehalten werden.]
-
-
-* *ma:inF* läßt sich hingegen als Klasse definieren: Ein Anwendungsfall, in dem etwa die Tonhöhe des ersten Naturtons Aussagen zu Intervallverteilung und Tonhöhen zuließen – die Entität weiter teilbar ist –, lässt sich durchaus vorstellen. Instanzen dieser Klassen wären dann die jeweiligen Grundtöne.
-* *rism:corDaCaccia* ist – insbesondere in seinem Verhältnis zu seiner Instanz *mimul:1663* als Klasse zu bewerten.
-* Dies trifft auch für die Entität *taxonomie:barockhorn* zu.
-
-Mit RDF in OWL2 ausgedrückt und in der *Turtle*-Syntax serialisiert[^24] ergibt sich der folgende Zusammenhang:
-
-
-```
-#################################################################
-#    Classes
-#################################################################
-
-###  ma#inF
-<ma#inF> rdf:type owl:Class .
-
-###  rism#corDaCaccia
-<rism#corDaCaccia> rdf:type owl:Class .
-
-###  taxonomie#barockhorn
-<taxonomie#barockhorn> rdf:type owl:Class .
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  ma#ambitus
-<ma#ambitus> rdf:type owl:NamedIndividual .
-
-###  ma#f
-<ma#f> rdf:type owl:NamedIndividual .
-
-###  ma#klangbeispiel
-<ma#klangbeispiel> rdf:type owl:NamedIndividual .
-
-###  ma#natuerlichesStimmungssystem
-<ma#natuerlichesStimmungssystem> rdf:type owl:NamedIndividual .
-
-###  ma#person
-<ma#person> rdf:type owl:NamedIndividual .
-
-###  ma#a''
-<ma#a''> rdf:type owl:NamedIndividual .
-
-###  ma#a'=115Hz
-<ma#a'=115Hz> rdf:type owl:NamedIndividual .
-
-###  ma#c'
-<ma#c'> rdf:type owl:NamedIndividual .
-
-###  ma#d''
-<ma#d''> rdf:type owl:NamedIndividual .
-
-###  mimul#1663
-<mimul#1663> rdf:type owl:NamedIndividual .
-```
-
-
-
-
-## Properties
-
-Analog zu den Entitäten müssen auch die Properties schematisch in das Wissensrepräsentationskonzept des Semantic Webs eingebettet werden. Auch hier geschieht dies, indem sie in der Sprache des Semantic Webs erfasst und als Properties definiert werden. Im Gegensatz zu den Entitäten müssen diese (zumindest im hier behandelten Beispiel) jedoch zunächst nicht klassifiziert werden.[^5] 
-
-```
-#################################################################
-#    Object Properties
-#################################################################
-
-###  ma#entsprichtGenau
-<ma#entsprichtGenau> rdf:type owl:ObjectProperty .
-
-###  ma#entsprichtUngefähr
-<ma#entsprichtUngefähr> rdf:type owl:ObjectProperty .
-
-###  ma#grundstimmung
-<ma#grundstimmung> rdf:type owl:ObjectProperty .
-
-###  ma#hoechsterTon
-<ma#hoechsterTon> rdf:type owl:ObjectProperty .
-
-###  ma#interpret
-<ma#interpret> rdf:type owl:ObjectProperty .
-
-###  ma#klangbeispiel
-<ma#klangbeispiel> rdf:type owl:ObjectProperty .
-
-###  ma#klingt
-<ma#klingt> rdf:type owl:ObjectProperty .
-
-###  ma#stimmungssystem
-<ma#stimmungssystem> rdf:type owl:ObjectProperty .
-
-###  ma#tiefsterTon
-<ma#tiefsterTon> rdf:type owl:ObjectProperty .
-
-###  ma#tonvorrat
-<ma#tonvorrat> rdf:type owl:ObjectProperty .
-
-###  ma#typ
-<ma#typ> rdf:type owl:ObjectProperty .
-
-###  ma#vermutlAbsoluteStimmung
-<ma#vermutlAbsoluteStimmung> rdf:type owl:ObjectProperty .
-```
-
-#  Relationen definieren / Anpassung des Datenmodells
+#  Relationen definieren / Anpassung des Datenmodells [muss anders]
 
 Nachdem kontrollierte Vokabulare erstellt worden sind, liegt es nahe, Relationen, die bislang höchstens im Vorhandensein kontingenter Klassen bestanden, zu erstellen. Auch dies geschieht laut Stuckenschmidt idealerweise zunächst auf einer Metaebene, indem die Properties gemäß ihrer Abhängigkeit zu den Entitäten näher beschrieben werden.[^33] Dies kann geschehen, indem zwei neue Properties eingeführt werden: *rdfs:range*[^31] und *rdfs:domain*[^32].[^27]        
 
@@ -642,12 +508,7 @@ Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss d
 
 scher Eigenschaften von Objekten, die zu einer bestimmten Ka- tegorie geho ̈ren. Diese werden ja, wie oben beschrieben, in der Philosophie als ,,differentiae“ bezeichnet. In den anderen rele- vanten Disziplinen wird ha ̈ufig von Eigenschaften und Attri- buten gesprochen. Diese wiederum werden oft durch ,,Relatio- nen“ dargestellt. Zusa ̈tzlich werden in bestimmten Gebieten spe- zielle Bezeichnungen verwendet. So wird vor Allem im Kon- text von Beschreibungslogiken und semantischen Netzen oft von ,,Slots“ gesprochen."[^26]
 
-# Semantic Web-Anbindung
-**terminolomuss evtl. anders aufgezogen werden – mehr Ablauf-orientiert im Kontext mit dem Zeug oben. Eventuell erst viel später?**
 
-Es liegt nahe, die zuletzt mit den Ontologiesprachen OWL und RDF beschriebenen und somit in das schematisch-ontologische Gefüge von RDF für das Semantic Web handhabbar gemachten Terme in Form kontrollierter Vokabulare zu speichern. Dabei beschränkt sich die "terminologische Kontrolle" hier zunächst auf Maßnahmen, "die direkt oder indirekt der Definition und Abgrenzung von Begriffen"[^7] im allerweitesten Sinne dienen. In diesem Sinne reicht es zu diesem Zeitpunkt – zunächst! – aus, eine einfache Liste der Terme und der – freilich außerordentlich vagen – eben erfolgten Spezifikation ihrer Natur als potentielle "Dinge" im Semantic Web zu erstellen.
-
-Die Funktion terminologischer Kontrolle erfüllen in der Informatik sogenannte *Namespaces*. 
 
 —
 
@@ -797,8 +658,11 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^8669]: Er ist unter der Adresse :https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma abgelegt und referenzierbar.
 
-[^8670]: Literaturverweis!
+[^8670]: Zu den technischen Aspekten von Namespaces im Semantic Web siehe insb. [@noauthor_linked_nodate] sowie [@heath_linked_2011]  und [@noauthor_associating_nodate]
 
 [^8671]: Vgl. etwa: [@madoc34762, S. 3]
 
 [^8672]: OWL2 differenziert, anders als etwa RDFS, nicht lediglich zwischen Klasse und Instanz, sondern zwischen Klasse und unterschiedlichen Individuen (vgl. [@noauthor_owl_nodate-1])
+
+[^8673]: Vgl. [@noauthor_architecture_nodate]
+[^8674]: [@allemang_semantic_2011, 128–130]
