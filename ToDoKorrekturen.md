@@ -1,11 +1,13 @@
 
 
-[] [Klangbeispiel anpassen in Anwendungsmodell
-[] ebenso Person a
-[] höchster /tiefster Ton falsch transponiert]
+- [ ] [Klangbeispiel anpassen in Anwendungsmodell
 
-[] [in ERM  "Label rausnehmen"]
+- [ ] ebenso Person a
 
-[] allgemein: es muss "Stimmton" heißen -> Klasse vgl. MGG "Stimmton":
+- [ ] höchster /tiefster Ton falsch transponiert]
+
+- [ ] [in ERM  "Label rausnehmen"]
+
+- [ ] allgemein: es muss "Stimmton" heißen -> Klasse vgl. MGG "Stimmton":
 ma:Stimmton ma:hat_Ton ma:a' ;
                       ma:hat_Frequenz ma:415Hz .
