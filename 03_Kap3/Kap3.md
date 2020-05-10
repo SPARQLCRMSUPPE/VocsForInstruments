@@ -119,7 +119,7 @@ Für die Zwecke dieser Arbeit ist es ausreichend, die zuletzt genannten Anwendun
 
 
 
-**Konzept als Oberbegriff zu  Property, class usw. verwendet – gut?**
+**Konzept als Oberbegriff zu  Property, class usw. verwendet – gut? RDF: statt Konzept allg. Ressource verwendet**
 **Entität als Oberbegriff zu class, instance?**
 
 
@@ -141,45 +141,68 @@ Notizen Methodik
 
 ## Klassifikation und Transformation mit RDF, RDFS und OWL
 
-Die zuletzt ausgearbeitete "Ontologie" befindet sich gewissermaßen noch außerhalb des Erkenntnishorizonts des Semantic Web. Zwar ist ihre Tripelstruktur bereits in Teilen RDF-konform, doch verschließt sie sich einer Deutung im Semantic Web-Kontext. Diesen Erkenntnishorizont zu überwinden und eine minimale semantische – wenn auch zunächst keine technische – Anschlussfähigkeit zu erreichen, ist Anliegen dieses Kapitels. Dazu wird es gelten, die Konzepte des ERM nochmals zu hinterfragen
+Das zuletzt ausgearbeitete Modell befindet sich gewissermaßen noch außerhalb des Erkenntnishorizonts des Semantic Web. Diesen Erkenntnishorizont zu überwinden und eine minimale semantische – wenn auch zunächst keine technische – Anschlussfähigkeit zu erreichen, ist Anliegen dieses Kapitels. Dazu wird es gelten, die Konzepte des ERM nochmals zu hinterfragen.
 
 Der Vorgehensweise im weiteren Verlauf liegt zugrunde, dass in RDF bereits bestimmte Klassen angelegt sind – in Folgevokabularen[^10] um weitere ergänzt –, die verwendet werden können, um Konzepte zu klassifizieren.[^13] Dabei erscheinen angesichts der zuvor ausgearbeiteten Anwendungsmodellierung die allgemein gebräuchlichsten drei Klassen[^12] für die Zwecke dieser Arbeit ausreichend. Diese sind:
 
 1. Klassen
-2. Instanzen
-3. Relationen [Relationen? vg. Stuckschmidt 11]
 
-Es mag an dieser Stelle auffallen, dass das Konzept von Attributen gegenüber dem ERM keine ausgezeichnete Klasse mehr bildet. Das Konzept des Attributs ist in RDF nicht mehr vorgesehen. Dies ist unmittelbar einleuchtend, kann doch jede RDF-Entität auch als Subjekt eines Tripels agieren (somit ist das von seiner Bezugsentität abhängige Attribut mit RDF inkompatibel).
+2. Instanzen
+
+3. Relationen (im Folgenden auch Properties) [Relationen? vg. Stuckschmidt 11]
+
+Es mag an dieser Stelle auffallen, dass das Konzept von Attributen gegenüber dem ERM keine ausgezeichnete Klasse mehr bildet. Das Konzept des Attributs ist in RDF nicht mehr vorgesehen. Dies ist unmittelbar einleuchtend, kann doch jede RDF-Entität auch als Subjekt eines Tripels agieren (somit erscheint das von seiner Bezugsentität abhängige und auf ihn verweisende Attribut mit RDF inkompatibel).
 Durch die Aufteilung in (theoretisch gleichgestellte) Entitäten und Beziehungen lassen sich bereits vollwertige RDF-Tripel bilden – zusätzlich gelingt es, dank der qualitativen Unterscheidung in Instanz und Klasse, einfache hierarchische Sachverhalte nachzubilden. In den folgenden Unterkapiteln wird es entsprechend darum gehen, eine entsprechende Klassierung vorzunehmen.
 
-Doch worin besteht an dieser Stelle der tiefere Sinn einer Klassifikation? Direkt assoziativ ist die Funktion des Klassierens – sofern man sie nicht als reinen Selbstzweck betreibt – insbesondere zur Ordnung von Ressourcen und deren Retrieval. Doch neben dieser "pragmatischen Aufgabe"[^23] führt Bertram auch die "erkenntnisvermittelnde Aufgabe" von Klassifikationen ins Feld, die in der "Aufhellung von Zusammenhängen anhand geordneten Wissens" besteht.[^14] Diese hermeneutische Dimension erscheint auch hier ganz zentral: Das Modell, das in seiner gegenwärtigen Form auf einem subjektiv geprägtem Verständnis, Wertesystem und persönlichen Denkstrukturen des Autors beruht, wird in ein objektives, standardisiertes Modell überführt. Gewissermaßen findet so eine Übersetzung statt, die den Erkenntnishorizont zwischen Mensch und Maschine überwindet. Das eigene Denkmodell wird dabei mithilfe der sprachlichen Ausdruckmittel des Semantic Web erfasst und ausgezeichnet, und so in das von RDF-vorgegebene Erkenntnisschema eingepflegt. Die dem Modell inhärente Semantik wird – wie zu sehen sein wird, freilich zunächst auf einer sehr oberflächlichen Ebene – dadurch objektiviert und gemeinhin auslegbar.
+Doch worin besteht an dieser Stelle der tiefere Sinn einer Klassifikation? Direkt assoziativ ist die Funktion des Klassierens – sofern man sie nicht als reinen Selbstzweck betreibt – insbesondere zur Ordnung von Ressourcen und deren Retrieval. Doch neben dieser "pragmatischen Aufgabe"[^23] führt Bertram auch die "erkenntnisvermittelnde Aufgabe" von Klassifikationen ins Feld, die in der "Aufhellung von Zusammenhängen anhand geordneten Wissens" besteht.[^14] Diese so angedeutete hermeneutische Dimension erscheint auch hier ganz zentral: Das Modell, das in seiner gegenwärtigen Form auf einem subjektiv geprägtem Verständnis, Wertesystem und persönlichen Denkstrukturen des Autors beruht, wird in ein objektives, standardisiertes Modell überführt. Gewissermaßen findet so eine Übersetzung statt, die den Erkenntnishorizont zwischen Mensch und Maschine überwindet. Das eigene Denkmodell wird dabei mithilfe der formalsprachlichen Ausdruckmittel des Semantic Web erfasst und ausgezeichnet, und so in das von RDF-vorgegebene Erkenntnisschema eingepflegt. Die dem Modell inhärente Semantik wird – wie zu sehen sein wird, freilich zunächst auf einer sehr oberflächlichen Ebene – dadurch objektiviert und gemeinhin auslegbar.
 
-Diese Übersetzung geht mithilfe entsprechend standardiserter, sich ergänzender Modellierungssprachen, den sogenannten "Ontologiesprachen", vonstatten.[^16] Wobei sich diese Arbeit insbesondere an der Ontologiesprache OWL[^17], der "inzwischen [...] meistbenutzen Ontologiesprache aller Zeiten"[^19] ausrichtet. Dies geschieht sowohl aus pragmatischen Gründen – der Ontologie-Editor *Protégé*[^18] basiert auf dieser Sprache – als auch aus fachlichen, die es wert sein werden, in einem nachfolgenden Unterkapitel für sich kurz zu skizzieren. [<- nein, weglassen.]
+Diese Übersetzung geht mithilfe entsprechend standardiserter, sich ergänzender Modellierungssprachen, den sogenannten "Ontologiesprachen", vonstatten.[^16] 
+Die durch den W3C standardisierten Grundpfeiler des Semantic Web bilden dabei gemeinhin die Sprachen RDF (Ressource Description Framework),[^8675] RDFS (RDF Schema)[^8676] und OWL (Web Ontology Language[^17], der "inzwischen [...] meistbenutzen Ontologiesprache aller Zeiten"[^19].
 
-**wichtig, dass kein Informationsverlust durch diese Wahl!** -> im Folgekapitel.
-
-Die formale Interpretierbarkeit der durch die Sprache ausgedrückten semantischen Komponente wird durch eine Syntax, also einer  "Menge von Regeln, um Programme oder Dokumente mit bestimmten Eigenschaften [...] zu erzeugen", ermöglicht. Die Entscheidung für eine bestimmte Syntax ist dabei im Falle nach RDF strukturierter Daten zwar letztlich arbiträr, bilden sie doch im übertragenen Sinne gewissermaßen lediglich "Verpackung und Beipackzettel" für den eigentlichen semantischen Inhalt. Doch fällt aufgrund seiner Einfachheit und Übersichtlichkeit in dieser Arbeit die Wahl auf das sogenannte *Turtle*-Format ("Terse RDF Triple Language")[^20].
+Die formale Interpretierbarkeit der durch die Sprache ausgedrückten semantischen Komponente wird durch eine Syntax, also einer  "Menge von Regeln, um Programme oder Dokumente mit bestimmten Eigenschaften [...] zu erzeugen",[^8677] ermöglicht. Die Entscheidung für eine bestimmte Syntax ist dabei im Falle nach RDF strukturierter Daten zwar letztlich arbiträr, bilden sie doch im übertragenen Sinne gewissermaßen lediglich "Verpackung und Beipackzettel" für den eigentlichen semantischen Inhalt. Doch fällt aufgrund seiner Einfachheit und Übersichtlichkeit in dieser Arbeit die Wahl auf das sogenannte *Turtle*-Format ("Terse RDF Triple Language")[^20].
 
 So entsteht in Folge dieser Klassifizierung zunächst 
 Dabei erfolgt die Disambiguierung der Lemmata analog zur Klassifizierung in folgender Form (s. auch Kapitel #klassenundinstanzen):
 
 Typ ist eine Klasse
+
 Typ ist eine Instanz
+
 Typ ist eine Eigenschaft[^5] 
 
-Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute* ausgelegt.[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert.[^24] 
+Durch die Klassifikatorische Erfassung von Instanzen, Entitäten Beziehungen aus der Anwendungsmodellierung bzw. der Klassen, Eigenschaften und Beziehungen des ERM ergibt sich ein sehr einfaches kontrolliertes Vokabular – etwa im sehr grob gefassten Sinne des *National Information Standards Organization* und des *American National Standards Institute*.[^21] Durch die Zuordnung von Instanzen zu Klassen und Klassen ergeben sich zudem erste taxonomische Beziehungen – hier wie gesagt in Turtle serialisiert.[^24] 
 Vermöge der Klassifizierung mithilfe der Eigenschaft
 ```
 rdf:type
-```
-werden ontologische Aussagen zu den Konzepten getroffen. So werden alle konzeptuell-kategorialen Verhältnisse innerhalb des Erkenntnishorizonts des Semantic Web formalsprachlich übersetzt und verstehbar.
+``` 
+werden zudem ontologische Aussagen zu den Einzelkonzepten getroffen. So werden alle konzeptuell-kategorialen Verhältnisse innerhalb des Erkenntnishorizonts des Semantic Web formalsprachlich übersetzt und verstehbar.
 
 ### Vokabular
 
 ```
+
+##########################
+#    Header
+##########################
+
+@prefix ma: <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29> .
+
+<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology ;
+            dc:title "Vocabulary for my M.A. thesis" ;
+            dc:date "2020-05-09" ;
+            owl:versionInfo "draft" ;
+            dc:description "An RDF classification of relevant terms for building an application profile linking music instrument related entities. Reuse not recommended." .
+
 ##########################
 #    Object Properties
 ##########################
+
 ###  ma:Entsprechungsgrad
 ma:Entsprechungsgrad rdf:type owl:ObjectProperty .
 
@@ -275,6 +298,7 @@ ma:hat_Stimmung_(relativ) rdf:type owl:ObjectProperty .
 ##########################
 #    Classes
 ##########################
+
 ###  ma:Ambitus
 ma:Ambitus rdf:type owl:Class .
 
@@ -370,6 +394,7 @@ ma:Werk_(Domäne) rdf:type owl:Class .
 ##########################
 #    Individuals
 ##########################
+
 ###  ma:BWV_208
 ma:BWV_208 rdf:type owl:NamedIndividual ,
                       ma:Werk_(Domäne) .
@@ -416,19 +441,25 @@ ma:c\' rdf:type owl:NamedIndividual ,
 
 ###  ma:d''
 ma:d\'\' rdf:type owl:NamedIndividual ,
-                  ma:Ton_(klingend) .               
+                  ma:Ton_(klingend) .
+              
 ```
 
 #### Bemerkungen zum Vokabular
 
 ##### Namensraum
 
-Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese freilich bislang nicht außerordentlich aussagekräftige, doch trotzdem definierte und abgrenzbare semantische Reichweite von Vokabular im Bezug zu sogenannten*Namensräumen*[^8670] – referenzierbare kontrollierte Vokabulare – festzulegen. Die Namensraumzugehörigkeit der Terme dieser Arbeit wird im Folgenden zunächst durch das Präfix *ma:* definiert.[^8669] Eine menschenlesbare Definition der einzelnen Terme, wie es als gute Praxis gemäß dem W3C (*World Wide Web Consortium*) nahegelegt wird,[^8673] wäre zum gegenwärtigen Zeitpunkt jedoch noch verfrüht.
+Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstellt worden sind, lässt sich bereits jetzt die sehr allgemeine Aussage treffen, dass ihr semantischer Gehalt sich darin ausdrückt, wie sie in dieser Arbeit Verwendung finden. Es ist möglich, diese freilich bislang nicht außerordentlich aussagekräftige, doch trotzdem in so fern definierte und abgrenzbare semantische Reichweite von Vokabular im Bezug zu sogenannten*Namensräumen*[^8670] – referenzierbare kontrollierte Vokabulare – festzulegen. Die Namensraumzugehörigkeit der Terme dieser Arbeit wird im Folgenden zunächst durch das Präfix *ma:* gekennzeichnet. Der Namensraum ist außerdem hier 
+
+ https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma
+
+hinterlegt. [^8669] 
+
+Eine menschenlesbare Definition der einzelnen Terme, wie es als gute Praxis gemäß dem W3C (*World Wide Web Consortium*) nahegelegt wird,[^8673] wäre zum gegenwärtigen Zeitpunkt noch verfrüht.
 
 ##### Instanzen (owl:NamedIndividuals) und Klassen (owl:Class, rdfs:subClassOf)
->"Deciding whether a particular concept is a class in an ontology or an individual instance depends on what the potential applications of the ontology are. Deciding where classes end and individual instances begin starts with deciding what is the lowest level of granularity in the representation. The level of granularity is in turn determined by a potential application of the ontology. In other words, what are the most specific items that are going to be represented in the knowledge base?" [@gangler_semantic_nodate, S.18]
 
-Die hier zur Differenzierung zwischen Klasse und Instanz (owl:NamedIndividual)[^8672] implizit vorgeschlagene Vorgehensweise,[^2] bei der die niedrigste Entität eines aus Klassen bestehenden hierarchischen Strangs als Instanz zu werten ist, erscheint im Falle einer in sich abgeschlossenen Ontologie als durchaus sinnvoll. Doch muss der Blickwinkel im Fall der hier beabsichtigten Anwendung als verbindendes Metadatenprofil auch auf potentielle Anknüpfungspunkte, aber vor allem auf die Anwendungsfälle und Vokabulare, die gewissermaßen "außerhalb" des Profils liegen, erweitert werden. Die Frage also, ob etwas eine Instanz oder eine Klasse ist, liegt nicht notwendigerweise in der hierarchischen Ebene begründet. Im Falle des *Barockhorns* wird dies insbesondere deutlich:
+Die bei der Differenzierung zwischen Klasse und Instanz (owl:NamedIndividual)[^8672] oftmals  vorgeschlagene Vorgehensweise,[^2] bei der die niedrigste Entität eines aus Klassen bestehenden hierarchischen Strangs als Instanz zu werten ist, mag im Falle einer in sich abgeschlossenen Ontologie als  sinnvoll erscheinen. Doch muss der Blickwinkel im Fall der hier beabsichtigten Anwendung als verbindendes Metadatenprofil auch auf potentielle Anknüpfungspunkte, aber vor allem auf die Anwendungsfälle und Vokabulare, die gewissermaßen "außerhalb" des Profils liegen, erweitert werden. Die Frage also, ob etwas eine Instanz oder eine Klasse ist, liegt nicht notwendigerweise in der hierarchischen Ebene begründet. Im Falle des *Barockhorns* wird dies insbesondere deutlich:
 ```
 ma:Barockhorn_(Mitteldeutschland) rdf:type owl:Class ;
                                     rdfs:subClassOf ma:Instrument_(Klassifikation) .
@@ -437,13 +468,16 @@ Es ist einleuchtend, dass die Bestimmung einer Klasse (Barockhorn) als Instanz, 
 
 ##### Identifier
 
-Während in einer relationalen Datenbank das Schlüsselattribut einer Entität variabel sein kann, erfolgt die eindeutige Referenzierung von Konzepten – darunter auch Entitäten – im Semantic Web anhand von URIs (Uniform Ressource Identifier).[^8671] Eine konzeptuelle Trennung zwischen Entität und seinem eindeutigen Identifier, wie im ERM, ist im Semantic Web nicht möglich: Die URI selbst erscheint vielmehr gewissermaßen als digitale Manifestation, als verdigitalisierter "Wesenskern" des durch sie repräsentierten real existierenden Konzepts. URIs sind also im Gegensatz zur Repräsentation im ERM keine eigenständigen Elemente mehr, sondern sie "sind" die Elemente, und ihre Anwendung ist auch nicht auf Entitäten beschränkt:
+Während in einer relationalen Datenbank das Schlüsselattribut einer Entität variabel sein kann, erfolgt die eindeutige Referenzierung von Konzepten – darunter auch Entitäten – im Semantic Web anhand von URIs (Uniform Ressource Identifier).[^8671] Eine konzeptuelle Trennung zwischen Entität und seinem eindeutigen Identifier, wie im ERM, ist im Semantic Web nicht denkbar: Die URI selbst erscheint vielmehr gewissermaßen als digitale Manifestation des durch sie repräsentierten nichtdigital existierenden Konzepts. URIs sind also im Gegensatz zur Repräsentation im ERM keine eigenständigen Konzepte mehr, sondern sie "sind" die Konzepte:
 
 Bei den syntaktischen Elementen der Aussage
 ```
 ma:Klangbeispiel rdf:type owl:Class .
 ```
-etwa handelt es sich bei jedem Element um eine URI, die mittels Präfix auf einen bestimmten Namensraum verweist. Sie ist notwendig, um das immaterielle Konzept handhabbar zu machen.
+
+etwa sind die Konzepte mit ihrem jeweiligen Namensraum präfigiert und über den Header der Datei zu vollständigen URIs auflösbar.
+
+
 
 ##### Attribute und Properties
 
@@ -458,23 +492,13 @@ erschaffen werden.
 ##### Weitere Anmerkungen
 
 * Analog zur Defintion von Klassen (owl:Class) und Unterklassen (rdfs:subclassOf) ist es mit *rdfs* möglich, Untereigenschaften (rdfs:subProperty) zu Eigenschaften zu bilden.[^8674] Dies ist im Falle der Eigenschaften *genaue Entsprechung* und *ungefähre Entsprechung* nützlich, indem sie der Eigenschaft *Entsprechungsgrad* subsumiert werden.
-
-
-
-
-
-
-
-
+* Sonderzeichen, die mit der Turtle-Syntax inkompatibel sind, sind mit dem "escape character" `\`maskiert.
 
 
 
 
 ---
 
-## OWL <- sollte man auf die einzelnen Vokabulare noch eingehen?
-
-Ich verwende OWL Full! <- informieren… hierzu und zum owl kopf [@TN_libero_mab21631588, S. 130 ff.]
 
 
 
@@ -538,21 +562,11 @@ Many namespaces have been created in the context of Semantic Web projects to dis
 "The names in a namespace form a collection [...] There's no requirement that the names in a namespace only identify items of a single type; elements and attributes can both come from the same namespace as could functions and concepts or any other homogeneous or heterogeneous collection you can imagine. The names in a namespace can, in theory at least, be defined to identify any thing or any number of things. [...] A user encountering a namespace might want to find any or all of these related resources. In the absence of any other information, a logical place to look for these resources, or information about them, is at the location of the namespace URI itself. The details of exactly what this means may be subtlely different in different cases, but the general point is clear, as [\[WebArch Vol 1\]](file:///Users/alanriedel/Zotero/storage/VEIFTJE6/nsDocuments.html#webarch) says: It is [Good Practice](http://www.w3.org/TR/webarch/#pr-namespace-documents) for the owner of a namespace to make available at the namespace URI “material intended for people to read and material optimized for software agents in order to meet the needs of those who will use the namespace”."
 
 
-
-
-
----
-
-
-
-
-**heute noch ändern: klingend/notiert ist falsch / Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?**
-
 ---
 
 [^1]: Zur Schreibweise: 
 
-[^2]: Vgl. auch die folgende Aussage "Individual instances are the most specific concepts represented in a knowledge base." (vgl. [@gangler_semantic_nodate, S.18]).
+[^2]: Vgl. etwa die Aussage "Individual instances are the most specific concepts represented in a knowledge base." ([@gangler_semantic_nodate, S.18]).
 
 [^4]: [@noauthor_owl_nodate]
 
@@ -581,7 +595,7 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^16]: S. hierzu etwa: [@alma9913393902586, S. 95–99]
 
-[^17]: [@noauthor_owl_nodate-3]
+[^17]: [@noauthor_owl_nodate-3] Diese Arbeit verwendet OWL Full, das die größten Ausdrucksmöglichkeiten bietet und mit RDFS kompatibel ist. (Vgl. [@TN_libero_mab21631588, S. 125–127])
 
 [^18]: 
 
@@ -656,8 +670,6 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^8668]: So etwa im Falle der Eigenschaft *Entsprechungsgrad* angelegt: Es lassen sich unterschiedliche Grade vorstellen.
 
-[^8669]: Er ist unter der Adresse :https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma abgelegt und referenzierbar.
-
 [^8670]: Zu den technischen Aspekten von Namespaces im Semantic Web siehe insb. [@noauthor_linked_nodate] sowie [@heath_linked_2011]  und [@noauthor_associating_nodate]
 
 [^8671]: Vgl. etwa: [@madoc34762, S. 3]
@@ -666,3 +678,6 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^8673]: Vgl. [@noauthor_architecture_nodate]
 [^8674]: [@allemang_semantic_2011, 128–130]
+[^8675]: [@noauthor_rdf_nodate]
+[^8676]: [@noauthor_rdf_nodate-6]
+[^8677]: [@TN_libero_mab21631588, S. 13]

@@ -13,3 +13,5 @@
 - [ ] allgemein: es muss "Stimmton" statt "Kammerton" heißen -> Klasse vgl. MGG "Stimmton":
 ma:Stimmton ma:hat_Ton ma:a' ;
                       ma:hat_Frequenz ma:415Hz .
+
+- [ ] Stimmungskonzepte überprüfen / überarbeiten (insb. Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?)

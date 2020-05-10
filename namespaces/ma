@@ -1,4 +1,8 @@
 
+##########################
+#    Header
+##########################
+
 @prefix ma: <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +11,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29> .
 
-<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology .
+<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology  ;
             dc:title "Vocabulary for my M.A. thesis" ;
             dc:date "2020-05-09" ;
-            dc:description "An RDF classification of relevant terms for building a application profile linking music instrument related entities. No guarantee for persistance, what so ever. Other use not recommended." .
+            owl:versionInfo "draft" ;
+            dc:description "An RDF classification of relevant terms for building an application profile linking music instrument related entities. Reuse not recommended." .
 
 ##########################
 #    Object Properties
 ##########################
+
 ###  ma:Entsprechungsgrad
 ma:Entsprechungsgrad rdf:type owl:ObjectProperty .
 
@@ -110,6 +116,7 @@ ma:hat_Stimmung_(relativ) rdf:type owl:ObjectProperty .
 ##########################
 #    Classes
 ##########################
+
 ###  ma:Ambitus
 ma:Ambitus rdf:type owl:Class .
 
@@ -205,6 +212,7 @@ ma:Werk_(Domäne) rdf:type owl:Class .
 ##########################
 #    Individuals
 ##########################
+
 ###  ma:BWV_208
 ma:BWV_208 rdf:type owl:NamedIndividual ,
                       ma:Werk_(Domäne) .
