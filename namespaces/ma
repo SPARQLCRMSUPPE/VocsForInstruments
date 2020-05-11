@@ -9,13 +9,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29> .
+@base <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma#> .
 
 <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology  ;
             dc:title "Vocabulary for my M.A. thesis" ;
             dc:date "2020-05-09" ;
             owl:versionInfo "draft" ;
-            dc:description "An RDF classification of relevant terms for building an application profile linking music instrument related entities. Reuse not recommended." .
+            dc:description "An RDF classification of relevant terms intended for building an application profile linking music instrument related entities. Reuse highly discouraged." .
 
 ##########################
 #    Object Properties

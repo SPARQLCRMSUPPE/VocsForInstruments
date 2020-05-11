@@ -490,13 +490,69 @@ erschaffen werden.
 
 ##### Weitere Anmerkungen
 
-* Analog zur Defintion von Klassen (owl:Class) und Unterklassen (rdfs:subclassOf) ist es mit *rdfs* möglich, Untereigenschaften (rdfs:subProperty) zu Eigenschaften zu bilden.[^8674] Dies ist im Falle der Eigenschaften *genaue Entsprechung* und *ungefähre Entsprechung* nützlich, indem sie der Eigenschaft *Entsprechungsgrad* subsumiert werden.
+* Analog zur Defintion von Klassen (owl:Class) und Unterklassen (rdfs:subclassOf) ist es mit *rdfs* möglich, Untereigenschaften (rdfs:subPropertyOf) zu Eigenschaften zu bilden.[^8674] Dies ist im Falle der Eigenschaften *genaue Entsprechung* und *ungefähre Entsprechung* nützlich, indem sie der Eigenschaft *Entsprechungsgrad* subsumiert werden.
 * Sonderzeichen, die mit der Turtle-Syntax inkompatibel sind, wurden mit dem "escape character" `\` maskiert.
+
+
+
+##  Vom Vokabular zur "Lightweight Ontology" – Spezifizierung von Relationen mit *rdfs:range* und *rdfs:domain*
+
+Eines der zentralen Konzepte des Semantic Webs ist die sog. *open world assumption*.[^8682] Gemäß dem vielzitierten Leitsatz "Anyone can say anything about anything"[^8678] besagt sie, dass eine Aussage, die in einem Modell nicht explizit verankert ist, nicht notwendigerweise falsch sein muss, sondern dass lediglich keine endgültige Aussage über ihre Richtigkeit getroffen werden kann.[^8679] Es muss somit im Interesse eines RDF-Vokabulars liegen, sein semantisches Ausdruckspotential fort von der Summe alles Möglichen und somit Willkürlichen hin zum eigentlich Aussagekräftigen fokussieren zu können, indem es Hinweise zur sinnhaften Benutzung seiner Terme bereithält. Die Möglichkeit einer solchen Fokussierung bieten Ontologiesprachen wie RDFS und OWL, indem sie in RDF formalisierte und somit direkt integrierbare Schemata anbieten.[^8680]
+Es liegt dabei auf der Hand, dass ein Applikationsprofil, dessen Sinn darin besteht, ein schematisches Framework zu bieten, auf die Reduktion und Fokussierung seiner  von angewisen ist. ????
+Doch werden kraft dieser Schemata keineswegs lediglich die Wirkungsweite von Relationen abgesteckt. Vielmehr entsteht durch sie eine weitere Bedeutungsdimension, die die Grundlage dafür bietet, auch maschinell inhärente logische Schlussfolgerungen (Inferenzen) ziehen zu können (Reasoning).[^8681]
+
+Während im Vokabular Properties in Form kontingenter, semantisch ungerichteter Bestandteile einer Liste aufgezählt waren, kann im Folgenden ihre Anwendung in Abhängigkeit zu den durch sie in Relation gesetzten Entitäten näher beschrieben werden.[^33] Diesen Schritt zu vollziehen, ermöglichen die Properties *rdfs:range*[^31] und *rdfs:domain*[^32].[^27]
+Die Wirkungsweise dieser begrenzenden Properties wird im folgenden Beispiel nochmals verdeutlicht:
+
+Obwohl die Aussage
+```
+ma:Person_a ma:hat_Frequenz ma:Lizenz .
+```
+angesichts der *open world assumption* legitim ist, ist es sinnvoll die Anwendung von `ma:hat_Frequenz`, gemäß Anwendungsmodell, nur auf bestimmte Subjekte und Objekte zu beschränken.
+Im Szenario 
+```
+ma:a\' ma:hat_Frequenz ma:415Hz .
+```
+bezieht sich `ma:hat_Frequenz` auf ein Subjekt aus der Klasse `ma:Ton` (es ist zudem bekannt, dass auch andere Töne Frequenzen besitzen). Zum anderen auf ein Objekt der Klasse Frequenz (mit weiteren möglichen Instanzen, wie 415 Hz etc.).
+Somit lässt sich mit der Zuweisung 
+```
+ma:hat_Frequenz rdfs:domain ma:Ton ;
+ma:hat_Frequenz rdfs:range ma:Frequenz .
+```
+bestimmen, dass das Property mit einem Subjekt aus der Klasse `ma:Ton` und einem Objekt aus der Klasse `ma:Frequenz` verwendet werden sollte.
+
+Diese Beschränkungen werden dabei, wie bereits kurz angedeutet, in folgender Form direkt in das Vokabular integriert:
+```
+ma:hat_Frequenz	rdf:type owl:ObjectProperty 
+	rdfs:domain ma:Ton ;
+ 	rdfs:range ma:Frequenz .
+```
+
+
+                            
+
+
+
+
+
+
+Einschränkung der Properties insb. bei Metadatenprofil wichtig: 
+
+
 
 
 
 
 ---
+
+
+
+
+
+
+
+
+
 
 
 
@@ -557,8 +613,6 @@ Many namespaces have been created in the context of Semantic Web projects to dis
 "Eine Mo ̈glichkeit ist die Verwendung von URI-Referenzen. Schreibt man z.B. http://de.wikipedia.org/wiki/Othello#URI, dann zeigt dies nicht direkt auf ein existierendes Dokument (da es den Abschnitt ”URI“ auf dieser Seite nicht gibt). Wenn man diese URI-Referenz als URL aufruft, dann erha ̈lt man dennoch die beschreibende Seite fu ̈r diese URI." [@TN_libero_mab21631588, S. 49]
 
 "Eine andere Mo ̈glichkeit ist die Verwendung von Weiterleitungen: auch bei Aufruf einer nicht existierenden URL kann ein Server den Nutzer auf eine alternative Seite weiterleiten. Da das Programm des Nutzers diese Weiterlei- tung wahrnimmt, ist dennoch die Unterscheidung der URIs gewa ̈hrleistet. Die automatische Weiterleitung hat außerdem den Vorteil, dass man entweder eine menschenlesbare HTML-Datei oder eine maschinenlesbare RDF-Datei auslie- fern kann – abha ̈ngig von Informationen in der Anfrage. Dieses Verfahren ist auch als Content Negotiation bekannt." [@TN_libero_mab21631588, S. 49]
-
-"The names in a namespace form a collection [...] There's no requirement that the names in a namespace only identify items of a single type; elements and attributes can both come from the same namespace as could functions and concepts or any other homogeneous or heterogeneous collection you can imagine. The names in a namespace can, in theory at least, be defined to identify any thing or any number of things. [...] A user encountering a namespace might want to find any or all of these related resources. In the absence of any other information, a logical place to look for these resources, or information about them, is at the location of the namespace URI itself. The details of exactly what this means may be subtlely different in different cases, but the general point is clear, as [\[WebArch Vol 1\]](file:///Users/alanriedel/Zotero/storage/VEIFTJE6/nsDocuments.html#webarch) says: It is [Good Practice](http://www.w3.org/TR/webarch/#pr-namespace-documents) for the owner of a namespace to make available at the namespace URI “material intended for people to read and material optimized for software agents in order to meet the needs of those who will use the namespace”."
 
 
 ---
@@ -676,7 +730,22 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 [^8672]: OWL2 differenziert, anders als etwa RDFS, nicht lediglich zwischen Klasse und Instanz, sondern zwischen Klasse und unterschiedlichen Individuen (vgl. [@noauthor_owl_nodate-1])
 
 [^8673]: Vgl. [@noauthor_architecture_nodate]
+
 [^8674]: [@allemang_semantic_2011, 128–130]
+
 [^8675]: [@noauthor_rdf_nodate]
+
 [^8676]: [@noauthor_rdf_nodate-6]
+
 [^8677]: [@TN_libero_mab21631588, S. 13]
+
+[^8678]: [@noauthor_resource_nodate]
+
+[^8679]: [@alma9913393902586, S. 32]
+Zur Notwendigkeit der Open World Assumption in semantischen Netzen s: [@alma9913393902586, S. 43]
+
+[^8680]: [@TN_libero_mab21631588, S. 67]
+
+[^8681]: [@szeredi_lukácsy_benkő_nagy_2014, S. 98–99]
+
+[^8682]: [@noauthor_overview_nodate]

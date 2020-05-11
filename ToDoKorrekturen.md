@@ -15,3 +15,5 @@ ma:Stimmton ma:hat_Ton ma:a' ;
                       ma:hat_Frequenz ma:415Hz .
 
 - [ ] Stimmungskonzepte überprüfen / überarbeiten (insb. Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?)
+
+- [ ] Es muss eine Oberklasse "Ton" eingeführt werden – entsprechende Anpassung in Vokabular / ERM
