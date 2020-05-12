@@ -18,6 +18,12 @@
                        rdfs:range <ma#Instrument_(Domäne)> .
 
 
+###  ma#Identifikator
+<ma#Identifikator> rdf:type owl:ObjectProperty ;
+                   rdfs:domain <ma#Aufführung_(Domäne)> ;
+                   rdfs:range <ma#Identifikator> .
+
+
 ###  ma#Interpret
 <ma#Interpret> rdf:type owl:ObjectProperty ;
                rdfs:domain <ma#Aufführung_(Domäne)> ,
@@ -105,7 +111,7 @@
 ###  ma#hat_Stimmungssystem
 <ma#hat_Stimmungssystem> rdf:type owl:ObjectProperty ;
                          rdfs:domain <ma#Instrument_(Domäne)> ;
-                         rdfs:range <ma#Instrument_(Domäne)> .
+                         rdfs:range <ma#Stimmungssystem> .
 
 
 ###  ma#hat_Zeitpunkt
@@ -158,7 +164,7 @@
 ###  ma#hat_ID_(WerkVZ)
 <ma#hat_ID_(WerkVZ)> rdf:type owl:ObjectProperty ;
                      rdfs:domain <ma#Werk_(Domäne)> ;
-                     rdfs:range <ma#ID_(intern)> .
+                     rdfs:range <ma#ID_(WerkVZ)> .
 
 
 ###  ma#hat_ID_(intern)
@@ -193,10 +199,6 @@
 <ma#Ambitus> rdf:type owl:Class .
 
 
-###  ma#Bezeichnung
-<ma#Bezeichnung> rdf:type owl:Class .
-
-
 ###  ma#Dauer
 <ma#Dauer> rdf:type owl:Class .
 
@@ -214,7 +216,8 @@
 
 
 ###  ma#Kammerton
-<ma#Kammerton> rdf:type owl:Class .
+<ma#Kammerton> rdf:type owl:Class ;
+               rdfs:subClassOf <ma#Ton> .
 
 
 ###  ma#Klangbeispiel

@@ -24,3 +24,6 @@ This work is published from:
       content="DE" about="[_:publisher]">
   Deutschland</span>.
 </p>
+
+—
+![Sneak peek of the ontology](/03_Kap3/medien_Kap3/20200512_lont.owl.svg)
