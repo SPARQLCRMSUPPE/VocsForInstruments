@@ -17,3 +17,5 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 - [ ] Stimmungskonzepte überprüfen / überarbeiten (insb. Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?)
 
 - [ ] Es muss eine Oberklasse "Ton" eingeführt werden – entsprechende Anpassung in Vokabular / ERM
+
+- [ ] Evtl. für Frequenz doch Datatype?

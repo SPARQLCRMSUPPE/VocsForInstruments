@@ -497,12 +497,13 @@ erschaffen werden.
 
 ##  Vom Vokabular zur "Lightweight Ontology" – Spezifizierung von Relationen mit *rdfs:range* und *rdfs:domain*
 
-Eines der zentralen Konzepte des Semantic Webs ist die sog. *open world assumption*.[^8682] Gemäß dem vielzitierten Leitsatz "Anyone can say anything about anything"[^8678] besagt sie, dass eine Aussage, die in einem Modell nicht explizit verankert ist, nicht notwendigerweise falsch sein muss, sondern dass lediglich keine endgültige Aussage über ihre Richtigkeit getroffen werden kann.[^8679] Es muss somit im Interesse eines RDF-Vokabulars liegen, sein semantisches Ausdruckspotential fort von der Summe alles Möglichen und somit Willkürlichen hin zum eigentlich Aussagekräftigen fokussieren zu können, indem es Hinweise zur sinnhaften Benutzung seiner Terme bereithält. Die Möglichkeit einer solchen Fokussierung bieten Ontologiesprachen wie RDFS und OWL, indem sie in RDF formalisierte und somit direkt integrierbare Schemata anbieten.[^8680]
+Eines der zentralen Konzepte des Semantic Webs ist die sog. *open world assumption*.[^8682] Gemäß dem vielzitierten Leitsatz "Anyone can say anything about anything"[^8678] besagt sie, dass eine Aussage, die in einem Modell nicht explizit verankert ist, nicht notwendigerweise falsch sein muss, sondern dass lediglich keine Aussage über ihre Richtigkeit getroffen werden kann.[^8679] Es muss somit im Interesse eines RDF-Vokabulars liegen, sein semantisches Ausdruckspotential fort von der Summe alles Möglichen und somit Willkürlichen hin zum eigentlich Aussagekräftigen fokussieren zu können, indem es Hinweise zur sinnhaften Verwendung seiner Terme bereithält. Die Möglichkeit einer solchen Fokussierung bieten Ontologiesprachen wie RDFS und OWL, indem sie in RDF formalisierte und somit direkt integrierbare "Anwendungsregel" zu Properties anbieten.[^8680]
 Es liegt dabei auf der Hand, dass ein Applikationsprofil, dessen Sinn darin besteht, ein schematisches Framework zu bieten, auf die Reduktion und Fokussierung seiner  von angewisen ist. ????
 Doch werden kraft dieser Schemata keineswegs lediglich die Wirkungsweite von Relationen abgesteckt. Vielmehr entsteht durch sie eine weitere Bedeutungsdimension, die die Grundlage dafür bietet, auch maschinell inhärente logische Schlussfolgerungen (Inferenzen) ziehen zu können (Reasoning).[^8681]
 
 Während im Vokabular Properties in Form kontingenter, semantisch ungerichteter Bestandteile einer Liste aufgezählt waren, kann im Folgenden ihre Anwendung in Abhängigkeit zu den durch sie in Relation gesetzten Entitäten näher beschrieben werden.[^33] Diesen Schritt zu vollziehen, ermöglichen die Properties *rdfs:range*[^31] und *rdfs:domain*[^32].[^27]
-Die Wirkungsweise dieser begrenzenden Properties wird im folgenden Beispiel nochmals verdeutlicht:
+
+1) Die Wirkungsweise dieser begrenzenden Properties wird im folgenden Beispiel nochmals verdeutlicht:
 
 Obwohl die Aussage
 ```
@@ -521,15 +522,55 @@ ma:hat_Frequenz rdfs:range ma:Frequenz .
 ```
 bestimmen, dass das Property mit einem Subjekt aus der Klasse `ma:Ton` und einem Objekt aus der Klasse `ma:Frequenz` verwendet werden sollte.
 
-Diese Beschränkungen werden dabei, wie bereits kurz angedeutet, in folgender Form direkt in das Vokabular integriert:
+Diese Beschränkungen werden dabei, wie bereits kurz angedeutet, in folgender Form direkt in das Vokabular integriert (dabei wird das Property `ma:hat_Frequenz` zum Subjekt folgender dreier Tripel):
 ```
 ma:hat_Frequenz	rdf:type owl:ObjectProperty 
 	rdfs:domain ma:Ton ;
  	rdfs:range ma:Frequenz .
 ```
 
+2) Durch die Bestimmung der Wirkunsweise von `ma:hat_Freuquenz` ist es im Folgenden möglich aus einer Aussage mehrere weitere Aussagen zu inferieren: Aus dem Tripel
+```
+example:x ma:hat_Frequenz example:y
+```
+wäre es für eine Reasoning-Software nun möglich zu inferieren, dass es sich bei `example:x` um eine Entität der Klasse `ma:Ton` und bei der Entität `example:y` um eine Entität der Klasse `ma:Frequenz` handeln muss.
 
-                            
+3) Eine wörtliche Überführung des ERM mit den `rdfs:domain` und `rdfs:range` ist nur im Falle bestimmter Properties – nämlich derjenigen, die in Bezug zu nur einem einzigen Subjekt und Objekt stehen (etwa `ma:hat_Ambitus`) – möglich. Das Property `ma:Interpret` etwa bezieht sich auf mehrere Subjekte. Eine Aussage in der folgenden Form ist jedoch problematisch:
+```
+ma:Interpret rdf:type owl:ObjectProperty ;
+	rdfs:domain		ma:Instrument_nach_Vokabular_(Domäne) ;
+ 	rdfs:domain		ma:ma:Objekt_(Domäne) ;
+ 	rdfs:domain		ma:Aufführung_(Domäne) ;
+ 	rdfs:range		 ma:Person		.
+```
+Aus diesem Sachverhalt scheint sich inferieren zu lassen, dass jede Instanz der Klasse `ma:Person` immer auch einer Instanz von `ma:Objekt_Domäne`, `ma:Instrument_nach_Vokabular_(Domäne)` sowie `ma:Aufführung_(Domäne)` zugleich zugeordnet ist.[^8683]
+Eine Aussage, wie 
+` `  
+` `  
+"Person a ist an dem Ereignis 'Uraufführung' beteiligt (spielt jedoch nicht auf dem Museumsobjekt b)" 
+` `  
+` `  
+wäre demnach nicht möglich.
+
+Ein Ausweg scheint in der Möglichkeit zu bestehen, eine übergeordnete Klasse für die Entitäten `ma:Instrument_nach_Vokabular_(Domäne)` sowie `ma:Objekt_Domäne` zu erschaffen und die Verwendung von `ma:Interpret` mit `rdfs:domain` auf diese Oberklasse (`ma:Instrument_(Domäne)`) zu beschränken.[^8684]
+Die Koppelung von Person und Ereignis scheint hingegen eine allgemein gültige.
+Somit lautet die neue Definition von `ma:Interpret`:
+```
+ma:Interpret rdf:type owl:ObjectProperty ;
+	rdfs:domain		ma:Instrument_(Domäne) ;
+ 	rdfs:domain		ma:Aufführung_(Domäne) ;
+ 	rdfs:range		 ma:Person		.
+```
+Bezugnahme auf die neue Superklasse `ma:Instrument_(Domäne)` kann nun auch auf analoge Sachverhalte im Falle von `ma:hat_Stimmung_(absolut)`, `ma:hat_Stimmungssystem` sowie `ma:hat_Klangbeispiel` angewendet werden.
+
+
+
+` `  
+` `  
+
+
+
+
 
 
 
@@ -742,10 +783,15 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 [^8678]: [@noauthor_resource_nodate]
 
 [^8679]: [@alma9913393902586, S. 32]
-Zur Notwendigkeit der Open World Assumption in semantischen Netzen s: [@alma9913393902586, S. 43]
+
+Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationalen Datenbanken. Zur Notwendigkeit der Open World Assumption in semantischen Netzen s: [@alma9913393902586, S. 43]
 
 [^8680]: [@TN_libero_mab21631588, S. 67]
 
 [^8681]: [@szeredi_lukácsy_benkő_nagy_2014, S. 98–99]
 
 [^8682]: [@noauthor_overview_nodate]
+
+[^8683]: [@TN_libero_mab21631588, S. 77]
+
+[^8684]: "Jede definierte Einschra ̈nkung auf einer Property wirkt al- so immer global auf jedes Vorkommen dieser Property, weswegen man bei der Angabe solcher Einschra ̈nkungen darauf achten muss, immer die allge- meinsten denkbaren Klassen anzugeben (also diejenigen, die mit Sicherheit alle mo ̈glichen Ressourcen, die in der fraglichen Beziehung stehen ko ̈nnen, enthalten)." ([@TN_libero_mab21631588, S. 77])
