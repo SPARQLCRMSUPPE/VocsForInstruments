@@ -180,6 +180,7 @@ werden zudem ontologische Aussagen zu den Einzelkonzepten getroffen. So werden a
 
 ```
 
+
 ##########################
 #    Header
 ##########################
@@ -190,257 +191,333 @@ werden zudem ontologische Aussagen zu den Einzelkonzepten getroffen. So werden a
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29> .
+@base <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma#> .
 
-<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology ;
+<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/ma> rdf:type owl:Ontology  ;
             dc:title "Vocabulary for my M.A. thesis" ;
             dc:date "2020-05-09" ;
             owl:versionInfo "draft" ;
-            dc:description "An RDF classification of relevant terms for building an application profile linking music instrument related entities. Reuse not recommended." .
+            dc:description "An RDF classification of relevant terms intended for building an application profile linking music instrument related entities. Reuse highly discouraged." .
 
-##########################
+#################################################################
 #    Object Properties
-##########################
+#################################################################
 
-###  ma:Entsprechungsgrad
-ma:Entsprechungsgrad rdf:type owl:ObjectProperty .
+###  ma#Entsprechungsgrad
+<ma#Entsprechungsgrad> rdf:type owl:ObjectProperty .
 
-###  ma:Interpret
-ma:Interpret rdf:type owl:ObjectProperty .
 
-###  ma:Typ
-ma:Typ rdf:type owl:ObjectProperty .
+###  ma#Identifikator
+<ma#Identifikator> rdf:type owl:ObjectProperty .
 
-###  ma:entspricht
-ma:entspricht rdf:type owl:ObjectProperty .
 
-###  ma:genaue_Entsprechung
-ma:genaue_Entsprechung rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf ma:Entsprechungsgrad .
+###  ma#Interpret
+<ma#Interpret> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Ambitus
-ma:hat_Ambitus rdf:type owl:ObjectProperty .
 
-###  ma:hat_Bezeichnung
-ma:hat_Bezeichnung rdf:type owl:ObjectProperty .
+###  ma#Typ
+<ma#Typ> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Dauer
-ma:hat_Dauer rdf:type owl:ObjectProperty .
 
-###  ma:hat_Format
-ma:hat_Format rdf:type owl:ObjectProperty .
+###  ma#entspricht
+<ma#entspricht> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Frequenz
-ma:hat_Frequenz rdf:type owl:ObjectProperty .
 
-###  ma:hat_Klangbeispiel
-ma:hat_Klangbeispiel rdf:type owl:ObjectProperty .
+###  ma#genaue_Entsprechung
+<ma#genaue_Entsprechung> rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <ma#Entsprechungsgrad> .
 
-###  ma:hat_Lebensdaten
-ma:hat_Lebensdaten rdf:type owl:ObjectProperty .
 
-###  ma:hat_Lizenz
-ma:hat_Lizenz rdf:type owl:ObjectProperty .
+###  ma#hat_Ambitus
+<ma#hat_Ambitus> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Namen
-ma:hat_Namen rdf:type owl:ObjectProperty .
 
-###  ma:hat_Ort
-ma:hat_Ort rdf:type owl:ObjectProperty .
+###  ma#hat_Dauer
+<ma#hat_Dauer> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Signatur
-ma:hat_Signatur rdf:type owl:ObjectProperty .
 
-###  ma:hat_Stimmungssystem
-ma:hat_Stimmungssystem rdf:type owl:ObjectProperty .
+###  ma#hat_Format
+<ma#hat_Format> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Zeitpunkt
-ma:hat_Zeitpunkt rdf:type owl:ObjectProperty .
 
-###  ma:hat_höchsten_Ton
-ma:hat_höchsten_Ton rdf:type owl:ObjectProperty .
+###  ma#hat_Frequenz
+<ma#hat_Frequenz> rdf:type owl:ObjectProperty .
 
-###  ma:hat_tiefsten_Ton
-ma:hat_tiefsten_Ton rdf:type owl:ObjectProperty .
 
-###  ma:in_Sammlung
-ma:in_Sammlung rdf:type owl:ObjectProperty .
+###  ma#hat_Klangbeispiel
+<ma#hat_Klangbeispiel> rdf:type owl:ObjectProperty .
 
-###  ma:klingt
-ma:klingt rdf:type owl:ObjectProperty .
 
-###  ma:ungefähre_Entsprechung
-ma:ungefähre_Entsprechung rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf ma:Entsprechungsgrad .
+###  ma#hat_Lebensdaten
+<ma#hat_Lebensdaten> rdf:type owl:ObjectProperty .
 
-###  ma:Ereignis_(Domäne)
-ma:Ereignis_(Domäne) rdf:type owl:ObjectProperty .
 
-###  ma:hat_Besetzung_(Domäne)
-ma:hat_Besetzung_(Domäne) rdf:type owl:ObjectProperty .
+###  ma#hat_Lizenz
+<ma#hat_Lizenz> rdf:type owl:ObjectProperty .
 
-###  ma:hat_ID_(WerkVZ)
-ma:hat_ID_(WerkVZ) rdf:type owl:ObjectProperty .
 
-###  ma:hat_ID_(intern)
-ma:hat_ID_(intern) rdf:type owl:ObjectProperty .
+###  ma#hat_Namen
+<ma#hat_Namen> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Stimmung_(absolut)
-ma:hat_Stimmung_(absolut) rdf:type owl:ObjectProperty .
 
-###  ma:hat_Stimmung_(notierte)
-ma:hat_Stimmung_(notierte) rdf:type owl:ObjectProperty .
+###  ma#hat_Ort
+<ma#hat_Ort> rdf:type owl:ObjectProperty .
 
-###  ma:hat_Stimmung_(relativ)
-ma:hat_Stimmung_(relativ) rdf:type owl:ObjectProperty .
 
-##########################
+###  ma#hat_Signatur
+<ma#hat_Signatur> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_Stimmungssystem
+<ma#hat_Stimmungssystem> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_Zeitpunkt
+<ma#hat_Zeitpunkt> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_höchsten_Ton
+<ma#hat_höchsten_Ton> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_tiefsten_Ton
+<ma#hat_tiefsten_Ton> rdf:type owl:ObjectProperty .
+
+
+###  ma#in_Sammlung
+<ma#in_Sammlung> rdf:type owl:ObjectProperty .
+
+
+###  ma#klingt
+<ma#klingt> rdf:type owl:ObjectProperty .
+
+
+###  ma#ungefähre_Entsprechung
+<ma#ungefähre_Entsprechung> rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <ma#Entsprechungsgrad> .
+
+
+###  ma#Ereignis_(Domäne)
+<ma#Ereignis_(Domäne)> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_Besetzung_(Domäne)
+<ma#hat_Besetzung_(Domäne)> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_ID_(WerkVZ)
+<ma#hat_ID_(WerkVZ)> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_ID_(intern)
+<ma#hat_ID_(intern)> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_Stimmung_(absolut)
+<ma#hat_Stimmung_(absolut)> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_Stimmung_(notierte)
+<ma#hat_Stimmung_(notierte)> rdf:type owl:ObjectProperty .
+
+
+###  ma#hat_Stimmung_(relativ)
+<ma#hat_Stimmung_(relativ)> rdf:type owl:ObjectProperty .
+
+
+#################################################################
 #    Classes
-##########################
+#################################################################
 
-###  ma:Ambitus
-ma:Ambitus rdf:type owl:Class .
+###  ma#Ambitus
+<ma#Ambitus> rdf:type owl:Class .
 
-###  ma:Bezeichnung
-ma:Bezeichnung rdf:type owl:Class .
 
-###  ma:Dauer
-ma:Dauer rdf:type owl:Class .
+###  ma#Dauer
+<ma#Dauer> rdf:type owl:Class .
 
-###  ma:Format
-ma:Format rdf:type owl:Class .
 
-###  ma:Frequenz
-ma:Frequenz rdf:type owl:Class .
+###  ma#Format
+<ma#Format> rdf:type owl:Class .
 
-###  ma:Identifikator
-ma:Identifikator rdf:type owl:Class .
 
-###  ma:Kammerton
-ma:Kammerton rdf:type owl:Class .
+###  ma#Frequenz
+<ma#Frequenz> rdf:type owl:Class .
 
-###  ma:Klangbeispiel
-ma:Klangbeispiel rdf:type owl:Class .
 
-###  ma:Lebensdaten
-ma:Lebensdaten rdf:type owl:Class .
+###  ma#Identifikator
+<ma#Identifikator> rdf:type owl:Class .
 
-###  ma:Lizenz
-ma:Lizenz rdf:type owl:Class .
 
-###  ma:Name
-ma:Name rdf:type owl:Class .
+###  ma#Kammerton
+<ma#Kammerton> rdf:type owl:Class ;
+               rdfs:subClassOf <ma#Ton> .
 
-###  ma:Ort
-ma:Ort rdf:type owl:Class .
 
-###  ma:Person
-ma:Person rdf:type owl:Class .
+###  ma#Klangbeispiel
+<ma#Klangbeispiel> rdf:type owl:Class .
 
-###  ma:Sammlung
-ma:Sammlung rdf:type owl:Class .
 
-###  ma:Signatur
-ma:Signatur rdf:type owl:Class .
+###  ma#Lebensdaten
+<ma#Lebensdaten> rdf:type owl:Class .
 
-###  ma:Stimmung
-ma:Stimmung rdf:type owl:Class .
 
-###  ma:Stimmungssystem
-ma:Stimmungssystem rdf:type owl:Class .
+###  ma#Lizenz
+<ma#Lizenz> rdf:type owl:Class .
 
-###  ma:Zeitpunk
-ma:Zeitpunk rdf:type owl:Class .
 
-###  ma:cor_da_caccia
-ma:cor_da_caccia rdf:type owl:Class ;
-                   rdfs:subClassOf ma:Instrument_nach_Vokabular_(Domäne) .
+###  ma#Name
+<ma#Name> rdf:type owl:Class .
 
-###  ma:höchster_Ton
-ma:höchster_Ton rdf:type owl:Class .
 
-###  ma:tiefster_Ton
-ma:tiefster_Ton rdf:type owl:Class .
+###  ma#Ort
+<ma#Ort> rdf:type owl:Class .
 
-###  ma:Aufführung_(Domäne)
-ma:Aufführung_(Domäne) rdf:type owl:Class .
 
-###  ma:Barockhorn_(Mitteldeutschland)
-ma:Barockhorn_(Mitteldeutschland) rdf:type owl:Class ;
-                                    rdfs:subClassOf ma:Instrument_(Klassifikation) .
+###  ma#Person
+<ma#Person> rdf:type owl:Class .
 
-###  ma:ID_(WerkVZ)
-ma:ID_(WerkVZ) rdf:type owl:Class .
 
-###  ma:ID_(intern)
-ma:ID_(intern) rdf:type owl:Class .
+###  ma#Sammlung
+<ma#Sammlung> rdf:type owl:Class .
 
-###  ma:Instrument_(Klassifikation)
-ma:Instrument_(Klassifikation) rdf:type owl:Class .
 
-###  ma:Instrument_nach_Vokabular_(Domäne)
-ma:Instrument_nach_Vokabular_(Domäne) rdf:type owl:Class .
+###  ma#Signatur
+<ma#Signatur> rdf:type owl:Class .
 
-###  ma:Objekt_(Domäne)
-ma:Objekt_(Domäne) rdf:type owl:Class .
 
-###  ma:Ton_(klingend)
-ma:Ton_(klingend) rdf:type owl:Class .
+###  ma#Stimmung
+<ma#Stimmung> rdf:type owl:Class .
 
-###  ma:Werk_(Domäne)
-ma:Werk_(Domäne) rdf:type owl:Class .
 
-##########################
+###  ma#Stimmungssystem
+<ma#Stimmungssystem> rdf:type owl:Class .
+
+
+###  ma#Ton
+<ma#Ton> rdf:type owl:Class .
+
+
+###  ma#Zeitpunk
+<ma#Zeitpunk> rdf:type owl:Class .
+
+
+###  ma#cor_da_caccia
+<ma#cor_da_caccia> rdf:type owl:Class ;
+                   rdfs:subClassOf <ma#Instrument_nach_Vokabular_(Domäne)> .
+
+
+###  ma#höchster_Ton
+<ma#höchster_Ton> rdf:type owl:Class ;
+                  rdfs:subClassOf <ma#Ton> .
+
+
+###  ma#tiefster_Ton
+<ma#tiefster_Ton> rdf:type owl:Class ;
+                  rdfs:subClassOf <ma#Ton> .
+
+
+###  ma#Aufführung_(Domäne)
+<ma#Aufführung_(Domäne)> rdf:type owl:Class .
+
+
+###  ma#Barockhorn_(Mitteldeutschland)
+<ma#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class ;
+                                    rdfs:subClassOf <ma#Instrument_(Klassifikation)> .
+
+
+###  ma#ID_(WerkVZ)
+<ma#ID_(WerkVZ)> rdf:type owl:Class .
+
+
+###  ma#ID_(intern)
+<ma#ID_(intern)> rdf:type owl:Class .
+
+
+###  ma#Instrument_(Klassifikation)
+<ma#Instrument_(Klassifikation)> rdf:type owl:Class .
+
+
+###  ma#Instrument_nach_Vokabular_(Domäne)
+<ma#Instrument_nach_Vokabular_(Domäne)> rdf:type owl:Class .
+
+
+###  ma#Objekt_(Domäne)
+<ma#Objekt_(Domäne)> rdf:type owl:Class .
+
+
+###  ma#Ton_(klingend)
+<ma#Ton_(klingend)> rdf:type owl:Class ;
+                    rdfs:subClassOf <ma#Ton> .
+
+
+###  ma#Werk_(Domäne)
+<ma#Werk_(Domäne)> rdf:type owl:Class .
+
+
+#################################################################
 #    Individuals
-##########################
+#################################################################
 
-###  ma:BWV_208
-ma:BWV_208 rdf:type owl:NamedIndividual ,
-                      ma:Werk_(Domäne) .
+###  ma#BWV_208
+<ma#BWV_208> rdf:type owl:NamedIndividual ,
+                      <ma#Werk_(Domäne)> .
 
-###  ma:MIMUL_1663
-ma:MIMUL_1663 rdf:type owl:NamedIndividual ,
-                         ma:Signatur .
 
-###  ma:MIMUL_Inv.-Nr._1663
-ma:MIMUL_Inv.-Nr._1663 rdf:type owl:NamedIndividual ,
-                                  ma:Objekt_(Domäne) .
+###  ma#MIMUL_1663
+<ma#MIMUL_1663> rdf:type owl:NamedIndividual ,
+                         <ma#Signatur> .
 
-###  ma:Person_a
-ma:Person_a rdf:type owl:NamedIndividual ,
-                       ma:Person .
 
-###  ma:Track_No_2
-ma:Track_No_2 rdf:type owl:NamedIndividual ,
-                         ma:Klangbeispiel .
+###  ma#MIMUL_Inv.-Nr._1663
+<ma#MIMUL_Inv.-Nr._1663> rdf:type owl:NamedIndividual ,
+                                  <ma#Objekt_(Domäne)> .
 
-###  ma:f
-ma:f rdf:type owl:NamedIndividual ,
-                ma:Ton_(klingend) .
 
-###  ma:in_F
-ma:in_F rdf:type owl:NamedIndividual ,
-                   ma:Stimmung .
+###  ma#Person_a
+<ma#Person_a> rdf:type owl:NamedIndividual ,
+                       <ma#Person> .
 
-###  ma:natürliches_Stimmungssystem
-ma:natürliches_Stimmungssystem rdf:type owl:NamedIndividual ,
-                                          ma:Stimmungssystem .
 
-###  ma:a''
-ma:a\'\' rdf:type owl:NamedIndividual ,
-                  ma:höchster_Ton .
+###  ma#Track_No_2
+<ma#Track_No_2> rdf:type owl:NamedIndividual ,
+                         <ma#Klangbeispiel> .
 
-###  ma:a'_=_415_Hz
-ma:a\'_=_415_Hz rdf:type owl:NamedIndividual ,
-                          ma:Kammerton .
 
-###  ma:c'
-ma:c\' rdf:type owl:NamedIndividual ,
-                 ma:tiefster_Ton .
+###  ma#f
+<ma#f> rdf:type owl:NamedIndividual ,
+                <ma#Ton_(klingend)> .
 
-###  ma:d''
-ma:d\'\' rdf:type owl:NamedIndividual ,
-                  ma:Ton_(klingend) .
+
+###  ma#in_F
+<ma#in_F> rdf:type owl:NamedIndividual ,
+                   <ma#Stimmung> .
+
+
+###  ma#natürliches_Stimmungssystem
+<ma#natürliches_Stimmungssystem> rdf:type owl:NamedIndividual ,
+                                          <ma#Stimmungssystem> .
+
+
+###  ma#a''
+<ma#a''> rdf:type owl:NamedIndividual ,
+                  <ma#höchster_Ton> .
+
+
+###  ma#a'_=_415_Hz
+<ma#a'_=_415_Hz> rdf:type owl:NamedIndividual ,
+                          <ma#Kammerton> .
+
+
+###  ma#c'
+<ma#c'> rdf:type owl:NamedIndividual ,
+                 <ma#tiefster_Ton> .
+
+
+###  ma#d''
+<ma#d''> rdf:type owl:NamedIndividual ,
+                  <ma#Ton_(klingend)> .
+
               
 ```
 
@@ -497,19 +574,20 @@ erschaffen werden.
 
 ##  Vom Vokabular zur "Lightweight Ontology" – Spezifizierung von Relationen mit *rdfs:range* und *rdfs:domain*
 
-Eines der zentralen Konzepte des Semantic Webs ist die sog. *open world assumption*.[^8682] Gemäß dem vielzitierten Leitsatz "Anyone can say anything about anything"[^8678] besagt sie, dass eine Aussage, die in einem Modell nicht explizit verankert ist, nicht notwendigerweise falsch sein muss, sondern dass lediglich keine Aussage über ihre Richtigkeit getroffen werden kann.[^8679] Es muss somit im Interesse eines RDF-Vokabulars liegen, sein semantisches Ausdruckspotential fort von der Summe alles Möglichen und somit Willkürlichen hin zum eigentlich Aussagekräftigen fokussieren zu können, indem es Hinweise zur sinnhaften Verwendung seiner Terme bereithält. Die Möglichkeit einer solchen Fokussierung bieten Ontologiesprachen wie RDFS und OWL, indem sie in RDF formalisierte und somit direkt integrierbare "Anwendungsregel" zu Properties anbieten.[^8680]
-Es liegt dabei auf der Hand, dass ein Applikationsprofil, dessen Sinn darin besteht, ein schematisches Framework zu bieten, auf die Reduktion und Fokussierung seiner  von angewisen ist. ????
+Eines der zentralen Konzepte des Semantic Webs ist die sog. *open world assumption*.[^8682] Gemäß dem vielzitierten Leitsatz "Anyone can say anything about anything"[^8678] besagt sie, dass eine Aussage, die in einem Modell nicht explizit verankert ist, nicht notwendigerweise falsch sein muss, sondern dass lediglich keine Aussage über ihre Richtigkeit getroffen werden kann.[^8679] Es muss somit im Interesse eines RDF-Vokabulars liegen, sein semantisches Ausdruckspotential fort von der Summe alles Möglichen (und somit Willkürlichen) hin zum eigentlich Aussagekräftigen fokussieren zu können, indem es Hinweise zur sinnhaften Verwendung seiner Terme bereithält. Die Möglichkeit einer solchen Fokussierung bieten Ontologiesprachen wie RDFS und OWL, indem sie in RDF formalisierte und somit direkt integrierbare "Anwendungsregel" zu Properties anbieten.[^8680]
+Es liegt dabei auf der Hand, dass für ein Applikationsprofil, dessen Sinn darin besteht, schematische Rahmenbedingungen zu schaffen, entlang derer sich Anwender ausrichten und orientieren können, ein hohes Maß an semantischer Fixiertheit insbesondere unabdingbar ist.
+
 Doch werden kraft dieser Schemata keineswegs lediglich die Wirkungsweite von Relationen abgesteckt. Vielmehr entsteht durch sie eine weitere Bedeutungsdimension, die die Grundlage dafür bietet, auch maschinell inhärente logische Schlussfolgerungen (Inferenzen) ziehen zu können (Reasoning).[^8681]
 
 Während im Vokabular Properties in Form kontingenter, semantisch ungerichteter Bestandteile einer Liste aufgezählt waren, kann im Folgenden ihre Anwendung in Abhängigkeit zu den durch sie in Relation gesetzten Entitäten näher beschrieben werden.[^33] Diesen Schritt zu vollziehen, ermöglichen die Properties *rdfs:range*[^31] und *rdfs:domain*[^32].[^27]
 
-1) Die Wirkungsweise dieser begrenzenden Properties wird im folgenden Beispiel nochmals verdeutlicht:
+1) Die Wirkung dieser begrenzenden Properties wird im folgenden Beispiel verdeutlicht:
 
 Obwohl die Aussage
 ```
 ma:Person_a ma:hat_Frequenz ma:Lizenz .
 ```
-angesichts der *open world assumption* legitim ist, ist es sinnvoll die Anwendung von `ma:hat_Frequenz`, gemäß Anwendungsmodell, nur auf bestimmte Subjekte und Objekte zu beschränken.
+angesichts der *open world assumption* legitim ist, ist es sinnvoll die Anwendung von `ma:hat_Frequenz` für das Profil, gemäß Anwendungsmodell, nur auf bestimmte Subjekte und Objekte zu beschränken.
 Im Szenario 
 ```
 ma:a\' ma:hat_Frequenz ma:415Hz .
@@ -520,7 +598,7 @@ Somit lässt sich mit der Zuweisung
 ma:hat_Frequenz rdfs:domain ma:Ton ;
 ma:hat_Frequenz rdfs:range ma:Frequenz .
 ```
-bestimmen, dass das Property mit einem Subjekt aus der Klasse `ma:Ton` und einem Objekt aus der Klasse `ma:Frequenz` verwendet werden sollte.
+bestimmen, dass im Profil das Property mit einem Subjekt aus der Klasse `ma:Ton` und einem Objekt aus der Klasse `ma:Frequenz` verwendet werden sollte.
 
 Diese Beschränkungen werden dabei, wie bereits kurz angedeutet, in folgender Form direkt in das Vokabular integriert (dabei wird das Property `ma:hat_Frequenz` zum Subjekt folgender dreier Tripel):
 ```
@@ -533,9 +611,9 @@ ma:hat_Frequenz	rdf:type owl:ObjectProperty
 ```
 example:x ma:hat_Frequenz example:y
 ```
-wäre es für eine Reasoning-Software nun möglich zu inferieren, dass es sich bei `example:x` um eine Entität der Klasse `ma:Ton` und bei der Entität `example:y` um eine Entität der Klasse `ma:Frequenz` handeln muss.
+wäre es für eine Reasoning-Applikation nun möglich zu inferieren, dass es sich bei `example:x` um eine Entität der Klasse `ma:Ton` und bei der Entität `example:y` um eine Entität der Klasse `ma:Frequenz` handeln muss.
 
-3) Eine wörtliche Überführung des ERM mit den `rdfs:domain` und `rdfs:range` ist nur im Falle bestimmter Properties – nämlich derjenigen, die in Bezug zu nur einem einzigen Subjekt und Objekt stehen (etwa `ma:hat_Ambitus`) – möglich. Das Property `ma:Interpret` etwa bezieht sich auf mehrere Subjekte. Eine Aussage in der folgenden Form ist jedoch problematisch:
+3) Eine direkte Überführung des ERM mit `rdfs:domain` und `rdfs:range` ist nur im Falle bestimmter Properties – nämlich derjenigen, die in Bezug zu nur einem einzigen Subjekt und Objekt stehen (etwa `ma:hat_Ambitus`) – möglich. Das Property `ma:Interpret` etwa bezieht sich auf mehrere Subjekte. Eine Aussage in der folgenden Form ist jedoch problematisch:
 ```
 ma:Interpret rdf:type owl:ObjectProperty ;
 	rdfs:domain		ma:Instrument_nach_Vokabular_(Domäne) ;
@@ -544,15 +622,15 @@ ma:Interpret rdf:type owl:ObjectProperty ;
  	rdfs:range		 ma:Person		.
 ```
 Aus diesem Sachverhalt scheint sich inferieren zu lassen, dass jede Instanz der Klasse `ma:Person` immer auch einer Instanz von `ma:Objekt_Domäne`, `ma:Instrument_nach_Vokabular_(Domäne)` sowie `ma:Aufführung_(Domäne)` zugleich zugeordnet ist.[^8683]
-Eine Aussage, wie 
-` `  
-` `  
+Eine Aussage, wie
+\
+
 "Person a ist an dem Ereignis 'Uraufführung' beteiligt (spielt jedoch nicht auf dem Museumsobjekt b)" 
-` `  
-` `  
+\
+
 wäre demnach nicht möglich.
 
-Ein Ausweg scheint in der Möglichkeit zu bestehen, eine übergeordnete Klasse für die Entitäten `ma:Instrument_nach_Vokabular_(Domäne)` sowie `ma:Objekt_Domäne` zu erschaffen und die Verwendung von `ma:Interpret` mit `rdfs:domain` auf diese Oberklasse (`ma:Instrument_(Domäne)`) zu beschränken.[^8684]
+Einen Ausweg scheint in die Möglichkeit zu bieten, eine übergeordnete Klasse für die Entitäten `ma:Instrument_nach_Vokabular_(Domäne)` sowie `ma:Objekt_Domäne` zu erschaffen und die Verwendung von `ma:Interpret` mit `rdfs:domain` auf diese Oberklasse (`ma:Instrument_(Domäne)`) zu beschränken.[^8684]
 Die Koppelung von Person und Ereignis scheint hingegen eine allgemein gültige.
 Somit lautet die neue Definition von `ma:Interpret`:
 ```
@@ -562,11 +640,55 @@ ma:Interpret rdf:type owl:ObjectProperty ;
  	rdfs:range		 ma:Person		.
 ```
 Bezugnahme auf die neue Superklasse `ma:Instrument_(Domäne)` kann nun auch auf analoge Sachverhalte im Falle von `ma:hat_Stimmung_(absolut)`, `ma:hat_Stimmungssystem` sowie `ma:hat_Klangbeispiel` angewendet werden.
+\
+
+Die *open world assumption* bringt es mit sich, dass eine Validierung von in RDF strukturierten Daten naturgemäß eigentlich nicht vorgesehen sein kann.[^8685] Hieran ändert auch – trotz des Namens – RDFS kaum etwas: "Unlike XML Schema, RDF Schema is generally interpreted as supplementing rather than validating RDF data."[^8686] Dennoch sind die Möglichkeiten von RDFS – etwa gegenüber dem sehr viel mächtigeren, dafür aber umso komplexeren OWL DL –[^8687] für die Belange dieses Metadatenprofils absolut angemessen,[^8691] nicht zuletzt da es gilt, Überkomplexität aufgrund seiner Anwendungs- und Anwenderorientiertheit insbesondere zu vermeiden.[^8690]
+Man spricht in solchen Fällen von sogenannten "lightweight ontologies", die "in der Regel nur aus einer Konzepthierarchie sowie Relationen, für die jeweils Domain und Range Einschränkungen [sic!] angegeben werden[, bestehen]."[^8692] Gegenüber dem Vokabular, das lediglich eine Bestandsaufnahme der für diese Arbeit relevanten Konzepte und deren Klassifikation darstellte, ist kraft der Properties eine weitere ontologische Dimension hinzugekommen (vgl. Abbildung): um mit Heidegger zu sprechen, wird in ihr das eigentliche sinnhafte Sein eines zuvor bloßen Vorhandenseins von Seiendem (Entitäten) "diesseitig" gegenüber einem Verständnishorizont (durch die sinnhaften Bezüge der Entitäten zueinander) erschlossen. Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Arbeit den Begriff als zu bedeutungsschwer für sich ausklammert – ausnahmsweise Verwendung findet, so ist mit ihm also genau diese Qualität gemeint. Das Anwendungsprofil ist, gemessen an seinem Potential Seinsstrukturen einer Welt darstellen zu können, qualitativ als Ontologie zu betrachten. Gemessen an seiner Funktionalität, die es als Schema für Mapping und Datenanreicherung auszeichnet, ist es ein Anwendungsprofil.
 
 
 
-` `  
-` `  
+
+
+
+"semantische[s] Bindeglied zwischen Klassen und Propertys".[^30]
+
+
+
+
+"Wie schon in XML versteht man un- ter einem Vokabular meist eine Zusammenstellung von Bezeichnern mit klar definierter Bedeutung." [@TN_libero_mab21631588, S. 48]
+
+"formale Definition von Begriffen und deren Beziehungen als Grundlage für ein gemeinsames Verständnis."[@busse_was_2014, S. 2] 
+
+"Wir nennen in der Informatik eine Ontologie eine formale Definition von Begriffen und deren Beziehungen – bezogen auf eine Anwendungsdomäne. „Formal“ heißt in einer Sprache, deren Syntax und Semantik definiert sind und die von Computerprogrammen bearbeitet werden kann." [@busse_was_2014, S. 4]
+
+Ontologie hier verwendet im Sinne seiner Vieldimensionalität.
+
+
+
+Begriff Vokabular hier (auch wenn eigentlich Ontologie) v.a. verwendet, um zu suggerieren, dass jene Ontologie hier als Sammlung von Begriffen benutzt wird bzw. die Begriffe kontingent herangezogen werden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -584,70 +706,34 @@ Einschränkung der Properties insb. bei Metadatenprofil wichtig:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-#  Relationen definieren / Anpassung des Datenmodells [muss anders]
-
-Nachdem kontrollierte Vokabulare erstellt worden sind, liegt es nahe, Relationen, die bislang höchstens im Vorhandensein kontingenter Klassen bestanden, zu erstellen. Auch dies geschieht laut Stuckenschmidt idealerweise zunächst auf einer Metaebene, indem die Properties gemäß ihrer Abhängigkeit zu den Entitäten näher beschrieben werden.[^33] Dies kann geschehen, indem zwei neue Properties eingeführt werden: *rdfs:range*[^31] und *rdfs:domain*[^32].[^27]        
-
-Diese fungieren als "semantische[s] Bindeglied zwischen Klassen und Propertys".[^30] indem sie definieren, welche Properties sich auf welche Klassen in welcher Weise beziehen können. 
-
-So besitzt z.B. das Prädikat in der folgenden Aussage[^28]
-```
-rism:corDaCaccia ma:typ taxonomie:barockhorn
-```
-die Domäne rism:corDaCaccia – das Subjekt der Aussage.[^29]  Zugleich besitzt das Property *ma:typ* das *rdfs:range* Barockhorn. Es lassen sich daher die Aussagen treffen, dass das Property bedeutet, dass jede Entität, die als Subjekt oder Objekt mit dem Property *ma:typ* verbunden ist, ein Barockhorn oder ein 
-
-
-die Aussage ist schon richtig, aber nur für das spezielle Modell. -> man sollte schon noch übergeordnete Klassen vergeben.
-
-
-**WICHTIG:** Nächster Schritt bei der Modellierung: [<- ja, erst jetzt wird Kontext konstruiert]
-
->"Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss diese na ̈her beschrieben werden. Hier- bei ist zuna ̈chst die Beziehung der gefundenen Relationen zu den im Vorfeld identifizierten Klassen zu bestimmen. Dies erfolgt in der Regel durch die in den Kapiteln 4.1.1 und 4.2.1 beschriebe- nen Domain- und Range Einschra ̈nkungen. Fu ̈r jede Relation ist also festzulegen, welche Art von Objekten diese potenziell ver- binden kann. Hierbei ist stets die allgemeinste Klasse zu wa ̈hlen, um nicht unno ̈tigerweise Mo ̈glichkeiten auszuschließen. Kom- men mehrere Klassen als Doma ̈ne oder Range einer Relation in Betracht, so sind die jeweilige Semantik der verwendeten Spra- che und leider zum Teil auch die Eigenschaften des verwende- ten Tools zu beru ̈cksichtigen, da diese zu unerwu ̈nschten Effek- ten fu ̈hren ko ̈nnen." [@alma9913393902586, S. 169]
-
-Dabei stellt sich heraus, dass das Datenmodell noch weiter spezifiziert werden muss, indem weitere Klassen vergeben werden. z.B. "natürliche Stimmung" rdfs:domain "Stimmung" (dabei mittelbar ja auch Anbindung an weitere Vokabulare möglich.)
-
-**"Dieser Schrittist notwendig, da die Kenntnis der zur Verf ̈ugung stehendenRelationen Voraussetzung f ̈ur die Formalisierung der Klassen durch notwendige und hinreichende Bedingungen im n ̈achstenSchritt ist."**[^15] <- Mist – warum mache ich es anders? und warum ist das auch ok? Wohl weil keine ganze Domäne modelliere, sondern nur einen ganz bestimmten Ausschnitt, der auch nicht die Funktion hat, vollständig zu sein, sondern nur spezifische Infos anzureichern bzw. zu Mappen.
-
-Nachdem auf diese Art eine Grundmenge von Relationen identifiziert wurde, muss diese na ̈her beschrieben werden. Hier- bei ist zuna ̈chst die Beziehung der gefundenen Relationen zu den im Vorfeld identifizierten Klassen zu bestimmen. Dies erfolgt in der Regel durch die in den Kapiteln 4.1.1 und 4.2.1 beschriebe- nen Domain- und Range Einschra ̈nkungen. Fu ̈r jede Relation ist also festzulegen, welche Art von Objekten diese potenziell ver- binden kann.[^25]
-
-"Ahnlich verha ̈lt es sich mit der Beschreibung charakteristi-
-
-scher Eigenschaften von Objekten, die zu einer bestimmten Ka- tegorie geho ̈ren. Diese werden ja, wie oben beschrieben, in der Philosophie als ,,differentiae“ bezeichnet. In den anderen rele- vanten Disziplinen wird ha ̈ufig von Eigenschaften und Attri- buten gesprochen. Diese wiederum werden oft durch ,,Relatio- nen“ dargestellt. Zusa ̈tzlich werden in bestimmten Gebieten spe- zielle Bezeichnungen verwendet. So wird vor Allem im Kon- text von Beschreibungslogiken und semantischen Netzen oft von ,,Slots“ gesprochen."[^26]
-
-
-
-—
 
 # Notizen
 
 Nachdem bereits vorläufige "Domains" in Form von Präfixen (*ma:*, *rism:*, *taxonomie:*, *mimul*) definiert worden waren, scheint es denkbar, die nun mit RDF ausgezeichneten Terme im Internet zu verankern und somit in das Semantic Web einzubetten. 
 
-deutlich machen, dass die Vorgehensweise hier nicht sauber, aber für die Belange der Arbeit ausreichend ist.
 
 
-wichtig ist auch range zu definieren. kann nur verwendet werden mit ma – wie??? mit rdfs:domain? als rdfs:container definieren (= Liste) und dann sagen, dass sich nur auf die Listen bezieht?
 
-aus gründen der lesbarkeit .rdf und nicht rdf/xml (<- könnte man aber geschwind umwandeln?)
 
 Many namespaces have been created in the context of Semantic Web projects to distinguish the names of classes, properties and individuals defined and/or described by that project from all others. One common approach is to use a namespace URI ending with a hash (`#`) to identify the namespace, in which case the URI _without_ the hash is available to identify the information resource which describes the namespace, that is, the namespace document.
 
 "An URIs kann, abgetrennt durch #, auch ein weiteres Fragment angehängt werden. Die Kombination aus URI und Fragment wird URI-Referenz genannt. URI- Referenzen werden in RDF häufig zur eindeutigen Referenzierung von Ressourcen verwendet und stellen somit eine wichtige Komponente der Semantic-Web-Schichten dar."[^6]
 
-"Wie schon in XML versteht man un- ter einem Vokabular meist eine Zusammenstellung von Bezeichnern mit klar definierter Bedeutung." [@TN_libero_mab21631588, S. 48]
+
 
 "Oft muss man aber auch vo ̈llig neue URIs bilden. In einem solchen Fall muss man sicherstellen, dass die gewa ̈hlte URI nicht versehentlich anderswo mit anderer Bedeutung zum Einsatz kommt. Eine gute Methode dazu ist es, eine URI zu wa ̈hlen, die sich aus einer Webadresse ableitet, deren Inhalte man selbst kontrolliert. Eine URI, die mit http://springer.com/... beginnt, soll- te demnach nur vom Springer-Verlag eingefu ̈hrt werden. Außerdem ist es in einem solchen Fall mo ̈glich, an der entsprechenden Adresse ein Dokument ab- zulegen, welches die Bedeutung der URI fu ̈r Menschen beschreibt." [@TN_libero_mab21631588, S. 48–49]
 
@@ -783,7 +869,7 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 [^8678]: [@noauthor_resource_nodate]
 
 [^8679]: [@alma9913393902586, S. 32]
-
+\
 Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationalen Datenbanken. Zur Notwendigkeit der Open World Assumption in semantischen Netzen s: [@alma9913393902586, S. 43]
 
 [^8680]: [@TN_libero_mab21631588, S. 67]
@@ -795,3 +881,17 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 [^8683]: [@TN_libero_mab21631588, S. 77]
 
 [^8684]: "Jede definierte Einschra ̈nkung auf einer Property wirkt al- so immer global auf jedes Vorkommen dieser Property, weswegen man bei der Angabe solcher Einschra ̈nkungen darauf achten muss, immer die allge- meinsten denkbaren Klassen anzugeben (also diejenigen, die mit Sicherheit alle mo ̈glichen Ressourcen, die in der fraglichen Beziehung stehen ko ̈nnen, enthalten)." ([@TN_libero_mab21631588, S. 77])
+
+[^8685]: [@noauthor_examples_nodate]
+
+[^8686]: [@noauthor_examples_nodate]
+
+[^8687]: descriptive logic – AI - solcher Kram
+
+[^8688]: [@alma9913393902586, S. 77]
+
+[^8690]: [@hyvonen_publishing_2012, S. 76]
+
+[^8691]: [@TN_libero_mab21631588, S. 68]
+
+[^8692]: [@alma9913393902586, S. 170–171]
