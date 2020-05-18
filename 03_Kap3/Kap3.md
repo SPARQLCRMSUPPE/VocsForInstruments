@@ -643,7 +643,69 @@ Bezugnahme auf die neue Superklasse `ma:Instrument_(Domäne)` kann nun auch auf 
 \
 
 Die *open world assumption* bringt es mit sich, dass eine Validierung von in RDF strukturierten Daten naturgemäß eigentlich nicht vorgesehen sein kann.[^8685] Hieran ändert auch – trotz des Namens – RDFS kaum etwas: "Unlike XML Schema, RDF Schema is generally interpreted as supplementing rather than validating RDF data."[^8686] Dennoch sind die Möglichkeiten von RDFS – etwa gegenüber dem sehr viel mächtigeren, dafür aber umso komplexeren OWL DL –[^8687] für die Belange dieses Metadatenprofils absolut angemessen,[^8691] nicht zuletzt da es gilt, Überkomplexität aufgrund seiner Anwendungs- und Anwenderorientiertheit insbesondere zu vermeiden.[^8690]
-Man spricht in solchen Fällen von sogenannten "lightweight ontologies", die "in der Regel nur aus einer Konzepthierarchie sowie Relationen, für die jeweils Domain und Range Einschränkungen [sic!] angegeben werden[, bestehen]."[^8692] Gegenüber dem Vokabular, das lediglich eine Bestandsaufnahme der für diese Arbeit relevanten Konzepte und deren Klassifikation darstellte, ist kraft der Properties eine weitere ontologische Dimension hinzugekommen (vgl. Abbildung): um mit Heidegger zu sprechen, wird in ihr das eigentliche sinnhafte Sein eines zuvor bloßen Vorhandenseins von Seiendem (Entitäten) "diesseitig" gegenüber einem Verständnishorizont (durch die sinnhaften Bezüge der Entitäten zueinander) erschlossen. Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Arbeit den Begriff als zu bedeutungsschwer für sich ausklammert – ausnahmsweise Verwendung findet, so ist mit ihm also genau diese Qualität gemeint. Das Anwendungsprofil ist, gemessen an seinem Potential Seinsstrukturen einer Welt darstellen zu können, qualitativ als Ontologie zu betrachten. Gemessen an seiner Funktionalität, die es als Schema für Mapping und Datenanreicherung auszeichnet, ist es ein Anwendungsprofil.
+Man spricht in solchen Fällen von sogenannten "lightweight ontologies", die "in der Regel nur aus einer Konzepthierarchie sowie Relationen, für die jeweils Domain und Range Einschränkungen [sic!] angegeben werden[, bestehen]."[^8692] Gegenüber dem Vokabular, das lediglich eine Bestandsaufnahme der für diese Arbeit relevanten Konzepte und deren Klassifikation darstellte, ist kraft der Properties eine weitere ontologische Dimension hinzugekommen (vgl. Abbildung): um mit Heidegger zu sprechen, wird das zuvor lediglich Vorhandene kraft seiner Bezogenheit um die Dimension intentionaler Bestimmtheit erweitert. Es wird so ein Stück weiter in Richtung eines sinnhaften "Zuhandenenseins" innerhalb des Verständnishorizonts eines wie auch immer gearteten theoretischen Subjekts entwickelt. 
+
+Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Arbeit den Begriff im Allgemeinen als zu bedeutungsschwer für sich scheut – ausnahmsweise Verwendung findet, so ist mit ihm also genau diese Qualität gemeint. Das Anwendungsprofil ist, gemessen an seinem Potential Seinsstrukturen einer Welt darstellen zu können, qualitativ als Ontologie zu betrachten. Gemessen an seiner Funktionalität, die es als Schema für Mapping und Datenanreicherung auszeichnet, ist es ein Anwendungsprofil.
+
+
+## Anbindung ans Semantic Web
+
+Während bei Ontologieerstellung durchaus Anleitungen, bei Einbindung in Semantic Web eher nicht (stimmt?)
+Wie also verfahren? Methodik entwickeln...
+
+
+Dimensionen:
+
+1. Generisches Vokabular verwenden.
+hier zu sagen, warum.
+Welche? Wie ausgewählt.
+* sollte generell etabliert sein. sollte in den Domänen etabliert sein.
+    * wo gucken? Europeana, RISM, MIMO <- ja! und nach Überschneidungen suchen!
+2. Verbindung zu ähnlichen Konzepten (sofern sie nicht existieren!) – z.B. ma:natürliche Stimmung a gnd:Stimmungssystem – oder so
+= "Einfügen dieser Entitäten in die Architektur des Semantic Webs" 
+<- das Ding ist, dass die Bedeutung im Semantic Web tatsächlich durch den Kontext hergestellt wird
+Eine tiefere Einsicht in die Natur eines Konzeptes wird nur dadurch erreicht, dass es innerhalb des Verständnishorizonts und seiner Gegenstände eingeführt wird – es wird vom Vorhandenen zum Zuhandenen – ihr Sein zeigt sich erst in ihrer Eingebettetheit
+
+
+
+man müsste dann auch jetzt mal die Vokabulare trennen. Ist vielleicht ein guter Zeitpunkt, so als Einführung
+
+
+
+
+—
+
+das gemeinsame ist dieser Gedanke, dass der Sinn von Dingen sich nicht aus sich selbst heraus generiert, bzw. ihrer Äußerlichkeit, sondern dass er in ihrer Funktionalität in Beziehung zu anderem entsteht
+
+ihr Wesen (also das, was für sie wesentlich ist) ist das Sein der zuhandenen Entitäten. Das wird in einer Ontologie ganz deutlich: Entitäten sind auf ihr Wesen beschränkt und stehen aufgrund von diesem in intentionaler Beziehung zueinander.
+
+
+
+
+"Das Dasein existiert nicht zunächst rein für sich selbst, um sich dann auch auf die Welt zu beziehen. Vielmehr muss die Welt, die Heidegger als einen umfassenden Bedeutungszusammenhang versteht, als ein konstitutives Element des Daseins selbst, d.h. also als ein Strukturmoment des Daseins betrachtet werden." [Phäno 49]
+
+"Man hat gemeinhin als völlig selbstverständlich vorausgesetzt [...], dass das Seiende, das uns zunächst und zumeist in der Welt umgibt, Gegenstände von substantiellen, materiellem, ausgedehntem etc. Charakter" seien. Das ist jedoch – nach Heidegger – ein grundlegender Irrtum. Dasjenige Seiende, das uns in unserem alltäglichen In-der-Welt-sein zunächst und zumeist begegnet, ist kein vorhandenes Ding, sondern *zuhandenes "Zeug"*."[Phänom 49–50]
+
+
+
+
+
+Wir erschließen uns diese Welt, die wir untersuchen, die aus dem Zuhandenen besteht, Schritt für Schritt
+
+
+
+
+
+In der Vorhandenheit, also in der theoretischen Umgangsweise des Menschen mit dem Ding, fokussiert man — meistens anschauend — das gegebene Ding und vernachlässigt dessen Umkreis. Das so anvisierte Ding wird nach Heidegger aus seinem natürlichen und zweckmäßigen **Zusammenhang** gerissen und als das Objekt der reinen Theorie betrachtet. Unter diesen Umständen kann das Wesen des Dings versteckt oder verzerrt sein.
+
+In der Zuhandenheit, also in der **praktischen Umgangsweise** des Daseins mit dem Ding, bewahrt man den Überblick über den lebendigen und zweckentsprechenden Zusammenhang. Das Ding bekommt seinen passenden Platz und verliert nicht sein natürliches Milieu.  
+Das Zuhandene als Zeug besitzt eine Struktur der Hinweisung. Es verweist stets auf die Zeug- und Zweckganzheit, die Heidegger als die Bewandtnisganzheit bezeichnet. Das heißt: Ein isoliertes Zeug zählt nicht zum Zeug.
+https://edoc.hu-berlin.de/bitstream/handle/18452/15701/Sun.pdf?sequence=1&isAllowed=y
+
+
+
+
+
 
 
 

@@ -96,7 +96,7 @@ Doch mit welchen Mitteln wird das Problem fehlender Interoperabilität handhabba
 
 
 
-
+"Ontologies are not static but change in time."[@hyvonen_publishing_2012, S. 94]
 
 
 
