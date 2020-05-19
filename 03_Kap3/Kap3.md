@@ -643,12 +643,83 @@ Bezugnahme auf die neue Superklasse `ma:Instrument_(Domäne)` kann nun auch auf 
 \
 
 Die *open world assumption* bringt es mit sich, dass eine Validierung von in RDF strukturierten Daten naturgemäß eigentlich nicht vorgesehen sein kann.[^8685] Hieran ändert auch – trotz des Namens – RDFS kaum etwas: "Unlike XML Schema, RDF Schema is generally interpreted as supplementing rather than validating RDF data."[^8686] Dennoch sind die Möglichkeiten von RDFS – etwa gegenüber dem sehr viel mächtigeren, dafür aber umso komplexeren OWL DL –[^8687] für die Belange dieses Metadatenprofils absolut angemessen,[^8691] nicht zuletzt da es gilt, Überkomplexität aufgrund seiner Anwendungs- und Anwenderorientiertheit insbesondere zu vermeiden.[^8690]
-Man spricht in solchen Fällen von sogenannten "lightweight ontologies", die "in der Regel nur aus einer Konzepthierarchie sowie Relationen, für die jeweils Domain und Range Einschränkungen [sic!] angegeben werden[, bestehen]."[^8692] Gegenüber dem Vokabular, das lediglich eine Bestandsaufnahme der für diese Arbeit relevanten Konzepte und deren Klassifikation darstellte, ist kraft der Properties eine weitere ontologische Dimension hinzugekommen (vgl. Abbildung): um mit Heidegger zu sprechen, wird das zuvor lediglich Vorhandene kraft seiner Bezogenheit um die Dimension intentionaler Bestimmtheit erweitert. Es wird so ein Stück weiter in Richtung eines sinnhaften "Zuhandenenseins" innerhalb des Verständnishorizonts eines wie auch immer gearteten theoretischen Subjekts entwickelt. 
+Man spricht in solchen Fällen von sogenannten "lightweight ontologies", die "in der Regel nur aus einer Konzepthierarchie sowie Relationen, für die jeweils Domain und Range Einschränkungen [sic!] angegeben werden[, bestehen]."[^8692] Gegenüber dem Vokabular, das lediglich eine Bestandsaufnahme der für diese Arbeit relevanten Konzepte und deren Klassifikation darstellte, ist kraft der Properties eine weitere ontologische Dimension hinzugekommen (vgl. Abbildung): phänomenologisch gesprochen wird das zuvor lediglich Vorhandene kraft seiner Bezogenheit um die Dimension intentionaler[^8693] Bestimmtheit erweitert. Es wird so ein Stück weiter in Richtung eines sinnhaften "Zuhandenenseins" innerhalb des Verständnishorizonts eines wie auch immer gearteten wahrnehmenden Subjekts entwickelt. 
 
 Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Arbeit den Begriff im Allgemeinen als zu bedeutungsschwer für sich scheut – ausnahmsweise Verwendung findet, so ist mit ihm also genau diese Qualität gemeint. Das Anwendungsprofil ist, gemessen an seinem Potential Seinsstrukturen einer Welt darstellen zu können, qualitativ als Ontologie zu betrachten. Gemessen an seiner Funktionalität, die es als Schema für Mapping und Datenanreicherung auszeichnet, ist es ein Anwendungsprofil.
 
+[transitivity in Hierarchien? Muss ich da was machen?]
 
-## Anbindung ans Semantic Web
+
+## Anbindung an- / Integration in das Semantic Web
+
+In den vorangegangenen Kapiteln wurde ein Modell in eine strukturell auf RDF basierende Ontologie "übersetzt". Deren "Grammatik" orientierte sich zwar an der im Semantic Web standardisierten (RDF, RDFS, OWL), deren Semantik und Etablierung das Potential für eine Integration im Semantic Web birgt. Doch bleiben die in dieser Ontologie verwahrten Konzepte durch die Brille des "Semantic Web-Subjekts" betrachtet diffus: erkennbar sind lediglich eine Menge arbiträrer Entitäten, die in bestimmten, jedoch nicht weiter spezifizierten Beziehungen zueinander stehen. 
+Es gilt insofern an dieser Stelle abermals einen hermeneutischen Prozess zu durchlaufen, in dessen Zuge die nicht-explizierten Konzepte im Namespace :ma dermaßen erschlossen werden, dass sie für ein Wahrnehmungssubjekt interpretierbar werden. 
+Abermals stellt sich, wie in #Kapitel die Frage, in welcher Weise der Verständnishorizont zu überwinden ist. Dies ist für ein menschliches Subjekt relativ einfach zu beantworten, etwa indem Konzepte mit sinnvollen Namen und Erklärungen versehen werden. Doch wie verhält es sich mit einem Wahrnehmungssubjekt, das nur die Sprache des Semantic Webs beherrscht ("things not strings")?[^8697]
+
+Eine zentrale Idee der Heidegger'schen Philosophie ist, dass das eigentliche Wesen von "Zeug"[^8694] (im Gegensatz etwa zu Platons Ideenlehre) keineswegs diesem a priori inhärent ist, sondern sich in der Welt erst in seiner kontextuellen habituellen Funktionalität und Materialität gegenüber einem Wahrnehmungssubjekt äußert.[^8696] Dieses Prinzip erscheint sich hier nochmals im Rahmen von Linked Data und Semantic Web eindrücklich nachzubilden: Kontext – sich in funktionalen Beziehungen zwischen Konzepten ausdrückend – bildet die Prämisse von Semantik. Das Wesen der Konzepte zeigt sich keineswegs in ihrer textuellen Beschreibung ("strings") begründet, sondern in ihrer Rolle als Sinnträger innerhalb eines Bedeutungsgefüges und gegenüber einem "besorgenden" Wahrnehmungssubjekt.
+
+So ist etwa – ganz vereinfacht – das Wesen des Konzepts "Spucknapf" in den folgenden RDF-Tripeln ein je anderes: 
+\
+
+1. "Mann" "spuckt in" "Spucknapf"
+2. "Spucknapf" "fällt auf" "Mann (Kopf)"
+\
+Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "das Ding" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet." 
+Exakt analog hierzu erscheint das "Wesen" einer Entität innerhalb einer formalen Welt dadurch bestimmt, in welchen Relationen sie zu der sie umgebenden, wechselwirkenden Welt steht.
+Und umgekehrt, löst man Konzepte aus diesem Gefüge heraus (wie es bislang in dieser Arbeit der Fall ist), entbindet man sie ihrer semantischen Kraft, und sie werden, im schlimmsten Fall, zu nichts weiterem als zu kontingenten URIs, jedenfalls aber – zumindest nach Heidegger – zu einem trivialen lediglich Vorhandenen.
+
+
+
+
+
+
+
+
+
+
+
+
+Wiederum auf technischer Ebene 
+
+
+1) Klassierung
+2) Mapping / In-Relation-Setzen
+3) Substitution mit bereits kontextualisierten Konzepten
+    * Allgemein
+    * Domäne
+
+
+
+
+
+die Entität in ihrer Funktionalität charakterisiert, die sie aus dem Kontext erhält → Mapping/In-Relation-Setzen
+
+Sollte man das "Wahrnehmungssubjekt" irgendwie vom Endnutzer abkoppeln? Das eine ist in der Welt – das andere nicht.
+
+Die Entitäten der Welt 
+
+
+Es geht also wieder um Klassierung und dadurch Erkennbarkeit, Deutbarkeit von Entitäten gegenüber einem Subjekt. Hermeneutik
+
+
+Wie werden Sachen verstehbar? Man sagt, was sie sind
+
+
+
+Was wird gemacht:
+
+Die Konzepte, die konzeptuell da sind, stehen nicht mehr nur in irgendeiner undefinierten Beziehung zueinander. Sie sind mit – kontextuell-objektiviertem, normativem – Sinn angereichert (beschrieben), der durch das Wahrnehmungssubjekt interpretierbar ist. [das ist dann auch :label drin]
+
+technisch: Übersetzung mit domänen
+
+
+
+
+war das davor die Grammatik? Vorsicht: nicht zuviel Linguistik
+
+
+
+Weltheit
 
 Während bei Ontologieerstellung durchaus Anleitungen, bei Einbindung in Semantic Web eher nicht (stimmt?)
 Wie also verfahren? Methodik entwickeln...
@@ -671,6 +742,22 @@ Eine tiefere Einsicht in die Natur eines Konzeptes wird nur dadurch erreicht, da
 man müsste dann auch jetzt mal die Vokabulare trennen. Ist vielleicht ein guter Zeitpunkt, so als Einführung
 
 
+Vorgehensweise:
+* Generelles: wieso Mixtur aus verschiedenen Vokabularen
+* Einführung: hier hört es mit der Literatur so langsam auf <- demonstieren
+    * Hyvonen?
+* Vorgehen
+* Vokabulare trennen.
+* [rdfs:label]
+
+
+An ontology infrastructure includes ontologies at different conceptual levels.
+
+1.  Domain independent vocabularies are needed for facilitating cross-domain interoperability. For example, thesaurus standards and the W3C Semantic Web recommendations RDF(S), SKOS, and OWL fall into this category, as well as generic metadata schemas, such as Dublin Core.
+    
+2.  Domainspecificontologiesarecreatedandusedbasedondomaindependentneedsandmod- els. For example, the Getty Vocabularies (AAT, TGN, and ULAN), the Library of Congress Subject Headings (LCSH), and other vocabularies used for annotating contents fall in this category.
+
+3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community due to, e.g., privacy or copyright issues. For example, international authority files for persons may not include individuals that may have local importance in a village or town, but that are not of much international interest. Such ontologies can be created as extensions of more general vocabularies.[@hyvonen_publishing_2012, S. 87, 88]
 
 
 —
@@ -679,7 +766,8 @@ das gemeinsame ist dieser Gedanke, dass der Sinn von Dingen sich nicht aus sich 
 
 ihr Wesen (also das, was für sie wesentlich ist) ist das Sein der zuhandenen Entitäten. Das wird in einer Ontologie ganz deutlich: Entitäten sind auf ihr Wesen beschränkt und stehen aufgrund von diesem in intentionaler Beziehung zueinander.
 
-
+Das ist eine 1:1 Rekreation von Verstehen und sinnlicher Beziehung in der realen Welt – die Dinge haben keinen inhärenten, objektivierbaren Wesenskern (Plato?), sondern ihre Bedeutung konstruiert sich in ihrer Beziehung zueinander.
+Auch Linguistic Turn oder so.
 
 
 "Das Dasein existiert nicht zunächst rein für sich selbst, um sich dann auch auf die Welt zu beziehen. Vielmehr muss die Welt, die Heidegger als einen umfassenden Bedeutungszusammenhang versteht, als ein konstitutives Element des Daseins selbst, d.h. also als ein Strukturmoment des Daseins betrachtet werden." [Phäno 49]
@@ -692,7 +780,7 @@ ihr Wesen (also das, was für sie wesentlich ist) ist das Sein der zuhandenen En
 
 Wir erschließen uns diese Welt, die wir untersuchen, die aus dem Zuhandenen besteht, Schritt für Schritt
 
-
+Das ist vielleicht genau der Punkt, warum Heidegger hier so interessant ist: Ontologie als solches klammert die die Wahrnehmungskomponente aus – hier aber ja genau das behandelt – es geht um "formale" Erfahrung und "sinnliche" Erschließung einer Welt.
 
 
 
@@ -957,3 +1045,13 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 [^8691]: [@TN_libero_mab21631588, S. 68]
 
 [^8692]: [@alma9913393902586, S. 170–171]
+
+[^8693]: Husserl
+
+[^8694]: 
+
+[^8695]: 
+
+[^8696]: 
+
+[^8697]: noauthor_introducing_2012
