@@ -659,19 +659,27 @@ Abermals stellt sich, wie in #Kapitel die Frage, in welcher Weise der Verständn
 Eine zentrale Idee der Heidegger'schen Philosophie ist, dass das eigentliche Wesen von "Zeug"[^8694] (im Gegensatz etwa zu Platons Ideenlehre) keineswegs diesem a priori inhärent ist, sondern sich in der Welt erst in seiner kontextuellen habituellen Funktionalität und Materialität gegenüber einem Wahrnehmungssubjekt äußert.[^8696] Dieses Prinzip erscheint sich hier nochmals im Rahmen von Linked Data und Semantic Web eindrücklich nachzubilden: Kontext – sich in funktionalen Beziehungen zwischen Konzepten ausdrückend – bildet die Prämisse von Semantik. Das Wesen der Konzepte zeigt sich keineswegs in ihrer textuellen Beschreibung ("strings") begründet, sondern in ihrer Rolle als Sinnträger innerhalb eines Bedeutungsgefüges und gegenüber einem "besorgenden" Wahrnehmungssubjekt.
 
 So ist etwa – ganz vereinfacht – das Wesen des Konzepts "Spucknapf" in den folgenden RDF-Tripeln ein je anderes: 
-\
 
 1. "Mann" "spuckt in" "Spucknapf"
 2. "Spucknapf" "fällt auf" "Mann (Kopf)"
-\
-Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "das Ding" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet." 
+
+Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "der Gegenstand" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet." 
 Exakt analog hierzu erscheint das "Wesen" einer Entität innerhalb einer formalen Welt dadurch bestimmt, in welchen Relationen sie zu der sie umgebenden, wechselwirkenden Welt steht.
 Und umgekehrt, löst man Konzepte aus diesem Gefüge heraus (wie es bislang in dieser Arbeit der Fall ist), entbindet man sie ihrer semantischen Kraft, und sie werden, im schlimmsten Fall, zu nichts weiterem als zu kontingenten URIs, jedenfalls aber – zumindest nach Heidegger – zu einem trivialen lediglich Vorhandenen.
+\
 
+Es stellt sich nun die Frage, wie diese Kontextualisierung technisch umzusetzen ist. Boten bislang insbesondere die Arbeiten von Ontology101[^8698] und Stuckenschmidt[^8699] einen guten Leitfaden für die Erstellung von Ontologien im Sinne abstrakter formalisierter Wissenspräsentationen, so findet sich in der Literatur kaum irgendwo ein Hinweis zur Umsetzung semantischer Kontextualisierung eigener Ontologien im Semantic Web.
 
+Einen Hinweis liefert Hyvönen, indem er drei Bestandteile einer (Semantic Web)-"Ontologieinfrastruktur" ausmacht:
 
+>>1.  Domain independent vocabularies are needed for facilitating cross-domain interoperability. For example, thesaurus standards and the W3C Semantic Web recommendations RDF(S), SKOS, and OWL fall into this category, as well as generic metadata schemas, such as Dublin Core.
+    
+>>2.  Domain specific ontologies [...]. For example, the Getty Vocabularies (AAT, TGN, and ULAN), the Library of Congress Subject Headings (LCSH), and other vocabularies used for annotating contents fall in this category.
 
+>>3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community[...].[^8700]
 
+Anhand dieser Bestandsaufnahme lassen sich mehrere Aussagen schlussfolgern: Neben der auf technischer Ebene wichtigen Information, dass eine im Semantic Web integrierte Ontologie sich aus verschiedenen Vokabularen aus verschiedenen Bereichen zusammensetzt (und zusammensetzen darf – hierzu später mehr), halten diese Informationen auch Hinweise auf die Frage nach semantischer Kontextualisierung bereit.
+Eine Ontologie erhält ihre Aussagekraft indem sie sich in den Kontext bereits etablierter Vokabulare stellt. Dabei sind die etabliertesten diejenigen, die das höchste Maß an Verständlichkeit (Interoperabilität) –  domänen- und institutionsspezifische die, die das höchste Maß an semantischer Präzision versprechen.
 
 
 
@@ -682,12 +690,17 @@ Und umgekehrt, löst man Konzepte aus diesem Gefüge heraus (wie es bislang in d
 Wiederum auf technischer Ebene 
 
 
-1) Klassierung
+1) Klassierung 
 2) Mapping / In-Relation-Setzen
 3) Substitution mit bereits kontextualisierten Konzepten
     * Allgemein
     * Domäne
 
+
+
+
+
+"Ein ebenfalls nicht zu un- terscha ̈tzender Vorteil der Wiederverwendung von Ontologien ist die sich hieraus ergebende Einheitlichkeit der Beschreibung einer bestimmten Doma ̈ne, welche es einfacher macht, Daten und Informationen zwischen Anwendungen auszutauschen. Aus diesem Grund basiert die grundlegende Idee der Verwendung von Ontologien im Semantic Web auf der Wiederverwendung von Konzepten durch Verweise auf entsprechende Definitionen, welche die Einheitlichkeit und Interoperabilita ̈t der Beschreibun- gen sicherstellen."[@alma9913393902586, S. 160–161]
 
 
 
@@ -751,13 +764,7 @@ Vorgehensweise:
 * [rdfs:label]
 
 
-An ontology infrastructure includes ontologies at different conceptual levels.
 
-1.  Domain independent vocabularies are needed for facilitating cross-domain interoperability. For example, thesaurus standards and the W3C Semantic Web recommendations RDF(S), SKOS, and OWL fall into this category, as well as generic metadata schemas, such as Dublin Core.
-    
-2.  Domainspecificontologiesarecreatedandusedbasedondomaindependentneedsandmod- els. For example, the Getty Vocabularies (AAT, TGN, and ULAN), the Library of Congress Subject Headings (LCSH), and other vocabularies used for annotating contents fall in this category.
-
-3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community due to, e.g., privacy or copyright issues. For example, international authority files for persons may not include individuals that may have local importance in a village or town, but that are not of much international interest. Such ontologies can be created as extensions of more general vocabularies.[@hyvonen_publishing_2012, S. 87, 88]
 
 
 —
@@ -1055,3 +1062,8 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 [^8696]: 
 
 [^8697]: noauthor_introducing_2012
+[^8698]: 
+
+[^8699]: 
+
+[^8700]: [@hyvonen_publishing_2012, S. 87–88]
