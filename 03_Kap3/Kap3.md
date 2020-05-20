@@ -572,7 +572,7 @@ erschaffen werden.
 
 
 
-##  Vom Vokabular zur "Lightweight Ontology" – Spezifizierung von Relationen mit *rdfs:range* und *rdfs:domain*
+## Vom Vokabular zur "Lightweight Ontology" – Spezifizierung von Relationen mit *rdfs:range* und *rdfs:domain*
 
 Eines der zentralen Konzepte des Semantic Webs ist die sog. *open world assumption*.[^8682] Gemäß dem vielzitierten Leitsatz "Anyone can say anything about anything"[^8678] besagt sie, dass eine Aussage, die in einem Modell nicht explizit verankert ist, nicht notwendigerweise falsch sein muss, sondern dass lediglich keine Aussage über ihre Richtigkeit getroffen werden kann.[^8679] Es muss somit im Interesse eines RDF-Vokabulars liegen, sein semantisches Ausdruckspotential fort von der Summe alles Möglichen (und somit Willkürlichen) hin zum eigentlich Aussagekräftigen fokussieren zu können, indem es Hinweise zur sinnhaften Verwendung seiner Terme bereithält. Die Möglichkeit einer solchen Fokussierung bieten Ontologiesprachen wie RDFS und OWL, indem sie in RDF formalisierte und somit direkt integrierbare "Anwendungsregel" zu Properties anbieten.[^8680]
 Es liegt dabei auf der Hand, dass für ein Applikationsprofil, dessen Sinn darin besteht, schematische Rahmenbedingungen zu schaffen, entlang derer sich Anwender ausrichten und orientieren können, ein hohes Maß an semantischer Fixiertheit insbesondere unabdingbar ist.
@@ -663,7 +663,7 @@ So ist etwa – ganz vereinfacht – das Wesen des Konzepts "Spucknapf" in den f
 1. "Mann" "spuckt in" "Spucknapf"
 2. "Spucknapf" "fällt auf" "Mann (Kopf)"
 
-Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "der Gegenstand" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet." 
+Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "der Gegenstand" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet."
 Exakt analog hierzu erscheint das "Wesen" einer Entität innerhalb einer formalen Welt dadurch bestimmt, in welchen Relationen sie zu der sie umgebenden, wechselwirkenden Welt steht.
 Und umgekehrt, löst man Konzepte aus diesem Gefüge heraus (wie es bislang in dieser Arbeit der Fall ist), entbindet man sie ihrer semantischen Kraft, und sie werden, im schlimmsten Fall, zu nichts weiterem als zu kontingenten URIs, jedenfalls aber – zumindest nach Heidegger – zu einem trivialen lediglich Vorhandenen.
 \
@@ -672,26 +672,93 @@ Es stellt sich nun die Frage, wie diese Kontextualisierung technisch umzusetzen 
 
 Einen Hinweis liefert Hyvönen, indem er drei Bestandteile einer (Semantic Web)-"Ontologieinfrastruktur" ausmacht:
 
->>1.  Domain independent vocabularies are needed for facilitating cross-domain interoperability. For example, thesaurus standards and the W3C Semantic Web recommendations RDF(S), SKOS, and OWL fall into this category, as well as generic metadata schemas, such as Dublin Core.
+>1.  Domain independent vocabularies are needed for facilitating cross-domain interoperability. For example, thesaurus standards and the W3C Semantic Web recommendations RDF(S), SKOS, and OWL fall into this category, as well as generic metadata schemas, such as Dublin Core.
     
->>2.  Domain specific ontologies [...]. For example, the Getty Vocabularies (AAT, TGN, and ULAN), the Library of Congress Subject Headings (LCSH), and other vocabularies used for annotating contents fall in this category.
+>2.  Domain specific ontologies [...]. For example, the Getty Vocabularies (AAT, TGN, and ULAN), the Library of Congress Subject Headings (LCSH), and other vocabularies used for annotating contents fall in this category.
 
->>3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community[...].[^8700]
+>3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community[...].[^8700]
 
-Anhand dieser Bestandsaufnahme lassen sich mehrere Aussagen schlussfolgern: Neben der auf technischer Ebene wichtigen Information, dass eine im Semantic Web integrierte Ontologie sich aus verschiedenen Vokabularen aus verschiedenen Bereichen zusammensetzt (und zusammensetzen darf – hierzu später mehr), halten diese Informationen auch Hinweise auf die Frage nach semantischer Kontextualisierung bereit.
-Eine Ontologie erhält ihre Aussagekraft indem sie sich in den Kontext bereits etablierter Vokabulare stellt. Dabei sind die etabliertesten diejenigen, die das höchste Maß an Verständlichkeit (Interoperabilität) –  domänen- und institutionsspezifische die, die das höchste Maß an semantischer Präzision versprechen.
+Anhand dieser Bestandsaufnahme lassen sich mehrere Aussagen schlussfolgern: Neben der auf technischer Ebene wichtigen Information, dass eine im Semantic Web integrierte Ontologie sich aus verschiedenen Vokabularen aus verschiedenen Bereichen zusammensetzt (und zusammensetzen darf),[^8708] halten diese Informationen auch Hinweise auf die Frage nach semantischer Kontextualisierung bereit:
+Eine Ontologie erhält ihre Aussagekraft indem sie sich in den Kontext bereits etablierter Vokabulare stellt. Dabei sind die etabliertesten diejenigen, die das höchste Maß an Verständlichkeit (Interoperabilität) anbieten –  domänen- und institutionsspezifische die, die das höchste Maß an semantischer Spezifität zu erreichen imstande sind.
+
+Freilich ist hierdurch nur wenig über den eigentlichen technischen Prozess der Verknüpfung eigener Ontologien im Semantic Web ausgesagt. Aussagekräftiger ist hingegen etwa die Empfehlung "[s]et RDF links to other data sources on the Web, so that clients can navigate the Web of Data as a whole by following RDF links."[^8701] Die folgenden Möglichkeiten lassen sich etwa ableiten:
+
+1) In etwa analog zur Klassierung von Konzepten in #kapitelx erscheint es denkbar, eigene Konzepte in Relation zu externen Konzepten zu setzen, und diese Relationen als Eigenschaft in der RDF-Beschreibung des Konzepts zu fixieren. Der bisherige Verständnishorizont wäre somit für eine Anwendung, die das Applikationsprofil parsed, überwunden, und ein Konnex zwischen Domänenontologie und Semantic Web geschaffen.\
+Ein – vorläufiges – Beispiel:
+
+``ma:Klangbeispiel	rdfs:subclassOf	<http://d-nb.info/gnd/4052020-1> .``
+
+In Worten: Der Term "Klangbeispiel" im :ma-Namespace wird als Unterklasse des in der GND definierten Schlagworts "Schallaufzeichnung" verstanden. 
+
+Das Property `rdfs:subclassOf` verlinkt dabei in eine externe, bereits im Semantic Web eingebundene und semantisch etablierte Ontologie, die GND. 
+
+Neben dieser hierarchischen Relation sind auch Äquivalenzrelationen darstellbar. Insbesondere das Vokabular SKOS ("Simple Knowledge Organization System")[^8702] hat sich etabliert, um etwa Thesauri in RDF zu überführen,[^8703] jedoch insbesondere auch um Vokabulare und Ontologien aufeinander zu beziehen[^8704] (ontology alignment,[^8706] Mapping). Hierfür sind sich etwa die Properties
+
+``
+skos:exactMatch
+
+skos:narrowMatch
+
+skos:broadMatch
+
+skos:closeMatch
+``
+besonders geeignet. Es wird jedoch deutlich, dass die Ambivalenz dieser Propeties (ausgenommen `skos:exactMatch`) naturgemäß groß ist und daher keine endgültig befriedigende semantische Eindeutigkeit ermöglichen kann.\
+
+2) Während das Mappen zu äquivalenten Termen im Falle sich bereits in Verwendung befindlicher und somit unantastbarer Vokabulare notwendig sein mag, erscheint es angesichts von Funktionsweise und Architektur des Semantic Webs im Falle des Applikationsprofils nicht wünschenswert. Obwohl die Produktion von Doubletten (und anschließendem Mapping) im Sinne der *open world assumption* im Semantic Web nicht "falsch" ist,[^8705] so ist sie doch eingedenk dessen Konzeption als offene, ins Netz ausgelagerte "Datenbank", in dem jeder Datensatz für jeden nutz- und referenzierbar ist, unsinnig, ist doch Kontextualisierung durch den Rekurs auf semantisch etablierte und somit aussagekräftige Konzepte, wie bereits mehrfach betont, außerordentlich wünschenswert. 
+Diese Aussagekraft erhöht sich wiederum durch Wiederverwendung etablierter Konzepte und der Vermeidung von Doubletten: "it is considered good practice to reuse terms from well-known RDF vocabularies [...] wherever possible in order to make it easier for client applications to process Linked Data. Only if these vocabularies do not provide the required terms should data publishers define new, data source-specific terminology [...]."[^8707]So wird zu guter Letzt "[...]die Einheitlichkeit und Interoperabilität der Beschreibungen sicher[gestellt]."[^8709]
+
+So ist also bei der Integration des Konzepts `ma:Ton` ins Semantic Web die Aussage
+``
+ma:Ton	skos:exactMatch	gnd:Ton
+``
+besser einfach durch das Konzept `gnd:Ton` zu ersetzen.
+
+### Vorgehensweise
+
+Für den Fortgang dieser Arbeit ergibt sich so die Vorgehensweise:
+
+1. Das Vokabular im Namespace :ma ist daraufhin zu untersuchen, ob seine Semantizität sich auch ebensogut in externen Konzepten abbildet, und eigene Terme in diesem Fall durch sie zu ersetzen. Dabei wird es gelten, eine ausgewogene Balance zwischen semantisch festen, jedoch womöglich eher unspezifischen, domänenübergreifend verwendeten Konzepten und spezifischen, jedoch womöglich wenig etablierten Konzepten auszutarieren. Dieser Vorgang birgt einige methodische Herausforderungen, auf die an entsprechender Stelle eingegangen werden wird.
+2. Eigene Terme, für die sich keine vorexistierende Entsprechungen finden lassen, sind nochmals zu fokussieren und einer terminologischen Kontrolle zu unterziehen. Anschließend sind sie gemäß 1) im vorhergehenden Kapitel in Beziehung zu externen Vokabularen zu setzen und so im Semantic Web zu verknüpfen. Sie sind anschließend gemäß der guten Praxis bei Namespaces auch mit menschenlesbaren Informationen und Bezeichnungen anzureichern.
+
+
+Vielleicht erstmal die domänenspezifischen Dinger jeweils vorstellen – tabellarisch?
 
 
 
 
 
 
+
+---
+
+
+"Anyone is free to publish vocabularies to the Web of Data (Berrueta & Phipps, 2008), which in turn can be connected by RDF triples that link classes and properties in one vocabulary to those in another, thereby defining mappings between related vocabularies."
+
+" Linked Data - The Story So Far
+
+1\. Assign URIs to the entities described by the data set and provide for dereferencing these URIs over the HTTP protocol into RDF representations.
+
+2\. Set RDF links to other data sources on the Web, so that clients can navigate the Web of Data as a whole by following RDF links.
+
+3\. Provide metadata about published data, so that clients can assess the quality of published data and choose between different means of access."
+
+
+
+" Linked Data - The Story So Far
+
+it is considered good practice to reuse terms from well-known RDF vocabularies such as FOAF, SIOC, SKOS, DOAP, vCard, Dublin Core, OAI-ORE or GoodRelations wherever possible in order to make it easier for client applications to process Linked Data. Only if these vocabularies do not provide the required terms should data publishers define new, data source-specific terminology (Bizer & Cyganiak & Heath, 2007). If new terminology is defined, it should be made self-describing by making the URIs that identify terms Web dereferencable (Berrueta & Phipps, 2008)."
+
+
+" Linked Data - The Story So Far
+
+based on a mixture of using common vocabularies together with data source-specific terms that are connected by mappings as deemed necessary."
 
 Wiederum auf technischer Ebene 
 
 
-1) Klassierung 
-2) Mapping / In-Relation-Setzen
+1) Klassierung (subclassOf)
+2) Mapping / In-Relation-Setzen (near match, sowas)
 3) Substitution mit bereits kontextualisierten Konzepten
     * Allgemein
     * Domäne
@@ -700,7 +767,7 @@ Wiederum auf technischer Ebene
 
 
 
-"Ein ebenfalls nicht zu un- terscha ̈tzender Vorteil der Wiederverwendung von Ontologien ist die sich hieraus ergebende Einheitlichkeit der Beschreibung einer bestimmten Doma ̈ne, welche es einfacher macht, Daten und Informationen zwischen Anwendungen auszutauschen. Aus diesem Grund basiert die grundlegende Idee der Verwendung von Ontologien im Semantic Web auf der Wiederverwendung von Konzepten durch Verweise auf entsprechende Definitionen, welche die Einheitlichkeit und Interoperabilita ̈t der Beschreibun- gen sicherstellen."[@alma9913393902586, S. 160–161]
+
 
 
 
@@ -1067,3 +1134,21 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 [^8699]: 
 
 [^8700]: [@hyvonen_publishing_2012, S. 87–88]
+
+[^8701]: [@madoc34762, S. 6]
+[^8702]: 
+
+[^8703]: [@allemang_semantic_2011, S. 207]
+
+[^8704]: [@allemang_semantic_2011, S. 213]
+
+[^8705]: [@noauthor_overview_nodate]
+
+[^8706]: [@zimanyi_web_2015, S. 79–80]
+
+[^8707]: [@madoc34762, S. 7] Die Autoren berufen sich ihrerseits auf [@noauthor_how_nodate]
+
+[^8708]: Vgl. auch [@noauthor_how_nodate]: "It is common practice to mix terms from different vocabularies."
+
+[^8709]: [@alma9913393902586, S. 160–161]
+
