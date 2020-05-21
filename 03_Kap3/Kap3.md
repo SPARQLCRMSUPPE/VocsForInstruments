@@ -678,10 +678,10 @@ Einen Hinweis liefert Hyvönen, indem er drei Bestandteile einer (Semantic Web)-
 
 >3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community[...].[^8700]
 
-Anhand dieser Bestandsaufnahme lassen sich mehrere Aussagen schlussfolgern: Neben der auf technischer Ebene wichtigen Information, dass eine im Semantic Web integrierte Ontologie sich aus verschiedenen Vokabularen aus verschiedenen Bereichen zusammensetzt (und zusammensetzen darf),[^8708] halten diese Informationen auch Hinweise auf die Frage nach semantischer Kontextualisierung bereit:
+Anhand dieser Bestandsaufnahme lassen sich mehrere Aussagen schlussfolgern: Neben der auf technischer Ebene wichtigen Information, dass eine im Semantic Web integrierte Ontologie sich aus verschiedenen Vokabularen aus verschiedenen Bereichen zusammensetzt (ja zusammensetzen sollte),[^8708] halten diese Informationen auch Hinweise auf die Frage nach semantischer Kontextualisierung bereit:
 Eine Ontologie erhält ihre Aussagekraft indem sie sich in den Kontext bereits etablierter Vokabulare stellt. Dabei sind die etabliertesten diejenigen, die das höchste Maß an Verständlichkeit (Interoperabilität) anbieten –  domänen- und institutionsspezifische die, die das höchste Maß an semantischer Spezifität zu erreichen imstande sind.
 
-Freilich ist hierdurch nur wenig über den eigentlichen technischen Prozess der Verknüpfung eigener Ontologien im Semantic Web ausgesagt. Aussagekräftiger ist hingegen etwa die Empfehlung "[s]et RDF links to other data sources on the Web, so that clients can navigate the Web of Data as a whole by following RDF links."[^8701] Die folgenden Möglichkeiten lassen sich etwa ableiten:
+Freilich ist hierdurch nur wenig über den eigentlichen technischen Prozess der Verknüpfung eigener Ontologien im Semantic Web ausgesagt. Etwas aussagekräftiger ist wiederum etwa die Maßgabe "[s]et RDF links to other data sources on the Web, so that clients can navigate the Web of Data as a whole by following RDF links."[^8701] Die folgenden Möglichkeiten lassen sich aus dieser Forderung ableiten:
 
 1) In etwa analog zur Klassierung von Konzepten in #kapitelx erscheint es denkbar, eigene Konzepte in Relation zu externen Konzepten zu setzen, und diese Relationen als Eigenschaft in der RDF-Beschreibung des Konzepts zu fixieren. Der bisherige Verständnishorizont wäre somit für eine Anwendung, die das Applikationsprofil parsed, überwunden, und ein Konnex zwischen Domänenontologie und Semantic Web geschaffen.\
 Ein – vorläufiges – Beispiel:
@@ -705,24 +705,89 @@ skos:closeMatch
 ``
 besonders geeignet. Es wird jedoch deutlich, dass die Ambivalenz dieser Propeties (ausgenommen `skos:exactMatch`) naturgemäß groß ist und daher keine endgültig befriedigende semantische Eindeutigkeit ermöglichen kann.\
 
-2) Während das Mappen zu äquivalenten Termen im Falle sich bereits in Verwendung befindlicher und somit unantastbarer Vokabulare notwendig sein mag, erscheint es angesichts von Funktionsweise und Architektur des Semantic Webs im Falle des Applikationsprofils nicht wünschenswert. Obwohl die Produktion von Doubletten (und anschließendem Mapping) im Sinne der *open world assumption* im Semantic Web nicht "falsch" ist,[^8705] so ist sie doch eingedenk dessen Konzeption als offene, ins Netz ausgelagerte "Datenbank", in dem jeder Datensatz für jeden nutz- und referenzierbar ist, unsinnig, ist doch Kontextualisierung durch den Rekurs auf semantisch etablierte und somit aussagekräftige Konzepte, wie bereits mehrfach betont, außerordentlich wünschenswert. 
-Diese Aussagekraft erhöht sich wiederum durch Wiederverwendung etablierter Konzepte und der Vermeidung von Doubletten: "it is considered good practice to reuse terms from well-known RDF vocabularies [...] wherever possible in order to make it easier for client applications to process Linked Data. Only if these vocabularies do not provide the required terms should data publishers define new, data source-specific terminology [...]."[^8707]So wird zu guter Letzt "[...]die Einheitlichkeit und Interoperabilität der Beschreibungen sicher[gestellt]."[^8709]
+2) Während das Mappen zu äquivalenten Termen im Falle sich bereits in Verwendung befindlicher und somit unantastbarer Vokabulare notwendig sein mag, erscheint es angesichts von Funktionsweise und Architektur des Semantic Webs im Falle des Applikationsprofils nicht erstrebenswert. Obwohl die Produktion von Doubletten (und anschließendem Mapping) im Sinne der *open world assumption* im Semantic Web nicht "falsch" ist,[^8705] so ist sie doch eingedenk dessen Konzeption als offene, ins Netz ausgelagerte "Datenbank", in dem jeder Datensatz für jeden zugänglich und referenzierbar ist, unsinnig, ist doch Kontextualisierung durch den Rekurs auf semantisch etablierte und somit aussagekräftige Konzepte, wie bereits mehrfach betont, sogar außerordentlich wünschenswert. 
+Diese Aussagekraft erhöht sich weiter durch Wiederverwendung etablierter Konzepte und der Vermeidung von konkurrierenden Redeundanzen: "it is considered good practice to reuse terms from well-known RDF vocabularies [...] wherever possible in order to make it easier for client applications to process Linked Data. Only if these vocabularies do not provide the required terms should data publishers define new, data source-specific terminology [...]."[^8707]So wird zu guter Letzt "[...]die Einheitlichkeit und Interoperabilität der Beschreibungen sicher[gestellt]."[^8709]
 
-So ist also bei der Integration des Konzepts `ma:Ton` ins Semantic Web die Aussage
+So ist also das Konzept `ma:Ton` bei der Einbindung ins Semantic Web nicht über die Festlegung
 ``
-ma:Ton	skos:exactMatch	gnd:Ton
+ma:Ton	skos:exactMatch	gnd:Ton .,
 ``
-besser einfach durch das Konzept `gnd:Ton` zu ersetzen.
+sondern einfach durch das Konzept `gnd:Ton` zu ersetzen.
 
 ### Vorgehensweise
 
-Für den Fortgang dieser Arbeit ergibt sich so die Vorgehensweise:
+Für den Fortgang dieser Arbeit erscheint die folgende Vorgehensweise sinnvoll:
 
-1. Das Vokabular im Namespace :ma ist daraufhin zu untersuchen, ob seine Semantizität sich auch ebensogut in externen Konzepten abbildet, und eigene Terme in diesem Fall durch sie zu ersetzen. Dabei wird es gelten, eine ausgewogene Balance zwischen semantisch festen, jedoch womöglich eher unspezifischen, domänenübergreifend verwendeten Konzepten und spezifischen, jedoch womöglich wenig etablierten Konzepten auszutarieren. Dieser Vorgang birgt einige methodische Herausforderungen, auf die an entsprechender Stelle eingegangen werden wird.
-2. Eigene Terme, für die sich keine vorexistierende Entsprechungen finden lassen, sind nochmals zu fokussieren und einer terminologischen Kontrolle zu unterziehen. Anschließend sind sie gemäß 1) im vorhergehenden Kapitel in Beziehung zu externen Vokabularen zu setzen und so im Semantic Web zu verknüpfen. Sie sind anschließend gemäß der guten Praxis bei Namespaces auch mit menschenlesbaren Informationen und Bezeichnungen anzureichern.
+1. Das Vokabular in seiner derzeitigen Form beinhaltet auch Platzhalter für institutionsspezifische Terme. Diese sind aus dem Vokabular auszulagern und in separaten Namespaces zu sammeln.
+2. Das verbleibende, institutionsübergreifende Vokabular im Namespace :ma ist daraufhin zu untersuchen, ob sich seine Semantizität auch ebensogut in externen Konzepten abbildet, und eigene Terme in diesem Fall durch sie zu ersetzen. Dabei wird es gelten, eine ausgewogene Balance zwischen semantisch festen, jedoch vermutlich eher unspezifischen, domänenübergreifend verwendeten Konzepten, und spezifischen, jedoch womöglich weniger etablierten Konzepten auszutarieren. Dieser Vorgang birgt einige methodische Herausforderungen, auf die an entsprechender Stelle eingegangen werden wird.
+3. Eigene Terme, für die sich keine vorexistierende Entsprechungen finden lassen, sind nochmals zu fokussieren und einer terminologischen Kontrolle zu unterziehen. Anschließend sind sie gemäß 1) im vorhergehenden Kapitel in Beziehung zu externen Vokabularen zu setzen und so im Semantic Web durch Verknüpfung aussagekräftig referenzierbar zu machen. Sie sind anschließend gemäß der guten Praxis bei Namespaces[^8710] auch mit menschenlesbaren Informationen und Bezeichnungen ("Labels") anzureichern.[^8711]
+
+
+#### Terminologische Kontrolle
+
+Mit "terminologischer Kontrolle" sind im Sinne Bertrams "alle Maßnahmen [...], die direkt oder indirekt der Definition und Abgrenzung von Begriffen und der eindeutigen Zuordnung von Bezeichnungen zu Begriffen dienen [...]"[^8712] gemeint. Während dieser Prozess in einem herkömmlichen Thesaurus insbesondere introspektiv auf die Arbeit mit internen Termen gerichtet sein dürfte, so umfasst der hier miteinzubeziehende Thesaurus nichts Geringeres als die Gesamtheit aller im Semantic Web eingebundenen Daten. Es liegt somit auf der Hand, dass dieser Prozess sich in vielem von der herkömmlichen Erstellung von Vokabularen unterscheiden muss. Leider findet sich in der Literatur, wie bereits eingangs erwähnt, kaum ein Hinweis, wie dieser Vorgang zu gestalten sein mag. Dieser Umstand kann auch nicht weiter verwundern, bedenkt man, dass die Heterogenität formalisierter Weltrepräsentationen in Form von Ontologien die Heterogenität, Komplexität und Ambivalenz der realen Welt widerspiegeln muss – einen allgemeingültigen Leitfaden unter diesen Umständen zu formulieren, ist somit naturgemäß schwierig, erscheint aber als lohnenswertes Desiderat für künftige Arbeiten.
+
+Für diese Arbeit erscheinen die folgenden Schritte und Abwägungen sinnvoll:
+
+* Bereits mehrfach wurde auf den Wert etablierter Vokabulare hingewiesen. Unter diesen findet sich eine Reihe von Vokabularen, die als Standards, wenn nicht gar als Grundpfeiler des Semantic Webs gelten können. Diese sind insbesondere RDF, RDFS, SKOS, OWL, aber auch etwa Dublin Core. Ihre Verwendung ist gut dokumentiert, und es existiert eine vergleichbar große Menge einführender Literatur, die als Leitfaden zu Rate gezogen werden kann.[^8713] Diese Vokabulare fanden bereits teilweise Verwendung in den vorangegangenen Kapiteln, und es wird aufgrund ihrer hohen Aussagekraft gelten, auch im Folgenden sich ihrer wann immer möglich zu bedienen.
+
+Hinsichtlich der Recherche nach domänenspezifischen Vokabularen und deren Anwendung sind verschiedene Strategien vorstellbar, die in dieser Arbeit jeweils zur Anwendung kommen werden:
+
+* Es erscheint naheliegend, die Verwendung von Vokabularen bei großen domänenspezifischen Projekten zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Angesichts der spartenübergreifenden Zielsetzung dieser Arbeit wären das also Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs. So etwa
+
+
+* Europeana
+* RISM
+* MIMO
+* DOREMUS
+
+Vokabulare
+
+* GND
+* LCSH
+* CIDOC CRM
+
+
+
+---
+
+
+
+
+es bleibt ein subjektives, gefühlsmäßiges Ding – es gibt kein eindeutiges Richtig/Falsch
+
+
+
+
+
+
+
+Wie lässt sich die Semantik eines Terms messen? Müsste man jetzt für jedes nochmal eine föderierte Suche machen?
+
+
+BARTOC
+
+2 Möglichkeiten:
+1. Bei den Playern suchen, gucken was sie verwenden
+2. Freie Suche nach Vokabularen 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Vielleicht erstmal die domänenspezifischen Dinger jeweils vorstellen – tabellarisch?
+die anderen sind ja schon standardisiert, dann muss man nicht.
 
 
 
@@ -757,11 +822,7 @@ based on a mixture of using common vocabularies together with data source-specif
 Wiederum auf technischer Ebene 
 
 
-1) Klassierung (subclassOf)
-2) Mapping / In-Relation-Setzen (near match, sowas)
-3) Substitution mit bereits kontextualisierten Konzepten
-    * Allgemein
-    * Domäne
+
 
 
 
@@ -1152,3 +1213,10 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 
 [^8709]: [@alma9913393902586, S. 160–161]
 
+[^8710]: 
+
+[^8711]: "Begriffliche Kontrolle", vgl.: [@TN_libero_mab213864266, S. 128]
+
+[^8712]: [@TN_libero_mab213864266, S. 128]
+
+[^8713]: In dieser Arbeit wurden vor allem die Texte [@allemang_semantic_2011] sowie [@TN_libero_mab21631588] zu Rate gezogen.
