@@ -733,7 +733,7 @@ Für diese Arbeit erscheinen die folgenden Schritte und Abwägungen sinnvoll:
 
 Hinsichtlich der Recherche nach domänenspezifischen Vokabularen und deren Anwendung sind verschiedene Strategien vorstellbar, die in dieser Arbeit jeweils zur Anwendung kommen werden:
 
-* Es erscheint naheliegend, die Verwendung von Vokabularen bei großen domänenspezifischen Projekten zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Angesichts der spartenübergreifenden Zielsetzung dieser Arbeit wären das also Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs. So etwa
+* Es erscheint naheliegend, die Verwendung von Vokabularen im Rahmen solcher domänenspezifischer Projekte zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Entsprechend der spartenübergreifenden Zielsetzung dieser Arbeit sind dies Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs. Also Portale
 
 
 * Europeana
@@ -751,11 +751,13 @@ Vokabulare
 
 ---
 
+Weiteres Vorgehen: Schluss mit Methodikgeschwafel: jeder Begriff wird jetzt einfach systematisch abgearbeitet.
 
 
 
 es bleibt ein subjektives, gefühlsmäßiges Ding – es gibt kein eindeutiges Richtig/Falsch
 
+Denkbar wäre philologische Auswertung der Vokabulare, aber würde Rahmen der Arbeit sprengen. Daher iterativ – deckt sich auch mit Vorgehen in der Praxis.
 
 
 
@@ -776,7 +778,7 @@ BARTOC
 
 
 
-
+Es ist eigentlich egal, welche Systematik man verwendet – man sollte vielleicht einfach immer auf einen Standard verlinken.
 
 
 
@@ -788,10 +790,6 @@ BARTOC
 
 Vielleicht erstmal die domänenspezifischen Dinger jeweils vorstellen – tabellarisch?
 die anderen sind ja schon standardisiert, dann muss man nicht.
-
-
-
-
 
 
 
