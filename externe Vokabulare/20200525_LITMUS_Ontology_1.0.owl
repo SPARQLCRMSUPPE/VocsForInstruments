@@ -1,0 +1,3492 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://itma.ie/litmus/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://itma.ie/litmus/ontology#"
+     versionIRI="https://itma.ie/litmus/ontology#/1.0.0">
+    <Prefix name="" IRI="https://itma.ie/litmus/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="trad" IRI="https://itma.ie/resources/ontology#"/>
+    <Import>http://erlangen-crm.org/efrbroo/</Import>
+    <Import>http://data.doremus.org/vocabulary/mode/</Import>
+    <Import>http://data.doremus.org/vocabulary/key/</Import>
+    <Import>https://s3-eu-west-1.amazonaws.com/litmus.itma.ie/itm-tunes-skos.ttl</Import>
+    <Import>https://s3-eu-west-1.amazonaws.com/litmus.itma.ie/itm-instruments-ext-skos.ttl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Linked Irish Traditional Music Ontology, an extension of FRBRoo, is designed to represent contemporary and historical Irish traditional music practice, documentation, and performance. It was developed in 2019 for use at the Irish Traditional Music Archive, Dublin.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/agent"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.wikidata.org/wiki/Q3154465</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>https://musicbrainz.org/artist/cf10e958-8b1e-4320-89cd-3a9d432c4f2b</IRI>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="L48_has_collector_source"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L52i_sings_version_known_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L28i_rendering_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L7i_tune_collection_contains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T4_Instrumental_Air"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L57_learned_from_source_material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T36_Music"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L29i_annotated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L17i_lived_in"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L27i_is_person_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L16_birthplace_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T32_Band"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L47i_has_dedicated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T37_Body"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L58i_instrument_played_by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I23_Composer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L37_sang_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L56_learned_dance_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L23_assigned_manuscript_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://itma.ie/resources/ontology#T19_Percussive_Dance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T38_Lead_Around"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I13_Publisher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I16_Scholar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L30i_compiled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L75i_recorded_in_studio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L57i_source_material_for_version_learned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L53_knows_version_danced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L73i_recorded_in_home_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T8_Text_Component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L23i_manuscript_number_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L14_possibly_influenced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L48i_is_collector_source_for"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T27_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T7_Song_Lyrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://itma.ie/resources/ontology#T18_Dance_Expression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L58_played_on_instrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L47_dedicated_to"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I22_Instrument_Maker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I8_sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I25_Compiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T5_Song_Component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L19_was_lifelong_home_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I10_Annotator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T2_Melodic_Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L40_style_influence_to"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T17_Dance_Component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L8i_is_alternate_title_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L18_was_long_time_home_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L27_has_associated_person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L62_Tune_3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L31i_has_personalised_version_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T34_Collection_Item"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L49i_is_familial_place_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L77i_recorded_at_event"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I3_heavy_shoes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L34_performed_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L45_has_associated_version"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L35_played_with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I30_Musician"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L29_annotated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L17_was_home_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L51i_plays_version_known_by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I29_Dancer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L63_Tune_4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L8_has_alternate_title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L14i_possible_influence_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L12i_gave_to_collector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L33_performed_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L20_includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L72i_performs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I28_Performer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I15_Arranger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T25_Old_Style_Step_Dance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I24_Collector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T9_Poem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L52_knows_version_sung_by"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T1_Melodic_Category"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L41_teacher_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L71_dance_type_associated_dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L41i_taught_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L10_has_geographic_association_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L49_family_people_are_from"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I27_Knowledge_Organiser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L25_assigned_annotator_number"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L13i_possible_association_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L21_has_modal_key"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L13_possibly_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L66_Tune_7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T15_Dance_Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L70_melodic_type_associated_category"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I12_Translator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I9_Teacher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L55_learned_song_from"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I4_light_shoes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L38_plays_repertoire_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I20_Mastering_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L65_Tune_6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L15_amended_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L10i_is_geographically_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I5_barrel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T28_Music_Performance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L9i_is_bandmember_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T33_Musical_Alliance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L31_personalised_version_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L76_event_of_performer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L7_from_tune_collection_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L32i_role_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L24i_collector_number_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L5i_dance_collection_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L53i_dances_version_known_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L50i_instrument_has_associated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L56i_taught_dance_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L43_in_honour_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L70i_melodic_category_associated_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L16i_was_born_in_place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L21i_is_modal_key_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L25i_annotator_number_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T29_Step"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L39_sings_repertoire_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T24_Dance_Equipment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L2i_manuscript_contains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://erlangen-crm.org/current/E18_Physical_Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T6_Song_Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T14_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T37_Figure_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L6_from_song_collection_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L22i_scholar_number_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T35_Set_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L46_composer_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L69_Tune_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.itma.ie/litmus/insts-ext#IrishTraditionalMusicInstrumentThesaurus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L60_Tune_1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L67_Tune_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I17_Recorder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L54i_taught_tune_to"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I1_set_dancing_shoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L28_has_rendering"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L40i_style_influenced_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L26_collected_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L2_from_manuscript_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I26_Dancing_Master"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I19_Recording_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L46i_composed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L74_session_used_for_recording"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L74i_recorded_at_session_in"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://itma.ie/resources/ontology#T21_Group_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L19i_lived_all_of_life_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L55i_taught_song_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L18i_lived_most_of_life_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L33i_performed_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L42_informal_teacher_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L44i_memorialised_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L9_has_bandmember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L22_assigned_scholar_number"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L50_associated_with_instrument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I14_Transcriber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L20i_is_included_by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I7_stick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T16_Dance_Performance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L5_from_dance_collection_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L59_has_associated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T3_Song"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L44_in_memory_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://itma.ie/litmus/tune-types#IrishTraditionalMusicTunesThesaurus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I6_broom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L45i_is_version_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L32_has_associated_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L42i_informally_taught_by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I21_Luthier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://itma.ie/resources/ontology#T20_Contemporary_Dance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I18_Mixing_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L30_compiled_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L36_danced_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L54_learned_tune_from"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T23_Céilí_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L12_collected_from"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I11_Dance_Caller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="I2_percussive_dance_shoes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L11i_is_historically_associated_with_geographic_area"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L6i_song_collection_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L24_assigned_collector_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T30_Figure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L4i_archival_collection_contains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://itma.ie/resources/ontology#T22_Step_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L68_Tune_9"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L76i_performed_at_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L75_studio_used_for_recording"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L43i_honoured_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L4_from_archival_collection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L72_performed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L77_event_of_recording"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://itma.ie/resources/thesaurus-instrument-ext#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L15i_amended"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L71i_dance_associated_dance_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L26i_collected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="T26_Sean_Nós_Dance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L64_Tune_5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L73_home_used_for_recording"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L51_knows_version_played_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L39i_repertoire_sung_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L38i_repertoire_played_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L61_Tune_2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="L11_has_historical_association_with_geographic_area"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/agent"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+        <Class IRI="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://itma.ie/resources/ontology#T18_Dance_Expression"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F2_Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://itma.ie/resources/ontology#T19_Percussive_Dance"/>
+        <Class IRI="T15_Dance_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://itma.ie/resources/ontology#T20_Contemporary_Dance"/>
+        <Class IRI="T15_Dance_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://itma.ie/resources/ontology#T21_Group_Dance"/>
+        <Class IRI="T15_Dance_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://itma.ie/resources/ontology#T22_Step_Dance"/>
+        <Class IRI="T15_Dance_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T10_Instrumental_Tune"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T14_Dance"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T14_Dance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L71i_dance_associated_dance_type"/>
+            <Class IRI="T15_Dance_Type"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T14_Dance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://erlangen-crm.org/efrbroo/R23i_was_realised_through"/>
+            <Class IRI="T16_Dance_Performance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T15_Dance_Type"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T15_Dance_Type"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L71_dance_type_associated_dance"/>
+            <Class IRI="T14_Dance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T16_Dance_Performance"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T16_Dance_Performance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="L28_has_rendering"/>
+            <Class IRI="T15_Dance_Type"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T17_Dance_Component"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F23_Expression_Fragment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T17_Dance_Component"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L20i_is_included_by"/>
+            <Class IRI="T14_Dance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T1_Melodic_Category"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T1_Melodic_Category"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L70i_melodic_category_associated_type"/>
+            <Class IRI="T2_Melodic_Type"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T23_Céilí_Dance"/>
+        <Class IRI="http://itma.ie/resources/ontology#T21_Group_Dance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T24_Dance_Equipment"/>
+        <Class IRI="http://erlangen-crm.org/current/E18_Physical_Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T24_Dance_Equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="L20_includes"/>
+            <Class IRI="T16_Dance_Performance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T25_Old_Style_Step_Dance"/>
+        <Class IRI="http://itma.ie/resources/ontology#T22_Step_Dance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T26_Sean_Nós_Dance"/>
+        <Class IRI="http://itma.ie/resources/ontology#T19_Percussive_Dance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T27_Role"/>
+        <Class IRI="http://erlangen-crm.org/current/E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T27_Role"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T27_Role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L20i_is_included_by"/>
+            <Class IRI="http://erlangen-crm.org/current/E7_Activity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T28_Music_Performance"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T29_Step"/>
+        <Class IRI="T17_Dance_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T29_Step"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="L20_includes"/>
+            <Class IRI="T29_Step"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T2_Melodic_Type"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T2_Melodic_Type"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L21_has_modal_key"/>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T2_Melodic_Type"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L70_melodic_type_associated_category"/>
+            <Class IRI="T1_Melodic_Category"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T30_Figure"/>
+        <Class IRI="T17_Dance_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T30_Figure"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="L20_includes"/>
+            <Class IRI="T17_Dance_Component"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T32_Band"/>
+        <Class IRI="http://erlangen-crm.org/current/E74_Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T33_Musical_Alliance"/>
+        <Class IRI="http://erlangen-crm.org/current/E74_Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T34_Collection_Item"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T35_Set_Dance"/>
+        <Class IRI="http://itma.ie/resources/ontology#T21_Group_Dance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T36_Music"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T37_Body"/>
+        <Class IRI="T17_Dance_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T37_Figure_Dance"/>
+        <Class IRI="http://itma.ie/resources/ontology#T21_Group_Dance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T38_Lead_Around"/>
+        <Class IRI="T17_Dance_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T3_Song"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T4_Instrumental_Air"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T5_Song_Component"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F23_Expression_Fragment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T5_Song_Component"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L20i_is_included_by"/>
+            <Class IRI="T2_Melodic_Type"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T6_Song_Air"/>
+        <Class IRI="T5_Song_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T7_Song_Lyrics"/>
+        <Class IRI="T5_Song_Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T8_Text_Component"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F23_Expression_Fragment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T8_Text_Component"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="L20i_is_included_by"/>
+            <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="T9_Poem"/>
+        <Class IRI="T8_Text_Component"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I10_Annotator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I11_Dance_Caller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I12_Translator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I13_Publisher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I14_Transcriber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I15_Arranger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I16_Scholar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I17_Recorder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I18_Mixing_Engineer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I19_Recording_Engineer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I1_set_dancing_shoes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I20_Mastering_Engineer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I21_Luthier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I22_Instrument_Maker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I23_Composer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I24_Collector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I25_Compiler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I26_Dancing_Master"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I27_Knowledge_Organiser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I28_Performer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I29_Dancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I2_percussive_dance_shoes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I30_Musician"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I3_heavy_shoes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I4_light_shoes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I5_barrel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I6_broom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I7_stick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T24_Dance_Equipment"/>
+        <NamedIndividual IRI="I8_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T27_Role"/>
+        <NamedIndividual IRI="I9_Teacher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="T1_Melodic_Category"/>
+        <NamedIndividual IRI="https://itma.ie/litmus/tune-types#IrishTraditionalMusicTunesThesaurus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://itma.ie/resources/thesaurus-instrument-ext#Instrument"/>
+        <NamedIndividual IRI="https://www.itma.ie/litmus/insts-ext#IrishTraditionalMusicInstrumentThesaurus"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L11_has_historical_association_with_geographic_area"/>
+        <ObjectProperty IRI="L10_has_geographic_association_with"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L11i_is_historically_associated_with_geographic_area"/>
+        <ObjectProperty IRI="L10i_is_geographically_associated_with"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L12i_gave_to_collector"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L18_was_long_time_home_of"/>
+        <ObjectProperty IRI="L17_was_home_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L18i_lived_most_of_life_in"/>
+        <ObjectProperty IRI="L17i_lived_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L19_was_lifelong_home_of"/>
+        <ObjectProperty IRI="L17_was_home_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L19i_lived_all_of_life_in"/>
+        <ObjectProperty IRI="L17i_lived_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L38i_repertoire_played_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L47_dedicated_to"/>
+        <ObjectProperty IRI="L47i_has_dedicated"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L5_from_dance_collection_of"/>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L5i_dance_collection_contains"/>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L6_from_song_collection_of"/>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L6i_song_collection_contains"/>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L7_from_tune_collection_of"/>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="L7i_tune_collection_contains"/>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L10i_is_geographically_associated_with"/>
+        <ObjectProperty IRI="L10i_is_geographically_associated_with"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L11_has_historical_association_with_geographic_area"/>
+        <ObjectProperty IRI="L11i_is_historically_associated_with_geographic_area"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L12_collected_from"/>
+        <ObjectProperty IRI="L12i_gave_to_collector"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L13_possibly_associated_with"/>
+        <ObjectProperty IRI="L13i_possible_association_to"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L14_possibly_influenced_by"/>
+        <ObjectProperty IRI="L14i_possible_influence_to"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L15_amended_by"/>
+        <ObjectProperty IRI="L15i_amended"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L16_birthplace_of"/>
+        <ObjectProperty IRI="L16i_was_born_in_place"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L17_was_home_of"/>
+        <ObjectProperty IRI="L17i_lived_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L18_was_long_time_home_of"/>
+        <ObjectProperty IRI="L18i_lived_most_of_life_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L19_was_lifelong_home_of"/>
+        <ObjectProperty IRI="L19i_lived_all_of_life_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L20_includes"/>
+        <ObjectProperty IRI="L20i_is_included_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L21_has_modal_key"/>
+        <ObjectProperty IRI="L21i_is_modal_key_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L22_assigned_scholar_number"/>
+        <ObjectProperty IRI="L22i_scholar_number_assigned_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L23_assigned_manuscript_number"/>
+        <ObjectProperty IRI="L23i_manuscript_number_assigned_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L24_assigned_collector_number"/>
+        <ObjectProperty IRI="L24i_collector_number_assigned_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L25_assigned_annotator_number"/>
+        <ObjectProperty IRI="L25i_annotator_number_assigned_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L26_collected_by"/>
+        <ObjectProperty IRI="L26i_collected"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L27_has_associated_person"/>
+        <ObjectProperty IRI="L27i_is_person_associated_with"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L28_has_rendering"/>
+        <ObjectProperty IRI="L28i_rendering_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L29_annotated_by"/>
+        <ObjectProperty IRI="L29i_annotated"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L2_from_manuscript_of"/>
+        <ObjectProperty IRI="L2i_manuscript_contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L30_compiled_by"/>
+        <ObjectProperty IRI="L30i_compiled"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L31_personalised_version_by"/>
+        <ObjectProperty IRI="L31i_has_personalised_version_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L32_has_associated_role"/>
+        <ObjectProperty IRI="L32i_role_associated_with"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L38_plays_repertoire_of"/>
+        <ObjectProperty IRI="L38i_repertoire_played_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L39_sings_repertoire_of"/>
+        <ObjectProperty IRI="L39i_repertoire_sung_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L40_style_influence_to"/>
+        <ObjectProperty IRI="L40i_style_influenced_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L41_teacher_to"/>
+        <ObjectProperty IRI="L41i_taught_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L42_informal_teacher_to"/>
+        <ObjectProperty IRI="L42i_informally_taught_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L43_in_honour_of"/>
+        <ObjectProperty IRI="L43i_honoured_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L44_in_memory_of"/>
+        <ObjectProperty IRI="L44i_memorialised_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L45_has_associated_version"/>
+        <ObjectProperty IRI="L45i_is_version_associated_with"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L46_composer_of"/>
+        <ObjectProperty IRI="L46i_composed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L47_dedicated_to"/>
+        <ObjectProperty IRI="L47i_has_dedicated"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L48_has_collector_source"/>
+        <ObjectProperty IRI="L48i_is_collector_source_for"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L49_family_people_are_from"/>
+        <ObjectProperty IRI="L49i_is_familial_place_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L4_from_archival_collection"/>
+        <ObjectProperty IRI="L4i_archival_collection_contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L50_associated_with_instrument"/>
+        <ObjectProperty IRI="L50i_instrument_has_associated"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L51_knows_version_played_by"/>
+        <ObjectProperty IRI="L51i_plays_version_known_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L52_knows_version_sung_by"/>
+        <ObjectProperty IRI="L52i_sings_version_known_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L53_knows_version_danced_by"/>
+        <ObjectProperty IRI="L53i_dances_version_known_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L54_learned_tune_from"/>
+        <ObjectProperty IRI="L54i_taught_tune_to"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L55_learned_song_from"/>
+        <ObjectProperty IRI="L55i_taught_song_to"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L56_learned_dance_from"/>
+        <ObjectProperty IRI="L56i_taught_dance_to"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L57_learned_from_source_material"/>
+        <ObjectProperty IRI="L57i_source_material_for_version_learned"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L58_played_on_instrument"/>
+        <ObjectProperty IRI="L58i_instrument_played_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L5_from_dance_collection_of"/>
+        <ObjectProperty IRI="L5i_dance_collection_contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L6_from_song_collection_of"/>
+        <ObjectProperty IRI="L6i_song_collection_contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L73_home_used_for_recording"/>
+        <ObjectProperty IRI="L73i_recorded_in_home_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L74_session_used_for_recording"/>
+        <ObjectProperty IRI="L74i_recorded_at_session_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L75_studio_used_for_recording"/>
+        <ObjectProperty IRI="L75i_recorded_in_studio"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L76_event_of_performer"/>
+        <ObjectProperty IRI="L76i_performed_at_event"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L77_event_of_recording"/>
+        <ObjectProperty IRI="L77i_recorded_at_event"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L7_from_tune_collection_of"/>
+        <ObjectProperty IRI="L7i_tune_collection_contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L8_has_alternate_title"/>
+        <ObjectProperty IRI="L8i_is_alternate_title_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="L9_has_bandmember"/>
+        <ObjectProperty IRI="L9i_is_bandmember_of"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="L20_includes"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="L20i_is_included_by"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L10_has_geographic_association_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L10i_is_geographically_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L11_has_historical_association_with_geographic_area"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L11i_is_historically_associated_with_geographic_area"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L12_collected_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L12i_gave_to_collector"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L13_possibly_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L13i_possible_association_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L14_possibly_influenced_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L14i_possible_influence_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L15_amended_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L15i_amended"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L16_birthplace_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L16i_was_born_in_place"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L17_was_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L17i_lived_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L18_was_long_time_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L18i_lived_most_of_life_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L19_was_lifelong_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L19i_lived_all_of_life_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L20_includes"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L20i_is_included_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L21_has_modal_key"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L21i_is_modal_key_of"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L22_assigned_scholar_number"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L22_assigned_scholar_number"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L22i_scholar_number_assigned_by"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L23_assigned_manuscript_number"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L23_assigned_manuscript_number"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L23i_manuscript_number_assigned_by"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L24_assigned_collector_number"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L24_assigned_collector_number"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L24i_collector_number_assigned_by"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L25_assigned_annotator_number"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L25_assigned_annotator_number"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L25i_annotator_number_assigned_by"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L26_collected_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L26i_collected"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L27_has_associated_person"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L27i_is_person_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L28_has_rendering"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L28i_rendering_of"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L29_annotated_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L2_from_manuscript_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L2i_manuscript_contains"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L30_compiled_by"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L30i_compiled"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L31_personalised_version_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L31i_has_personalised_version_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L32_has_associated_role"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L32i_role_associated_with"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L33_performed_for"/>
+        <Class IRI="T28_Music_Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L33i_performed_to"/>
+        <Class IRI="T16_Dance_Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L34_performed_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L35_played_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L36_danced_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L37_sang_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L38_plays_repertoire_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L38i_repertoire_played_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L39_sings_repertoire_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L39i_repertoire_sung_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L40_style_influence_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L40i_style_influenced_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L41_teacher_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L41i_taught_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L42_informal_teacher_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L42i_informally_taught_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L43_in_honour_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L43_in_honour_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F8_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L43i_honoured_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L44_in_memory_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L44_in_memory_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F8_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L44i_memorialised_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L45_has_associated_version"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L45i_is_version_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L46_composer_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L46i_composed_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L47_dedicated_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L47i_has_dedicated"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L48_has_collector_source"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L48i_is_collector_source_for"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L49_family_people_are_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L49i_is_familial_place_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L4_from_archival_collection"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L4i_archival_collection_contains"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L50_associated_with_instrument"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L50i_instrument_has_associated"/>
+        <Class IRI="https://itma.ie/resources/thesaurus-instrument-ext#Instrument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L51_knows_version_played_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L51i_plays_version_known_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L52_knows_version_sung_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L52i_sings_version_known_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L53_knows_version_danced_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L53i_dances_version_known_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L54_learned_tune_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L54i_taught_tune_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L55_learned_song_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L55i_taught_song_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L56_learned_dance_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L56i_taught_dance_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L57_learned_from_source_material"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L57i_source_material_for_version_learned"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L58_played_on_instrument"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L58i_instrument_played_by"/>
+        <Class IRI="https://itma.ie/resources/thesaurus-instrument-ext#Instrument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L59_has_associated"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L59_has_associated"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L5_from_dance_collection_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L5i_dance_collection_contains"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L60_Tune_1"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L61_Tune_2"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L62_Tune_3"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L63_Tune_4"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L64_Tune_5"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L65_Tune_6"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L66_Tune_7"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L67_Tune_8"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L68_Tune_9"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L69_Tune_10"/>
+        <Class IRI="T11_Instrumental_Tune_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L6_from_song_collection_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L6i_song_collection_contains"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L72_performed_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F20_Performance_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L72i_performs"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L73_home_used_for_recording"/>
+        <Class IRI="http://erlangen-crm.org/current/E39_Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L73i_recorded_in_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L74_session_used_for_recording"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L74i_recorded_at_session_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L75_studio_used_for_recording"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L75i_recorded_in_studio"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L76_event_of_performer"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F8_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L76i_performed_at_event"/>
+        <Class IRI="http://erlangen-crm.org/current/E39_Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L77_event_of_recording"/>
+        <Class IRI="http://erlangen-crm.org/current/E5_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L77i_recorded_at_event"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F29_Recording_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L7_from_tune_collection_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L7i_tune_collection_contains"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L8_has_alternate_title"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L8i_is_alternate_title_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L9_has_bandmember"/>
+        <Class IRI="http://erlangen-crm.org/current/E74_Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="L9i_is_bandmember_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L10_has_geographic_association_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L10i_is_geographically_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L11_has_historical_association_with_geographic_area"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L11i_is_historically_associated_with_geographic_area"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L12_collected_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L12i_gave_to_collector"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L13_possibly_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L13i_possible_association_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L14_possibly_influenced_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L14i_possible_influence_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L15_amended_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L15i_amended"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L16_birthplace_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L16i_was_born_in_place"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L17_was_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L17i_lived_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L18_was_long_time_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L18i_lived_most_of_life_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L19_was_lifelong_home_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L19i_lived_all_of_life_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L20_includes"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L20i_is_included_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L21_has_modal_key"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L21i_is_modal_key_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L22_assigned_scholar_number"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L22i_scholar_number_assigned_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L22i_scholar_number_assigned_by"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L23_assigned_manuscript_number"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L23i_manuscript_number_assigned_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L23i_manuscript_number_assigned_by"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L24_assigned_collector_number"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L24i_collector_number_assigned_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L24i_collector_number_assigned_by"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L25_assigned_annotator_number"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L25i_annotator_number_assigned_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L25i_annotator_number_assigned_by"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L26_collected_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L26i_collected"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L27_has_associated_person"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L27i_is_person_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L28_has_rendering"/>
+        <Class IRI="T2_Melodic_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L28i_rendering_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L29_annotated_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L2_from_manuscript_of"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L2i_manuscript_contains"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L30_compiled_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L30i_compiled"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L31_personalised_version_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L31i_has_personalised_version_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L32_has_associated_role"/>
+        <Class IRI="T27_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L32i_role_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L33_performed_for"/>
+        <Class IRI="T16_Dance_Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L33i_performed_to"/>
+        <Class IRI="T28_Music_Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L34_performed_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L35_played_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L36_danced_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L37_sang_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L38_plays_repertoire_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L38i_repertoire_played_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L39_sings_repertoire_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L39i_repertoire_sung_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L3_from_collection_of"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L3i_collection_contains"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L40_style_influence_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L40i_style_influenced_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L41_teacher_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L41i_taught_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L42_informal_teacher_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L42i_informally_taught_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L43_in_honour_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L43i_honoured_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L43i_honoured_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F8_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L44_in_memory_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L44i_memorialised_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L44i_memorialised_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F8_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L45_has_associated_version"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L45i_is_version_associated_with"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L46_composer_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L46i_composed_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L47_dedicated_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L47i_has_dedicated"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L48_has_collector_source"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L48i_is_collector_source_for"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L49_family_people_are_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L49i_is_familial_place_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L4_from_archival_collection"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L4i_archival_collection_contains"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L50_associated_with_instrument"/>
+        <Class IRI="https://itma.ie/resources/thesaurus-instrument-ext#Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L50i_instrument_has_associated"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L51_knows_version_played_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L51i_plays_version_known_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L52_knows_version_sung_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L52i_sings_version_known_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L53_knows_version_danced_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L53i_dances_version_known_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L54_learned_tune_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L54i_taught_tune_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L55_learned_song_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L55i_taught_song_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L56_learned_dance_from"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L56i_taught_dance_to"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L57_learned_from_source_material"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L57i_source_material_for_version_learned"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L58_played_on_instrument"/>
+        <Class IRI="https://itma.ie/resources/thesaurus-instrument-ext#Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L58i_instrument_played_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L59_has_associated"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L59_has_associated"/>
+        <Class IRI="T1_Melodic_Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L5_from_dance_collection_of"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L5i_dance_collection_contains"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L60_Tune_1"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L61_Tune_2"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L62_Tune_3"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L63_Tune_4"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L64_Tune_5"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L65_Tune_6"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L66_Tune_7"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L67_Tune_8"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L68_Tune_9"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L69_Tune_10"/>
+        <Class IRI="T10_Instrumental_Tune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L6_from_song_collection_of"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L6i_song_collection_contains"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L72_performed_by"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L72i_performs"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F20_Performance_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L73_home_used_for_recording"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L73i_recorded_in_home_of"/>
+        <Class IRI="http://erlangen-crm.org/current/E39_Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L74_session_used_for_recording"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L74i_recorded_at_session_in"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L75_studio_used_for_recording"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L75i_recorded_in_studio"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F9_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L76_event_of_performer"/>
+        <Class IRI="http://erlangen-crm.org/current/E39_Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L76i_performed_at_event"/>
+        <Class IRI="http://erlangen-crm.org/current/E5_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L77_event_of_recording"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F29_Recording_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L77i_recorded_at_event"/>
+        <Class IRI="http://erlangen-crm.org/current/E5_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L7_from_tune_collection_of"/>
+        <Class IRI="T31_Collection_Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L7i_tune_collection_contains"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L8_has_alternate_title"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L8i_is_alternate_title_of"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F1_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L9_has_bandmember"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F10_Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="L9i_is_bandmember_of"/>
+        <Class IRI="http://erlangen-crm.org/current/E74_Group"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://itma.ie/resources/ontology#T18_Dance_Expression</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Dance Expression is the version of a Dance, not specific to the Dance Type in which it is rendered. Dance Expressions may be the result of differences in choreography, dance styles, and personal approach.
+
+Example: The Molyneaux Blackbird set dances, versions of The Blackbird set dance with characteristic steps unique to the version. Jeramiah Molyneaux, the North Kerry dancing master, choreographed at least three levels of this dance specific to the compentency levels of his dance students. 
+
+The Dance Expression in this example could be the overall dance people generally reference as &quot;The Molyneaux Blackbird,&quot; with self-contained expressions for each of the Molyneaux Blackbird versions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://itma.ie/resources/ontology#T18_Dance_Expression</IRI>
+        <IRI>http://itma.ie/resources/ontology#T18_Dance_Expression</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://itma.ie/resources/ontology#T19_Percussive_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Percussive dance is a general descriptive class to incorporate contemporary interpretations of various dance forms. While &quot;sean-nós dance&quot; is the most well-known example of percussive dance in contemporary Irish dance practise, it is not the only example. This class may be used to describe rhythmic dance examples that create percussive sounds but are not easily classified or described with a sub-class label, such as hybrid contemporary dance-stepdance-seán nos dance choreography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://itma.ie/resources/ontology#T19_Percussive_Dance</IRI>
+        <IRI>http://itma.ie/resources/ontology#T19_Percussive_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://itma.ie/resources/ontology#T20_Contemporary_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contemporary Dance class incorporates all dance forms that are not easily positioned within another specific class. This class may be used to describe newer choreographed pieces that combine dance forms and / or incorporate several types of traditional dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://itma.ie/resources/ontology#T20_Contemporary_Dance</IRI>
+        <IRI>http://itma.ie/resources/ontology#T20_Contemporary_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://itma.ie/resources/ontology#T21_Group_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group dance is used to describe dances that involve more than one person. This class may be used for dances that are not easily defined with either subclass T23_Ceili_Dance or T35_Set_Dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://itma.ie/resources/ontology#T21_Group_Dance</IRI>
+        <IRI>http://itma.ie/resources/ontology#T21_Group_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://itma.ie/resources/ontology#T22_Step_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Solo dance form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://itma.ie/resources/ontology#T22_Step_Dance</IRI>
+        <IRI>http://itma.ie/resources/ontology#T22_Step_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>I1_set_dancing_shoes</IRI>
+        <IRI>I1_set_dancing_shoes</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>I2_percussive_dance_shoes</IRI>
+        <IRI>I2_percussive_dance_shoes</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L10_has_geographic_association_with</IRI>
+        <IRI>L10_has_geographic_association_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L10i_is_geographically_associated_with</IRI>
+        <IRI>L10i_is_geographically_associated_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L11_has_historical_association_with_geographic_area</IRI>
+        <IRI>L11_has_historical_association_with_geographic_area</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L11i_is_historically_associated_with_geographic_area</IRI>
+        <IRI>L11i_is_historically_associated_with_geographic_area</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L12_collected_from</IRI>
+        <IRI>L12_collected_from</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L12i_gave_to_collector</IRI>
+        <IRI>L12i_gave_to_collector</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L13_possibly_associated_with</IRI>
+        <IRI>L13_possibly_associated_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L13i_possible_association_to</IRI>
+        <IRI>L13i_possible_association_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L14_possibly_influenced_by</IRI>
+        <IRI>L14_possibly_influenced_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L14i_possible_influence_to</IRI>
+        <IRI>L14i_possible_influence_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L15_amended_by</IRI>
+        <IRI>L15_amended_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L15i_amended</IRI>
+        <IRI>L15i_amended</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L16_birthplace_of</IRI>
+        <IRI>L16_birthplace_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L16i_was_born_in_place</IRI>
+        <IRI>L16i_was_born_in_place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L17_was_home_of</IRI>
+        <IRI>L17_was_home_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L17i_lived_in</IRI>
+        <IRI>L17i_lived_in</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L18_was_long_time_home_of</IRI>
+        <IRI>L18_was_long_time_home_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L18i_lived_most_of_life_in</IRI>
+        <IRI>L18i_lived_most_of_life_in</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L19_was_lifelong_home_of</IRI>
+        <IRI>L19_was_lifelong_home_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L19i_lived_all_of_life_in</IRI>
+        <IRI>L19i_lived_all_of_life_in</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L20_includes</IRI>
+        <IRI>L20_includes</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L20i_is_included_by</IRI>
+        <IRI>L20i_is_included_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L21_has_modal_key</IRI>
+        <IRI>L21_has_modal_key</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L21i_is_modal_key_of</IRI>
+        <IRI>L21i_is_modal_key_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L22_assigned_scholar_number</IRI>
+        <IRI>L22_assigned_scholar_number</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L22i_scholar_number_assigned_by</IRI>
+        <IRI>L22i_scholar_number_assigned_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L23_assigned_manuscript_number</IRI>
+        <IRI>L23_assigned_manuscript_number</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L23i_manuscript_number_assigned_by</IRI>
+        <IRI>L23i_manuscript_number_assigned_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L24_assigned_collector_number</IRI>
+        <IRI>L24_assigned_collector_number</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L24i_collector_number_assigned_by</IRI>
+        <IRI>L24i_collector_number_assigned_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L25_assigned_annotator_number</IRI>
+        <IRI>L25_assigned_annotator_number</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L25i_annotator_number_assigned_by</IRI>
+        <IRI>L25i_annotator_number_assigned_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L26_collected_by</IRI>
+        <IRI>L26_collected_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L26i_collected</IRI>
+        <IRI>L26i_collected</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L27_has_associated_person</IRI>
+        <IRI>L27_has_associated_person</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L27i_is_person_associated_with</IRI>
+        <IRI>L27i_is_person_associated_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L28_has_rendering</IRI>
+        <IRI>L28_has_rendering</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L28i_rendering_of</IRI>
+        <IRI>L28i_rendering_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L29_annotated_by</IRI>
+        <IRI>L29_annotated_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L29i_annotated</IRI>
+        <IRI>L29i_annotated</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L2_from_manuscript_of</IRI>
+        <IRI>L2_from_manuscript_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L2i_manuscript_contains</IRI>
+        <IRI>L2i_manuscript_contains</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L30_compiled_by</IRI>
+        <IRI>L30_compiled_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L30i_compiled</IRI>
+        <IRI>L30i_compiled</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L31_personalised_version_by</IRI>
+        <IRI>L31_personalised_version_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L31i_has_personalised_version_of</IRI>
+        <IRI>L31i_has_personalised_version_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L32_has_associated_role</IRI>
+        <IRI>L32_has_associated_role</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L32i_role_associated_with</IRI>
+        <IRI>L32i_role_associated_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L33_performed_for</IRI>
+        <IRI>L33_performed_for</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L33i_performed_to</IRI>
+        <IRI>L33i_performed_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L34_performed_with</IRI>
+        <IRI>L34_performed_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L35_played_with</IRI>
+        <IRI>L35_played_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L36_danced_with</IRI>
+        <IRI>L36_danced_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L37_sang_with</IRI>
+        <IRI>L37_sang_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L38_plays_repertoire_of</IRI>
+        <IRI>L38_plays_repertoire_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L38i_repertoire_played_by</IRI>
+        <IRI>L38i_repertoire_played_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L39_sings_repertoire_of</IRI>
+        <IRI>L39_sings_repertoire_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L39i_repertoire_sung_by</IRI>
+        <IRI>L39i_repertoire_sung_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L3_from_collection_of</IRI>
+        <IRI>L3_from_collection_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L3i_collection_contains</IRI>
+        <IRI>L3i_collection_contains</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L40_style_influence_to</IRI>
+        <IRI>L40_style_influence_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L40i_style_influenced_by</IRI>
+        <IRI>L40i_style_influenced_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L41_teacher_to</IRI>
+        <IRI>L41_teacher_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L41i_taught_by</IRI>
+        <IRI>L41i_taught_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L42_informal_teacher_to</IRI>
+        <IRI>L42_informal_teacher_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L42i_informally_taught_by</IRI>
+        <IRI>L42i_informally_taught_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L43_in_honour_of</IRI>
+        <IRI>L43_in_honour_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L43i_honoured_by</IRI>
+        <IRI>L43i_honoured_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L44_in_memory_of</IRI>
+        <IRI>L44_in_memory_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L44i_memorialised_by</IRI>
+        <IRI>L44i_memorialised_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L45_has_associated_version</IRI>
+        <IRI>L45_has_associated_version</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L45i_is_version_associated_with</IRI>
+        <IRI>L45i_is_version_associated_with</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L46_composer_of</IRI>
+        <IRI>L46_composer_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L46i_composed_by</IRI>
+        <IRI>L46i_composed_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L47_dedicated_to</IRI>
+        <IRI>L47_dedicated_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L47i_has_dedicated</IRI>
+        <IRI>L47i_has_dedicated</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L48_has_collector_source</IRI>
+        <IRI>L48_has_collector_source</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L48i_is_collector_source_for</IRI>
+        <IRI>L48i_is_collector_source_for</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L49_family_people_are_from</IRI>
+        <IRI>L49_family_people_are_from</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L49i_is_familial_place_of</IRI>
+        <IRI>L49i_is_familial_place_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L4_from_archival_collection</IRI>
+        <IRI>L4_from_archival_collection</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L4i_archival_collection_contains</IRI>
+        <IRI>L4i_archival_collection_contains</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L50_associated_with_instrument</IRI>
+        <IRI>L50_associated_with_instrument</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L50i_instrument_has_associated</IRI>
+        <IRI>L50i_instrument_has_associated</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L51_knows_version_played_by</IRI>
+        <IRI>L51_knows_version_played_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L51i_plays_version_known_by</IRI>
+        <IRI>L51i_plays_version_known_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L52_knows_version_sung_by</IRI>
+        <IRI>L52_knows_version_sung_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L52i_sings_version_known_by</IRI>
+        <IRI>L52i_sings_version_known_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L53_knows_version_danced_by</IRI>
+        <IRI>L53_knows_version_danced_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L53i_dances_version_known_by</IRI>
+        <IRI>L53i_dances_version_known_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L54_learned_tune_from</IRI>
+        <IRI>L54_learned_tune_from</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L54i_taught_tune_to</IRI>
+        <IRI>L54i_taught_tune_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L55_learned_song_from</IRI>
+        <IRI>L55_learned_song_from</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L55i_taught_song_to</IRI>
+        <IRI>L55i_taught_song_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L56_learned_dance_from</IRI>
+        <IRI>L56_learned_dance_from</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L56i_taught_dance_to</IRI>
+        <IRI>L56i_taught_dance_to</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L57_learned_from_source_material</IRI>
+        <IRI>L57_learned_from_source_material</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L57i_source_material_for_version_learned</IRI>
+        <IRI>L57i_source_material_for_version_learned</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L58_played_on_instrument</IRI>
+        <IRI>L58_played_on_instrument</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L58i_instrument_played_by</IRI>
+        <IRI>L58i_instrument_played_by</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L59_has_associated</IRI>
+        <IRI>L59_has_associated</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L5_from_dance_collection_of</IRI>
+        <IRI>L5_from_dance_collection_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L5i_dance_collection_contains</IRI>
+        <IRI>L5i_dance_collection_contains</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L60_Tune_1</IRI>
+        <IRI>L60_Tune_1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L61_Tune_2</IRI>
+        <IRI>L61_Tune_2</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L62_Tune_3</IRI>
+        <IRI>L62_Tune_3</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L63_Tune_4</IRI>
+        <IRI>L63_Tune_4</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L64_Tune_5</IRI>
+        <IRI>L64_Tune_5</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L65_Tune_6</IRI>
+        <IRI>L65_Tune_6</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L66_Tune_7</IRI>
+        <IRI>L66_Tune_7</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L67_Tune_8</IRI>
+        <IRI>L67_Tune_8</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L68_Tune_9</IRI>
+        <IRI>L68_Tune_9</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L69_Tune_10</IRI>
+        <IRI>L69_Tune_10</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L6_from_song_collection_of</IRI>
+        <IRI>L6_from_song_collection_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L6i_song_collection_contains</IRI>
+        <IRI>L6i_song_collection_contains</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L73_home_used_for_recording</IRI>
+        <IRI>L73_home_used_for_recording</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L73i_recorded_in_home_of</IRI>
+        <IRI>L73i_recorded_in_home_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L74_session_used_for_recording</IRI>
+        <IRI>L74_session_used_for_recording</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L74i_recorded_at_session_in</IRI>
+        <IRI>L74i_recorded_at_session_in</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L75_studio_used_for_recording</IRI>
+        <IRI>L75_studio_used_for_recording</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L75i_recorded_in_studio</IRI>
+        <IRI>L75i_recorded_in_studio</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L76_event_of_performer</IRI>
+        <IRI>L76_event_of_performer</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L76i_performed_at_event</IRI>
+        <IRI>L76i_performed_at_event</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L77_event_of_recording</IRI>
+        <IRI>L77_event_of_recording</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L77i_recorded_at_event</IRI>
+        <IRI>L77i_recorded_at_event</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L7_from_tune_collection_of</IRI>
+        <IRI>L7_from_tune_collection_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L7i_tune_collection_contains</IRI>
+        <IRI>L7i_tune_collection_contains</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L8_has_alternate_title</IRI>
+        <IRI>L8_has_alternate_title</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L8i_is_alternate_title_of</IRI>
+        <IRI>L8i_is_alternate_title_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L9_has_bandmember</IRI>
+        <IRI>L9_has_bandmember</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L9i_is_bandmember_of</IRI>
+        <IRI>L9i_is_bandmember_of</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T10_Instrumental_Tune</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An instrumental tune is a metred melody that can be used to accompany dancing. Instrumental tunes are typically played in sets or medleys of more than one tune, most often sets of two or three individual tunes played back-to-back without stopping (see T11_Instrumental_Tune_Set).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T10_Instrumental_Tune</IRI>
+        <IRI>T10_Instrumental_Tune</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T11_Instrumental_Tune_Set</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An instrumental tune set is a grouping of more than one instrumental tune, played back-to-back without stopping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T11_Instrumental_Tune_Set</IRI>
+        <IRI>T11_Instrumental_Tune_Set</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T14_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A &quot;Dance&quot; is the conceptual thing described by title, regardless of specific rendering according to Dance Type, Dance Performance, or using specific Dance Equipment. For example, The Caledonian Set is a conceptual Dance that will likely be rendered as the Dance Type &quot;Set Dance,&quot; which is a subclass of Group Dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T14_Dance</IRI>
+        <IRI>T14_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T15_Dance_Type</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dance types are the rendered forms a dance (concept) may take. The same dance (e.g. The Blackbird, a solo set dance) may appear in one instance in step dance, either general or &quot;old-style,&quot; or it could be rendered as a contemporary dance hybrid, incorporating Blackbird steps in a new choreographed dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T15_Dance_Type</IRI>
+        <IRI>T15_Dance_Type</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T16_Dance_Performance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A dance performance is a performance work primarily focused on dance or a music performance also including dancers or dance performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T16_Dance_Performance</IRI>
+        <IRI>T16_Dance_Performance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T17_Dance_Component</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dance Component class is a subclass of Expression Fragment and comprises a smaller element or portion of overall dance choreography. This class L20i is included by some T14 Dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T17_Dance_Component</IRI>
+        <IRI>T17_Dance_Component</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T1_Melodic_Category</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Use property L70i_melodic_category_associated_type and point to Tune Type within itma.ie/litmus/tune-types#IrishTraditionalMusicTunesThesaurus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T1_Melodic_Category</IRI>
+        <IRI>T1_Melodic_Category</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T23_Céilí_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Céilí Dance is a type of social group dance. 
+Examples: Ballaí Luimní (Walls of Limerick), Ionsaí na hInse (Seige of Ennis)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T23_Céilí_Dance</IRI>
+        <IRI>T23_Céilí_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T24_Dance_Equipment</IRI>
+        <IRI>T24_Dance_Equipment</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T25_Old_Style_Step_Dance</IRI>
+        <IRI>T25_Old_Style_Step_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T26_Sean_Nós_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sean-nós Dance (&quot;old style&quot;) is a solo percussive dance style that is improvisatory and individualised in practice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T26_Sean_Nós_Dance</IRI>
+        <IRI>T26_Sean_Nós_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T27_Role</IRI>
+        <IRI>T27_Role</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T28_Music_Performance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A music performance can contain singing, instrumental tunes, and other performances. It is primarily focused on musical aspects, not dance, though could be used also to describe a dance performance with accompanying musicians.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T28_Music_Performance</IRI>
+        <IRI>T28_Music_Performance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T29_Step</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Step&quot; can be defined slightly differently within several dance contexts. It is a smaller unit of choreography that is an 8-bar length of choreography in step-dancing; in sean-nós dancing iis can be used to define much smaller units of dance choreography, such as a battering step or drums.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T29_Step</IRI>
+        <IRI>T29_Step</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T2_Melodic_Type</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the type of melodic rendering, whether instrumental dance tune, set, air, or song.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T2_Melodic_Type</IRI>
+        <IRI>T2_Melodic_Type</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T30_Figure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Figure is the part of a ceili dance between the repeat of the body of the dance. There are usually two or more figures in a dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T30_Figure</IRI>
+        <IRI>T30_Figure</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T31_Collection_Manifestation</IRI>
+        <IRI>T31_Collection_Manifestation</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T32_Band</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Band is a formal musical group of more than one person. The band has a recognised group name separate from the combined names of the individual musicians comprising it.
+
+Example: Altan, The Chieftains, Danú</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T32_Band</IRI>
+        <IRI>T32_Band</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T33_Musical_Alliance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scope note: Comprises those musical partnerships or collectives involving performances, recordings, or other activities between two or more people, outside the scope of band-based alliances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T33_Musical_Alliance</IRI>
+        <IRI>T33_Musical_Alliance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T34_Collection_Item</IRI>
+        <IRI>T34_Collection_Item</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T35_Set_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Set Dance class refers to the group set dances, not the solo set dances performed by step dancers. For solo set dance, refer to the instance &quot;Set Dance&quot; of class T1 Melodic Category (all instances are found in the Irish Traditional Music Tune Types Thesaurus - https://itma.ie/litmus/tune-types#IrishTraditionalMusicTunesThesaurus)
+
+Examples: Caledonian set, Sliabh Luchra set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T35_Set_Dance</IRI>
+        <IRI>T35_Set_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T36_Music</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Music is the class representative of the conceptual, highest level of a tune or song, or other musical piece. It is the sum of all versions and variants.
+
+Example: &quot;The Blackbird&quot; as a conceptual thing, incorporating all melodic derivatives such as those in song form, instrumental slow air form, various dance tunes and melodic derivatives.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T36_Music</IRI>
+        <IRI>T36_Music</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T37_Body</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Body of a ceili dance is repeated several times throughout a dance with figures interspersed between repeats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T37_Body</IRI>
+        <IRI>T37_Body</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T37_Figure_Dance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Figure dances are group dances meant to portray themes through movement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T37_Figure_Dance</IRI>
+        <IRI>T37_Figure_Dance</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T38_Lead_Around</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The lead around is the first sixteen bars of a solo step dance. The choreography can involve dancing in a circular pattern or forwards and backwards to introduce the dance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T38_Lead_Around</IRI>
+        <IRI>T38_Lead_Around</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T3_Song</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Song class is a melodic rendering intended for the human voice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T3_Song</IRI>
+        <IRI>T3_Song</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T4_Instrumental_Air</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Instrumental Air class is a melodic rendering using an instrument that is either metred or un-metred, but may not be defined as a dance tune.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T4_Instrumental_Air</IRI>
+        <IRI>T4_Instrumental_Air</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T5_Song_Component</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Song Component class is a subclass of Expression Fragment and can include a song air (melodic material) or song lyrics. This class L20i is included by some T2 Melodic Type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T5_Song_Component</IRI>
+        <IRI>T5_Song_Component</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T6_Song_Air</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Song Air is a melodic line without associated text. Air in this context does not mean unmetred, but refers to the musical component of songs. Song airs can be associated with multiple named songs and with multiple sets of song texts or lyrics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T6_Song_Air</IRI>
+        <IRI>T6_Song_Air</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T7_Song_Lyrics</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Song lyrics are the non-melodic component of a song. They may be associated with a poem. Song lyrics may have multiple versions that are all recognised as the &quot;same&quot; song, or have multiple associated lyrics that are seen as &quot;different&quot; songs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T7_Song_Lyrics</IRI>
+        <IRI>T7_Song_Lyrics</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T8_Text_Component</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text Component class is an associated text or text fragment that relates to a dance or musical work. As this is not considered a work on its own, it is a subclass of Expression Fragment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T8_Text_Component</IRI>
+        <IRI>T8_Text_Component</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>T9_Poem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A poem is a subclass of Text Component as it can relate a poem to a particular song. 
+
+Example: She Moved Through The Fair, by Padraic Colum, as poem (lyrics) associated with the song of the same name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>T9_Poem</IRI>
+        <IRI>T9_Poem</IRI>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
