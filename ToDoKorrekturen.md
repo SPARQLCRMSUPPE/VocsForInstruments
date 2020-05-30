@@ -25,3 +25,5 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 - [ ] Interpret + Ereignis muss auch mit Objekt verbunden werden! (oder?)
 
 - [ ] ERM "bezeichnung" bei Klassifikation rausnehmen. Allgemein am Ende: "Label"? <- Anpassen in ma und MA !!!
+
+- [ ] skos:exactMatch anpassen in Grafik
