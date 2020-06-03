@@ -182,10 +182,6 @@ owl:sameAs rdf:type owl:ObjectProperty ;
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Frequenz> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Identifikator
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Identifikator> rdf:type owl:Class .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Kammerton
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Kammerton> rdf:type owl:Class ;
                                                                        rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> .
