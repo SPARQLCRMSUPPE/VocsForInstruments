@@ -1,4 +1,4 @@
-## Anbindung an- / Integration in das Semantic Web
+# Anbindung an- / Integration in das Semantic Web
 
 In den vorangegangenen Kapiteln wurde ein Modell in eine strukturell auf RDF basierende Ontologie "übersetzt". Deren "Grammatik" orientierte sich zwar an der im Semantic Web standardisierten (RDF, RDFS, OWL), deren Semantik und Etablierung das Potential für eine Integration im Semantic Web birgt. Doch bleiben die in dieser Ontologie verwahrten Konzepte durch die Brille des "Semantic Web-Subjekts" betrachtet diffus: erkennbar sind lediglich eine Menge arbiträrer Entitäten, die in bestimmten, jedoch nicht weiter spezifizierten Beziehungen zueinander stehen. 
 Es gilt insofern an dieser Stelle abermals einen hermeneutischen Prozess zu durchlaufen, in dessen Zuge die nicht-explizierten Konzepte im Namespace :ma dermaßen erschlossen werden, dass sie für ein Wahrnehmungssubjekt interpretierbar werden. 
