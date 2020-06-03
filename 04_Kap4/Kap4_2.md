@@ -60,7 +60,7 @@ Zum anderen muss eine Verknüpfung "werkseitig" erfolgen. Hier bietet es sich an
 
 Erstaunlicherweise findet sich in den großen etablierten Vokabularen keine Terminologie, um diesen scheinbar banalen Sachverhalt abzubilden. Fündig wird man jedoch in der *Linked Irish Traditional Music Ontology*.[^d18] Das Property L58[^d20] ("played on instrument") und das inverse Property L58i[^d19] ("instrument played by") geben den hier gewünschten Sachverhalt in geeigneter Weise wieder.
 
-![](medien_Kap3/20200526_interpret3.png)
+![](medien_Kap4/20200526_interpret3.png)
 
 Hierbei ergeben sich auch einige Fragen bezüglich der Verwendung der Entität `ma:Instrument_Domäne`, die im folgenden Kapitel zu diskutieren sein werden.
 
@@ -102,7 +102,7 @@ Die Entität `ma:Instrument_nach_Vokabular_(Domäne)` findet ihre fallspezifisch
 
 Eine Verwendung weiterer, vagerer SKOS-Relationen erscheint – da von einem "werkseitigen" Mappen ausgegangen wird – an dieser Stelle nicht sinnvoll, soll doch das uneindeutige Domänenvokabular durch Mappen dismabiguiert werden.
 
-![](medien_Kap3/20200602_Klass2.png)
+![](medien_Kap4/20200602_Klass2.png)
 
 ###### Klassifikation
 
@@ -111,7 +111,7 @@ Vorläufig lässt sich jedoch festellen, dass insbesondere der sog. *MIMO Thesau
 
 ##### Direktes Mapping
 
-Bei der Herstellung einer direkten Relation zwischen `ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` erscheinen verschiedene Szenarien vorstellbar. Es erscheint daher sinnvoll eine Relation als sog. "Superproperty" zu definieren, unter die alle weiteren Relationen ("Subpropertys") subsumiert werden. Als Superproperty ist dabei die Property `dc:relation`[^11] der *Dublin Core Metadata Initiative* als besonders standardisiert zu betrachten. Unter ihn können mit der Property `rdfs:subPropertyOf`[^12] Subproperties für die folgenden Szenarien eingeordnet werden:
+Bei der Herstellung einer direkten Relation zwischen `ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` erscheinen verschiedene Szenarien vorstellbar. Es erscheint daher sinnvoll eine Relation als sog. "Superproperty" zu definieren, unter die alle weiteren Relationen ("Subpropertys") subsumiert werden. Als Superproperty ist dabei die Property `dc:relation`[^11] der *Dublin Core Metadata Initiative* als besonders standardisiert zu betrachten. Unter ihn können mit der Property `rdfs:subpropertyOf`[^12] Subproperties für die folgenden Szenarien eingeordnet werden:
 
 * Zur Exemplifizierung eines Terms wird auf ein beispielhaftes Objekt verwiesen. Dies ist auch im hier behandelten Anwendungsbeispiel der Fall: dem Term `rism:cor_da_caccia` kann aufgrund bestehender Gemeinsamkeiten hinsichtlich Region (Herstellungs-/Kompositionsort: Mitteldeutschland) und Zeit (erste Hälfte 18. Jahrhundert) ein Objekt zugewiesen werden, das als beispielhaft für den Typ des etwa bei der Uraufführung verwendeten Instruments sein könnte.
 SKOS bietet dabei das Property `skos:example`[^1], dessen Zweck jedoch nicht im Verlinken mit beispielhaften Instanzen zu bestehen, sondern darin zu liegen scheint, beispielhafte Verwendung von Termen zu illustrieren.[^2] 
@@ -128,7 +128,7 @@ Einen möglichen Ausweg böte unter Umständen die Verwendung von `rdf:type`, um
 
 Daher soll `owl:sameAs` "als Krücke", im Bewusstsein seiner Unzulänglichkeit vorläufig beibehalten werden.
 
-![blablablub – fett umrandet: die übergeordneten Klassen und Properties](/medien_Kap3/20200603_mappKlass.png)
+![blablablub – fett umrandet: die übergeordneten Klassen und Properties](/medien_Kap4/20200603_mappKlass.png)
 
 ##### Erkenntnisse aus der Modellierung
 
