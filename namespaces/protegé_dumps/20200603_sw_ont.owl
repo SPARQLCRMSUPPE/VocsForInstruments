@@ -12,10 +12,18 @@
 #    Object Properties
 #################################################################
 
+###  http://purl.org/NET/cidoc-crm/core#P137_exemplifies
+<http://purl.org/NET/cidoc-crm/core#P137_exemplifies> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf <https://dublincore.org/specifications/dublin-core/dcmi-terms/#relation> ;
+                                                      rdf:type owl:SymmetricProperty ;
+                                                      rdfs:domain <http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> ;
+                                                      rdfs:range <http://purl.org/NET/cidoc-crm/core#E55_Type> .
+
+
 ###  http://purl.org/ontology/mo/instrument
 <http://purl.org/ontology/mo/instrument> rdf:type owl:ObjectProperty ;
                                          rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Aufführung_(Domäne)> ;
-                                         rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> .
+                                         rdfs:range <https://www.wikidata.org/wiki/Q34379> .
 
 
 ###  http://purl.org/ontology/mo/performer
@@ -24,38 +32,9 @@
                                         rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Entsprechungsgrad
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Entsprechungsgrad> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> ;
-                                                                               rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Identifikator
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Identifikator> rdf:type owl:ObjectProperty ;
-                                                                           rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Aufführung_(Domäne)> ;
-                                                                           rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Identifikator> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Typ
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Typ> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)> ;
-                                                                 rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Klassifikation)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#entspricht
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#entspricht> rdf:type owl:ObjectProperty ;
-                                                                        rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> ;
-                                                                        rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Klassifikation)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#genaue_Entsprechung
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#genaue_Entsprechung> rdf:type owl:ObjectProperty ;
-                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Entsprechungsgrad> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Ambitus
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Ambitus> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> ;
+                                                                         rdfs:domain <http://purl.org/NET/cidoc-crm/core#E55_Type> ;
                                                                          rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ambitus> .
 
 
@@ -79,7 +58,7 @@
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Klangbeispiel
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Klangbeispiel> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> ;
+                                                                               rdfs:domain <https://www.wikidata.org/wiki/Q34379> ;
                                                                                rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Klangbeispiel> .
 
 
@@ -89,28 +68,10 @@
                                                                         rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Lizenz> .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Ort
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Ort> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Aufführung_(Domäne)> ;
-                                                                     rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ort> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Signatur
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Signatur> rdf:type owl:ObjectProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)> ;
-                                                                          rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Signatur> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmungssystem
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmungssystem> rdf:type owl:ObjectProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> ;
+                                                                                 rdfs:domain <https://www.wikidata.org/wiki/Q34379> ;
                                                                                  rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Stimmungssystem> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Zeitpunkt
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Zeitpunkt> rdf:type owl:ObjectProperty ;
-                                                                           rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Aufführung_(Domäne)> ;
-                                                                           rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Zeitpunk> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_höchsten_Ton
@@ -125,81 +86,81 @@
                                                                               rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#tiefster_Ton> .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#in_Sammlung
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#in_Sammlung> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)> ;
-                                                                         rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Sammlung> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#klingt
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#klingt> rdf:type owl:ObjectProperty ;
                                                                     rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> ;
                                                                     rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton_(klingend)> .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ungefähre_Entsprechung
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ungefähre_Entsprechung> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Entsprechungsgrad> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ereignis_(Domäne)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ereignis_(Domäne)> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Werk_(Domäne)> ;
-                                                                               rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Aufführung_(Domäne)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Besetzung_(Domäne)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Besetzung_(Domäne)> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Werk_(Domäne)> ;
-                                                                                    rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_ID_(WerkVZ)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_ID_(WerkVZ)> rdf:type owl:ObjectProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Werk_(Domäne)> ;
-                                                                             rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ID_(WerkVZ)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_ID_(intern)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_ID_(intern)> rdf:type owl:ObjectProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> ;
-                                                                             rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ID_(intern)> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmung_(absolut)
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmung_(absolut)> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> ;
-                                                                                    rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> .
+                                                                                    rdfs:domain <https://www.wikidata.org/wiki/Q34379> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Stimmung> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmung_(notierte)
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmung_(notierte)> rdf:type owl:ObjectProperty ;
-                                                                                     rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> ;
+                                                                                     rdfs:domain <https://www.wikidata.org/wiki/Q34379> ;
                                                                                      rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Stimmung> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmung_(relativ)
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmung_(relativ)> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)> ;
+                                                                                    rdfs:domain <http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> ;
                                                                                     rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Stimmung> .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://dublincore.org/specifications/dublin-core/dcmi-terms/#relation> ;
+           rdf:type owl:SymmetricProperty ;
+           rdfs:domain <http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> ;
+           rdfs:range <http://purl.org/NET/cidoc-crm/core#E55_Type> .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:ObjectProperty ,
+                                                          owl:SymmetricProperty ;
+                                                 rdfs:domain <http://purl.org/NET/cidoc-crm/core#E55_Type> ;
+                                                 rdfs:range <http://data.doremus.org/ontology/#M14_Medium_Of_Performance> .
+
+
+###  https://dublincore.org/specifications/dublin-core/dcmi-terms/#relation
+<https://dublincore.org/specifications/dublin-core/dcmi-terms/#relation> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:domain <http://purl.org/NET/cidoc-crm/core#E55_Type> ;
+                                                                         rdfs:range <http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> .
 
 
 ###  https://itma.ie/litmus/ontology#L58_played_on_instrument
 <https://itma.ie/litmus/ontology#L58_played_on_instrument> rdf:type owl:ObjectProperty ;
                                                            owl:inverseOf <https://itma.ie/litmus/ontology#L58i_instrument_played_by> ;
                                                            rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
-                                                           rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> .
+                                                           rdfs:range <https://www.wikidata.org/wiki/Q34379> .
 
 
 ###  https://itma.ie/litmus/ontology#L58i_instrument_played_by
 <https://itma.ie/litmus/ontology#L58i_instrument_played_by> rdf:type owl:ObjectProperty ;
-                                                            rdfs:domain <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> ;
+                                                            rdfs:domain <https://www.wikidata.org/wiki/Q34379> ;
                                                             rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://data.doremus.org/ontology/#M14_Medium_Of_Performance
+<http://data.doremus.org/ontology/#M14_Medium_Of_Performance> rdf:type owl:Class .
+
+
+###  http://purl.org/NET/cidoc-crm/core#E19_Physical_Object
+<http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://www.wikidata.org/wiki/Q34379> .
+
+
+###  http://purl.org/NET/cidoc-crm/core#E55_Type
+<http://purl.org/NET/cidoc-crm/core#E55_Type> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://www.wikidata.org/wiki/Q34379> .
+
 
 ###  http://purl.org/ontology/mo/Performance
 <http://purl.org/ontology/mo/Performance> rdf:type owl:Class .
@@ -234,28 +195,8 @@
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Klangbeispiel> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Lebensdaten
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Lebensdaten> rdf:type owl:Class .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Lizenz
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Lizenz> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Name
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Name> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ort
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ort> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Sammlung
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Sammlung> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Signatur
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Signatur> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Stimmung
@@ -270,13 +211,9 @@
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Zeitpunk
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Zeitpunk> rdf:type owl:Class .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#cor_da_caccia
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#cor_da_caccia> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> .
+                                                                           rdfs:subClassOf <http://purl.org/NET/cidoc-crm/core#E55_Type> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#höchster_Ton
@@ -296,42 +233,12 @@
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class ;
-                                                                                            rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Klassifikation)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ID_(WerkVZ)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ID_(WerkVZ)> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ID_(intern)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#ID_(intern)> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Klassifikation)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Klassifikation)> rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_nach_Vokabular_(Domäne)> rdf:type owl:Class ;
-                                                                                                rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)> rdf:type owl:Class ;
-                                                                             rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Instrument_(Domäne)> .
+                                                                                            rdfs:subClassOf <http://data.doremus.org/ontology/#M14_Medium_Of_Performance> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton_(klingend)
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton_(klingend)> rdf:type owl:Class ;
                                                                             rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Werk_(Domäne)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Werk_(Domäne)> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
@@ -343,23 +250,18 @@
                                    rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
 
 
+###  https://www.wikidata.org/wiki/Q34379
+<https://www.wikidata.org/wiki/Q34379> rdf:type owl:Class .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#BWV_208
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#BWV_208> rdf:type owl:NamedIndividual ,
-                                                                              <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Werk_(Domäne)> .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#MIMUL_1663
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#MIMUL_1663> rdf:type owl:NamedIndividual ,
-                                                                                 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Signatur> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#MIMUL_Inv.-Nr._1663
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#MIMUL_Inv.-Nr._1663> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Objekt_(Domäne)> .
+                                                                                          <http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> ,
+                                                                                          <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Person_a
