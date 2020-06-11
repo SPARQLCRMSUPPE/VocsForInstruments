@@ -136,7 +136,7 @@ Einen möglichen Ausweg böte unter Umständen die Verwendung von `rdf:type`, um
 
 Daher soll `owl:sameAs` "als Krücke", im Bewusstsein seiner Unzulänglichkeit vorläufig beibehalten werden, wäre aber im Rahmen einer Community-Nachbereitung zu thematisieren.
 
-![blablablub – fett markiert: übergeordnete Klassen und deren Beziehungen zueinander](/medien_Kap4/20200603_mappKlass.png)
+![blablablub – fett markiert: übergeordnete Klassen und deren Beziehungen zueinander](medien_Kap4/20200603_mappKlass.png)
 
 ##### Erkenntnisse aus der Modellierung
 
@@ -156,7 +156,7 @@ Nachdem ein Property definiert worden ist, darf noch das dazugehörige Objekt, b
 
 Denkbar wäre es, wie im ERM skizziert, weitere Möglichkeiten Lizenz, Format, Album, Dauer etc. darzustellen, in das Applikationsprofil zu integrieren. Dies im Rahmen dieser Arbeit durchzuführen, ist jedoch nicht möglich. Stattdessen kann zum einen auf Vokabulare verwiesen werden (etwa *schema.org* oder die  *Music Ontology*), andererseits würde dies vom eigentlichen Ziel dieser Arbeit – nämlich das spartenübergreifende verbinden von musikinstrumentellen Daten allzu sehr weglenken. Daher bleibt auch dies ein mögliches Desiderat im Rahmen einer Weiterentwicklung
 
-![blablablub – fett umrandet: Klassen, dünn umrundet: Instanzen](/medien_Kap4/20200609_klgBsp.png)
+![blablablub – fett umrandet: Klassen, dünn umrundet: Instanzen](medien_Kap4/20200609_klgBsp.png)
 
 
 
