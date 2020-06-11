@@ -67,7 +67,7 @@ Zum anderen muss eine Verknüpfung "werkseitig" erfolgen. Hier bietet es sich an
 
 Erstaunlicherweise findet sich in den großen etablierten Vokabularen keine Terminologie, um diesen scheinbar banalen Sachverhalt abzubilden. Fündig wird man jedoch in der *Linked Irish Traditional Music Ontology*.[^d18] Das Property L58[^d20] ("played on instrument") und das inverse Property L58i[^d19] ("instrument played by") geben den hier gewünschten Sachverhalt in geeigneter Weise wieder.
 
-![](medien_Kap4/20200526_interpret3.png)
+![](/medien_Kap4/20200526_interpret3.png)
 
 ### Mapping und Klassifikation
 #### "Medium of Performance"
@@ -110,7 +110,7 @@ Die Entität `ma:Instrument_nach_Vokabular_(Domäne)` findet ihre fallspezifisch
 
 Eine Verwendung weiterer, vagerer SKOS-Relationen erscheint – da von einem "werkseitigen" Mappen ausgegangen wird – an dieser Stelle nicht relevant, soll doch das uneindeutige Domänenvokabular durch Mappen dismabiguiert, also exakt gemapped, werden.
 
-![](medien_Kap4/20200602_Klass2.png)
+![](/medien_Kap4/20200602_Klass2.png)
 
 ###### Klassifikation
 
@@ -136,7 +136,7 @@ Einen möglichen Ausweg böte unter Umständen die Verwendung von `rdf:type`, um
 
 Daher soll `owl:sameAs` "als Krücke", im Bewusstsein seiner Unzulänglichkeit vorläufig beibehalten werden, wäre aber im Rahmen einer Community-Nachbereitung zu thematisieren.
 
-![blablablub – fett markiert: übergeordnete Klassen und deren Beziehungen zueinander](medien_Kap4/20200603_mappKlass.png)
+![blablablub – fett markiert: übergeordnete Klassen und deren Beziehungen zueinander](/medien_Kap4/20200603_mappKlass.png)
 
 ##### Erkenntnisse aus der Modellierung
 
@@ -156,7 +156,7 @@ Nachdem ein Property definiert worden ist, darf noch das dazugehörige Objekt, b
 
 Denkbar wäre es, wie im ERM skizziert, weitere Möglichkeiten Lizenz, Format, Album, Dauer etc. darzustellen, in das Applikationsprofil zu integrieren. Dies im Rahmen dieser Arbeit durchzuführen, ist jedoch nicht möglich. Stattdessen kann zum einen auf Vokabulare verwiesen werden (etwa *schema.org* oder die  *Music Ontology*), andererseits würde dies vom eigentlichen Ziel dieser Arbeit – nämlich das spartenübergreifende verbinden von musikinstrumentellen Daten allzu sehr weglenken. Daher bleibt auch dies ein mögliches Desiderat im Rahmen einer Weiterentwicklung
 
-![blablablub – fett umrandet: Klassen, dünn umrundet: Instanzen](medien_Kap4/20200609_klgBsp.png)
+![blablablub – fett umrandet: Klassen, dünn umrundet: Instanzen](/medien_Kap4/20200609_klgBsp.png)
 
 
 
