@@ -333,10 +333,16 @@ beides exemplarisch angerissen
 
 
 
+Auch Musicincipit Search als Beispiel erwähnen, in dem LOD verwendet wird @neovesky_interconnecting_2020-1
+schema.org verwendet. Wie bei mir als interoperables Framework, um heterogene Quellen miteinander zu verbinden[^1]
 
+"Different serialization formatsmake it possible to integrate RDF in already-existingmarkup or to provide a standalone notation. Formatsthat enable an integration in already-existing markupare the JSON-LD format, which offers a possibility toencode linked open data using the easily readable JSON(JavaScript Object Notation) format, the MicrodataHTMLspecification,andRDFa(ResourceDescription Framework in Attributes), which allowsto add RDF notation in XML and HTML documents."[^2]
 
+"We believe the promotion of LOD technologies indigitalmusicologyiscriticaltoachieveopennesswithinand across the discipline. IncipitSearch implements LODto serve as an example of interoperable and sustainableresearch software and promote crossdisciplinary open-ness and possibilities for exchange and interoperability."[^3]
 
+Schema.org scheint ein gutes Vokabular zu sein, um sich im breiten Web of Data – z.B. Suchmaschinenoptimierung und so – zu positionieren. Das ist das, was die Großen verwenden (z.B. von Google entwickelt und maintained)
 
+---
 
 
 * implizite Fragestellung:	 (wie) kann auch ein einfacher Geisteswissenschaftler LOD machen?
@@ -416,3 +422,8 @@ beides exemplarisch angerissen
 [^a38]: Concepts? S. Hyvonen irgendwo recht am Anfang
 
 [^a39]: 
+
+[^1]: [@neovesky_interconnecting_2020-1, S. 3.]
+[^2]: [@neovesky_interconnecting_2020-1, S. 4.] 
+
+[^3]: [@neovesky_interconnecting_2020-1, S. 6.] 

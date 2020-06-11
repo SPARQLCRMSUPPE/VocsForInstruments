@@ -24,7 +24,7 @@
 ### Interpret und Aufführung
 #### Personennormdaten
 #### Modellierung von Zusammenhängen zwischen Musikinstrumenten, Interpreten und Aufführungen
-### Mapping und Klassifikation	76
+### Mapping und Klassifikation
 #### "Medium of Performance"
 #### Herausforderungen
-#### Mapping	77
+#### Mapping
