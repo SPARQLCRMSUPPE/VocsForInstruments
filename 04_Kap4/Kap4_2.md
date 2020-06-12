@@ -67,7 +67,7 @@ Zum anderen muss eine Verknüpfung "werkseitig" erfolgen. Hier bietet es sich an
 
 Erstaunlicherweise findet sich in den großen etablierten Vokabularen keine Terminologie, um diesen scheinbar banalen Sachverhalt abzubilden. Fündig wird man jedoch in der *Linked Irish Traditional Music Ontology*.[^d18] Das Property L58[^d20] ("played on instrument") und das inverse Property L58i[^d19] ("instrument played by") geben den hier gewünschten Sachverhalt in geeigneter Weise wieder.
 
-![](/medien_Kap4/20200526_interpret3.png)
+![](medien_Kap4/20200526_interpret3.png)
 
 ### Mapping und Klassifikation
 #### "Medium of Performance"
@@ -89,54 +89,55 @@ Jedoch erschiene es sinnvoll, im Nachgang dieser Arbeit – etwa im Rahmen jenes
 
 #### Herausforderungen
 \ 
-Dieser Option lag das Anliegen zugrunde, "werkseitig" fallspezifisch unsaubere oder unspezifische Vokabulare durch In-Beziehung-Setzen zu Musikinstrumenten – entweder über eine Klassifikation, oder direkt gegenüber einem Objekt – zu disambiguieren. Diese Fallspezifität birgt jedoch auch Probleme: Kehrte man die Perspektive zu einer "objektseitigen" um, so mündete ein Suchvorgang unter Umständen in eine mit ambiguösem Vokabular indexierte Treffermenge und somit in übermäßig viele *False Positives*.
-Dieses Problem ist nicht einfach lösbar, und es scheint, dass eine wirklich symmetrische Lösung auf terminologischer Basis nur Ergebnis eines gründlichen Standardisierungsprozesses zu schaffen sein wird. Allerdings exisiteren bereits Ansätze, die aus "umgekehrter Richtung" hin zu einer Verbindung zwischen Objekt und Werk vorstoßen: Im Artikel "A Timeline Metaphor for Analyzing the Relationships between Musical Instruments and Musical Pieces",[^d21] einer Publikation aus dem *MusiXplora*-Umfeld,[^d25] wird beschrieben, wie anhand eines statistischen Abgleichverfahrens zwischen Objekt- und Werkmetadaten (Similarity Measure) eine gute Trefferquote bei der maschinellen Herstellung von Objekt-/Werkbeziehungen zwischen MIMO- und RISM-Einträgen erzielt wird.\
-Der Umstand, dass bereits auf Verfahren verwiesen werden kann, die die "objektseitige" Verlinkung abdecken, lässt das eingangs beschriebene Defizit als zunächst verschmerzbar erscheinen. Angesichts dessen jedoch, dass die die Ergebnisse der Verlinkung laut Artikel noch einen intellektuellen Redaktionsprozess erfordern[^d22] bzw. soweit bekannt nicht mit Semantic Web-Technologien erschlossen sind, erschiene vielmehr ein synergetischer hybrider Ansatz, der die hohe intellektuelle Qualität mittels der hier vorgeschlagenen Methodik mit der im Artikel beschriebenen maschinellen Effizienz koppelt, als verfolgenswerter Ansatz.
+Dieser Option lag das Anliegen zugrunde, "werkseitig" fallspezifisch unsaubere oder unspezifische Vokabulare durch In-Beziehung-Setzen zu Musikinstrumenten – entweder über eine Klassifikation, oder direkt gegenüber einem Objekt – zu disambiguieren. Diese Fallspezifität birgt jedoch auch Herausforderungen: Kehrte man die Perspektive zu einer "objektseitigen" um, so mündete ein Suchvorgang unter Umständen in eine mit ambiguösem Vokabular indexierte Treffermenge und somit in übermäßig viele *False Positives*.
+Dieses Problem ist nicht einfach lösbar, und es scheint, dass eine wirklich symmetrische Lösung auf terminologischer Basis nur Ergebnis eines gründlichen Standardisierungsprozesses zu schaffen sein wird. Allerdings exisiteren bereits Ansätze, die aus "umgekehrter Richtung" hin zu einer Verbindung zwischen Objekt und Werk vorstoßen: Im Artikel "A Timeline Metaphor for Analyzing the Relationships between Musical Instruments and Musical Pieces",[^d21] einer Publikation aus dem *MusiXplora*-Umfeld,[^d25] wird beschrieben, wie anhand eines statistischen Abgleichverfahrens zwischen Objekt- und Werkmetadaten (Similarity Measure) eine gute Trefferquote bei der maschinellen Herstellung von Objekt-/Werkbeziehungen zwischen MIMO- und RISM-Einträgen erzielt wird.
+
+Der Umstand, dass bereits auf Verfahren verwiesen werden kann, die die "objektseitige" Verlinkung abdecken, lässt das eingangs beschriebene Defizit als zunächst verschmerzbar erscheinen. Angesichts dessen jedoch, dass die die Ergebnisse der Verlinkung laut Artikel noch einen intellektuellen Redaktionsprozess erfordern[^d22] bzw. soweit bekannt nicht mit Semantic Web-Technologien erschlossen sind, erschiene vielmehr ein synergetischer hybrider Ansatz, der die erzielbare hohe intellektuelle Qualität mittels der hier vorgeschlagenen Methodik mit der im Artikel beschriebenen maschinellen Effizienz koppelt, als verfolgenswerter Ansatz.
 
 #### Mapping
 \
-Zum Mappen hat sich insbesondere das ebenfalls durch die W3C standardisierte Vokabular SKOS ("Simple Knowledge Organization System")[^d24] etabliert.[^d23]\
+Zum Mappen hat sich insbesondere das ebenfalls durch die W3C standardisierte Vokabular SKOS ("Simple Knowledge Organization System")[^d24] etabliert.[^d23] Es wird zu klären sein, in wie weit es auch für die Belange des Metadatenprofils nutzbar sein wird.\
 Das in dieser Arbeit entwickelte Modell sieht zwei Anwendungsszenarien vor:
 
-##### Mapping über Klassifikation
+##### Szenario 1: Mapping über Klassifikation
 
-Verbindungen zwischen `ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` werden über eine Unterklasse von `mus:M14` ("Medium of Performance") hergestellt. Dabei ist der jeweilige Vertreter der Klasse `ma:Objekt_(Domäne)` eine Instanz der Klasse `mus:M14`. Dieser Sachverhalt kann mit `rdf:type`, wie auch bereits in #Kapitel geschehen, wiedergegeben werden (das Property `ma:Typ` kann entsprechend entfernt werden):
+Verbindungen zwischen `ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` werden über eine Unterklasse von `mus:M14` ("Medium of Performance") hergestellt (s. #Abbildung. Dabei ist der jeweilige Vertreter der Klasse `ma:Objekt_(Domäne)` eine Instanz der Klasse `mus:M14`. Dieser Sachverhalt kann mit `rdf:type`, wie auch bereits in #Kapitel geschehen, wiedergegeben werden (das Property `ma:Typ` kann entsprechend entfernt werden):
 
 `ma:Objekt_(Domäne)	rdf:type	mus:M14	.`
 
-Die Entität `ma:Instrument_nach_Vokabular_(Domäne)` findet ihre fallspezifische exakte Entsprechung in der Entität `mus:M14`, sodass mit `skos:exactMatch` eine Äquivalenzrelation dargestellt werden kann:
+Die Entität `ma:Instrument_nach_Vokabular_(Domäne)` findet ihre fallspezifische exakte Entsprechung in der Instanz der Entität `mus:M14` (vgl. #Abbildung), sodass mit `skos:exactMatch` eine Äquivalenzrelation dargestellt werden kann:
 
 `ma:Instrument_nach_Vokabular_(Domäne)	skos:exactMatch	mus:M14	.`
 
-Eine Verwendung weiterer, vagerer SKOS-Relationen erscheint – da von einem "werkseitigen" Mappen ausgegangen wird – an dieser Stelle nicht relevant, soll doch das uneindeutige Domänenvokabular durch Mappen dismabiguiert, also exakt gemapped, werden.
+Eine Verwendung weiterer, vagerer SKOS-Relationen erscheint – da von einem "werkseitigen" Mappen ausgegangen wird – an dieser Stelle nicht angebracht, soll doch das uneindeutige Domänenvokabular durch Mappen dismabiguiert, also exakt gemapped, werden.
 
-![](/medien_Kap4/20200602_Klass2.png)
+![](medien_Kap4/20200602_Klass2.png)
 
 ###### Klassifikation
 
 Die Entscheidung für eine Klassifikation muss – aus bereits dargelegten Gründen – domänenübergreifend geschehen. Zudem kann an dieser Stelle – wie ebenfalls bereits erwähnt – keine systematische, kritische Untersuchung vorhandener Klassifikationen erfolgen, die eine Entscheidungsgrundlage anbieten könnte. Darin, eine solche Untersuchung vorzunehmen, liegt jedoch großes Potential für zukünftige Arbeiten begründet.
-Vorläufig lässt sich jedoch festellen, dass insbesondere der sog. *MIMO Thesaurus*[^15] eine tragfähige klassifikatorische Infrastruktur zu bieten scheint. Weitere Möglichkeiten, insbesondere für die Verwendung von Stimmen,[^17] finden sich im *IAML Medium of Performance Vocabulary*.[^16] Vor allem erscheint denkbar, ähnlich zum hier gewählten Vorgehen, ein Metadatenprofil zu entwickeln, das die Darstellungstiefen verschiedener Klassifikationen und Vokabulare kombiniert und zueinander in Beziehung setzt.
+Vorläufig lässt sich jedoch festellen, dass insbesondere der sog. *MIMO Thesaurus*[^15] eine tragfähige klassifikatorische Infrastruktur zu bieten scheint. Weitere Möglichkeiten, insbesondere für die Verwendung von Vokalstimmen,[^17] finden sich im *IAML Medium of Performance Vocabulary*.[^16] Vor allem erscheint denkbar, ähnlich zum hier gewählten Vorgehen, ein Metadatenprofil zu entwickeln, das die Darstellungstiefen verschiedener Klassifikationen und Vokabulare kombiniert und zueinander in Beziehung setzt.
 
-##### Direktes Mapping
+##### Szenario 2: direktes Mapping
 
-Bei der Herstellung einer direkten Relation zwischen `ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` sind verschiedene Bezugsszenarien vorstellbar. Es erscheint daher sinnvoll, eine Relation als sog. "Superproperty" zu definieren, unter die alle weiteren Relationen ("Subpropertys") subsumiert werden.[^30] Als Superproperty ist dabei die Property `dc:relation`[^11] der *Dublin Core Metadata Initiative* als besonders standardisiert zu betrachten. Unter ihn können mit der Property `rdfs:subpropertyOf`[^12] Subproperties für die folgenden Szenarien eingeordnet werden:
+Bei der Herstellung einer direkten Relation zwischen `ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` sind verschiedene Bezugsszenarien je nach Ähnlichkeit von Term und Objekt vorstellbar. Es erscheint daher sinnvoll, eine Relation als sog. "Superproperty" zu definieren, unter die alle weiteren Relationen ("Subpropertys") subsumiert werden.[^30] Als Superproperty ist dabei die Property `dc:relation`[^11] der *Dublin Core Metadata Initiative* als besonders standardisiert zu betrachten. Unter ihn können mit der Property `rdfs:subpropertyOf`[^12] Subproperties für die folgenden Szenarien eingeordnet werden:\
 
-* Zur Exemplifizierung eines Terms wird auf ein beispielhaftes Objekt verwiesen. Dies ist auch im hier behandelten Anwendungsbeispiel der Fall: dem Term `rism:cor_da_caccia` kann aufgrund bestehender Gemeinsamkeiten hinsichtlich Region (Herstellungs-/Kompositionsort: Mitteldeutschland) und Zeit (erste Hälfte 18. Jahrhundert) ein Objekt zugewiesen werden, das als beispielhaft für den Typ des etwa bei der Uraufführung verwendeten Instruments gelten könnte.
+1)\ Zur Exemplifizierung eines Terms wird auf ein beispielhaftes Objekt verwiesen. Dies ist auch im hier behandelten Anwendungsbeispiel der Fall: dem Term `rism:cor_da_caccia` kann aufgrund bestehender Gemeinsamkeiten hinsichtlich Region (Herstellungs-/Kompositionsort: Mitteldeutschland) und Zeit (erste Hälfte 18. Jahrhundert) ein Objekt zugewiesen werden, das als beispielhaft für den Typ des etwa bei der Uraufführung verwendeten Instruments gelten könnte.
 SKOS, die erste Anlaufstelle, wenn es um Mapping geht, bietet dabei das Property `skos:example`[^1], dessen Zweck jedoch nicht im Verlinken mit beispielhaften Instanzen zu bestehen, sondern darin zu liegen scheint, beispielhafte Verwendung von Termen zu illustrieren.[^2] 
 
-Da das Verlinken zu Objekten weniger im bibliographischen Bereich, als im Museumswesen eine Rolle spielt, erscheint es angebracht, in letzterem nach anwendbarer Terminologie zu suchen: Hier erscheint insbesondere das bereits erwähnte CIDOC CRM eine gute Anlaufstelle zu bieten. Dort findet sich das Property `crm:P137`[^3] mit dem Label "exemplifies (is exemplified by)". Die Domain des Propertys ist dabei auf `crm:E1`[^4] (Entity) bezogen – die Range auf `crm:E55` (Type).[^5] Beim Konzept `crm:E55` handelt es sich um "CIDOC CRM’s interface to domain specific ontologies and thesauri",[^6] indem die domänenspezifischen Terme etwa mit der Property  `crm:P127`[^7] "has broader term (has narrower term)" zu Unterklassen von `crm:E55` deklariert werden.[^8] Mehreres erscheint daher sinnvoll:
+Da das Verlinken von Objekten weniger im bibliographischen Bereich, als im Museumswesen eine Rolle spielt, erscheint es angebracht, in letzterem nach anwendbarer Terminologie zu suchen: Hier erscheint insbesondere das bereits erwähnte CIDOC CRM eine gute Anlaufstelle zu bieten. Dort findet sich das Property `crm:P137`[^3] mit dem Label "exemplifies (is exemplified by)". Die Domain des Propertys ist dabei auf `crm:E1`[^4] (Entity) bezogen – die Range auf `crm:E55` (Type).[^5] Beim Konzept `crm:E55` handelt es sich um "CIDOC CRM’s interface to domain specific ontologies and thesauri",[^6] indem die domänenspezifischen Terme etwa mit der Property  `crm:P127`[^7] "has broader term (has narrower term)" zu Unterklassen von `crm:E55` deklariert werden (s. #Abbildung).[^8] Mehreres erscheint daher sinnvoll:
 - Das Property `crm:P137` darf für die Relation "Beispiel" zwischen`ma:Instrument_nach_Vokabular_(Domäne)` und `ma:Objekt_(Domäne)` eingeführt werden. Bemerkenswert ist zudem, dass diese Property als eine sog. *symmetric property* definiert werden kann, bei der also Domain und Range variabel sind.[^27] Sie wird dabei durch die Eigenschaft `owl:symmetricProperty`[^28] als solche klassifiziert.
 - Anstelle der Entität `ma:Instrument_nach_Vokabular_(Domäne)` kann die Entität `crm:E55` (Type) als Schnittstelle zwischen domänenspezifischem Vokabular und dem Metadatenprofil verwendet werden.
 - Das Konzept `crm:E19`[^9] ("physical object") kann, als Unterklasse von `crm:E1`, dabei anstelle von `ma:Objekt_(Domäne)` verwendet werden, um den gleichen Effekt zu erzielen.
-- Indem `crm:E55` mit `rdf:type` als Musikinstrument gekennzeichnet wird, kann festgelegt werden, dass es sich bei allen Unterklassen und Instanzen um Musikinstrumente handelt. Dies kann anstelle der Klasse `ma:Instrument_(Domäne)` geschehen und macht diese somit obsolet. Obwohl die "großen" Domänenvokabulare (GND, LCSH etc.) vielfältige Terme bereithalten, fallen auch hier spartenunspezifische Terme aus Vokabularen in die engere Auswahl, die ein hohes Maß an Verbreitung versprechen: Der Datensatz `wd:Q34379` "musical instrument" in Wikidata[^10] weist eine Vielzahl von Mappings zu anderen Vokabularen auf und ist somit außerordentlich aussagekräftig. Obwohl Wikidata-Datensätze grundsätzlich manipulierbar sind und daher semantische Persistenz nicht garantieren können, handelt es sich bei "musical instrument" wohl um ein sehr zentrales Konzept, das nicht ohne weiteres zu verändern sein wird. Und tatsächlich ist die "maschineninterpretierbare", kontextuell-hergestellte Semantik nicht weniger persistent als bei anderen, angeblich persistenteren Vokabularen. Eine Übernahme in das Metadatenprofil erscheint daher möglich und sinnvoll. 
+- Indem `crm:E55` mit `rdf:type` als Musikinstrument gekennzeichnet wird, kann festgelegt werden, dass es sich bei allen Unterklassen und Instanzen von `crm:E55` um Musikinstrumente handelt (s. #Abbildung). Dies kann anstelle der Klasse `ma:Instrument_(Domäne)` geschehen und macht diese somit obsolet. Obwohl die "großen" Domänenvokabulare (GND, LCSH etc.) vielfältige Terme bereithalten, fallen auch hier spartenunspezifische Terme aus Vokabularen in die engere Auswahl, die ein hohes Maß an Verbreitung versprechen: Der Datensatz `wd:Q34379` "musical instrument" in Wikidata[^10] weist eine Vielzahl von Mappings zu anderen Vokabularen auf und ist somit außerordentlich aussagekräftig. Obwohl Wikidata-Datensätze grundsätzlich manipulierbar sind und daher semantische Persistenz nicht garantieren können, handelt es sich bei "musical instrument" wohl um ein sehr zentrales Konzept, das nicht ohne weiteres zu verändern sein wird. Und tatsächlich ist die "maschineninterpretierbare", kontextuell-hergestellte Semantik nicht weniger persistent als bei anderen, angeblich persistenteren Vokabularen. Eine Übernahme in das Metadatenprofil erscheint daher möglich und sinnvoll. 
 
-* Einen gängigen Anwendungsfall stellt das Szenario dar, dass eine Äquivalenzrelation zwischen Domänenvokabular und Objekt dargestellt werden soll. Beispielhafte Sachverhalte wären – etwa im Falle einer Audioaufnahme: "Anne Sophie Mutter spielt auf ihrer Stradivari *Lord Dunn-Raven*"[^26], oder "J. S. Bach nimmt die *Hildebrandt Orgel* von *St. Wenzel* in Naumburg ab".[^14] Es müsste also eine Verknüpfung zwischen einem domänenspezifischen Vokabular – etwa der GND – und einem Objekt hergestellt werden, die besagt, dass beide Datensätze ein identisches Instrument bezeichnen. Dies kann etwa mithilfe der Property `owl:sameAs`,[^13] im Übrigens ebenfalls eine *symmetric property* (s.o.), geschehen. Analog zu den bereits beschriebenen Herausforderungen beim Mappen über eine Klassifikation ergibt sich jedoch auch hier beim Mappen zwischen einer Entität des Typs *Instanz* (Objekt) und einer des Typs *Klasse* (Vokabular) ein Problem: Während das ambiguöse Domänenvokabular durch den Verweis auf ein spezifisches Objekt disambiguiert wird, folgt "objektseitig" die logische Aussage, mit der "werkseitigen" Verwendung eines (eigentlich generischen) Terms sei immer genau jenes Objekt gemeint.
+2)\ Einen gängigen Anwendungsfall stellt das Szenario dar, dass eine Äquivalenzrelation zwischen Domänenvokabular und Objekt dargestellt werden soll. Beispielhafte Sachverhalte wären – etwa im Falle einer Audioaufnahme: "Anne Sophie Mutter spielt auf ihrer Stradivari *Lord Dunn-Raven*"[^26], oder "J. S. Bach nimmt die *Hildebrandt Orgel* von *St. Wenzel* in Naumburg ab".[^14] Es müsste also eine Verknüpfung zwischen einem domänenspezifischen Vokabular – etwa der GND – und einem Objekt hergestellt werden, die besagt, dass beide Datensätze ein identisches Instrument bezeichnen. Dies kann etwa mithilfe der Property `owl:sameAs`,[^13] im Übrigens ebenfalls eine *symmetric property* (s.o.), geschehen. Analog zu den bereits beschriebenen Herausforderungen beim Mappen über eine Klassifikation ergibt sich jedoch auch hier beim Mappen zwischen einer Entität des Typs *Instanz* (Objekt) und einer des Typs *Klasse* (Vokabular) ein Problem: Während das ambiguöse Domänenvokabular durch den Verweis auf ein spezifisches Objekt disambiguiert wird, folgt "objektseitig" die logische Aussage, mit der "werkseitigen" Verwendung eines (eigentlich generischen) Terms sei immer genau jenes Objekt gemeint.
 
 Einen möglichen Ausweg böte unter Umständen die Verwendung von `rdf:type`, um dieses hierarchische Problem zu umgehen. In diesem Fall müsste jedoch die Superproperty `dc:relation` entfernt werden, würde doch andernfalls jede `rdf:type`-Beziehung – also auch etwa die, die festlegt, dass `dc:relation` eine Property ist – zu einer Subproperty von `dc:relation`; logisch falsch.
 
 Daher soll `owl:sameAs` "als Krücke", im Bewusstsein seiner Unzulänglichkeit vorläufig beibehalten werden, wäre aber im Rahmen einer Community-Nachbereitung zu thematisieren.
 
-![blablablub – fett markiert: übergeordnete Klassen und deren Beziehungen zueinander](/medien_Kap4/20200603_mappKlass.png)
+![blablablub – fett markiert: übergeordnete Klassen und deren Beziehungen zueinander](medien_Kap4/20200603_mappKlass.png)
 
 ##### Erkenntnisse aus der Modellierung
 
@@ -145,36 +146,51 @@ Das – ursprünglich immerhin recht zentrale – Anliegen dieser Arbeit, eine "
 
 ### Klangbeispiel
 
-Widererwarten stellt sich bei der Sichtung anwendbarer Vokabulare heraus, dass insbesondere die Verknüpfung eines Klangbeispiels mit einem Instrument ein Szenario darstellt, dass momentan nicht abgedeckt ist. Dabei liegt die größte Herausforderung darin, dass Properties, die sich auf Aufnahmen jeder Art beziehen, in der Regel mit `rdfs:range` oder `rdfs:domain` an Ereignis-Entitäten gebunden sind.[^31] Zwar lässt sich der Ereignis-Kontext laut Weigl für die Beziehung zwischen Werk und Aufnahme mit einer relativ komplex modellierten, auf der Music Ontology basierenden Volte[^32] oder evtl. etwas einfacher, mit *schema.org*, vermeiden[^33]. Allerdings sind auch diese Lösungen auf den Werk-Kontext beschränkt und somit für die Verknüpfung von *Musikinstrument* mit *Klangbeispiel*  ungeeignet. Wikidata hält zwar mit den Properties `wdt:P4733` ("produced sound")[^35] und `wdt:P51` ("audio")[^36] Properties bereit, mit denen man Klangbeispiele verlinken kann. Allerdings beziehen sich diese auf Medien aus den *Wiki Commons* bzw. erscheinen recht unspezifisch. Trotzdem erscheint das Verlinken in den Wikimedia-Kosmos, eine Möglichkeit zu sein, die prinzipiell nicht ausgeschlossen werden sollte, weswegen `wdt:P51` als ein Szenario hier in das Applikationsprofil übernommen werden soll (vgl. #Abbildung).\
-Für andere Szenarien scheint es jedoch, dass das Property `ma:hat_Klangbeispiel` nicht aus externen Vokabularen zu ersetzen sein wird und als neuer Term im Rahmen des Applikationsprofils in das Semantic Web eingeführt werden sollte. Dabei sind folgende Dinge zu beachten:
+Widererwarten stellt sich bei der Sichtung anwendbarer Vokabulare heraus, dass gerade die Verknüpfung eines Klangbeispiels mit einem Instrument offebar ein Szenario darzustellen scheint, das momentan im Semantic Web nicht abgedeckt ist. Um eine solche Verknüpfung doch umzusetzen, liegt die größte Herausforderung darin, dass Properties, die sich auf Aufnahmen Art beziehen, in der Regel mit `rdfs:range` oder `rdfs:domain` an Ereignis-Entitäten gebunden sind.[^31] Zwar lässt sich der Ereignis-Kontext laut Weigl für die Beziehung zwischen Werk und Aufnahme mit einer relativ komplex modellierten, auf der Music Ontology basierenden "Volte"[^32] oder evtl. etwas einfacher, mit *schema.org*, vermeiden[^33]. Allerdings sind auch diese Lösungen auf den Werk-Kontext beschränkt und somit für die Verknüpfung von *Musikinstrument* mit *Klangbeispiel*  ungeeignet. 
 
-* Momentan bezieht sich `ma:hat_Klangbeispiel` durch `rdfs:domain` auf `wd:Q34379` – ist jedoch somit explizit auf Musikinstrumente im eigentlichen Sinne ausgerichtet und daher nicht mit der sehr integrativen Definition von Musikinstrumenten dieser Arbeit kompatibel (s. #Kapitel"MediumofPerformance"). Dieser Umstand lässt sich jedoch einfach lösen, indem die `rdfs:domain` auf `mus:M14` ("Medium of Performance") bezogen wird. Noch wird jedoch  `mus:M14` nur im Kontext des Mappings verwendet – eine direkte Verknüpfung mit Objekten oder Vokabularen, wie sie im Anwendungsszenario dieser Arbeit vorgesehen war, ist nicht möglich. Dies lässt sich jedoch lösen, indem `wd:Q34379` mit `rdfs:subclassOf` zur Unterklasse von `mus:M14` erklärt wird. So wäre es denn also möglich, auch Klangbeispiele mit Instrumenten – verstanden im aller weitesten Sinne – zu verknüpfen.
-* Es gehört zur guten Praxis im Semantic Web, Konzepte mit `rdfs:label`[^37] eine menschenlesbare Bezeichnung in Form eines "Strings" zu verleihen.[^34] Um ein größtmögliches Maß an Verständlichkeit zu gewährleisten, geschieht dies idealerweise auf Englisch. Die Bezeichnung lautet hier: "audio example medium of performance". Es macht darüber hinaus Sinn, diese Bezeichnung ebenfalls in der URI zu verwenden, um auch diese menschenlesbar zu gestalten. So wird denn aus `ma:hat_Klangbeispiel` das Property `ma:audio_example_medium_of_performance`.
-* Zudem gehört es zur guten Praxis, mit `rdfs:comment`[^40] einen menschenlesbaren Kommentar zur Verwendung eines Properties ebenfalls als String zu hinterlegen.[^39] In diesem Fall: "Relates audio files to: musical instrument terms in vocabularies, physical objects used for musical performance."
+Wikidata hält zwar mit den Properties `wdt:P4733` ("produced sound")[^35] und `wdt:P51` ("audio")[^36] Properties bereit, mit denen man Klangbeispiele verlinken kann. Allerdings beziehen sich diese auf Medien aus den *Wiki Commons*. Dennoch scheint im Verlinken in den Wikimedia-Kosmos, eine Chance zu liegen, die prinzipiell nicht ausgeschlossen werden sollte, stellt doch der Wikimedia-Kosmos eine riesige, stetig wachsende, intern wie extern verknüpfte Wissensdatenbank dar. Daher erscheint es sinnnvoll, `wdt:P51` als Verbindungsglied in diese Welt in das Applikationsprofil zu übernehmen (vgl. #Abbildung).
 
-Nachdem ein Property definiert worden ist, darf noch das dazugehörige Objekt, bislang `ma:Klangbeispiel`, durch einem etablierten Term ersetzt werden. Hier bietet sich etwa die Klasse `schema:track`[^41] an. Dabei handelt es sich um ein überaus mächtiges Vokabular, das von den einschlägigen Suchmaschinengiganten entwickelt und verwendet wird. Auch aus Gründen der Suchmaschinenvisibilität sowie seiner einfachen Implementierbarkeit von RDF in HTML handelt es sich um ein Vokalbular bzw. Modell, das zuletzt auch als sehr performant für den Kulturerbebereich wahrgenommen worden ist.[^42] Eine weitere Prüfung, in wie weit das hier entwickelte Anwendungsprofil von einer Erschließung mit den Mitteln von *schema.org*[^43] profitieren könnte bzw. in wie weit überhaupt eine Kompatibilität besteht, wäre aus genannten Gründen sicherlich auch ein sinnvolles Unterfangen bei einer Fortentwicklung dieses Anwendungsprofils.\
+Für andere Szenarien scheint, das Property `ma:hat_Klangbeispiel` nicht mit externem Vokabular ersetzbar zu sein. Es ergibt sich somit erstmalig im Zug dieser Arbeit, dass ein neuer Term – `ma:hat_Klangbeispiel` – im Rahmen des Applikationsprofils in das Semantic Web eingeführt werden muss. Bei diesem Schritt sind einige Dinge zu beachten:
 
-Denkbar wäre es, wie im ERM skizziert, weitere Möglichkeiten Lizenz, Format, Album, Dauer etc. darzustellen, in das Applikationsprofil zu integrieren. Dies im Rahmen dieser Arbeit durchzuführen, ist jedoch nicht möglich. Stattdessen kann zum einen auf Vokabulare verwiesen werden (etwa *schema.org* oder die  *Music Ontology*), andererseits würde dies vom eigentlichen Ziel dieser Arbeit – nämlich das spartenübergreifende verbinden von musikinstrumentellen Daten allzu sehr weglenken. Daher bleibt auch dies ein mögliches Desiderat im Rahmen einer Weiterentwicklung
+* Momentan bezieht sich `ma:hat_Klangbeispiel` vermittels `rdfs:domain` auf `wd:Q34379` (Musikinstrument) – und ist somit explizit auf Musikinstrumente im eigentlichen Sinne beschränkt. Eine Verlinkung mit Musikinstrumenten im offenen Verständnis dieser Arbeit (s. #Kapitel"MediumofPerformance") ist daher nicht möglich. Diese Inkompatibilität lässt sich jedoch recht einfach lösen, indem `rdfs:domain` auf `mus:M14` ("Medium of Performance") bezogen wird. Noch wird jedoch  `mus:M14` nur im Kontext des Mappings verwendet: Eine direkte Verknüpfung mit Objekten oder Vokabularen, wie sie im Anwendungsszenario dieser Arbeit vorgesehen war, ist nicht möglich. Dies lässt sich jedoch lösen, indem `wd:Q34379` mit `rdfs:subclassOf` zur Unterklasse von `mus:M14` erklärt wird (s. #Abbildung). So wäre es denn also möglich, auch Klangbeispiele mit Instrumenten – verstanden im aller weitesten Sinne – zu verknüpfen.\
 
-![blablablub – fett umrandet: Klassen, dünn umrundet: Instanzen](/medien_Kap4/20200609_klgBsp.png)
+* Es gehört zur guten Praxis im Semantic Web, Konzepte mit `rdfs:label`[^37] mit einer menschenlesbaren Bezeichnung in Form eines "Strings" zu annotieren.[^34] Um ein größtmögliches Maß an Verständlichkeit im Netz zu gewährleisten, geschieht dies idealerweise auf Englisch. Diese Bezeichnung lautet hier: "audio example medium of performance". Es macht darüber hinaus Sinn, diese Bezeichnung ebenfalls in der URI zu verwenden, um auch diese menschenlesbar zu gestalten. So wird denn aus `ma:hat_Klangbeispiel` das Property `ma:audio_example_medium_of_performance`.\
+
+* Zudem gehört es zur guten Praxis, mit `rdfs:comment`[^40] einen menschenlesbaren Kommentar zur Verwendung eines Properties ebenfalls als String zu hinterlegen.[^39] In diesem Fall heißt er: "[The property r]elates audio files to: musical instrument terms in vocabularies, physical objects used for musical performance."
+
+Nachdem ein passendes Property kreiert worden ist, darf noch das dazugehörige Objekt, bislang `ma:Klangbeispiel`, durch einem etablierten Term ersetzt werden. Hier bietet sich etwa die Klasse `schema:track`[^41] an. 
+
+Bei *schema.org* handelt es sich dabei um ein überaus mächtiges Vokabular, das von den einschlägigen Suchmaschinengiganten unterhalten und verwendet wird. Schon allein auch aus Gründen der Suchmaschinenvisibilität sowie der "mitgelieferten" einfachen Implementierbarkeit von RDF in HTML handelt es sich um eine "Anwendung", die zuletzt auch als potentiell außerordentlich performant für den Kulturerbebereich wahrgenommen worden ist.[^42] Eine weitere Prüfung, in wie weit das hier entwickelte Anwendungsprofil von einer Erschließung mit den Mitteln von *schema.org*[^43] profitieren könnte bzw. ob überhaupt eine Kompatibilität besteht, würde aus genannten Gründen sicherlich im Zuge einer Fortentwicklung des Anwendungsprofils Sinn machen.\
+
+Denkbar wäre es, wie im ERM skizziert, weitere Szenarien darzustellen (etwa Lizenz, Format, Album, Dauer etc.), in das Applikationsprofil zu integrieren. Dies im Rahmen dieser Arbeit durchzuführen ist jedoch nicht möglich. Stattdessen kann zum einen auf Vokabulare verwiesen werden (etwa *schema.org* oder die  *Music Ontology*), andererseits würde eine Ausarbeitung vom eigentlichen Ziel dieser Arbeit – nämlich das spartenübergreifende Verbinden von musikinstrumentalen Daten – allzu sehr weglenken. Daher bleibt auch dies ein mögliches Desiderat im Rahmen einer Weiterentwicklung des Metadatenprofils. Entsprechende, bereits vorhandene Terme können somit aus dem Applikationsprofil entfernt werden.
+
+![blablablub – fett umrandet: Klassen, dünn umrundet: Instanzen](medien_Kap4/20200609_klgBsp.png)
+
+
+
+
+inst peng klatsch  
+
+wumms – SeManticMUsicinstrumentWeb <- sicher schon vergeben?
+
+
+
+mu ins se ma web
+
+
+sch na ps
+
+onto
 
 
 
 
 
-
-
+Wichtig: Arbeit ist Train of thought – absolut deduktiv (manches hätte man vielleicht von Anfang an besser lösen können)
 
 —
 
-Erkenntnisse: 
-- so allgemein wie möglich <- das muss nochmal ausgeführt werden!
-Denkbar: 
-1 - Fokussierung muss erst noch erfolgen
-2 - Anschlussfähigkeit für vielfältige (vielleicht noch gar nicht in Erwägung gezogene) Anwendungsszenarien
 
-
-Es ist schwer vom Werk/Ereignis-Kontext loszukommen. -> ist das ein neuer Kontext? Der "Mapping-Kontext" oder so?
 
 
 —
