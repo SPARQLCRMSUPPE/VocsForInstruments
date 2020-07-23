@@ -12,3 +12,4 @@ Denkbar:
 
 #Mapping
 * Es fehlt an Vokabulare für Objekte – z.B. Orgel – möglich in GND4C anzugehen?
+* Dazu kommt, dass man Objekte nicht über die SPARQL-Abfrage von Mimo abfragen kann. Man müsste hier besser erschließen – bzw. gitb es bereits irgendwo besser erschlossene Musikinstrumente (Wikidata, ...)

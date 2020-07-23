@@ -67,6 +67,9 @@ Zum anderen muss eine Verknüpfung "werkseitig" erfolgen. Hier bietet es sich an
 
 Erstaunlicherweise findet sich in den großen etablierten Vokabularen keine Terminologie, um diesen scheinbar banalen Sachverhalt abzubilden. Fündig wird man jedoch in der *Linked Irish Traditional Music Ontology*.[^d18] Das Property L58[^d20] ("played on instrument") und das inverse Property L58i[^d19] ("instrument played by") geben den hier gewünschten Sachverhalt in geeigneter Weise wieder.
 
+**hier nochmal an einem Bsp.:**
+@noauthor_johann_nodate
+
 ![](medien_Kap4/20200526_interpret3.png)
 
 ### Mapping und Klassifikation
