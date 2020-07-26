@@ -40,6 +40,7 @@ Jedenfalls ergibt sich bei der Modellierung die Schwierigkeit, dass der Bezeichn
 Ein Umgang mit dieser Herausforderung könnte sein, zwei neue Stimmungsentitäten zu schaffen – eine, die sich auf die Notation bezieht und eine, die sich auf die "Grundstimmung" eines Instruments bezieht. Allerdings würde dies eine recht eigentlich artifizielle Trennung des eben skizzierten Sachverhalts bewirken. Um einiges sinnvoller erscheint es, das Konzept der `ma:Stimmung` in seiner bisherigen Form beizubehalten und – wie dies auch vorgesehen war – durch Properties Relationen zu einem jeweiligen Bezugspunkt, Quelle oder Objekt, auszudrücken. 
 
 [in F: Schlüssel zur Interpretation des Notentexts, wie ein Notenschlüssel – könnte auch einfach durch Schlüsselung erfolgen]
+[an dieser Stelle auch, dass man also ma:hat Stimmung (relativ) umbenennt]
 
 
 ##  Töne
@@ -49,13 +50,51 @@ Töne spielten im vorhergehenden Kapitel bereits eine Rolle:
 1) als eine Art Schlüssel zum Verständnis eines Notentexts ("'in F' bedeutet, man muss alles eine Quinte tiefer denken")
 2) als ein Bezeichner, der Rückschlüsse auf den physikalisch prädisponierten intervallischen Aufbau der Naturtonreihe bei Blechblasinstrumenten erlaubt
 3) als Klangfrequenz (440 Hz)
-4) als "Zeichen" ("f'" oder graphische Note)
+4) als "Zeichen" ("f'" oder "graphische Note")
+5) Bislang nicht thematisiert worden ist die Idee einer Oktavidentität der "F-Töne", die alle Oktav-verwandten, also im Schwingungsverhältnis 1:2, 2:4 etc. stehenden Töne, in sich vereint.[^7]
 
-Abermals wird deutlich, dass die Beschaffenheit des Konzepts "Ton" eine sehr ambige ist, die durchaus hohe Herausforderungen an ihre Modellierung stellt.
+Abermals wird deutlich, dass die Beschaffenheit des Konzepts "Ton" eine sehr ambige ist, die durchaus hohe Herausforderungen an die kontextuelle Modellierung stellt, ergeben sich doch zugleich konzeptuelle Überschneidungen sowie Differenzen zwischen den zu modellierenden Konzepten. 
+
+Es erscheint sinnvoll, zunächst eine Klassifikation der relevanten Konzepte vorzunehmen:
+
+### Ton als Abstraktum
+
+\1) und 2) beziehen sich auf ein Tonkonzept, das große Ähnlichkeit mit dem 5) inhärenten aufweist: Es liegt ihm eine sehr allgemeine und zugleich sehr abstrakte Vorstellung einer Tonentität "F" zugrunde. Um nicht zu sehr ins Philosophisch-Musiktheoretische abzuschweifen (dies könnte Thema einer Anschlussuntersuchung sein), reicht es, diese Entität zunächst rein hierarchisch als allgemeinste Oberklasse von "F-Tönen" zu verstehen. Leider findet sich keine adäquate Terminologie im Internet, die übernommen werden könnten – es erscheint offensichtlich, dass die Repräsentation musiktheoretischer Zusammenhänge noch ein großes Desiderat darstellt. Die Nutzung der Wikidata-Entität `wdt:Q775617`("F"[^8]) ist durch Koppelung an die  die gleichstufige Stimmung in ihrer Nutzbarkeit dergestalt beschränkt, dass sie etwa im hier bearbeiteten Anwendungsszenario nicht verwendet werden kann. Es muss daher eine neue Entität `ma:F (Tonkomplex)` als Unterklasse von `ma:Ton` angelegt werden. Diese erhält – wie im letzten Kapitel geschildert – durch Verbindung mit einem Property `ma:hat Stimmung (notierte)` oder `ma:Stimmung (Instrument)` eine semantische Spezifikation. So können denn auch die bisherigen Entitäten `ma:Stimmung` sowie `ma:in_F` entfernt werden und die beiden Properties durch `rdfs:range` auf `ma:Ton` und seine Unterklassen bezogen werden.
+
+### Ton als normativ fixiertes Zeichen
+
+#### Taxonomie
+
+Eine Eskalationsstufe weiter in der Konkretisierung des Konzepts "Ton" liegt seine Manifestation als Zeichen jeglicher Form, jedoch stets nur innerhalb eines Musikalischen Bezugs- und Ordnungssystems verständlich, in dessen Kontext er als Bedeutungsträger auftritt. Doch auch hier bleibt er ein abstraktes Phänomen, dessen akustische Äußerung ihm lediglich als Potential innewohnt.
+
+Dieses Konzept von Ton begegnet selbstverständlich insbesondere in Hinsicht auf den Notentext, wie er etwa im Umfeld der Entität `ma:Ambitus` auftritt. Seine Notation erfolgt hier gemäß der sog. Helmholtz-Notationsweise.[^9]
+
+Es ergibt sich die folgende taxonomische Beziehung:
+
+Graphik: Ton – F(Tonkomplex) – f'
+
+Dabei ist jedoch weiter zwischen Notation und "Klang" – etwa bei Blechblasinstrumenten zu differenzieren. Dieser Faden wird jedoch an späterer Stelle wieder aufzunehmen sein.
+
+
+#### Stimmton
+
+Zugleich aber findet sich dieses Tonkonzept im Zusammenhang mit der bisherigen Entität `ma:Kammerton`, indem jene "symbolische", tonsystemisch-relative Tonhöhe durch die Zuweisung einer Frequenz definiert wird und als Referenzton Verwendung finden kann.
+
+Angesichts der zuletzt vorgenommenen Anpassung im Bereich der Töne gilt es, das bestehende Modell nochmals zu überdenken: Es liegt dabei auf der Hand, dass die bisherige Entität `ma:a' = 415 Hz` sehr viel aussagekräftiger, multidimensionaler und semantisch anschlussfähiger würde, wenn man jeden Bestandteil des Tripels als einzelnes Konzept auffassen würde.
+
+Dabei existiert bereits eine Entität `ma:a'`, durch deren Nachnutzung in diesem Kontext die Kohärenz des gesamten Datenmodells weiter gestärkt wird.
+
+
+### Ton als physikalisches Phänomen
+
+Wie bereits mehrfach erwähnt, geschieht die Etablierung eines Referenztons, eines Stimmtons, durch "das Mappen" eines relativen Tonkonkonzepts mit der realen Naturerscheinung akustischer Schwingungsfrequenzen. Soll nun also diese "Konkordanz" ebenfalls in eine Tripelstruktur gebracht werden, muss eine Property sowie ein Objekt definiert werden. Dies kann an dieser Stelle nur prophylaktisch erfolgen, erfordert doch die Modellierung mit etablierten Semantic Web-Sprachen solide(re) Kenntnisse im Bereich der Akustik. In Wikidata findet sich das etwa die Entität "pitch" (`wdt:Q118819`), die als Klasse eingeführt werden kann. Diese kann durch das Property `rdf:value`[^10] in Relation zu einem Ton, etwa `ma:a'` gesetzt werden. Somit ist die Entität `ma:Kammerton` obsolet und kann aus dem Vokabular entfernt werden, und eine neue Instanz von `wdt:Q118819` ("pitch") `ma:415_Hz` darf angelegt werden.
+
+Weiterhin möglich wäre es, durch weitere Ausdifferenzierung in Datentypen (etwa "natürliche Zahlen") und Einheitswerte (Hz), eine sehr ausdrucksstarke und anschlussfähige Modellierung zu erstellen. Auch dies sollte künftig Bestandteil einer späteren Ausarbeitung des Metadatenprofils sein.
 
 
 
 
+wie dann in Beziehung setzen? als blank node?
 
 
 
@@ -173,3 +212,7 @@ musical interval/range of a melody
 [^4]: Eine sehr verständliche Einführung zur Transposition in Hornstimmen findet sich in: [@TN_libero_mab21137748, S. 67–72.]
 [^5]: S. hierzu insb. [@wogram_beitrag_nodate]
 [^6]: Vgl.: [@TN_libero_mab21137748, S. 69.]
+[^8]: [@noauthor_f_nodate]
+[^9]: 
+
+[^10]: [noauthor_rdf_nodate-11]
