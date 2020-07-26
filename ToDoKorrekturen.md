@@ -31,3 +31,9 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 - [ ] Klären: kann man RDF statements überhaupt in MEI embedden? Wie ist das z.B. bei Weber-Gesamtausgabe? Werden die Tripel außerhalb gespeichert und nur aus der MEI Datei referenziert?
 
 - [ ] Änderung der Gliederung: "3.0 Vorarbeiten" oder "Erfassung[/Modellierung?] mit RDF" und "4.0 Integration Semantic Web" oder so.
+
+- [ ] ERM: nicht Kammerton!
+
+- [ ] ERM: statt hat Stimmung (relativ) gleich hat Stimmung (Pedalton)
+
+- [ ] Datenmodell insg. eigentlich könnte auch das Objekt an Ereignis gekoppelt sein – muss nicht m it Werk verknüpft sein – irgendwo erwähnen (Schluss?)

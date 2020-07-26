@@ -69,6 +69,7 @@ Erstaunlicherweise findet sich in den großen etablierten Vokabularen keine Term
 
 **hier nochmal an einem Bsp.:**
 @noauthor_johann_nodate
+@noauthor_anton_nodate
 
 ![](medien_Kap4/20200526_interpret3.png)
 
