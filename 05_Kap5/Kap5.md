@@ -32,7 +32,7 @@ Wichtig ist hierbei festzuhalten, dass das hier gemeinte Stimmungskonzept in kei
 
 Zu 2): Blasinstrumente verfügen kraft ihrer baulichen Charakteristika sowie der Methode der Tonerzeugung[^5] über eine Art "Grundton", dem sog. "Pedalton". Über diesem baut sich durch Veränderung des Luftstroms, dem sog. "Überblasen", eine Folge von Tönen mit einer festen Intervallstruktur auf – die sog. "Naturtonreihe".
 
-**Bild**
+![Naturtonreihe über den "Pedalton" C](Medien_Kap5/20200726_Naturtonreihe.png)
 
 Dies bedeutet also, dass Blasinstrumente bereits qua Konstruktion über eine festgelegte Stimmung verfügen. Diese wird anhand jenes Pedaltons, dem "ersten Naturton" benannt: so bedeutet etwa die Bezeichnung "F-Horn" oder "Horn in F" bezogen auf ein Instrument (und also nicht einen Notentext), dass es sich beim ersten Naturton um ein f handelt, und dass sich die Naturtonreihe mit ihrer festgelegten Intervallik über diesem Ton aufbaut. Doch auch hier ist die Aussage "in F" keineswegs auf einen absoluten Ton mit definierter Frequenz bezogen und bleibt somit wenig aussagekräftig, sondern kann nur in Bezug zu einem frequentiell definierten Stimmton identifiziert werden.
 Jedenfalls ergibt sich bei der Modellierung die Schwierigkeit, dass der Bezeichnung "Horn in F" je nach Bezugspunkt – Objekt oder Quelle – eine unterschiedliche Bedeutung zukommen kann, jedoch nicht muss. Tatsächlich kann diese Bezeichnung im Fall der Modellierung von Autograph und Großwindigem Naturwaldhorn als synonym gelten – eine Differenzierung zwischen Notation und Horn ist nicht nötig: Ein F-Horn muss in diesem Kontext allein schon deshalb gemeint sein, da nur dessen Naturtonreihe im Barock das notwendige Tonmaterial bereithalten konnte – die Notation ist also bloß eine logische Folge dieser Festlegung. Anders sieht es bei neueren Sachverhalten aus. Dort ist Notation keineswegs an den Instrumententyp gekoppelt: Für ein diatonisch spielbares Horn kann auch ein "virtuell-gestimmtes" Horn notiert werden.[^6]
@@ -61,6 +61,8 @@ Es erscheint sinnvoll, zunächst eine Klassifikation der relevanten Konzepte vor
 
 \1) und 2) beziehen sich auf ein Tonkonzept, das große Ähnlichkeit mit dem 5) inhärenten aufweist: Es liegt ihm eine sehr allgemeine und zugleich sehr abstrakte Vorstellung einer Tonentität "F" zugrunde. Um nicht zu sehr ins Philosophisch-Musiktheoretische abzuschweifen (dies könnte Thema einer Anschlussuntersuchung sein), reicht es, diese Entität zunächst rein hierarchisch als allgemeinste Oberklasse von "F-Tönen" zu verstehen. Leider findet sich keine adäquate Terminologie im Internet, die übernommen werden könnten – es erscheint offensichtlich, dass die Repräsentation musiktheoretischer Zusammenhänge noch ein großes Desiderat darstellt. Die Nutzung der Wikidata-Entität `wdt:Q775617`("F"[^8]) ist durch Koppelung an die  die gleichstufige Stimmung in ihrer Nutzbarkeit dergestalt beschränkt, dass sie etwa im hier bearbeiteten Anwendungsszenario nicht verwendet werden kann. Es muss daher eine neue Entität `ma:F (Tonkomplex)` als Unterklasse von `ma:Ton` angelegt werden. Diese erhält – wie im letzten Kapitel geschildert – durch Verbindung mit einem Property `ma:hat Stimmung (notierte)` oder `ma:Stimmung (Instrument)` eine semantische Spezifikation. So können denn auch die bisherigen Entitäten `ma:Stimmung` sowie `ma:in_F` entfernt werden und die beiden Properties durch `rdfs:range` auf `ma:Ton` und seine Unterklassen bezogen werden.
 
+![](Medien_Kap5/20200726_Stimm.png)
+
 ### Ton als normativ fixiertes Zeichen
 
 #### Taxonomie
@@ -71,7 +73,8 @@ Dieses Konzept von Ton begegnet selbstverständlich insbesondere in Hinsicht auf
 
 Es ergibt sich die folgende taxonomische Beziehung:
 
-Graphik: Ton – F(Tonkomplex) – f'
+![](Medien_Kap5/20200526_Ton.png)
+
 
 Dabei ist jedoch weiter zwischen Notation und "Klang" – etwa bei Blechblasinstrumenten zu differenzieren. Dieser Faden wird jedoch an späterer Stelle wieder aufzunehmen sein.
 
