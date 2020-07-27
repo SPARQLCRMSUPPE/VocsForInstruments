@@ -169,6 +169,19 @@ Weiteres Potential des Metadatenprofils liegt in der automatischen Deduktion von
 Diese Modellierung würde ein fundierteres Verständnis mathematischer Logik und ihrer Modellierung etwa mit OWL erfordern. 
 
 
+## "Wrapping things up"
+
+* label @eng – rdfs:literal
+* domain: owl:deprecated
+* trennung von domain und ma:vokabular
+
+
+
+
+
+
+
+
 
 
 

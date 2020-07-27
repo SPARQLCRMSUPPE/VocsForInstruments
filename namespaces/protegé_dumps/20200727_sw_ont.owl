@@ -49,7 +49,7 @@
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmhoehe
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmhoehe> rdf:type owl:ObjectProperty ;
                                                                             rdfs:domain <https://www.wikidata.org/wiki/Q34379> ;
-                                                                            rdfs:range <http://purl.org/ontology/mo/Stimmhoehe> .
+                                                                            rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Stimmhoehe> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#hat_Stimmungssystem
@@ -91,19 +91,19 @@
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#object
 rdf:object rdf:type owl:ObjectProperty ;
            rdfs:domain rdf:statement ;
-           rdfs:range <http://purl.org/ontology/mo/Stimmhoehe> .
+           rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Stimmhoehe> .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
 rdf:predicate rdf:type owl:ObjectProperty ;
               rdfs:domain rdf:statement ;
-              rdfs:range <http://purl.org/ontology/mo/Stimmhoehe> .
+              rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Stimmhoehe> .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
 rdf:subject rdf:type owl:ObjectProperty ;
             rdfs:domain rdf:statement ;
-            rdfs:range <http://purl.org/ontology/mo/Stimmhoehe> .
+            rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Stimmhoehe> .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
@@ -159,6 +159,7 @@ owl:sameAs rdf:type owl:ObjectProperty ;
 
 ###  http://d-nb.info/gnd/4122368-8
 <http://d-nb.info/gnd/4122368-8> rdf:type owl:Class ;
+                                 rdfs:comment "definiert das systemisch Gefüge, das festlegt, in welchem Stimmungsverhältnis Töne zueinander stehen."@de ;
                                  rdfs:label "Stimmungssystem" .
 
 
@@ -178,15 +179,6 @@ owl:sameAs rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/ontology/mo/Performance
 <http://purl.org/ontology/mo/Performance> rdf:type owl:Class .
-
-
-###  http://purl.org/ontology/mo/Stimmhoehe
-<http://purl.org/ontology/mo/Stimmhoehe> rdf:type owl:Class .
-
-
-###  http://purl.org/ontology/mo/F_(Tonkomplex)
-<http://purl.org/ontology/mo/F_(Tonkomplex)> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> .
 
 
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ambitus
@@ -231,6 +223,22 @@ owl:sameAs rdf:type owl:ObjectProperty ;
                                                                             rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> .
 
 
+###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Stimmhoehe
+<http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Stimmhoehe> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Werk
+<http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/Werk> rdf:type owl:Class ;
+                                                                                    rdfs:comment "Jede Art musikalischer Ressource oder Werk. Bsp: eine Audioaufnahme, das Singspiel \"Die Zauberflöte\", eine Partitur, Stimme etc. Instabiler Datensatz. Verwendung nicht empfohlen."@de ;
+                                                                                    rdfs:label "Werk / Ressource"@de ;
+                                                                                    owl:deprecated "" .
+
+
+###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/F_(Tonkomplex)
+<http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/F_(Tonkomplex)> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> .
+
+
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#statement
 rdf:statement rdf:type owl:Class .
 
@@ -270,11 +278,6 @@ rdf:statement rdf:type owl:Class .
                                                                                           <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)> .
 
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Person_a
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Person_a> rdf:type owl:NamedIndividual ,
-                                                                               <http://xmlns.com/foaf/0.1/Person> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Track_No_2
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Track_No_2> rdf:type owl:NamedIndividual ,
                                                                                  <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Klangbeispiel> .
@@ -307,6 +310,18 @@ rdf:statement rdf:type owl:Class .
 
 ###  https://commons.wikimedia.org/wiki/File:4m33s.mid
 <https://commons.wikimedia.org/wiki/File:4m33s.mid> rdf:type owl:NamedIndividual .
+
+
+###  https://www.wikidata.org/wiki/Q97621186
+<https://www.wikidata.org/wiki/Q97621186> rdf:type owl:NamedIndividual ,
+                                                   <http://xmlns.com/foaf/0.1/Person> ;
+                                          rdfs:label "Johann Zedelmayer" .
+
+
+###  https://www.wikidata.org/wiki/Q97621343
+<https://www.wikidata.org/wiki/Q97621343> rdf:type owl:NamedIndividual ,
+                                                   <http://xmlns.com/foaf/0.1/Person> ;
+                                          rdfs:label "Anton Fischer" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

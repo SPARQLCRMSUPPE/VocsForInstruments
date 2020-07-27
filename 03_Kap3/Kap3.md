@@ -12,7 +12,7 @@ Jedoch darf diese scheinbare Übersimplifizierung, die zunächst also jederlei E
 
 ### Domäne[^c8660]
 
-1) Dies wird etwa im Falle der Entität *BWV 208* deutlich: Das "Label" "BWV 208" referenziert hier die Kantate auf Werkebene und fungiert als Platzhalter[^c8650] für eine Expression[^c8651] (etwa der in RISM beschriebenen Quelle),[^c8649] einer Manifestation[^c8652] (etwa einer Edition), oder aber auch eines Exemplars[^c8653] (etwa einer, freilich illegal, mit Bleistift eingerichteten Ausgabe in einer Bibliothek).
+1) Dies wird etwa im Falle der Entität *BWV 208* deutlich: Das "Label" "BWV 208" referenziert hier die Kantate auf Werkebene und fungiert als Platzhalter[^c8650] für eine Expression[^c8651] (etwa der in RISM beschriebenen Quelle),[^c8649] einer Manifestation[^c8652] (etwa einer Edition), oder aber auch eines Exemplars[^c8653] (etwa einer, freilich verdammenswerterweise, mit Bleistift eingerichteten Ausgabe in einer Bibliothek).
 
 2) Über die Beziehung "Besetzung" mit der Entität Werk verbunden ist die Entität *Corno da caccia*, im Modell mit dem – willkürlichen – Label "cor da caccia", der Terminologie von RISM folgend, versehend. Auch an dieser Stelle ist das Label völlig flexibel – analog also zur Entität *BWV 208*.
 
@@ -87,7 +87,7 @@ Tatsächlich hat sich im Verlauf dieser Arbeit ganz organisch eine andere Reihen
 
 #### Entity Relationship Model [es muss klar werden, dass das nur eine Hilfestellung ist – die aber nicht kompatibel mit RDF ist]
 
-Ein erster möglicher Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein Hilfskonstrukts in Form eines *Entity Relationship Models* (ERM). Hierbei sollen die anwendungsspezifischen Szenarien strukturiert und auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander stehen.[^c8661] So werden Klassen definiert und erste einfache hierarchische Relationen zwischen Klassen und untergeordneten, "beschreibenden" Klassen (Eigenschaften) hergestellt.
+Ein erster möglicher Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein Modell in Form eines *Entity Relationship Models* (ERM). Wichtig ist gleich eingangs darauf hinzuweisen, dass das ERM zunächst ein unverbindliches und zu veränderndes Ausgangsmodell darstellt, das auf dem Weg zur RDF-"Ontologie" wohl Gegenstand vielfacher Transitionen sein wird. Hierbei sollen die anwendungsspezifischen Szenarien strukturiert und auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander stehen.[^c8661] So werden Klassen definiert und erste einfache hierarchische Relationen zwischen Klassen und untergeordneten, "beschreibenden" Klassen (Eigenschaften) hergestellt.
 
 Beziehungen ("properties" s.o.) wiederum können in diesem ERM ebenfalls zunächst als potentielle zukünftige "Eigenschaftsklassen" verstanden werden, die zukünftig Container für weitere "Untereigenschaften" darstellen können.[^c8668]
 Im ERM fungieren besondere Schlüsseleigenschaften ("Primärschlüssel") als eindeutige Identifier einer Entität. Es ist zu erwarten, dass diese in einer RDF-Modellierung keine Rolle spielen werden, da dort eindeutige Referenzierbarkeit bereits dank URIs gegeben ist. [^c8662] Mengenverhältnisse zwischen Entitäten werden im ERM zudem durch "Kardinalitäten" miteinbezogen und dadurch fixierbar.[^c8663] 
@@ -99,6 +99,10 @@ Einige wesentlichen Entwicklungen gegenüber dem Anwendungsmodell sowie weitere 
 * Wie bereits erwähnt sind den Entitäten des ERM gegenüber denen der Anwendungsmodellierung weitere sie beschreibende Eigenschaften hinzugefügt worden (etwa *Name* zu *Person*)
 
 * Neben dem verwendeten Instrument *Instrument nach Vokabular (Domäne)* muss die Entität *Interpret* auch immer an ein Ereignis, in der Regel eine *Aufführung* geknüpft sein (diesem Umstand wurde durch die Zusätze im linken Domänenbereich Rechnung getragen). Dabei sind folgende Szenarien berücksichtigt: ein *Instrument* kann sowohl mehrfach ("n Mal") mit beliebig vielen *Interpreten* besetzt sein (entspricht beispielsweise der Bezeichnung "2 Oboen" oder "Celli" in einer Partitur) als auch gesondert aufgeführt werden (entspricht etwa dem Sachverhalt "Musiker a und Musiker b spielen vierhändig Klavier").
+
+* Die Verknüpfung zwischen Ereignis und Werk kann in gleichem Maße auch für Ereignis und Objekt gelten – etwa wenn ein bestimmtes Objekt in einer Aufführung verwendet wird. Dieser Sachverhalt ist der besseren im ERM **nicht** dargestellt! Es wird an späterer Stelle gelten, dies umzusetzen. 
+
+Werk kann auch Quelle sein!
 
 * Ein *Instrument nach Vokabular (Domäne)* kann innerhalb eines Werks beliebig viele notierte *Stimmungen* besitzen.[^c8665]. Die Bedeutung der Entität *Stimmung* – etwa mit dem Wert "F" – weicht dabei in der Kombination mit *Instrument* von der der Verwendung in Kombination mit *Objekt (Domäne)* ab: In dieser Kombination bezieht sich die Entität *Stimmung* auf die mögliche "Grundstimmung" eines Objekts (z.B. F-Horn), sofern es eine besitzt.[^c8666]
 

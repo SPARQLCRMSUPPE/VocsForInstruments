@@ -55,3 +55,4 @@ sowie
 ``<ma:Kammerton>	<rdf:type>	<rdf:statement>	.``
 
 - [ ] Alles, was domänenspezifisch ist, muss ausgelagert werden.
+- [ ] Barockhorn muss irgendetwas anderes werden(?) nein! sagen, dass man da noch geografische Herkunft darndingsen könnte.
