@@ -18,7 +18,7 @@ Während *Interpret* und *Aufführung* jeweils im Bereich der "Domäne" und somi
 
 * *Wikidata* verfügt über das Property `wd:P175` ("performer")[^d3]. Während Wikidata aufgrund der potnenitellen Instabilität seiner Terme zwar in der Regel keine Verwendung im Rahmen dieser Arbeit, verweist Wikidata in seiner Eigenschaft als Data Hub unter anderem auf den folgenden Datensatz:
 
-* Auf *schema.org* findet sich das Property `schema:byArtist`.[^d4] mit möglichen Objekten `schema:musicGroup` und `schema:person`. Als Subjekte kommen `schema:musicAlbum`oder `schema:musicRecording` infrage. Während die Objekte geeignet erscheinen, anwendungsrelevante Sachverhalte wiederzugeben, sind die Subjekte offenbar auf Audioaufnahmen beschränkt: Somit könnten  Aufführung, die nicht in Form einer Aufnahme vorliegen, durch diese Entitäten nicht repräsentiert werden.
+* Auf *schema.org* findet sich das Property `schema:byArtist`.[^d4] mit möglichen Objekten `schema:musicGroup` und `schema:person`. Als Subjekte kommen `schema:musicAlbum`oder `schema:musicRecording` infrage. Während die Objekte geeignet erscheinen, anwendungsrelevante Sachverhalte wiederzugeben, sind die Subjekte offenbar auf Audioaufnahmen beschränkt: Somit könnten Aufführungen, die nicht in Form einer Aufnahme vorliegen, durch diese Entitäten nicht repräsentiert werden.
 
 * In der *DOREMUS Ontology*[^d7] finden sich die Properties `mus:U54`[^d5] ("is performed expression of") und `mus:U81`[^d6] ("had performer status"). Jedoch scheint ersteres durch die implizit starke Konzentration auf FRBR für eine generische Anwendung zu eingeschränkt und nicht sachgemäß. Letzteres ist offenbar auf eine Verwendung bei der Erfassung von Konzertprogrammen semantisch ausgerichtet und  somit für das vorliegende Anwendungsszenario ebenfalls unsachgemäß.
 
@@ -39,7 +39,7 @@ Soll `foaf:agent` Verwendung finden, muss das Datenmodell dergestalt ummodellier
 
 #### Personennormdaten
 
-Die Instanz `ma:Person_a` stellt eine Variable dar, die je nach Bedarf mit entsprechenden Normdaten aus beliebigen externen Domänenvokabularen befüllt werden kann (GND, LCNAF[^d14], VIAF[^d15], Wikidata etc.).
+Die Instanz `ma:Person_a` stellt eine Variable dar, die je nach Bedarf mit entsprechenden Normdaten aus beliebigen externen Domänenvokabularen befüllt werden kann (GND, LCNAF[^d14], VIAF[^d15], Wikidata etc.). So hat der Verfasser beispielsweise zur Illustration für die Arbeit Personendatensätze auf Wikidata der angeblich an der Uraufführung der Kantate BWV 208 beteiligten Hornisten des Weißenfelser Hofs,[^46] Johann Zedelmayer (`wdt:Q97621186`)[^44] und Anton Fischer (`wdt:Q97621343`)[^45] angelegt.
 
 Da die Entitäten `ma:hat_Name` und `ma:hat_Lebensdaten`, ursprünglich ja als Attribute im ERM eingeführt, in der Regel Bestandteil von Personennormdatensätzen sind, können erstere als obsolet betrachtet werden und aus dem Vokabular `ma:` entfernt werden.
 
@@ -50,7 +50,7 @@ Während Aussagen gemäß dem Schema
 \
 "\<das Klavier "Objekt Schlagmichtot"> \<wird bespielt von> \<Klavierduo Soundso>"
 
-nun in Bezug auf auf das Objekt dank `foaf:agent` ermöglicht worden sind, ist aufgrund der Beschränkungen von `mo:performer` eine Verbindung mit einem Subjekt, welches kein "Agent" ist (etwa ein Musikinstrument), nicht möglich.
+nun in Bezug auf das Objekt dank `foaf:agent` ermöglicht worden sind, ist aufgrund der Beschränkungen von `mo:performer` eine Verbindung mit einem Subjekt, welches kein "Agent" ist (etwa ein Musikinstrument), nicht möglich.
 
 Während die Modellierung im ERM kraft der einfachen Eigenschaft "Interpret" erfolgte, wird spätestens zu diesem Zeitpunkt deutlich, dass dieses an äußere Vorgaben ungebundene, monodimensionale Modell der vorgefundenen Realität des Semantic Web nicht mehr gerecht werden kann. Es gilt daher, Um- und Neumodellierungen vorzunehmen.\
 
@@ -67,9 +67,6 @@ Zum anderen muss eine Verknüpfung "werkseitig" erfolgen. Hier bietet es sich an
 
 Erstaunlicherweise findet sich in den großen etablierten Vokabularen keine Terminologie, um diesen scheinbar banalen Sachverhalt abzubilden. Fündig wird man jedoch in der *Linked Irish Traditional Music Ontology*.[^d18] Das Property L58[^d20] ("played on instrument") und das inverse Property L58i[^d19] ("instrument played by") geben den hier gewünschten Sachverhalt in geeigneter Weise wieder.
 
-**hier nochmal an einem Bsp.:**
-@noauthor_johann_nodate
-@noauthor_anton_nodate
 
 ![](medien_Kap4/20200526_interpret3.png)
 
@@ -152,7 +149,7 @@ Das – ursprünglich immerhin recht zentrale – Anliegen dieser Arbeit, eine "
 
 Widererwarten stellt sich bei der Sichtung anwendbarer Vokabulare heraus, dass gerade die Verknüpfung eines Klangbeispiels mit einem Instrument offebar ein Szenario darzustellen scheint, das momentan im Semantic Web nicht abgedeckt ist. Um eine solche Verknüpfung doch umzusetzen, liegt die größte Herausforderung darin, dass Properties, die sich auf Aufnahmen Art beziehen, in der Regel mit `rdfs:range` oder `rdfs:domain` an Ereignis-Entitäten gebunden sind.[^31] Zwar lässt sich der Ereignis-Kontext laut Weigl für die Beziehung zwischen Werk und Aufnahme mit einer relativ komplex modellierten, auf der Music Ontology basierenden "Volte"[^32] oder evtl. etwas einfacher, mit *schema.org*, vermeiden[^33]. Allerdings sind auch diese Lösungen auf den Werk-Kontext beschränkt und somit für die Verknüpfung von *Musikinstrument* mit *Klangbeispiel*  ungeeignet. 
 
-Wikidata hält zwar mit den Properties `wdt:P4733` ("produced sound")[^35] und `wdt:P51` ("audio")[^36] Properties bereit, mit denen man Klangbeispiele verlinken kann. Allerdings beziehen sich diese auf Medien aus den *Wiki Commons*. Dennoch scheint im Verlinken in den Wikimedia-Kosmos, eine Chance zu liegen, die prinzipiell nicht ausgeschlossen werden sollte, stellt doch der Wikimedia-Kosmos eine riesige, stetig wachsende, intern wie extern verknüpfte Wissensdatenbank dar. Daher erscheint es sinnnvoll, `wdt:P51` als Verbindungsglied in diese Welt in das Applikationsprofil zu übernehmen (vgl. #Abbildung).
+Wikidata hält zwar mit den Properties `wdt:P4733` ("produced sound")[^35] und `wdt:P51` ("audio")[^36] Properties bereit, mit denen man Klangbeispiele verlinken kann. Allerdings beziehen sich diese auf Medien aus den *Wiki Commons*. Dennoch scheint im Verlinken in den Wikimedia-Kosmos, eine Chance zu liegen, die prinzipiell nicht ausgeschlossen werden sollte, stellt doch der dieser Kosmos eine riesige, stetig wachsende, intern wie extern verknüpfte Wissensdatenbank dar. Daher erscheint es sinnnvoll, `wdt:P51` als Verbindungsglied in diese Welt in das Applikationsprofil zu übernehmen (vgl. #Abbildung).
 
 Für andere Szenarien scheint, das Property `ma:hat_Klangbeispiel` nicht mit externem Vokabular ersetzbar zu sein. Es ergibt sich somit erstmalig im Zug dieser Arbeit, dass ein neuer Term – `ma:hat_Klangbeispiel` – im Rahmen des Applikationsprofils in das Semantic Web eingeführt werden muss. Bei diesem Schritt sind einige Dinge zu beachten:
 
@@ -312,15 +309,28 @@ Wichtig: Arbeit ist Train of thought – absolut deduktiv (manches hätte man vi
 [^32]: [@noauthor_david_nodate]
 
 [^33]: [@noauthor_david_nodate-1]
+
 [^34]: [@noauthor_label_nodate]
 
 [^35]: [@noauthor_produced_nodate]
+
 [^36]: [@noauthor_audio_nodate]
+
 [^37]: [@noauthor_rdf_nodate-7]
 
 
 [^39]: [@noauthor_notitle_nodate-1, S. 16–17.]
+
 [^40]: [@noauthor_rdf_nodate-8]
+
 [^41]: [@noauthor_track_nodate]
+
 [^42]: S. hierzu etwa: [@gangemi_evaluation_2018] oder [@neovesky_interconnecting_2020-1]
+
 [^43]: [@noauthor_home_nodate]
+
+[^44]: [@noauthor_johann_nodate]
+
+[^45]: [@noauthor_anton_nodate]
+
+[^46]: [@10.2307/41640100, S. 22.]

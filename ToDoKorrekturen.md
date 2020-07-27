@@ -37,3 +37,21 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 - [ ] ERM: statt hat Stimmung (relativ) gleich hat Stimmung (Pedalton)
 
 - [ ] Datenmodell insg. eigentlich könnte auch das Objekt an Ereignis gekoppelt sein – muss nicht m it Werk verknüpft sein – irgendwo erwähnen (Schluss?)
+
+- [ ] Literals in Vokabular = alles mit Anführungszeichen. Ändern! (_ _)
+
+- [ ] das muss in das endgültige Vokabular eingepflegt werden.
+
+``<wdt:musical_instrument>	<ma:hat_Stimmung>	<ma:Kammerton>	.``\
+ 
+ ``<ma:Kammerton>	<rdf:subject>	<ma:Ton>	.``\
+ 
+``<ma:Kammerton>	<rdf:predicate>	<rdf:value>	.``\
+
+``<ma:Kammerton>	<rdf:object>	<wdt:pitch>	.``\
+
+sowie
+
+``<ma:Kammerton>	<rdf:type>	<rdf:statement>	.``
+
+- [ ] Alles, was domänenspezifisch ist, muss ausgelagert werden.

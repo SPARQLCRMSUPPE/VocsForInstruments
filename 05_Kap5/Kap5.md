@@ -11,11 +11,11 @@ Kurz gesagt also: Signifikant und Signifikat sind nicht a priori gekoppelt. Ihr 
 
 ## Stimmton
 
-Die Entität `Stimmton` definiert, wie eben bereits skizziert, den Bezug zwischen Tonkonzept und Klang in der Form "Stimmton hat Festlegung Klangfrequenz" (etwa: "a' = 440 Hz)".[^2] Dabei liegt die Relevanz keineswegs in der Kenntnis des Stimmtons in seiner eigentlichen Funktion als Ton für das gemeinsame Stimmen von Instrumente, sondern darin, dass in ihm ein Referenzrahmen festgelegt ist, an dem weitere Töne intervallisch ausgerichtet sind (s. Stimmungssystem). Es erscheint daher präziser diese Entität in `ma:Stimmhöhe` umzubenennen und mit dem Property `ma:hat Stimmung (absolut)` analog zu verfahren und in `ma:hat Stimmhöhe` umzubenennen.
+Die Entität `Kammerton` definiert, wie eben bereits skizziert, den Bezug zwischen Tonkonzept und Klang in der Form "Stimmton hat Festlegung Klangfrequenz" (etwa: "a' = 440 Hz)".[^2] Dabei liegt die Relevanz keineswegs in der Kenntnis des Stimmtons in seiner eigentlichen Funktion als Ton für das gemeinsame Stimmen von Instrumente, sondern darin, dass in ihm ein Referenzrahmen festgelegt ist, an dem weitere Töne intervallisch ausgerichtet sind (s. Stimmungssystem). Es erscheint daher präziser diese Entität in `ma:Stimmhöhe` umzubenennen und mit dem Property `ma:hat Stimmung (absolut)` analog zu verfahren und in `ma:hat Stimmhöhe` umzubenennen.
 
 ## Stimmungssystem
 
-Die Entität `ma:Stimmungssystem`  definiert das Gefüge, das festlegt, in welchem Verhältnis Töne zueinander stehen. Anhand eines absolut definierten Stimmtons als Referenzton und in Kenntnis eines zugrundeliegenden Stimmungssystems ließen sich Frequenzen und somit absolute Tonhöhen für beliebige weitere Töne – etwa die des Ambitus – ableiten.
+Die Entität `ma:Stimmungssystem`  definiert das Gefüge, das festlegt, in welchem Verhältnis Töne zueinander stehen. Anhand eines absolut definierten Stimmtons als Referenzton und in Kenntnis eines zugrundeliegenden Stimmungssystems ließen sich Frequenzen und somit absolute Tonhöhen für beliebige weitere Töne – etwa die des Ambitus – ableiten. Hier bietet die GND mit der Entität `gnd:4122368-8` ("Stimmung <Musik\>")[^22i] einen halbwegs aussagekräftigen Datensatz, der behelfsmäßig genutzt werden kann. Um die scheinbare Redundanz dieser Entität und der Entität `ma:Stimmung` aufzulösen, wird das Label für den Gebrauch in diesem Metadatenprofil durch das Property `rdfs:label`[^23] wieder zu "Stimmungssystem" verändert.
 
 ## Stimmung
 
@@ -59,7 +59,7 @@ Es erscheint sinnvoll, zunächst eine Klassifikation der relevanten Konzepte vor
 
 ### Ton als Abstraktum
 
-\1) und 2) beziehen sich auf ein Tonkonzept, das große Ähnlichkeit mit dem 5) inhärenten aufweist: Es liegt ihm eine sehr allgemeine und zugleich sehr abstrakte Vorstellung einer Tonentität "F" zugrunde. Um nicht zu sehr ins Philosophisch-Musiktheoretische abzuschweifen (dies könnte Thema einer Anschlussuntersuchung sein), reicht es, diese Entität zunächst rein hierarchisch als allgemeinste Oberklasse von "F-Tönen" zu verstehen. Leider findet sich keine adäquate Terminologie im Internet, die übernommen werden könnten – es erscheint offensichtlich, dass die Repräsentation musiktheoretischer Zusammenhänge noch ein großes Desiderat darstellt. Die Nutzung der Wikidata-Entität `wdt:Q775617`("F"[^8]) ist durch Koppelung an die  die gleichstufige Stimmung in ihrer Nutzbarkeit dergestalt beschränkt, dass sie etwa im hier bearbeiteten Anwendungsszenario nicht verwendet werden kann. Es muss daher eine neue Entität `ma:F (Tonkomplex)` als Unterklasse von `ma:Ton` angelegt werden. Diese erhält – wie im letzten Kapitel geschildert – durch Verbindung mit einem Property `ma:hat Stimmung (notierte)` oder `ma:Stimmung (Instrument)` eine semantische Spezifikation. So können denn auch die bisherigen Entitäten `ma:Stimmung` sowie `ma:in_F` entfernt werden und die beiden Properties durch `rdfs:range` auf `ma:Ton` und seine Unterklassen bezogen werden.
+\1) und 2) beziehen sich auf ein Tonkonzept, das große Ähnlichkeit mit dem 5) inhärenten aufweist: Es liegt ihm eine sehr allgemeine und zugleich sehr abstrakte Vorstellung einer Tonentität "F" zugrunde. Um nicht zu sehr ins Philosophisch-Musiktheoretische abzuschweifen (dies könnte Thema einer Anschlussuntersuchung sein), reicht es, diese Entität zunächst rein hierarchisch als allgemeinste Oberklasse von "F-Tönen" – im denkbar weitesten Sinne – zu verstehen. Leider findet sich keine adäquate Terminologie im Internet, die übernommen werden könnten – es erscheint offensichtlich, dass die Repräsentation musiktheoretischer Zusammenhänge noch ein großes Desiderat darstellt. So ist etwa eine Nutzung der Wikidata-Entität `wdt:Q775617`("F"[^8]) ist durch Koppelung an die gleichstufige Stimmung in ihrer Nutzbarkeit dergestalt beschränkt, dass sie etwa im hier bearbeiteten Anwendungsszenario nicht verwendet werden kann. Es muss daher eine neue Entität `ma:F (Tonkomplex)` als Unterklasse von `ma:Ton` angelegt werden. Diese erhält – wie im letzten Kapitel geschildert – durch Verbindung mit einer Property `ma:hat Stimmung (notierte)` oder `ma:Stimmung (Instrument)` eine semantische Spezifikation. So können denn auch die bisherigen Entitäten `ma:Stimmung` sowie `ma:in_F` entfernt werden und die beiden Properties durch `rdfs:range` auf `ma:Ton` und seine Unterklassen bezogen werden.
 
 ![](Medien_Kap5/20200726_Stimm.png)
 
@@ -69,7 +69,7 @@ Es erscheint sinnvoll, zunächst eine Klassifikation der relevanten Konzepte vor
 
 Eine Eskalationsstufe weiter in der Konkretisierung des Konzepts "Ton" liegt seine Manifestation als Zeichen jeglicher Form, jedoch stets nur innerhalb eines Musikalischen Bezugs- und Ordnungssystems verständlich, in dessen Kontext er als Bedeutungsträger auftritt. Doch auch hier bleibt er ein abstraktes Phänomen, dessen akustische Äußerung ihm lediglich als Potential innewohnt.
 
-Dieses Konzept von Ton begegnet selbstverständlich insbesondere in Hinsicht auf den Notentext, wie er etwa im Umfeld der Entität `ma:Ambitus` auftritt. Seine Notation erfolgt hier gemäß der sog. Helmholtz-Notationsweise.[^9]
+Dieses Konzept von Ton begegnet selbstverständlich insbesondere in Hinsicht auf den Notentext, wie er etwa im Umfeld der Entität `ma:Ambitus` auftritt. Seine Notation erfolgt dabei in dieser Arbeit gemäß der sog. Helmholtz-Notationsweise.[^9]
 
 Es ergibt sich die folgende taxonomische Beziehung:
 
@@ -90,14 +90,92 @@ Dabei existiert bereits eine Entität `ma:a'`, durch deren Nachnutzung in diesem
 
 ### Ton als physikalisches Phänomen
 
-Wie bereits mehrfach erwähnt, geschieht die Etablierung eines Referenztons, eines Stimmtons, durch "das Mappen" eines relativen Tonkonkonzepts mit der realen Naturerscheinung akustischer Schwingungsfrequenzen. Soll nun also diese "Konkordanz" ebenfalls in eine Tripelstruktur gebracht werden, muss eine Property sowie ein Objekt definiert werden. Dies kann an dieser Stelle nur prophylaktisch erfolgen, erfordert doch die Modellierung mit etablierten Semantic Web-Sprachen solide(re) Kenntnisse im Bereich der Akustik. In Wikidata findet sich das etwa die Entität "pitch" (`wdt:Q118819`), die als Klasse eingeführt werden kann. Diese kann durch das Property `rdf:value`[^10] in Relation zu einem Ton, etwa `ma:a'` gesetzt werden. Somit ist die Entität `ma:Kammerton` obsolet und kann aus dem Vokabular entfernt werden, und eine neue Instanz von `wdt:Q118819` ("pitch") `ma:415_Hz` darf angelegt werden.
+Wie bereits mehrfach erwähnt, geschieht die Etablierung eines Referenztons, eines Stimmtons, durch "das Mappen" eines relativen Tonkonkonzepts mit der realen Naturerscheinung akustischer Schwingungsfrequenzen. Soll nun also diese "Konkordanz" ebenfalls in eine Tripelstruktur gebracht werden, muss eine Property sowie ein Objekt definiert werden. Dies kann an dieser Stelle nur prophylaktisch erfolgen, erfordert doch die Modellierung mit etablierten Semantic Web-Sprachen solide(re) Kenntnisse im Bereich der Akustik. Daher soll zunächst mit der Wikidata-Entität "pitch" (`wdt:Q118819`) vorliebgenommen werden, die als Klasse eingeführt werden kann. Ihr als Instanz zugeordnet, ist die zu erstellende Frequenz-Entität `ma:415Hz`. Eine weitere Ausdifferenzierung der Bestandteile in Datentypen (etwa "natürliche Zahlen") und Einheitswerte (Hz) wäre ebenfalls ein Anschlusspunkt für künftige Bestrebungen.[^11]
 
-Weiterhin möglich wäre es, durch weitere Ausdifferenzierung in Datentypen (etwa "natürliche Zahlen") und Einheitswerte (Hz), eine sehr ausdrucksstarke und anschlussfähige Modellierung zu erstellen. Auch dies sollte künftig Bestandteil einer späteren Ausarbeitung des Metadatenprofils sein.
+#### Modellierung Stimmhöhe / Referenzton
+\
+1)\ Es ergibt sich also der folgende Zusammenhang:
+
+**Bild: **
+
+Die Entität `ma:Stimmhoehe` integriert in sich die allgemeine, freilich durch Instanzen dieser Klassen weiter zu spezifizierende Aussage:
+
+``ma:Ton	rdf:value	wdt:Q118819``
+
+Dabei wurde `wdt:Q118819` durch das neue Property `rdf:value`[^10] in Relation zu `ma:Ton`, etwa `ma:a'`, gesetzt.
+
+
+2)\ Durch die so erfolgte Modellierung der Entität `ma:Stimmhoehe` als RDF-Tripel ergibt sich eine Schwierigkeit, die bislang keine Rolle gespielt hat: Das Objekt (`die Stimmung`) der Aussage
+
+``<ein Musikinstrument>	<hat Stimmung>	<die Stimmung>	.``\
+
+beinhaltet selbst ein Tripel, nämlich:
+
+``<a'>	<ist gleich>	<415 Hertz>	.``\
+
+Die Lösung dieses Problems liegt im sogenannten *reification*,[^12] indem "eine Aussage über eine Aussage" gemäß dem folgenden Schema gemacht wird:
+
+``<ein Musikinstrument>	<hat Stimmung>	<die Stimmung>	.``\
+
+``<die Stimmung>	<hat Subjekt>	<a'>	.``\
+
+``<die Stimmung>	<hat Prädikat>	<ist gleich>	.``\
+
+``<die Stimmung>	<hat Objekt>	<415 Hertz>	.``\
+
+Zudem könnte definiert werden:
+
+``<die Stimmung>	<ist eine>	<Tripel-Aussage>	.``\
+
+Dies kann mithilfe der Properties `rdf:subject`,[^14] `rdf:predicate`[^15] und `rdf:object`[^16] geschehen. Zudem kann das Objekt durch Klassifizierung als Aussage durch die Verbindung über das Property `rdf:type` zur Entiät `rdf:statement`[^17] definiert werden:[^13][^18]
+ 
+ Es ergibt sich somit der folgende analoge Zusammenhang:
+ 
+ ``<wdt:musical_instrument>	<ma:hat_Stimmhoehe>	<ma:Stimmhoehe>	.``\
+ 
+ ``<ma:Stimmhoehe>	<rdf:subject>	<ma:Ton>	.``\
+ 
+``<ma:Stimmhoehe>	<rdf:predicate>	<rdf:value>	.``\
+
+``<ma:Stimmhoehe>	<rdf:object>	<wdt:pitch>	.``\
+
+sowie
+
+``<ma:Stimmhoehe>	<rdf:type>	<rdf:statement>	.``
+
+
+
+### Tonraum (Ambitus)
+
+Ein weiteres Anliegen der Arbeit war es, eine Darstellungsmöglichkeit für den Ambitus (bislang `ma:Ambitus`) von Stimmen zu schaffen. Auch hier halten die auffindbaren Vokabulare keine Patentrezepte bereit. So bietet zwar DOREMUS das Property `mus:has_Ambitus`[^18] scheinbar einen Ansatzpunkt, allerdings wird durch die Erklärung "this property allows for describing the tessitura of a character, as can be drawn from the score[...]" die Benutzung letztlich auf Vokalpartien beschränkt.
+Wikidata hält das Property `wdt:ambitus`(`P2279`)[^19] bereit, das aufgrund seiner Beschreibung "étendue d'une mélodie, d'une voix ou d'un instrument, entre sa note la plus grave et sa note la plus élevée" vielversprechend erscheint. Jedoch ist er semantisch auf eine Entiät bezogen, deren Beschreibung unsinnig ist,[^20] und zugleich scheint jener Ambitus als Intervall und nicht als definierter Tonraum darstellbar. So fällt die Entscheidung leicht, die eigens definierten Konzepte auch weiterhin beizubehalten.\
+
+``<ma:Instrument_nach_Vokabular_(Domäne)>	<ma:hatAmbitus>	<ma:Ambitus>	.``\
+
+Dabei gilt für `ma:Ambitus`:\
+
+``<ma:Ambitus>	<ma:hat_höchsten_Ton>	<ma:Ton>	.``\
+
+``<ma:Ambitus>	<ma:hat_tiefsten_Ton>	<ma:Ton>	.``\
+
+
+### Inferenzmöglichkeiten
+
+Weiteres Potential des Metadatenprofils liegt in der automatischen Deduktion von Schlussfolgerungen dank formallogischer Zusammenhänge.[^21] Beispielsweise die folgenden Sachverhalte könnten künftig durch entsprechende weitaus komplexere Modellierung inferiert werden:\
+
+1) anhand der Information über die notierte Stimmung könnten die dermaßen notierte Töne – etwa die des Ambitus – automatisch zu "klingenden" Tönen automatisch werden. (Die Möglichkeit, diese Transposition künftig maschinell zu implementieren macht die ursprünglich im ERM vorgesehene Modellierung der "klingenden" Äquivalente zu notierten Tönen hinfällig.)
+2) mit dem Kammerton als Referenzton und in Kenntnis des zugrundeliegenden Stimmungssystems wären einzelne Frequenzen von Tönen exakt bestimmbar.\
+
+Diese Modellierung würde ein fundierteres Verständnis mathematischer Logik und ihrer Modellierung etwa mit OWL erfordern. 
 
 
 
 
-wie dann in Beziehung setzen? als blank node?
+
+1 Erkenntnis: das ganze mit den Stimmungen und so sollte mal als komplette Ontologie modelliert werden!!!
+
+
+
 
 
 
@@ -132,8 +210,6 @@ f': Ton, der in einer bestimmten Art notiert wird und in jenem Gefüge sich bewe
 
 
 im weiteren: ausdifferenzieren – Töne zueinander in Beziehung setzen. <- Reasoning!
-
-Datentypen
 
 
 also die Properties definieren – kann also sein, dass Stimmung andere Werte hat (nicht so wie im ERM)
@@ -211,11 +287,45 @@ musical interval/range of a melody
 [^1]: Einen umfassenden Überblick bietet:
 
 [^2]: Sinnvoll wäre es etwa für maschinelle Auswertungen, die Festlegung des Stimmtons ebenfalls als Tripel mit unterschiedlichen Datentypen zu modellieren und mit etablierten Vokabularen – v.a. aus dem Bereich der Physik/Akustik – zu verknüpfen. 
+
 [^3]: Wobei dies freilich zunächst ebenfalls ein theoretisches "Klingen" ist.
+
 [^4]: Eine sehr verständliche Einführung zur Transposition in Hornstimmen findet sich in: [@TN_libero_mab21137748, S. 67–72.]
+
 [^5]: S. hierzu insb. [@wogram_beitrag_nodate]
+
 [^6]: Vgl.: [@TN_libero_mab21137748, S. 69.]
+
 [^8]: [@noauthor_f_nodate]
+
 [^9]: 
 
-[^10]: [noauthor_rdf_nodate-11]
+[^10]: [noauthor_rdf_nodate-11], [@TN_libero_mab21631588, S. 55–56.]
+
+[^11]: [@TN_libero_mab21631588, S. 51–52.]
+
+[^12]: [@noauthor_rdf_nodate-12], [@allemang_semantic_2011, S. 42–44.]
+
+[^13]: [@TN_libero_mab21631588, S. 80.]
+
+[^14]: [@noauthor_rdf_nodate-13]
+
+[^15]: [@noauthor_rdf_nodate-14]
+
+[^16]: [@noauthor_rdf_nodate-15]
+
+[^17]: [@noauthor_rdf_nodate-16]
+
+[^18s]: Dabei ist die Domain der Properties auf die Klasse `rdfs:statement` festgelegt, die Range auf `ma:Stimmhoehe`.
+
+[^18]: [@noauthor_doremus_nodate-6]
+
+[^19]: [@noauthor_ambitus_nodate]
+
+[^20]: Beschreibung: "range of musical scale degrees attributed to a given mode", vgl.: [@noauthor_ambitus_nodate-1]
+
+[^21]: Vgl. etwa: [@szeredi_lukácsy_benkő_nagy_2014, S. 175–183.]
+[^22]: 
+
+[^22i]: [@noauthor_katalog_nodate]
+[^23]: [@noauthor_rdf_nodate-17]
