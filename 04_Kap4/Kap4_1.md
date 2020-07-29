@@ -1,20 +1,22 @@
 # Anbindung an- / Integration in das Semantic Web
 
-In den vorangegangenen Kapiteln wurde ein Modell in eine strukturell auf RDF basierende Ontologie "übersetzt". Deren "Grammatik" orientierte sich zwar an der im Semantic Web standardisierten (RDF, RDFS, OWL), deren Semantik und Etabliertheit das Potential für eine anschließende Integration im Semantic Web birgt. Doch bleiben die in dieser Ontologie verwahrten Konzepte durch die Brille des "Semantic Web-Subjekts" betrachtet diffus: erkennbar sind lediglich eine Menge arbiträrer Entitäten, die in bestimmten, jedoch nicht weiter spezifizierten Beziehungen zueinander stehen. 
+In den vorangegangenen Kapiteln wurde ein Modell in eine strukturell auf RDF basierende Ontologie "übersetzt". Deren "Grammatik" orientierte sich zwar an der im Semantic Web standardisierten (RDF, RDFS, OWL), deren Semantik und Etabliertheit das Potential für eine anschließende Integration im Semantic Web birgt. Doch bleiben die in dieser Ontologie verwahrten Konzepte durch die Brille des "Semantic Web-Subjekts" betrachtet diffus: erkennbar sind lediglich eine Menge arbiträrer Entitäten, die in bestimmten, jedoch außerordentlich allgemeinen Beziehungen stehen. 
 Es gilt insofern an dieser Stelle abermals einen hermeneutischen Prozess zu durchlaufen, in dessen Zuge die nicht-explizierten Konzepte im Namespace :ma dermaßen erschlossen werden, dass sie für ein Wahrnehmungssubjekt interpretierbar werden. 
-Abermals stellt sich, wie in #Kapitel die Frage, in welcher Weise der Verständnishorizont zu überwinden ist. Dies ist für ein menschliches Subjekt relativ einfach zu beantworten, etwa indem Konzepte mit sinnvollen Namen und Erklärungen versehen werden. Doch wie verhält es sich mit einem Wahrnehmungssubjekt, das nur die Sprache des Semantic Webs beherrscht ("things not strings")?[^c8697]
+Abermals stellt sich, wie in #Kapitel die Frage, in welcher Weise der hier begegnende Verständnishorizont zu überwinden ist. Dies ist für ein menschliches Subjekt relativ einfach zu beantworten, etwa indem Konzepte mit sinnvollen Namen und Erklärungen versehen werden. Doch wie verhält es sich mit einem Wahrnehmungssubjekt, das nur die Sprache des Semantic Webs beherrscht ("things not strings")?[^c8697]
 
-Eine zentrale Idee der Heidegger'schen Philosophie ist, dass das eigentliche Wesen von "Zeug"[^c8694] (im Gegensatz etwa zu Platons Ideenlehre) keineswegs diesem a priori inhärent ist, sondern sich in der Welt erst in seiner kontextuellen habituellen Funktionalität und Materialität gegenüber einem Wahrnehmungssubjekt äußert.[^c8696] Dieses Prinzip erscheint sich hier nochmals im Rahmen von Linked Data und Semantic Web eindrücklich nachzubilden: Kontext – sich in funktionalen Beziehungen zwischen Konzepten ausdrückend – bildet die Prämisse von Semantik. Das Wesen der Konzepte zeigt sich keineswegs in ihrer textuellen Beschreibung ("strings") begründet, sondern in ihrer Rolle als Sinnträger innerhalb eines Bedeutungsgefüges und gegenüber einem "besorgenden" Wahrnehmungssubjekt.
+Eine zentrale Idee der Heidegger'schen Philosophie ist, dass das "eigentliche Wesen" von "Zeug"[^c8694] (im Gegensatz etwa zu Platons Ideenlehre) keineswegs diesem a priori inhärent ist, sondern sich in der Welt erst in seiner kontextuellen habituellen Funktionalität und Materialität gegenüber einem Wahrnehmungssubjekt äußert.[^c8696] Diese Annahme erscheint auch hier aufschlussreich: Kontext – sich in funktionalen Beziehungen zwischen Konzepten ausdrückend – bildet im Semantic Web die Prämisse von Semantik. Das "Wesen" der Konzepte zeigt sich keineswegs in ihrer textuellen Beschreibung ("strings") begründet, sondern in ihrer Rolle als Sinnträger innerhalb eines Bedeutungsgefüges und gegenüber einem "besorgenden" Wahrnehmungssubjekt.
 
 So ist etwa – ganz vereinfacht – das Wesen des Konzepts "Spucknapf" in den folgenden RDF-Tripeln ein je anderes: 
 
 1. "Mann" "spuckt in" "Spucknapf"
 2. "Spucknapf" "fällt auf" "Mann (Kopf)"
 
-Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "der Gegenstand" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet."
+Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "der Gegenstand" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet.
 Exakt analog hierzu erscheint das "Wesen" einer Entität innerhalb einer formalen Welt dadurch bestimmt, in welchen Relationen sie zu der sie umgebenden, wechselwirkenden Welt steht.
 Und umgekehrt, löst man Konzepte aus diesem Gefüge heraus (wie es bislang in dieser Arbeit der Fall ist), entbindet man sie ihrer semantischen Kraft, und sie werden, im schlimmsten Fall, zu nichts weiterem als zu kontingenten URIs, jedenfalls aber – zumindest nach Heidegger – zu einem trivialen lediglich Vorhandenen.
 \
+
+**evtl. Zwischenüberschrift**
 
 Es stellt sich nun die Frage, wie diese Kontextualisierung technisch umzusetzen ist. Boten bislang insbesondere die Arbeiten von Ontology101[^c8698] und Stuckenschmidt[^c8699] einen guten Leitfaden für die Erstellung von Ontologien im Sinne abstrakter formalisierter Wissenspräsentationen, so findet sich in der Literatur kaum irgendwo ein Hinweis zur Umsetzung semantischer Kontextualisierung eigener Ontologien im Semantic Web.
 
@@ -64,24 +66,34 @@ sondern einfach durch das Konzept `gnd:Ton` zu ersetzen.
 
 ### Vorgehensweise
 
-Für den Fortgang dieser Arbeit erscheint die folgende Vorgehensweise sinnvoll:
+Für den Fortgang dieser Arbeit erscheint die folgende allgemeine Vorgehensweise sinnvoll:
 
-1. Das Vokabular in seiner derzeitigen Form beinhaltet auch Platzhalter für institutionsspezifische Terme. Diese sind aus dem Vokabular auszulagern und in separaten Namespaces zu sammeln.
-2. Das verbleibende, institutionsübergreifende Vokabular im Namespace :ma ist daraufhin zu untersuchen, ob sich seine Semantizität auch ebensogut in externen Konzepten abbildet, und eigene Terme in diesem Fall durch sie zu ersetzen. Dabei wird es gelten, eine ausgewogene Balance zwischen semantisch festen, jedoch vermutlich eher unspezifischen, domänenübergreifend verwendeten Konzepten, und spezifischen, jedoch womöglich weniger etablierten Konzepten auszutarieren. Dieser Vorgang birgt einige methodische Herausforderungen, auf die an entsprechender Stelle eingegangen werden wird.
-3. Eigene Terme, für die sich keine vorexistierende Entsprechungen finden lassen, sind nochmals zu fokussieren und einer terminologischen Kontrolle zu unterziehen. Anschließend sind sie gemäß 1) im vorhergehenden Kapitel in Beziehung zu externen Vokabularen zu setzen und so im Semantic Web durch Verknüpfung aussagekräftig referenzierbar zu machen. Sie sind anschließend gemäß der guten Praxis bei Namespaces[^c8710] auch mit menschenlesbaren Informationen und Bezeichnungen ("Labels") anzureichern.[^c8711]
+1. Das verbleibende, institutionsübergreifende Vokabular im Namespace :ma ist daraufhin zu untersuchen, ob sich seine Semantizität auch adäquat mit externen Konzepten abbildet, und eigene Terme in diesem Fall durch sie zu ersetzen. Dabei wird es gelten, eine ausgewogene Balance zwischen semantisch festen, jedoch vermutlich eher unspezifischen, domänenübergreifend verwendeten Konzepten, und spezifischen, jedoch womöglich weniger etablierten Konzepten auszutarieren. Dieser Vorgang birgt einige methodische Herausforderungen, auf die an entsprechender Stelle eingegangen werden wird.
+2. Eigene Terme, für die sich keine vorexistierende Entsprechungen finden lassen, sind nochmals zu fokussieren und einer terminologischen Kontrolle zu unterziehen. Anschließend sind sie gemäß 1) im vorhergehenden Kapitel in Beziehung zu externen Vokabularen zu setzen und so im Semantic Web durch Verknüpfung aussagekräftig referenzierbar zu machen. Sie sind anschließend gemäß der guten Praxis bei Namespaces[^c8710] auch mit menschenlesbaren Informationen und Bezeichnungen ("Labels") anzureichern.[^c8711]
 
 
-#### Terminologische Kontrolle
+#### Terminologische Kontrolle / Modellierung / Methodik
 
-Mit "terminologischer Kontrolle" sind im Sinne Bertrams "alle Maßnahmen [...], die direkt oder indirekt der Definition und Abgrenzung von Begriffen und der eindeutigen Zuordnung von Bezeichnungen zu Begriffen dienen [...]"[^c8712] gemeint. Während dieser Prozess in einem herkömmlichen Thesaurus insbesondere introspektiv auf die Arbeit mit internen Termen gerichtet sein dürfte, so umfasst der hier miteinzubeziehende Thesaurus nichts Geringeres als die Gesamtheit aller im Semantic Web eingebundenen Daten. Es liegt somit auf der Hand, dass dieser Prozess sich in vielem von der herkömmlichen Erstellung von Vokabularen unterscheiden muss. Leider findet sich in der Literatur, wie bereits eingangs erwähnt, kaum ein Hinweis, wie dieser Vorgang zu gestalten sein mag. Dieser Umstand kann auch nicht weiter verwundern, bedenkt man, dass die Heterogenität formalisierter Weltrepräsentationen in Form von Ontologien die Heterogenität, Komplexität und Ambivalenz der realen Welt widerspiegeln muss – einen allgemeingültigen Leitfaden unter diesen Umständen zu formulieren, ist somit naturgemäß schwierig, erscheint aber als lohnenswertes Desiderat für künftige Arbeiten.
+Mit "terminologischer Kontrolle" sind im Sinne Bertrams "alle Maßnahmen [...], die direkt oder indirekt der Definition und Abgrenzung von Begriffen und der eindeutigen Zuordnung von Bezeichnungen zu Begriffen dienen [...]"[^c8712] gemeint. Während dieser Prozess in einem herkömmlichen Thesaurus insbesondere introspektiv auf die Arbeit mit internen Termen gerichtet sein dürfte, so umfasst der hier miteinzubeziehende Thesaurus nichts Geringeres als die Gesamtheit aller im Semantic Web eingebundenen Daten. Es liegt somit auf der Hand, dass dieser Prozess sich in vielem von der herkömmlichen Erstellung von Vokabularen unterscheiden muss. Leider findet sich in der Literatur, wie bereits eingangs erwähnt, kaum ein Hinweis, wie dieser Vorgang zu gestalten sein mag. Dieser Umstand kann auch nicht weiter verwundern, bedenkt man, dass die Heterogenität formalisierter Weltrepräsentationen in Form von Ontologien, die die Komplexität und Ambivalenz der realen Welt widerspiegeln muss. Zugleich erscheint der Vorgang der Formalisierung von Wissen, und somit von Wahrnehmung, ein stark subjektiver – einen allgemeingültigen Leitfaden unter diesen Umständen zu formulieren, ist somit naturgemäß schwierig, erscheint aber als lohnenswertes Desiderat für künftige Arbeiten.
 
 Für diese Arbeit erscheinen die folgenden Schritte und Abwägungen sinnvoll:
 
+* Eine Grundbeschaffenheit des Semantic Webs liegt in seiner Qualität als Hypertext aller in ihm verwobenen Modellierungen und Ontologien. Dieser Umstand macht eine – eigentlich wünschenswerte – initiale vollständige philologische Auswertung einzelner Textteile (Vokabulare), und es muss mit einem heuristischen Ansatz vorliebgenommen werden. Dieser besteht darin, unter Zuhilfenahme geeigneter Suchwerkzeuge, fallspezifisch nach terminologischen Lösungen zu suchen. Wie dies in der Praxis gelingen kann, wird sich prozessual im Laufe der folgenden Kapitel entfalten. (Eine Ausarbeitung der generierten Erkenntnisse zur Methodik ist nicht Gegenstand dieser Arbeit, stellt aber wie erwähnt ein sehr vielversprechendes Desiderat dar!)
 * Bereits mehrfach wurde auf den Wert etablierter Vokabulare hingewiesen. Unter diesen findet sich eine Reihe von Vokabularen, die als Standards, wenn nicht gar als Grundpfeiler des Semantic Webs gelten können. Diese sind insbesondere RDF, RDFS, SKOS, OWL, aber auch etwa Dublin Core. Ihre Verwendung ist gut dokumentiert, und es existiert eine vergleichbar große Menge einführender Literatur, die als Leitfaden zu Rate gezogen werden kann.[^c8713] Diese Vokabulare fanden bereits teilweise Verwendung in den vorangegangenen Kapiteln, und es wird aufgrund ihrer hohen Aussagekraft gelten, auch im Folgenden sich ihrer wann immer möglich zu bedienen.
 
-Hinsichtlich der Recherche nach domänenspezifischen Vokabularen und deren Anwendung sind verschiedene Strategien vorstellbar, die in dieser Arbeit jeweils zur Anwendung kommen werden:
+Hinsichtlich der Recherche nach domänenspezifischen Vokabularen und deren Anwendung sind verschiedene Strategien vorstellbar, die in dieser Arbeit jeweils anzuwenden sein werden:
 
-* Es erscheint naheliegend, die Verwendung von Vokabularen im Rahmen solcher domänenspezifischer Projekte zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Entsprechend der spartenübergreifenden Zielsetzung dieser Arbeit sind dies Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs. Also Portale
+* Es erscheint naheliegend, die Verwendungsweise von Terminologie im Rahmen solcher domänenspezifischer Projekte zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Entsprechend der spartenübergreifenden Zielsetzung dieser Arbeit sind dies Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs.[^1] **<- hier müssen irgendwelche Sachen zitiert werden, in denen sich Angaben zu versch. relevanten Vokabularen finden.**
+* Einen Sucheinstieg für Vokabulare bietet das *Basel Register of Thesauri, Ontologies and Classifikations*[^2], in dem auch fachspezifische Suchen möglich sind.
+* Das Portal *Linked Open Vocabularies*[^3] ist eine Metasuchmaschine, mit der eine große Zahl von Triplestores durchsucht werden kann. Suchergebnisse können wiederum nach unterschiedlichen Kriterien (Disziplin, Konzept etc.) gefiltert werden.
+* Zumindest erwähnenswert ist die technische Möglichkeit, eigene referenzierbare und semantisch kontextualisierte Datensätze – etwa in Wikidata – zu erstellen. Ob dies auch für das hier entwickelte Metadatenprofil sinnvoll ist, ist eine ganz andere Frage.
+
+
+
+
+
+---
+
 
 
 * Europeana
@@ -101,15 +113,13 @@ Vokabulare
 
 
 
----
 
-Weiteres Vorgehen: Schluss mit Methodikgeschwafel: jeder Begriff wird jetzt einfach systematisch abgearbeitet.
+
 
 
 
 es bleibt ein subjektives, gefühlsmäßiges Ding – es gibt kein eindeutiges Richtig/Falsch
 
-Denkbar wäre philologische Auswertung der Vokabulare, aber würde Rahmen der Arbeit sprengen. Daher iterativ – deckt sich auch mit Vorgehen in der Praxis.
 
 
 
@@ -120,16 +130,6 @@ Wie lässt sich die Semantik eines Terms messen? Müsste man jetzt für jedes no
 
 
 
-2 Möglichkeiten:
-1. Bei den Playern suchen, gucken was sie verwenden
-2. Freie Suche nach Vokabularen 
-
-
-
-
-
-
-Es ist eigentlich egal, welche Systematik man verwendet – man sollte vielleicht einfach immer auf einen Standard verlinken.
 
 
 
@@ -138,9 +138,6 @@ Es ist eigentlich egal, welche Systematik man verwendet – man sollte vielleich
 
 
 
-
-Vielleicht erstmal die domänenspezifischen Dinger jeweils vorstellen – tabellarisch?
-die anderen sind ja schon standardisiert, dann muss man nicht.
 
 
 
@@ -217,28 +214,10 @@ Wie also verfahren? Methodik entwickeln...
 
 Dimensionen:
 
-1. Generisches Vokabular verwenden.
-hier zu sagen, warum.
-Welche? Wie ausgewählt.
-* sollte generell etabliert sein. sollte in den Domänen etabliert sein.
-    * wo gucken? Europeana, RISM, MIMO <- ja! und nach Überschneidungen suchen!
-2. Verbindung zu ähnlichen Konzepten (sofern sie nicht existieren!) – z.B. ma:natürliche Stimmung a gnd:Stimmungssystem – oder so
-= "Einfügen dieser Entitäten in die Architektur des Semantic Webs" 
-<- das Ding ist, dass die Bedeutung im Semantic Web tatsächlich durch den Kontext hergestellt wird
-Eine tiefere Einsicht in die Natur eines Konzeptes wird nur dadurch erreicht, dass es innerhalb des Verständnishorizonts und seiner Gegenstände eingeführt wird – es wird vom Vorhandenen zum Zuhandenen – ihr Sein zeigt sich erst in ihrer Eingebettetheit
 
 
 
-man müsste dann auch jetzt mal die Vokabulare trennen. Ist vielleicht ein guter Zeitpunkt, so als Einführung
 
-
-Vorgehensweise:
-* Generelles: wieso Mixtur aus verschiedenen Vokabularen
-* Einführung: hier hört es mit der Literatur so langsam auf <- demonstieren
-    * Hyvonen?
-* Vorgehen
-* Vokabulare trennen.
-* [rdfs:label]
 
 
 
@@ -300,41 +279,6 @@ Ontologie hier verwendet im Sinne seiner Vieldimensionalität.
 
 
 Begriff Vokabular hier (auch wenn eigentlich Ontologie) v.a. verwendet, um zu suggerieren, dass jene Ontologie hier als Sammlung von Begriffen benutzt wird bzw. die Begriffe kontingent herangezogen werden
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Einschränkung der Properties insb. bei Metadatenprofil wichtig: 
-
 
 
 
@@ -569,3 +513,8 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 [^c8712]: [@TN_libero_mab213864266, S. 128]
 
 [^c8713]: In dieser Arbeit wurden vor allem die Texte [@allemang_semantic_2011] sowie [@TN_libero_mab21631588] zu Rate gezogen.
+
+[^1]: es gab diese Sammlung von Musik LOD. wo????
+
+[^2]: [@noauthor_bartocorg_nodate.]
+[^3]: 

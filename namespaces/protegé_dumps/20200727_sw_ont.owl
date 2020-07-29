@@ -88,6 +88,10 @@
                                                                                     rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton> .
 
 
+###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/hatBesetzung
+<http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/hatBesetzung> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#object
 rdf:object rdf:type owl:ObjectProperty ;
            rdfs:domain rdf:statement ;
@@ -267,11 +271,6 @@ rdf:statement rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://purl.org/ontology/mo/415Hz
-<http://purl.org/ontology/mo/415Hz> rdf:type owl:NamedIndividual ,
-                                             <https://www.wikidata.org/wiki/Q118819> .
-
-
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#MIMUL_Inv.-Nr._1663
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#MIMUL_Inv.-Nr._1663> rdf:type owl:NamedIndividual ,
                                                                                           <http://purl.org/NET/cidoc-crm/core#E19_Physical_Object> ,
@@ -306,6 +305,16 @@ rdf:statement rdf:type owl:Class .
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#d''
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#d''> rdf:type owl:NamedIndividual ,
                                                                           <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Ton_(klingend)> .
+
+
+###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/UrauffuehrungBWV208
+<http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/UrauffuehrungBWV208> rdf:type owl:NamedIndividual ,
+                                                                                                            <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Aufführung_(Domäne)> .
+
+
+###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/415Hz
+<http://www.semanticweb.org/alanriedel/ontologies/2020/4/untitled-ontology-29/415Hz> rdf:type owl:NamedIndividual ,
+                                                                                              <https://www.wikidata.org/wiki/Q118819> .
 
 
 ###  https://commons.wikimedia.org/wiki/File:4m33s.mid
