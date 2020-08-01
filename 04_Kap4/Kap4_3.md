@@ -1,8 +1,8 @@
-# Anreicherung "Stimmungen" <- das muss anders heißen
+## Erfassung des Komplexes "Stimmungen"
 
 Nachdem es zuletzt möglich gewesen war, bei der Modellierung ontologischer Sachverhalte auf nachnutzbare, bereits im Semantic Web verankerte Vokabulare zurückzugreifen, ergibt sich für diese Arbeit nun die Situation, dass eine solche Datengrundlage nicht mehr zur Verfügung steht. Dies ist gleichermaßen Herausforderung wie Chance: So entfällt zwar die aufwendige Suche nach- und Auswertung von Vokabularen im Netz, doch ergeben sich nun zwangsläufig Fragen in Bezug auf die konzeptuelle Anlage und technische Bereitstellung eigener Datensätze. Dabei wird es abermals nicht anders möglich sein, als technische Aspekte weitestgehend auszuklammern und sich auf die konzeptuelle Arbeit zu fokussieren. Angesichts der Komplexität im Bereich der musikalischen Stimmungen, die im Spannungsfeld von Musikästhetik, Musiktheorie, Organologie aber auch etwa der Physik angesiedelt ist, wird es fortan notwendig sein, vermehrt musikwissenschaftlichen Fragestellungen im weitesten Sinne bei der terminologischen Arbeit Platz einzuräumen. 
 
-## Problemstellung
+### Problemstellung
 
 Eine zentrale Herausforderung stellt die Vieldeutigkeit der mit dem Komplex "Stimmung" assoziierten Begriffe dar. Da eine umfassende Disambiguierung an dieser Stelle nicht möglich ist,[^1] wird hier vor allem auf einen wichtigen Umstand hingewiesen, der das Verständnis für die folgenden Ausführungen erleichtern soll.
 
@@ -11,15 +11,15 @@ Prinzipiell unterschieden werden muss nämlich zwischen einer streng physikalisc
 Die Frequenz 440 Hz ist keineswegs dasselbe wie "der Ton *a*'", sondern ein in der Natur vorkommendes Phänomen, das anhand einer normalisierten Einheit, *Hertz*, gemessen wird. Und umgekehrt handelt es sich beim Ton *a* nicht um einen Klang mit der Frequenz 440 Hz, sondern um ein lediglich ideell existierendes Konzept, das innerhalb eines Ordnungsgefüges in (ebenfalls theoretischer) Relation zu anderen theoretischen Konzepten (also anderen "Tönen") steht. Dieses Konzept erfährt seine reale Manifestation dabei zunächst lediglich in semiotischer Form als graphischer (Note) oder sprachlicher Darstellung als "Label" "der Ton *a*'". Ein klangliches Potential existiert für dieses Konzepts höchstens implizit (dank dessen ist etwa eine Partitur als Medium dazu imstande, dieses inhärente Potential auch ohne klangliche Äußerung in abstrahierter Repräsentation zu transportieren). 
 Kurz gesagt also: Signifikant und Signifikat sind nicht a priori gekoppelt. Ihr Verhältnis muss zuerst festgelegt werden: – etwa durch die Definiton "*a'* = 440 Hz". Es wird bei der Modellierung darauf zu achten sein, dass diese beiden konzeptuellen Ebenen nicht vermischt werden, und es erscheint sinnvoll, die benötigten Entitäten und Properties nochmals semantisch zu schärfen und gegeneinander abzugrenzen.
 
-## Stimmton
+### Stimmton
 
 Die Entität `ma:Stimmhöhe` definiert, wie eben bereits skizziert, den Bezug zwischen Tonkonzept und Klang in der Form "Stimmton hat Festlegung Klangfrequenz" (etwa: "*a'* = 440 Hz)".[^2] Dabei liegt die Relevanz keineswegs in der Kenntnis des Stimmtons in seiner eigentlichen Funktion als Ton für das gemeinsame Stimmen von Instrumente, sondern darin, dass in ihm ein Referenzpunkt festgelegt ist, an dem weitere Töne intervallisch ausgerichtet sind (s. Stimmungssystem).
 
-## Stimmungssystem
+### Stimmungssystem
 
 Die Entität `ma:Stimmungssystem`  definiert das Gefüge, das festlegt, in welchem Verhältnis Töne zueinander stehen. Anhand eines absolut definierten Stimmtons als Referenzton und in Kenntnis eines zugrundeliegenden Stimmungssystems ließen sich Frequenzen und somit absolute Tonhöhen für beliebige weitere Töne – etwa die des Ambitus – ableiten. Hier bietet die GND mit der Entität `gnd:4122368-8` ("Stimmung <Musik\>")[^22i] einen halbwegs aussagekräftigen Datensatz, der behelfsmäßig genutzt werden kann. Um die scheinbare Redundanz dieser Entität und der Entität `ma:Stimmung` aufzulösen, wird das Label für den Gebrauch in diesem Metadatenprofil durch das Property `rdfs:label`[^23] wieder zu "Stimmungssystem" verändert (sich aber auf die GND hinterlegte Bedeutung bezieht).
 
-## Stimmung
+### Stimmung
 
 Bei dieser Entität handelt es sich um das komplexeste der hier zu fokussierenden, da in ihm jene eingangs beschriebenen Ebenen Gefahr laufen, übermäßig zu verschwimmen. Zu differenzieren sind vor allem zwei Konzepte:
 
@@ -42,7 +42,7 @@ Jedenfalls ergibt sich bei der Modellierung die Schwierigkeit, dass der Bezeichn
 Ein Umgang mit dieser Herausforderung könnte sein, zwei neue Stimmungsentitäten zu schaffen – eine, die sich auf die Notation bezieht und eine, die sich auf die "Grundstimmung" eines Instruments bezieht. Allerdings würde dies eine recht eigentlich artifizielle Trennung des eben skizzierten Sachverhalts bewirken. Um einiges sinnvoller erscheint es, das Konzept der `ma:Stimmung` in seiner bisherigen Form beizubehalten und – wie dies auch vorgesehen war – durch Properties Relationen zu einem jeweiligen Bezugspunkt, Quelle oder Objekt, auszudrücken. 
 
 
-##  Töne
+###  Töne
 
 Töne spielten im vorhergehenden Kapitel bereits eine Rolle:
 
@@ -56,15 +56,15 @@ Abermals wird deutlich, dass die Beschaffenheit des Konzepts "Ton" eine sehr amb
 
 Es erscheint sinnvoll, zunächst eine Klassifikation der relevanten Konzepte vorzunehmen:
 
-### Ton als Abstraktum
+#### Ton als Abstraktum
 
 \1) und 2) beziehen sich auf ein Tonkonzept, das große Ähnlichkeit mit dem 5) inhärenten aufweist: Es liegt ihm eine sehr allgemeine und zugleich sehr abstrakte Vorstellung einer Tonentität "F" zugrunde. Um nicht zu sehr ins Philosophisch-Musiktheoretische abzuschweifen (dies könnte Thema einer Anschlussuntersuchung sein), reicht es, diese Entität zunächst rein hierarchisch als allgemeinste Oberklasse von "F-Tönen" – im denkbar weitesten Sinne – zu verstehen. Leider findet sich keine adäquate Terminologie im Netz, die übernommen werden könnten – es erscheint offensichtlich, dass die Repräsentation musiktheoretischer Zusammenhänge noch ein großes Desiderat darstellt. So ist – beispielhaft betrachtet – eine Nutzung der Wikidata-Entität `wdt:Q775617`("F"[^8]) durch Koppelung an die gleichstufige Stimmung in ihrer Nutzbarkeit dergestalt beschränkt, dass sie etwa im hier bearbeiteten Anwendungsszenario nicht verwendet werden kann. Es muss daher eine neue Entität `ma:F (Tonkomplex)` als Unterklasse von `ma:Ton` angelegt werden. Diese erhält – wie im letzten Kapitel geschildert – durch Verbindung mit einer Property `ma:hat Stimmung (notierte)` oder `ma:Stimmung (Instrument)` eine semantische Spezifikation. So können denn auch die bisherigen Entitäten `ma:Stimmung` sowie `ma:in_F` entfernt werden und die beiden Properties durch `rdfs:range` auf `ma:Ton` und seine Unterklassen bezogen werden.
 
 ![](Medien_Kap4/20200726_Stimm.png)
 
-### Ton als normativ fixiertes Zeichen
+#### Ton als normativ fixiertes Zeichen
 
-#### Taxonomie
+##### Taxonomie
 
 Eine Eskalationsstufe weiter in der Konkretisierung des Konzepts "Ton" liegt seine Manifestation als Zeichen jeglicher Form, jedoch stets nur innerhalb eines Musikalischen Bezugs- und Ordnungssystems verständlich, in dessen Kontext er als Bedeutungsträger auftritt. Doch auch hier bleibt er ein abstraktes Phänomen, dessen akustische Äußerung ihm lediglich als Potential innewohnt.
 
@@ -78,7 +78,7 @@ Es ergeben sich die folgenden taxonomischen Beziehungen:
 Dabei ist jedoch weiter zwischen Notation und "Klang" – etwa bei transponierenden Instrumenten zu differenzieren. Dieser Faden wird an späterer Stelle wieder aufzunehmen sein.
 
 
-#### Stimmton
+##### Stimmton
 
 Zugleich aber findet sich dieses Tonkonzept im Zusammenhang mit der bisherigen Entität `ma:Stimmhoehe`, indem jene "symbolische", tonsystemisch-relative Tonhöhe durch die Zuweisung einer Frequenz definiert wird und als Referenzton Verwendung finden kann.
 
@@ -87,11 +87,11 @@ Angesichts der zuletzt vorgenommenen Anpassung im Bereich der Töne gilt es, das
 Dabei existiert bereits eine Entität `ma:a'`, durch deren Nachnutzung in diesem Kontext die Kohärenz des gesamten Datenmodells weiter gestärkt wird.
 
 
-### Ton als physikalisches Phänomen
+#### Ton als physikalisches Phänomen
 
 Wie bereits mehrfach erwähnt, geschieht die Etablierung eines Referenztons, eines Stimmtons, durch "das Mappen" eines relativen Tonkonkonzepts mit der realen Naturerscheinung akustischer Schwingungsfrequenzen. Soll nun also diese "Konkordanz" ebenfalls in eine Tripelstruktur gebracht werden, muss eine Property sowie ein Objekt definiert werden. Dies kann an dieser Stelle nur prophylaktisch erfolgen, erfordert doch die Modellierung mit etablierten Semantic Web-Sprachen solide(re) Kenntnisse im Bereich der Akustik. Daher soll zunächst mit der Wikidata-Entität "pitch" (`wdt:Q118819`) vorliebgenommen werden, die als Klasse eingeführt werden kann. Ihr als Instanz zugeordnet, ist die zu erstellende Frequenz-Entität `ma:415Hz`. Eine weitere Ausdifferenzierung der Bestandteile in Datentypen (etwa "natürliche Zahlen") und Einheitswerte (Hz) wäre ebenfalls ein Anschlusspunkt für künftige Bestrebungen.[^11]
 
-#### Modellierung Stimmhöhe / Referenzton
+##### Modellierung Stimmhöhe / Referenzton
 \
 1)\ Es ergibt sich also der folgende Zusammenhang:
 
@@ -144,7 +144,7 @@ sowie
 
 
 
-### Tonraum (Ambitus)
+#### Tonraum (Ambitus)
 
 Ein weiteres Anliegen der Arbeit war es, eine Darstellungsmöglichkeit für den Ambitus (bislang `ma:Ambitus`) von Stimmen zu schaffen. Auch hier halten die auffindbaren Vokabulare keine Patentrezepte bereit. So bietet zwar DOREMUS das Property `mus:has_Ambitus`[^18] scheinbar einen Ansatzpunkt, allerdings wird durch die Erklärung "this property allows for describing the tessitura of a character, as can be drawn from the score[...]" die Benutzung letztlich auf Vokalpartien beschränkt.
 Wikidata hält das Property `wdt:ambitus`(`P2279`)[^19] bereit, das aufgrund seiner Beschreibung "étendue d'une mélodie, d'une voix ou d'un instrument, entre sa note la plus grave et sa note la plus élevée" vielversprechend erscheint. Jedoch ist er semantisch auf eine Entiät bezogen, deren Beschreibung unsinnig ist,[^20] und zugleich scheint jener Ambitus als Intervall und nicht als definierter Tonraum darstellbar. So fällt die Entscheidung leicht, die eigens definierten Konzepte auch weiterhin beizubehalten.\
@@ -158,7 +158,7 @@ Dabei gilt für `ma:Ambitus`:\
 ``<ma:Ambitus>	<ma:hat_tiefsten_Ton>	<ma:Ton>	.``\
 
 
-### Inferenzmöglichkeiten
+#### Inferenzmöglichkeiten
 
 Weiteres Potential des Metadatenprofils liegt in der automatischen Deduktion von Schlussfolgerungen dank formallogischer Zusammenhänge.[^21] Beispielsweise die folgenden Sachverhalte könnten künftig durch entsprechende weitaus komplexere Modellierung inferiert werden:\
 

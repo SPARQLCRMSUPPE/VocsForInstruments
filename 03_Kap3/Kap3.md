@@ -2,7 +2,7 @@
 
 ## Anwendungsmodellierung
 
-Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel #Desiderat angerissenen Anforderungen nochmals zu schärfen und aus ihnen ein Modell zu generieren, das künftig als diskursive Grundlage für die spätere Ausarbeitung herhalten kann. Dies soll in einem zweistufigen Prozess geschehen, in dem zunächst ein informelles Anwendungsmodell generiert wird, aus dem wiederum ein formalisiertes Datenmodell in Form eines *ERM*s (Entity Relationship Model) abgeleitet werden kann. Dieses wiederum wird die Grundlage für die RDF-Modellierung bieten.
+Insgesamt erscheint es als sinnvoll, zuerst die bereits in Kapitel #Desiderat angerissenen Anforderungen nochmals zu schärfen und aus ihnen ein Modell zu generieren, das künftig als diskursive Grundlage für die spätere Ausarbeitung herhalten kann. Dies soll in einem zweistufigen Prozess geschehen, während dessen zunächst ein informelles Anwendungsmodell generiert wird, aus dem wiederum ein formalisiertes Datenmodell in Form eines *ERM*s (Entity Relationship Model) abgeleitet werden kann. Dieses wiederum wird die Grundlage für die RDF-Modellierung bieten.
 Dieses Vorgehen gewährleistet, dass sich das Anwendungsprofil an den tatsächlichen in der Praxis vorgefundenen Erfordernissen ausrichtet und sich nicht etwa "in vorauseilendem Gehorsam" anhand im Semantic Web bereits vorhandener Darstellungsmöglichkeiten ausrichtet und selbst zensiert. (In Vorgriff auf die terminologische Ausarbeitung heißt dies etwa: domänenspezifische Vokabulare dahingehend zu untersuchen, ob sie in der Lage sind, das Geforderte abzubilden und andernfalls nach Möglichkeiten zu suchen, diese Darstellungsmöglichkeiten selbst zu schaffen.)
 Jedoch darf diese scheinbare Übersimplifizierung, die zunächst also jederlei Eindeutigkeit – etwa in Form von Normdaten – vermeidet, keineswegs als solche missverstanden werden. Vielmehr bildet sie die eigentliche Prämisse für spätere grundsätzliche terminologische Anschlussfähigkeit und Interoperabilität, indem sie sich nicht auf bestimmte gebräuchliche Datenstrukturen oder eine bestimmte Domäne fixiert. 
 
@@ -287,6 +287,8 @@ Gegenüber dem Vokabular, das lediglich eine Bestandsaufnahme der für diese Arb
 
 Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Arbeit den Begriff im Allgemeinen als zu bedeutungsschwer für sich scheut – ausnahmsweise Verwendung findet, so ist mit ihm also genau diese Qualität gemeint. Das Anwendungsprofil ist, gemessen an seinem Potential Seinsstrukturen einer Welt darstellen zu können, qualitativ als Ontologie zu betrachten. Gemessen an seiner Funktionalität, die es als Schema für Mapping und Datenanreicherung auszeichnet, ist es ein Anwendungsprofil.
 
+---
+
 [^c2]: Vgl. etwa die Aussage "Individual instances are the most specific concepts represented in a knowledge base." ([@gangler_semantic_nodate, S.18]).
 
 [^c4]: [@noauthor_owl_nodate]
@@ -300,11 +302,11 @@ Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Ar
 [^c8]: [@noy_ontology_nodate]
 Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
-[^c9]: Zum Begriff siehe [@ TN_libero_mab213864266, S. 150]
+[^c9]: Zum Begriff siehe @TN_libero_mab213864266, S. 150.
 
-[^c10]: Für diese Arbeit spielen insbesondere RDFS ([@ noauthor_rdfs_nodate]) und OWL ([@ noauthor_owl_nodate-3]) eine Rolle.
+[^c10]: Für diese Arbeit spielen insbesondere RDFS ([@noauthor_rdfs_nodate]) und OWL ([@noauthor_owl_nodate-3]) eine Rolle.
 
-[^c11]: "Individualbegriffe"  [@ stock_wissensreprasentation_2008, S. 84].
+[^c11]: "Individualbegriffe"  [@stock_wissensreprasentation_2008, S. 84].
 
 [^c12]: In "Semantic Web-Sprache" augedrückt, wären das die Klassen *rdfs:class*, *rdfs:instanceOf* und *rdf:property*.
 
@@ -372,9 +374,9 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 [^c8660]: Da diese Arbeit angesichts ihres Fallbeispiels sehr stark RISM als primäre Domäne hervorhebt, kann gar nicht oft genug betont werden, dass jede andere relevante Domäne gleichermaßen im Vordergrund stehen könnte. So ist letztlich auch die Objektentität innerhalb einer Domäne, in diesem Fall dem Musikinstrumentenmuseum der Universität Leipzig, angesiedelt, das seinerseits sein Objekt mit dem RISM-Datensatz verlinken könnte, und dasselbe gilt selbstverständlich auch für Editionen, Bibliotheken, Archive, Wirtschaftsunternehmen etc.
 
 
-[^c8661]: Siehe hierzu etwa: [@alma9958916302586, S. 338–343]
+[^c8661]: Siehe hierzu etwa: [@alma9958916302586, S. 338–343.]
 
-[^c8662]: [@alma9958916302586, S. 342–343]
+[^c8662]: [@alma9958916302586, S. 342–343.]
 
 [^c8663]: [@alma9958916302586, S. 343]
 
@@ -384,7 +386,7 @@ Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
 
 [^c8666]: Tatsächlich kann diese Entität in Zusammenhang mit Objekten lediglich in Verbindung mit Instrumenten Verwendung finden, die etwa aus baulichen, physikalischen Gründen eine solche "Grundstimmung" vorweisen.
 
-[^c8667]: Vgl. [@haynes_stimmton_2016]
+[^c8667]: Vgl. [@haynes_stimmton_2016].
 
 [^c8668]: So etwa im Falle der Eigenschaft *Entsprechungsgrad* angelegt: Es lassen sich unterschiedliche Grade vorstellen.
 
@@ -478,12 +480,12 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 @ziku_digital_2020. Für eine Auswahl musikrelevanter Vokabulare s. @lisena_controlled_nodate, @bicher_normdaten_2018, @nurmikko-fuller_building_2018, @nurmikko-fuller_collaboration_2016, @futurelearn_linked_nodate.
 
 
-[^2]: [@noauthor_bartocorg_nodate.]
+[^2]: @noauthor_bartocorg_nodate.
 [^3]: [@noauthor_linked_nodate-1]
 [^4]: Z. Begriff "Hypertext" siehe etwa: [@niewerth_dinge-nutzer-netze_2018, S. 92–93.]
 [^1q]: https://mimo-international.com/MIMO/doc/IFD/OAI_ULEI_M0001655
 
-[^2q]: Ob es sich bei ihm tatsächlich um ein in allen Aspekten passendes Objekt handelt, ist an dieser Stelle zunächst nicht relevant – es dient vor allem zur Verdeutlichung.
+[^2q]: Ob es sich bei ihm tatsächlich um ein in allen Aspekten passendes Objekt handelt, ist an dieser Stelle zunächst nicht relevant – es dient vor allem zur Verdeutlichung. (Tatsächlich wäre das Objekt wohl eher dem Typ "Corne du chasse" zuzuordnen. Vgl. die Ausführungen zu *Corno* und *Corne du chasse* in: @TN_libero_mab2197075, S. 57–63 und 46–51. )
 [^3q]: [@sparqlcrmsuppe_sparqlcrmsuppevocsforinstruments_2020]
 
 
