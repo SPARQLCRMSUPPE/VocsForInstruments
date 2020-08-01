@@ -171,9 +171,9 @@ Diese Modellierung würde ein fundierteres Verständnis mathematischer Logik und
 
 
 
+---
 
-
-## "Wrapping things up"
+## "Wrapping things up" / Nachbereitung (?)
 
 * label @eng – rdfs:literal
 * domain: owl:deprecated
@@ -298,7 +298,7 @@ musical interval/range of a melody
 
 
 
-
+---
 
 
 

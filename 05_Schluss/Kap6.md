@@ -2,7 +2,7 @@
 
 ## Wrap-up
 
-## Simulation
+## Anwendungssimulation
 
 Nach erfolgter Modellierung liegt es nahe, die Kohärenz sowie die Praxistauglichkeit des Metadatenprofils zu verifizieren. Doch anhand welcher Kriterien und mit welcher Methode lässt sich der Erfolg prüfen? Wären die Datensätze bereits in einem Triple Store publiziert, ließe sich mithilfe verschiedener Abfragen über eine API oder eine SPARQL-Schnittstelle die Konsistenz des Datenmodells feststellen, indem eine Abfrage einer Kataloganwendung simuliert würde. Da dies nun nicht der Fall ist, erscheint der Ansatz sinnvoll, eine Nachmodellierung des "Anwendungsszenarios" aus #Kapitel anhand dem Metadatenprofil vorzunehmen. Diese Modellierung simuliert denn zwar nicht die Schnittstellenabfrage an sich, wohl aber das erfolgreiche Retrieval relevanter Informationen. Gelingt die Nachmodellierung, ist davon auszugehen, dass das Metadatenprofil den spezifischen Anforderungen des Szenarios genügt. 
 

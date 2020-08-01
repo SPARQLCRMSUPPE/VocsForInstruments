@@ -22,6 +22,8 @@ Es entsteht so als wissenschaftliches Beiprodukt neben dem eigentlichen *Proof o
 
 ---
 
+
+
 [^9db5]: Zugleich exisitieren durch das DOREMUS-Projekt (link) bereits Mappings zwischen unterschiedlichen gebräuchlichen Klassifikationen und Vokabularen, sodass viele gängige Klassifikationen bereits miteinander verlinkt sind (vgl. Pierre Choffé und Françoise Leresche, Art. "DOREMUS: Connecting Sources, Enriching Catalogues and User Experience", (= 24th IFLA World Library and Information Congress, Columbus, OH 2016, <http://library.ifla.org/1322/2/093-choffe-en.pdf>eingesehen am 28.01.2020).
 
 [^036d]: Neben den einschlägigen Vokabularen – allen voran UNIMARC Medium of Performance (http://metadataregistry.org/vocabulary/show/id/380.html), Gemeinsame Normadatei (https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html;jsessionid=EABF103A6BB5F1F3BB106566B1CEDA98.internet571), Library of Congress Subject Headings (http://id.loc.gov/authorities/subjects.html) – betrifft dies ab

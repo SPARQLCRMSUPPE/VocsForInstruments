@@ -1,5 +1,3 @@
-**+++ ACHTUNG: zu überarbeiten: klingend/notiert ist falsch / Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt? +++**
-
 **in krit. Bericht bwv208 gucken, ob da etwas zur Instrumentationsproblematik steht**
 
 # Erschließungspraxis bei Instrumentalbesetzungen
