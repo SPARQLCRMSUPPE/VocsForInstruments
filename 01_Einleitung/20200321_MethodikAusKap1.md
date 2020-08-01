@@ -16,3 +16,6 @@ Die Umsetzung des zuletzt skizzierten Fallbeispiels erfolgt insbesondere auf zwe
 2. Semantische Ebene: wie lassen sich die Beziehungen zwischen relevanten "Dinge" modellieren.
 
 Obwohl diese Arbeit ihr Augenmerk insbesondere auf die "semantische Ebene" richtet, werden mitunter auch technische Aspekte zu berücksichtigen sein.
+
+
+[vielleicht noch etwas darüber, dass es keine wirkliche Lit. gibt, die einen Leitfaden von Anfang bis Ende bildet]

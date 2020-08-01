@@ -10,7 +10,7 @@
 
 - [ ] *genaue Entsprechung* und *ungefähre Entsprechung* in Anwendungsmodell einpflegen
 
-- [ ] in ERM  "Label" rausnehmen
+- [x] in ERM  "Label" rausnehmen [<- warum eigtl.?]
 
 - [ ] allgemein: es muss "Stimmton" statt "Kammerton" heißen -> Klasse vgl. MGG "Stimmton":
 ma:Stimmton ma:hat_Ton ma:a' ;
@@ -24,7 +24,7 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 
 - [ ] Interpret + Ereignis muss auch mit Objekt verbunden werden! (oder?)
 
-- [ ] ERM "bezeichnung" bei Klassifikation rausnehmen. Allgemein am Ende: "Label"? <- Anpassen in ma und MA !!!
+- [x] ERM "bezeichnung" bei Klassifikation rausnehmen. Allgemein am Ende: "Label"? <- Anpassen in ma und MA !!!
 
 - [ ] skos:exactMatch anpassen in Grafik
 
@@ -32,9 +32,9 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 
 - [ ] Änderung der Gliederung: "3.0 Vorarbeiten" oder "Erfassung[/Modellierung?] mit RDF" und "4.0 Integration Semantic Web" oder so.
 
-- [ ] ERM: nicht Kammerton!
+- [x] ERM: nicht Kammerton!
 
-- [ ] ERM: statt hat Stimmung (relativ) gleich hat Stimmung (Pedalton)
+- [x] ERM: statt hat Stimmung (relativ) gleich hat Stimmung (Pedalton)
 
 - [ ] Datenmodell insg. eigentlich könnte auch das Objekt an Ereignis gekoppelt sein – muss nicht m it Werk verknüpft sein – irgendwo erwähnen (Schluss?)
 

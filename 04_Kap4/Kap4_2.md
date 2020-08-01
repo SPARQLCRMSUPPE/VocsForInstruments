@@ -1,6 +1,4 @@
-## Erfassung mit externen Vokabularen
-
-kurz, was jetzt gemacht wird.
+## Erfassung und Modellierung mit externen Vokabularen
 
 ### Interpret und Aufführung
 
