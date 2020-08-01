@@ -1,11 +1,14 @@
 **+++ ACHTUNG: zu überarbeiten: klingend/notiert ist falsch / Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt? +++**
 
+**in krit. Bericht bwv208 gucken, ob da etwas zur Instrumentationsproblematik steht**
+
 # Erschließungspraxis bei Instrumentalbesetzungen
 
-Im folgenden Kapitel soll, ausgehend von der derzeitigen Praxis bei der Erschließung von Quellen mit musikinstrumentenbezogenen Metadaten, eine exemplarische Bestandsaufnahme der Problemstellung – hier am Beispiel eines RISM-Datensatzes[^b8661] versucht werden. Die Kenntnis dieser bildet die Grundlage für das Entwickeln denkbarer Lösungsansätze. [**klarer machen, dass das hier exemplarisch ist – in Einleitung?**]
-Um ein möglichst breitgefächertes Bild zeichnen zu können, ist es eingangs geeignet, eingangs jeweils ein Beispiel aus dem bibliothekarischen Umfeld, dem Museumswesen sowie aus dem Editionswesen zu untersuchen.
+ *RISM* (*Répertoire International des Sources Musicales*) ist "[...] ein länderübergreifendes, gemeinnützig orientiertes Unternehmen mit dem Ziel, die weltweit überlieferten Quellen zur Musik umfassend zu dokumentieren."[^1] Für die Musikwissenschaft stellt es das wichtigste Nachweissystem von historischem musikalischem Quellenmaterial (insb. bis etwa 1850) dar.
 
-Es finden sich im Datensatz[^b23b1] an zwei [**auch bei "Besetzungshinweis"**] Stellen Informationen zur Besetzung: Zum einen unter "Quellenbeschreibung / Originaler Titel" (MARC-Feld #245\$a (Title))[^b9a22] der String "Cantata â 4 Voci. 2 Corni di Caccia. 2 Violini una Viola è Cont.[?]".
+Im folgenden Kapitel soll, ausgehend von einem Datensatz von RISM exemplarisch die derzeitige Situation bei der Erschließung von Quellen mit musikinstrumentenbezogenen Metadaten untersucht und anhand dieser Untersuchung zu einer Problemstellung gefunden werden. Die Kenntnis dieser Problemstellung bildet wiederum die Grundlage für das Entwickeln denkbarer Lösungsansätze. 
+
+Es finden sich im Datensatz[^b23b1] an drei Stellen Informationen zur Besetzung: Zum einen unter "Quellenbeschreibung / Originaler Titel" (MARC-Feld #245\$a (Title))[^b9a22] der String "Cantata â 4 Voci. 2 Corni di Caccia. 2 Violini una Viola è Cont.[?]". Hinzu kommt ein sehr allgemeiner Besetzungshinweis, der hier aber ausgeklammert werden kann.
 
 ![Besetzung1](medien_Kap2/20200320_RISM_Besetzung1.png)
 
@@ -13,30 +16,32 @@ Zum anderen unter "Weitere Angaben und Bemerkungen" im Unterfeld "Besetzung" (MA
 
 ![Besetzung2](medien_Kap2/20200320_RISM_Besetzung2.png)
 
-Dabei scheint es sich um ein kontrolliertes Vokabular zu handeln.[^b8647] Mehreres fällt an dieser Stelle auf:
+Dabei handelt es sich um ein kontrolliertes Vokabular.[^b8647] Mehreres fällt an dieser Stelle auf:
 
 1. Die Bezeichnungen der Instrumente in Originaltitel und im Feld "Besetzung" weichen voneinander ab (etwa "Corn[o] da Caccia" vs. "cor da caccia").
-2. Die Besetzung in den MARC/XML- bzw. RDF/XML-Dateien ist nicht maschinenlesbar.[^beaa6]
+2. Die Besetzungsangaben in den MARC/XML- bzw. RDF/XML-Dateien ist als String nicht "maschinenverstehbar".[^beaa6]
 3. Auch auf der Benutzeroberfläche sind die (teils kryptischen) Abkürzungen nicht mit einem Vokabular oder einer disambiguierenden Seite verlinkt.
 4. Die Bezeichnung *cor da caccia*[^b1807] ist ungebräuchlich und somit als normierter Term – zumal ohne Disambiguierung – wenig geeignet.
 
-Die Vieldeutigkeit des Terms *cor da caccia* lässt sich dabei auch durch eine Internetrecherche nicht einfach lösen: Die Google-Suche[^b43a9] ergibt neben Treffer zum *Corno da Caccia* auch viele Treffer zu Oboen-Instrumenten wie der *Oboe da Caccia*, dem *Englischhorn* oder zu einem modernen terompetenartigen *Corno da Caccia* mit Ventilen.[^b714c]
+Die Vieldeutigkeit des Terms *cor da caccia* lässt sich dabei auch durch eine Internetrecherche nicht einfach lösen: Die Google-Suche[^b43a9] ergibt neben Treffer zum *Corno da caccia* vor allem Treffer zu Oboen-Instrumenten wie der *Oboe da Caccia*, dem *Englischhorn* oder zu einem modernen trompetenartigen *Corno da Caccia* mit Ventilen.[^b714c]
 
 Tatsächlich handelt es sich bei der Frage um die Verwendung von Blechblasinstrumenten in der Musik Bachs um auch in der Musikwissenschaft umstrittene Fragestellungen.[^b8646] Doch lassen sich durch Konsultation des autographen Quellenmaterials[^bcbf9] durchaus gewisse verbindliche Aussagen treffen:
 
+![PD1.0](medien_Kap2/20200731_autograph.png)
+
 * Die Instrumente sind in F gestimmt – das in F-notierte "eingestrichene c" (c') entspricht, dies wird im Bezug zum Basso Continuo deutlich, dem klingenden "kleinen f" (f).
 * Es handelt sich aufgrund der stereotypen Stimmführung zwischen den Instrumenten keineswegs um oboenartige Instrumente, sondern um Blechblasinstrumente.
-* Angesichts der Lage und der Stellung der Naturtöne lässt sich eine Aussage in Bezug auf die Länge und den Ambitus des Instruments treffen.
+* Angesichts der Lage und der Stellung der Naturtöne lässt sich eine Aussage zu Länge des Instuments und spielbarem Ambitus treffen – der trompetenartige Typ des *Corno da caccia* scheidet aus.
 * Eingedenk der raumzeitlichen Dimension in der das Stück entstanden ist, ließen sich Verbindungen zu änhlichen erhaltenen Instrumenten herstellen.
 
-Gleichwohl eine solche Erschließungstiefe nicht notwendigerweise bei der Katalogisierung vorausgesetzt werden kann, handelt es sich bei diesen Schlüssen doch um wesentliche Informationen, die eine Disambiguierung – eigentlich Sinn und Zweck eines kontrollierten Vokabulars – in diesem Fall überhaupt erst ermöglichen. **[Das ist gerade bei Instrumenten wichtig, da diese keineswegs eindeutig sind (besonders zu der Zeit)]** Doch auch eine alternative Benennung als "Corno da Caccia"[^b008d] würde wenig zur eigentlichen Begriffsbestimmung beitragen können. Es wird deutlich, dass die semantische Eindeutigkeit der hier untersuchten Entität – wie auch immer sie benannt sein mag – sich letztlich vor allem durch ihre Eigenschaften (Stimmung, Lage etc.) und ihrer Beziehungen zu anderen Entitäten (etwa dem historischen Instrumententyp, der sich in einem Objekt manifestieren könnte) ergibt.[^baafd] Erst mit diesen versehen, hat der Term *cor da caccia* eine aussagekräftige Bedeutung.
+Gleichwohl eine solche Erschließungstiefe nicht notwendigerweise bei der bibliothekarischen Katalogisierung vorausgesetzt werden kann, [aber die könnten bspw. von der Erschließung im Rahmen Edition oder dgl. profitieren – Datenübernahme] handelt es sich bei diesen Schlüssen doch um wesentliche Informationen, die eine Disambiguierung – eigentlich Sinn und Zweck eines kontrollierten Vokabulars – in diesem Fall überhaupt erst ermöglichen. Doch auch eine alternative Benennung als "Corno da Caccia"[^b008d] würde wenig zur eigentlichen Begriffsbestimmung beitragen können. Es wird deutlich, dass die semantische Eindeutigkeit der hier untersuchten Entität – wie auch immer sie benannt sein mag – sich letztlich vor allem durch ihre Eigenschaften (Stimmung, Lage etc.) und ihrer Beziehungen zu anderen Entitäten (etwa dem historischen Instrumententyp, der sich in einem Objekt manifestieren könnte) ergibt.[^baafd] Erst mit diesen versehen, hat der Term *cor da caccia* – und das trotz der Uneindeutigkeit seiner Bezeichnung – eine aussagekräftige Bedeutung.
 
 
 # Desiderat
 
 Mit Blick auf die am Beispiel des RISM-Datensatzes identifizierten Mängel und Chancen lassen sich mehrere Schlüsse ziehen:
 
-1. Es liegt auf der Hand, dass das verwendete Vokabular nicht ideal ist. Abgesehen von der offenbarten Unschärfe ist das Vokabular nicht öffentlich einsehbar[^bc1f9] – terminologische Kontrolle somit nicht nachvollziehbar. Um ein alternatives Vokabular zu verwenden, wäre eine philologische Auswertung verfügbarer Klassifikationen und Taxonomien bzw. entsprechender Crosskonkordanzen hinsichtlich ihrer Präzision und Anwendbarkeit erfolgsversprechend.[^b8648]
+1. Es liegt auf der Hand, dass das verwendete Vokabular nicht ideal ist. Abgesehen von der offenbarten Unschärfe ist das Vokabular nicht öffentlich einsehbar – terminologische Kontrolle somit nicht nachvollziehbar. Um ein alternatives Vokabular zu verwenden, wäre eine philologische Auswertung verfügbarer Klassifikationen und Taxonomien bzw. entsprechender Crosskonkordanzen hinsichtlich ihrer Präzision und Anwendbarkeit erfolgsversprechend.[^b8648]
 2. Es sind noch eine Vielzahl weiterer – wie gezeigt wurde: durchaus signifikanter – Aussagen zum verwendeten Instrumentarium sinnvoll.
 3. Leider mangelt es an etabliertem, geschweige denn maschinenlesbarem Vokabular, solcherlei Aussagen in eindeutiger Weise treffen zu können.
 
@@ -51,16 +56,15 @@ Für den Fortgang dieser Arbeit erscheint dabei die Klärung der folgenden Frage
 
 Zu 1.: Es existieren zahllose Musikinstrumente. Diese wiederum besitzen unzählige charakteristische Eigenschaften. Es erscheint daher unumgänglich, sich in dieser Arbeit auf ein Instrument oder auf eine Instrumentengruppe zu beschränken. Dieser Schritt ist auch insofern legitimiert, indem die Demonstration grundsätzlicher ontologischer Zusammenhänge eine heuristische Übertragbarkeit des in der Arbeit entwickelten Modells zulässt. Dieser Legitimierung eingedenk bedient sich diese Arbeit deshalb auch in ihrem weiteren Fortgang exemplarisch vornehmlich des bereits eingeführten Beispiels.
 
-Bereits im vorhergehenden Kapitel waren einige Eigenschaften benannt worden, die als bestimmende Eigenschaften des *cor da caccia* (und zwar jenes Typs, der in BWV 208 Verwendung finden sollte) identifiziert wurden. Dies waren etwa: **hier muss jeder Punkt terminolog. belegt sein!**
+Bereits im vorhergehenden Kapitel waren einige Eigenschaften benannt worden, die als bestimmende Eigenschaften des *cor da caccia* (und zwar jenes Typs, der in BWV 208 Verwendung finden sollte) identifiziert wurden. Dies waren etwa[^2]:
 
 * Stimmung[^b4ee1]
-  * sowohl relative Stimmung[^bd355]
-  * als auch absolute Stimmung[^b3141]
+  * sowohl Pedalton[^bd355]
+  * als auch Stimmhöhe[^b3141]
   * als auch Temperatur[^bfd29]
 * Instrumententyp (also etwa als Mapping zu einer Hornbostel und Sachs-Klassifikation: **xxxxx**[^b17ba])
 * Ambitus[^b1389]
 * historische Äquivalente, oder, falls bekannt, Objekt
-* daraus: Material
 
 Darüber hinaus wären – je nach Verwendungskontext – weitere Eigenschaften denkbar, wie:
 
@@ -73,9 +77,15 @@ Die kontrollierte, maschinenlesbare Darstellbarkeit dieser Eigenschaften in Bezu
 
 ## Anwendungsbeispiel
 
+hier  eigene Naturtonreihe einfügen!
+
+Leute + Aufnahme + 
+
 aus der Perspektive von RISM – allerdings auch aus jeder anderen Perpektive (Sucheinstieg) mögl.
 
-Als einfaches "Domänenmodell"[^b8659] am Beispiel des RISM-Datensatzes exemplifiziert (wobei auch jede andere Datenbank gleichermaßen gut herhalten könnte) wäre etwa das folgende Szenario denkbar: Entweder innerhalb des Datensatzes eingeblendet, oder als Verlinkung aus dem String *cor da caccia* heraus ließe sich die Kombination geeigneter Eigenschaften aufrufen. Möglich wären weitere Verlinkungen etwa zu ähnlichen Sammlungsobjekten, zu disambiguierenden Normdaten oder zu weiteren nützlichen Informationen. Umgekehrt erzielte eine Suche mit einer entsprechenden Kombination indizierter Terme – etwa über die RISM SPARQL-Schnittstelle – zumindest den erwähnten Datensatz als Treffer. Eine wesentlich differenziertere und vielfältigere Suche über Spartengrenzen hinweg wäre somit ermöglicht.
+a'=440 Hz
+
+Als einfaches "Domänenmodell"[^b8659] am Beispiel des RISM-Datensatzes exemplifiziert (wobei auch jede andere Datenbank gleichermaßen gut herhalten könnte) wäre etwa das folgende Szenario denkbar: Entweder innerhalb des Datensatzes eingeblendet, oder als Verlinkung aus dem String *cor da caccia* (mit oder ohne den beschriebenen zusätzlichen Informationen) heraus ließe sich die Kombination geeigneter Eigenschaften aufrufen. Möglich wären weitere Verlinkungen etwa zu ähnlichen Sammlungsobjekten, zu disambiguierenden Normdaten oder zu weiteren nützlichen Informationen. Umgekehrt erzielte eine Suche mit einer entsprechenden Kombination indizierter Terme – etwa über die RISM SPARQL-Schnittstelle – zumindest den erwähnten Datensatz als Treffer. Eine wesentlich differenziertere und vielfältigere Suche über Spartengrenzen hinweg wäre somit ermöglicht.
 
 ![Sucheinstieg über RISM – Bildrechte blabla Naturtonreihe: [@ahrens_horner_2016]](medien_Kap2/20200320_Anwendungsbeispiel.001.png)
 
@@ -96,13 +106,16 @@ Als einfaches "Domänenmodell"[^b8659] am Beispiel des RISM-Datensatzes exemplif
 
 [^b714c]: Wie bereits erwähnt, ist es nicht Ziel dieser Arbeit, klassifikatorische Fragestellungen zu Musikinstrumenten zu untersuchen.
 
-[^bcbf9]: Johann Sebastian Bach, "Was mir behagt ist nur die muntre Jagd", in: *3 Kantaten, 1 Instrumentalstück*, D-B Mus.ms. Bach P 42, S. 77.
+[^bcbf9]: Johann Sebastian Bach, "Was mir behagt ist nur die muntre Jagd", in: *3 Kantaten, 1 Instrumentalstück*, D-B Mus.ms. Bach P 42, Bl. [81].
 
 [^b008d]: Vgl. [@noauthor_vizskos_nodate]
 
 [^baafd]: x **das muss näher erklärt werden, durch Literatur abgesichert werden.**
 
-[^bc1f9]: RISM selbst konnte zunächst keine Angaben zu dem verwendeten Vokabular geben – vermutlich habe eine Kollegin eine Datei gespeichert (Anfrage und Korrespondenz am 31.01.2020).
+
+
+
+
 
 [^b4ee1]: [@auhagen_stimmung_1998-1] 07.02.2020.
 
@@ -120,8 +133,11 @@ Als einfaches "Domänenmodell"[^b8659] am Beispiel des RISM-Datensatzes exemplif
 
 [^bfd29]: Etwa die mitteltönige Stimmung einer Orgel.
 
-[^b8647]: Hierbei handelt es sich laut RISM um ein internes Vokabular, das nicht unmittelbar einsehbar ist (s. Fußnote [^bc1f9]).
+[^b8647]: RISM hält im Netz eine Liste der verwendeten Abkürzungen und Bezeichnungen vor: [@noauthor_rism-opac_nodate]). Allerdings ist dort der Term *cor da caccia* nicht verzeichnet. Auf Nachfrage in der RISM-Zentralredaktion stellte sich heraus, dass noch ein zweites, dort gepflegter interner Thesaurus existiert, in dem jedoch der Term ebenfalls fehlte. Mittlerweile ist er jedoch eingepflegt.
 
-[^b8648]: Tatsächlich existieren bereits dank des DOREMUS-Projekts **Link** Mappings etwa zwischen dem IAML Medium of Performance-Vokabular **Link** und MIMO **Link**. Laut Korrespondenz mit RISM ist zudem die Erstellung eines neuen RISM-Thesaurus' mit entsprechenden Mappings für 2022 vorgesehen.
+[^b8648]: Tatsächlich existieren bereits dank des DOREMUS-Projekts **Link** Mappings etwa zwischen dem IAML Medium of Performance-Vokabular **Link** und MIMO **Link**. Laut Korrespondenz mit RISM ist zudem die Erstellung eines neuen RISM-Thesaurus' mit entsprechenden Mappings für 2022 vorgesehen (mündl. Auskunft d. RISM-Zentralredaktion vom 21.02.2020).
 
-[^b8661]: Bei *RISM*, Akronym für *Répertoire International des Sources Musicales*, handelt es sich um "[...] ein länderübergreifendes, gemeinnützig orientiertes Unternehmen mit dem Ziel, die weltweit überlieferten Quellen zur Musik umfassend zu dokumentieren." (vgl.: [@noauthor_unternehmen_nodate]) Für die Musikwissenschaft stellt es das wichtigste Nachweissystem von historischem musikalischem Quellenmaterial (insb. bis etwa 1850) dar. [**in den TexT!**]
+
+
+[^1]: [@noauthor_unternehmen_nodate]
+[^2]: Für eine Disambiguierung der folgenden Begriffe s. #Kapitel.

@@ -85,7 +85,7 @@ Das folgende Kapitel bildet den Ausgangspunkt dafür, den Weg von einem Anwendun
 Das Produkt dieser Vorgehensweise bildet, wie oben angedeutet, eine zunächst auf den Anwendungsbereich beschränkte "Ontologie", die nicht mit den Sprachen des Semantic Web ausgezeichnet ist.
 Tatsächlich hat sich im Verlauf dieser Arbeit ganz organisch eine andere Reihenfolge ergeben: Nach dem exemplarischen Auffinden eines Defizits wurde ein spezifisches Szenario entworfen, um dieses zu beheben: Einige wichtige Instanzen[^c11] wurden bereits im vorhergehenden Kapitel identifiziert und aufgeführt.
 
-#### Entity Relationship Model [es muss klar werden, dass das nur eine Hilfestellung ist – die aber nicht kompatibel mit RDF ist]
+### Entity Relationship Model [es muss klar werden, dass das nur eine Hilfestellung ist – die aber nicht kompatibel mit RDF ist]
 
 Ein erster möglicher Schritt in Richtung einer Modellierung mit RDF ist die Überführung des Anwendungsmodells in ein Modell in Form eines *Entity Relationship Models* (ERM). Wichtig ist gleich eingangs darauf hinzuweisen, dass das ERM zunächst ein unverbindliches und zu veränderndes Ausgangsmodell darstellt, das auf dem Weg zur RDF-"Ontologie" wohl Gegenstand vielfacher Transitionen sein wird. Hierbei sollen die anwendungsspezifischen Szenarien strukturiert und auf eine allgemeine Ebene gesetzt werden, auf der übergeordnete Entitätsklassen und ihre Eigenschaften in Beziehung zueinander stehen.[^c8661] So werden Klassen definiert und erste einfache hierarchische Relationen zwischen Klassen und untergeordneten, "beschreibenden" Klassen (Eigenschaften) hergestellt.
 
@@ -117,33 +117,7 @@ Für die Zwecke dieser Arbeit ist es ausreichend, die zuletzt genannten Anwendun
 
 
 
-
-
-
-
-
-
-**Konzept als Oberbegriff zu  Property, class usw. verwendet – gut? RDF: statt Konzept allg. Ressource verwendet**
-**Entität als Oberbegriff zu class, instance?**
-
-
-
-Notizen Methodik
-
-2 große Sachen folgen: 
-1) die Klassifikation mit RDF
-
-2) die Umwandlung der unspezifischen Beziehungen zu semantisch festgelegten mit OWL
-
-3) Die Anbindung ans Semantic Web durch Austausch entsprechender etablierter Terme bzw. die Verbindung zu ähnlichen Konzepten – z.B. ma:natürliche Stimmung a gnd:Stimmungssystem – oder so
-= "Einfügen dieser Entitäten in die Architektur des Semantic Webs"
-
-
- Literatur bezieht sich eigentlich fast nie auf das Technische, das man braucht, um selbst Daten zu publizieren.
- darunter: Noy, Allemang, Schneckengruber
-
-
-## Klassifikation und Transformation mit RDF, RDFS und OWL
+### Klassifikation und Transformation mit RDF, RDFS und OWL
 
 Das zuletzt ausgearbeitete Modell befindet sich gewissermaßen noch außerhalb des Erkenntnishorizonts des Semantic Web. Diesen Erkenntnishorizont zu überwinden und eine minimale semantische – wenn auch zunächst nicht primär eine technische – Anschlussfähigkeit zu erreichen, ist Anliegen dieses Kapitels. Dazu wird es gelten, die Konzepte des ERM nochmals zu hinterfragen.
 
@@ -184,8 +158,6 @@ werden zudem ontologische Aussagen zu den Einzelkonzepten getroffen. So werden a
 
 
 
-              
-
 #### Bemerkungen zum Vokabular
 
 ##### Namensraum
@@ -196,7 +168,7 @@ Auch wenn keine abschließenden Definitionen der hier geschaffenen Terme erstell
 
 hinterlegt.
 
-Eine menschenlesbare Definition der einzelnen Terme, wie sie als gute Praxis gemäß dem W3C (*World Wide Web Consortium*) nahegelegt wird,[^c8673] wäre zum gegenwärtigen Zeitpunkt noch verfrüht.
+Eine menschenlesbare Definition der einzelnen Terme, wie sie als gute Praxis gemäß dem W3C (*World Wide Web Consortium*) nahegelegt wird,[^c8673] wäre aufgrund der voraussichtlichen terminologischen Unbeständigkeit zum gegenwärtigen Zeitpunkt noch verfrüht.
 
 ##### Instanzen (owl:NamedIndividuals) und Klassen (owl:Class, rdfs:subClassOf)
 
@@ -312,6 +284,199 @@ Man spricht in solchen Fällen von sogenannten "lightweight ontologies", die "in
 
 Wenn an dieser Stelle der Begriff (lightweight) Ontologie – auch wenn diese Arbeit den Begriff im Allgemeinen als zu bedeutungsschwer für sich scheut – ausnahmsweise Verwendung findet, so ist mit ihm also genau diese Qualität gemeint. Das Anwendungsprofil ist, gemessen an seinem Potential Seinsstrukturen einer Welt darstellen zu können, qualitativ als Ontologie zu betrachten. Gemessen an seiner Funktionalität, die es als Schema für Mapping und Datenanreicherung auszeichnet, ist es ein Anwendungsprofil.
 
-[transitivity in Hierarchien? Muss ich da was machen?]
+[^c2]: Vgl. etwa die Aussage "Individual instances are the most specific concepts represented in a knowledge base." ([@gangler_semantic_nodate, S.18]).
+
+[^c4]: [@noauthor_owl_nodate]
+
+[^c5]: OWL2 differenziert zwischen *Object Properties* und *Datatype Properties* (vgl.: [noauthor_owl_nodate-2]). Obwohl etwa *ma:a'=415Hz* prinzipiell auch mit *Datatype Properties* modelliert werden könnte, erscheint diese Detailtiefe für den hier exemplarisch durchgeprobten Anwendungsfall nicht notwendig.
+
+[^c6]: [@TN_libero_mab21631588, S. 27–28.]
+
+[^c7]: [@TN_libero_mab213864266, S. 128]
+
+[^c8]: [@noy_ontology_nodate]
+Auch Stuckenschmidt legt diese Vorgehensweise nahe (vgl.: [@alma9913393902586]).
+
+[^c9]: Zum Begriff siehe [@ TN_libero_mab213864266, S. 150]
+
+[^c10]: Für diese Arbeit spielen insbesondere RDFS ([@ noauthor_rdfs_nodate]) und OWL ([@ noauthor_owl_nodate-3]) eine Rolle.
+
+[^c11]: "Individualbegriffe"  [@ stock_wissensreprasentation_2008, S. 84].
+
+[^c12]: In "Semantic Web-Sprache" augedrückt, wären das die Klassen *rdfs:class*, *rdfs:instanceOf* und *rdf:property*.
+
+[^c13]: Auf eine Übersicht der gängigen übergeordneten Klassen – etwa "Literals", "Datatypes", "Blank nodes" etc. – muss an dieser Stelle verzichtet werden.
+
+[^c14]: [@TN_libero_mab213864266, S. 151]
+
+[^c15]: [@alma9913393902586, S. 166]
+
+[^c16]: S. hierzu etwa: [@alma9913393902586, S. 95–99]
+
+[^c17]: [@noauthor_owl_nodate-3] Diese Arbeit verwendet OWL Full, das die größten Ausdrucksmöglichkeiten bietet und mit RDFS kompatibel ist. (Vgl. [@TN_libero_mab21631588, S. 125–127])
+
+[^c18]: 
+
+[^c19]:  [@alma9913393902586, S. 146]
+
+[^c20]: Vgl.: [@noauthor_rdf_nodate-2]
+
+[^c21]: [@national_information_standards_organization_u.s._guidelines_2005, S. 3]
 
 
+
+[^c23]: [@TN_libero_mab213864266, S. 151]
+
+[^c24]: Die Serialisierung erfolgt am einfachsten, indem etwa der Ontologieeditor *Protégé* zu Hilfe genommen wird. Er ermöglicht den Export von Ontologien in vielfältigen Formaten.
+
+[^c25]:  [@alma9913393902586, S. 169]
+
+[^c26]: [@alma9913393902586, S. 24]
+
+[^c27]: Auch in OWL verfügt über entsprechende (noch mächtigere) Möglichkeiten, diese Beziehungen auszudrücken (vgl. hierzu etwa: [@allemang_semantic_2011, S. 238-239.]) Allerdings erscheint für die Belange dieser Arbeit die Terminologie von RDFS als genügend.
+
+[^c28]: Wörtlich also: "Das Objekt mit der Signatur 1663 hat den Typ eines Barockhorns".
+
+[^c29]: [@alma9913393902586, S. 106]
+
+
+[^c31]: [@noauthor_rdf_nodate-3]
+
+[^c32]: [@noauthor_rdf_nodate-4]
+
+[^c33]: [@alma9913393902586, S. 169]
+
+[^c8649]: Zur spezifischen Problematik des an dieser Stelle verwendeten  FRBR/FRAD-Modells bei Werken der Musik s.  [@bicher_normdaten_2018, S. 225].
+
+[^c8650]: In den sogenannten *Functional Requirements for Bibliographic Data*, deren Entitätenmodell an dieser Stelle verwendet wird, heißt es: "Ein Werk ist eine abstrakte Entität; es gibt keinen entsprechenden materiellen Gegenstand." ([@arbeitsstelle_fur_standardisierung_funktionelle_2006, S. 16]).
+
+[^c8651]: [@arbeitsstelle_fur_standardisierung_funktionelle_2006, S. 18–20.]
+
+[^c8652]: [@arbeitsstelle_fur_standardisierung_funktionelle_2006, S. 20–22.]
+
+[^c8653]: [@arbeitsstelle_fur_standardisierung_funktionelle_2006, S. 22–23.]
+
+[^c8654]: Und somit strenggenommen ebenfalls eine domänenspezifische Entität. **in MIMO verlinken**
+
+[^c8655]: Ein gleichermaßen illustratives wie auch charmantes Beispiel für eine solche Beziehung wären etwa Leopold Mozarts und Johann Ernst Eberlins Komposition "Der Morgen und der Abend" ([@mozart_eberlin_morgen_nodate]) für das "Hornwerk" der Festung Hohensalzburg aus dem 16. Jahrhundert, dem sog. *Salzburger Stier* ([@hocker_mechanische_2016]). (Ein lohnenswerter klanglicher Eindruck lässt sich hier gewinnen: [@noauthor_salzburger_nodate]).
+
+[^c8656]: Daher die gestrichelte Verbindungslinie zwischen Objekt und der Entität der relativen Stimmung.
+
+[^c8657]: Anders verhielte es sich freilich, würde mit dem hier definierten Schema beispielsweise eine Audioaufnahme einer Aufführung mit modernen Instrumenten erschlossen.
+
+[^c8658]: Etwa lassen die Stimmungen von unstimmbaren Instrumenten (Blockflöten, Zinken etc.) sehr präzise Rückschlüsse auf die historische Musikpraxis zu (vgl.: [@haynes_stimmton_2016]).
+
+[^c8659]: Nach Martin Fowler, dem Begründer des Modells: "An object model of the domain that incorporates both behavior and data." (vgl.:[@N_libero_mab2, S. 116]).
+
+[^c8660]: Da diese Arbeit angesichts ihres Fallbeispiels sehr stark RISM als primäre Domäne hervorhebt, kann gar nicht oft genug betont werden, dass jede andere relevante Domäne gleichermaßen im Vordergrund stehen könnte. So ist letztlich auch die Objektentität innerhalb einer Domäne, in diesem Fall dem Musikinstrumentenmuseum der Universität Leipzig, angesiedelt, das seinerseits sein Objekt mit dem RISM-Datensatz verlinken könnte, und dasselbe gilt selbstverständlich auch für Editionen, Bibliotheken, Archive, Wirtschaftsunternehmen etc.
+
+
+[^c8661]: Siehe hierzu etwa: [@alma9958916302586, S. 338–343]
+
+[^c8662]: [@alma9958916302586, S. 342–343]
+
+[^c8663]: [@alma9958916302586, S. 343]
+
+[^c8664]: Um den Umfang dieser Arbeit in Grenzen zu halten, kann nicht jedem denkbaren Szenario in ihr Rechnung getragen werden. Vielmehr würden sich solche tiefergehenden Überlegungen im Rahmen einer Weiterentwicklung des Anwendungsprofils empfehlen.
+
+[^c8665]: Sowohl "simultan" (vgl. etwa den Hornsatz in C. M. v. Webers Ouvertüre zur Oper "Der Freischütz": "Corni in F" sowie "Corni in C"), als auch "sukszessive" ab der Klassik zwischen Sätzen und mit der zunehmenden Erweiterung des harmonischen Raums im Laufe des 19. Jahrhunderts immer mehr auch in kontingenter Abfolge. 
+
+[^c8666]: Tatsächlich kann diese Entität in Zusammenhang mit Objekten lediglich in Verbindung mit Instrumenten Verwendung finden, die etwa aus baulichen, physikalischen Gründen eine solche "Grundstimmung" vorweisen.
+
+[^c8667]: Vgl. [@haynes_stimmton_2016]
+
+[^c8668]: So etwa im Falle der Eigenschaft *Entsprechungsgrad* angelegt: Es lassen sich unterschiedliche Grade vorstellen.
+
+[^c8670]: Zu den technischen Aspekten von Namespaces im Semantic Web siehe insb. [@noauthor_linked_nodate] sowie [@heath_linked_2011]  und [@noauthor_associating_nodate]
+
+[^c8671]: Vgl. etwa: [@madoc34762, S. 3]
+
+[^c8672]: OWL2 differenziert, anders als etwa RDFS, nicht lediglich zwischen Klasse und Instanz, sondern zwischen Klasse und unterschiedlichen Individuen (vgl. [@noauthor_owl_nodate-1])
+
+[^c8673]: Vgl. [@noauthor_architecture_nodate]
+
+[^c8674]: [@allemang_semantic_2011, 128–130]
+
+[^c8675]: [@noauthor_rdf_nodate]
+
+[^c8676]: [@noauthor_rdf_nodate-6]
+
+[^c8677]: [@TN_libero_mab21631588, S. 13]
+
+[^c8678]: [@noauthor_resource_nodate]
+
+[^c8679]: [@alma9913393902586, S. 32]
+\
+Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationalen Datenbanken. Zur Notwendigkeit der Open World Assumption in semantischen Netzen s: [@alma9913393902586, S. 43]
+
+[^c8680]: [@TN_libero_mab21631588, S. 67]
+
+[^c8681]: [@szeredi_lukácsy_benkő_nagy_2014, S. 98–99]
+
+[^c8682]: [@noauthor_overview_nodate]
+
+[^c8683]: [@TN_libero_mab21631588, S. 77]
+
+[^c8684]: "Jede definierte Einschra ̈nkung auf einer Property wirkt al- so immer global auf jedes Vorkommen dieser Property, weswegen man bei der Angabe solcher Einschra ̈nkungen darauf achten muss, immer die allge- meinsten denkbaren Klassen anzugeben (also diejenigen, die mit Sicherheit alle mo ̈glichen Ressourcen, die in der fraglichen Beziehung stehen ko ̈nnen, enthalten)." ([@TN_libero_mab21631588, S. 77])
+
+[^c8685]: [@noauthor_examples_nodate]
+
+[^c8686]: [@noauthor_examples_nodate]
+
+[^c8687]: descriptive logic – AI - solcher Kram
+
+[^c8688]: [@alma9913393902586, S. 77]
+
+[^c8690]: [@hyvonen_publishing_2012, S. 76]
+
+[^c8691]: [@TN_libero_mab21631588, S. 68]
+
+[^c8692]: [@alma9913393902586, S. 170–171]
+
+[^c8693]: Husserl
+
+[^c8694]: 
+
+[^c8695]: 
+
+[^c8696]: 
+
+[^c8697]: noauthor_introducing_2012
+[^c8698]: 
+
+[^c8699]: 
+
+[^c8700]: [@hyvonen_publishing_2012, S. 87–88]
+
+[^c8701]: [@madoc34762, S. 6]
+[^c8702]: 
+
+[^c8703]: [@allemang_semantic_2011, S. 207]
+
+[^c8704]: [@allemang_semantic_2011, S. 213]
+
+[^c8705]: [@noauthor_overview_nodate]
+
+[^c8706]: [@zimanyi_web_2015, S. 79–80]
+
+[^c8707]: [@madoc34762, S. 7] Die Autoren berufen sich ihrerseits auf [@noauthor_how_nodate]
+
+[^c8708]: Vgl. auch [@noauthor_how_nodate]: "It is common practice to mix terms from different vocabularies."
+
+[^c8709]: [@alma9913393902586, S. 160–161]
+
+[^c8710]: 
+
+[^c8711]: "Begriffliche Kontrolle", vgl.: [@TN_libero_mab213864266, S. 128]
+
+[^c8712]: [@TN_libero_mab213864266, S. 128]
+
+[^c8713]: In dieser Arbeit wurden vor allem die Texte [@allemang_semantic_2011] sowie [@TN_libero_mab21631588] zu Rate gezogen.
+
+[^1]: Für eine Auswahl relevanter Vokabulare für den GLAM-Bereich s. @TN_libero_mab2 und
+@ziku_digital_2020. Für eine Auswahl musikrelevanter Vokabulare s. @lisena_controlled_nodate, @bicher_normdaten_2018, @nurmikko-fuller_building_2018, @nurmikko-fuller_collaboration_2016, @futurelearn_linked_nodate.
+
+
+[^2]: [@noauthor_bartocorg_nodate.]
+[^3]: [@noauthor_linked_nodate-1]
+[^4]: Z. Begriff "Hypertext" siehe etwa: [@niewerth_dinge-nutzer-netze_2018, S. 92–93.]

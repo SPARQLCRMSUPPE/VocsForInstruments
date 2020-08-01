@@ -4,25 +4,25 @@
 
 ### Hintergrund
 
-In den vorangegangenen Kapiteln wurde ein Modell in eine strukturell auf RDF basierende Ontologie "übersetzt". Deren "Grammatik" orientierte sich zwar an der im Semantic Web standardisierten (RDF, RDFS, OWL), deren Semantik und Etabliertheit das Potential für eine anschließende Integration im Semantic Web birgt. Doch bleiben die in dieser Ontologie verwahrten Konzepte durch die Brille des "Semantic Web-Subjekts" betrachtet diffus: erkennbar sind lediglich eine Menge arbiträrer Entitäten, die in bestimmten, jedoch außerordentlich allgemeinen Beziehungen stehen. 
+In den vorangegangenen Kapiteln wurde ein Modell in eine strukturell auf RDF basierende Ontologie "übersetzt". Deren "Grammatik" orientierte sich zwar an der im Semantic Web standardisierten (RDF, RDFS, OWL), deren Semantik und Etabliertheit das Potential für eine anschließende Integration im Semantic Web birgt. Doch bleiben die in dieser Ontologie verwahrten Konzepte durch die Brille des "Semantic Web-Subjekts" betrachtet diffus: ees handelt sich lediglich um eine Menge arbiträrer Entitäten, die in bestimmten, jedoch außerordentlich allgemeinen Beziehungen stehen. 
 Es gilt insofern an dieser Stelle abermals einen hermeneutischen Prozess zu durchlaufen, in dessen Zuge die nicht-explizierten Konzepte im Namespace :ma dermaßen erschlossen werden, dass sie für ein Wahrnehmungssubjekt interpretierbar werden. 
 Abermals stellt sich, wie in #Kapitel die Frage, in welcher Weise der hier begegnende Verständnishorizont zu überwinden ist. Dies ist für ein menschliches Subjekt relativ einfach zu beantworten, etwa indem Konzepte mit sinnvollen Namen und Erklärungen versehen werden. Doch wie verhält es sich mit einem Wahrnehmungssubjekt, das nur die Sprache des Semantic Webs beherrscht ("things not strings")?[^c8697]
 
-Eine zentrale Idee der Heidegger'schen Philosophie ist, dass das "eigentliche Wesen" von "Zeug"[^c8694] (im Gegensatz etwa zu Platons Ideenlehre) keineswegs diesem a priori inhärent ist, sondern sich in der Welt erst in seiner kontextuellen habituellen Funktionalität und Materialität gegenüber einem Wahrnehmungssubjekt äußert.[^c8696] Diese Annahme erscheint auch hier aufschlussreich: Kontext – sich in funktionalen Beziehungen zwischen Konzepten ausdrückend – bildet im Semantic Web die Prämisse von Semantik. Das "Wesen" der Konzepte zeigt sich keineswegs in ihrer textuellen Beschreibung ("strings") begründet, sondern in ihrer Rolle als Sinnträger innerhalb eines Bedeutungsgefüges und gegenüber einem "besorgenden" Wahrnehmungssubjekt.
+Eine zentrale Idee der Heidegger'schen Philosophie ist, dass das "eigentliche Wesen" von "Zeug"[^c8694] (im Gegensatz etwa zu Platons Ideenlehre) keineswegs diesem a priori inhärent ist, sondern sich in der Welt erst in seiner kontextuellen habituellen Funktionalität und Materialität gegenüber einem Wahrnehmungssubjekt äußert.[^c8696] Diese Annahme erscheint auch hier aufschlussreich: Kontext – sich in funktionalen Beziehungen zwischen Konzepten ausdrückend – bildet im Semantic Web die Prämisse von Semantik. Das "Wesen" der Konzepte liegt keineswegs in ihrer textuellen Beschreibung ("strings") begründet, sondern in ihrer Rolle als Sinnträger innerhalb eines Bedeutungsgefüges und gegenüber einem "besorgenden" Wahrnehmungssubjekt.
 
-So ist etwa – ganz vereinfacht – das Wesen des Konzepts "Spucknapf" in den folgenden RDF-Tripeln ein je anderes: 
+So ist etwa das Wesen des Konzepts "Spucknapf" in den folgenden RDF-Tripeln ein je anderes: 
 
 1. "Mann" "spuckt in" "Spucknapf"
 2. "Spucknapf" "fällt auf" "Mann (Kopf)"
 
 Neben dem offensichtlichen, hier variablen grammatikalischen "Wesen", Subjekt und Objekt,[nicht sicher ob das so geht] liegt im ersten Beispiel das Wesen des Spucknapfs darin begründet, dass es "der Gegenstand" ist, "in das man reinspuckt". Im zweiten ist es jedoch "das zerbrechliche Ding, das durch Fallen auf den Kopf Schmerzen und Ekel bereitet.
 Exakt analog hierzu erscheint das "Wesen" einer Entität innerhalb einer formalen Welt dadurch bestimmt, in welchen Relationen sie zu der sie umgebenden, wechselwirkenden Welt steht.
-Und umgekehrt, löst man Konzepte aus diesem Gefüge heraus (wie es bislang in dieser Arbeit der Fall ist), entbindet man sie ihrer semantischen Kraft, und sie werden, im schlimmsten Fall, zu nichts weiterem als zu kontingenten URIs, jedenfalls aber – zumindest nach Heidegger – zu einem trivialen lediglich Vorhandenen.
+Und umgekehrt: löst man Konzepte aus diesem Gefüge heraus (wie es bislang in dieser Arbeit der Fall ist), entbindet man sie ihrer semantischen Kraft, und sie werden, im schlimmsten Fall, zu nichts weiterem als zu kontingenten URIs, jedenfalls aber – zumindest nach Heidegger – zu einem trivialen lediglich Vorhandenen.
 \
 
-### Technische Umsetzung
+### Semantische Verknüpfungsmöglichkeiten mit dem Semantic Web 
 
-Es stellt sich nun die Frage, wie diese Kontextualisierung technisch umzusetzen ist. Boten bislang insbesondere die Arbeiten von Ontology101[^c8698] und Stuckenschmidt[^c8699] einen guten Leitfaden für die Erstellung von Ontologien im Sinne abstrakter formalisierter Wissenspräsentationen, so findet sich in der Literatur kaum irgendwo ein Hinweis zur Umsetzung semantischer Kontextualisierung eigener Ontologien im Semantic Web.
+Es stellt sich nun die Frage, wie diese Kontextualisierung konzeptionell umzusetzen ist. Boten bislang insbesondere die Arbeiten von Ontology101[^c8698] und Stuckenschmidt[^c8699] einen guten Leitfaden für die Erstellung von Ontologien im Sinne abstrakter formalisierter Wissensrepräsentationen, so findet sich in der Literatur kaum irgendwo ein Hinweis zur Umsetzung semantischer Kontextualisierung eigener Ontologien im Semantic Web.
 
 Einen Hinweis liefert Hyvönen, indem er drei Bestandteile einer (Semantic Web)-"Ontologieinfrastruktur" ausmacht:
 
@@ -33,20 +33,22 @@ Einen Hinweis liefert Hyvönen, indem er drei Bestandteile einer (Semantic Web)-
 >3.  Institution specific ontologies are needed for concepts that may be relevant for a particular organization only or cannot be shared for some reason with a larger community[...].[^c8700]
 
 Anhand dieser Bestandsaufnahme lassen sich mehrere Aussagen schlussfolgern: Neben der auf technischer Ebene wichtigen Information, dass eine im Semantic Web integrierte Ontologie sich aus verschiedenen Vokabularen aus verschiedenen Bereichen zusammensetzt (ja zusammensetzen sollte),[^c8708] halten diese Informationen auch Hinweise auf die Frage nach semantischer Kontextualisierung bereit:
-Eine Ontologie erhält ihre Aussagekraft indem sie sich in den Kontext bereits etablierter Vokabulare stellt. Dabei sind die etabliertesten diejenigen, die das höchste Maß an Verständlichkeit (Interoperabilität) anbieten –  domänen- und institutionsspezifische die, die das höchste Maß an semantischer Spezifität zu erreichen imstande sind.
+Eine Ontologie erhält ihre Aussagekraft indem sie sich in den Kontext bereits etablierter Vokabulare stellt. Dabei sind die etabliertesten diejenigen, die das höchste Maß an Verständlichkeit anbieten –  domänen- und institutionsspezifische die, die das höchste Maß an semantischer Spezifität zu erreichen imstande sind.
 
-Freilich ist hierdurch nur wenig über den eigentlichen technischen Prozess der Verknüpfung eigener Ontologien im Semantic Web ausgesagt. Etwas aussagekräftiger ist wiederum etwa die Maßgabe "[s]et RDF links to other data sources on the Web, so that clients can navigate the Web of Data as a whole by following RDF links."[^c8701] Die folgenden Möglichkeiten lassen sich aus dieser Forderung ableiten:
+Freilich ist hierdurch nur wenig über den eigentlichen semantischen Prozess der Verknüpfung eigener Ontologien im Semantic Web ausgesagt. Die Empfehlung "[s]et RDF links to other data sources on the Web, so that clients can navigate the Web of Data as a whole by following RDF links[...]"[^c8701] bietet einige konkrete Hinweise auf diese Umsetzung:
 
-1) In etwa analog zur Klassierung von Konzepten in #kapitelx erscheint es denkbar, eigene Konzepte in Relation zu externen Konzepten zu setzen, und diese Relationen als Eigenschaft in der RDF-Beschreibung des Konzepts zu fixieren. Der bisherige Verständnishorizont wäre somit für eine Anwendung, die das Applikationsprofil parsed, überwunden, und ein Konnex zwischen Domänenontologie und Semantic Web geschaffen.\
+#### 1) Mapping
+
+In etwa analog zur Klassierung von Konzepten in #kapitelx können eigene Konzepte in Relation zu extern, etablierten Konzepten gesetzt werden, und diese Relationen als Eigenschaft in der RDF-Beschreibung des Konzepts fixiert. Der bisherige Verständnishorizont wäre somit für eine Anwendung, die das Metadatenprofil parsed, überwunden, und ein Konnex zwischen Metadatenprofil und Semantic Web geschaffen.\
 Ein – vorläufiges – Beispiel:
 
 ``ma:Klangbeispiel	rdfs:subclassOf	<http://d-nb.info/gnd/4052020-1> .``
 
-In Worten: Der Term "Klangbeispiel" im :ma-Namespace wird als Unterklasse des in der GND definierten Schlagworts "Schallaufzeichnung" verstanden. 
+In Worten: Der Term "Klangbeispiel" im ma:-Namespace wird als Unterklasse des in der GND definierten Schlagworts "Schallaufzeichnung" verstanden. 
 
-Das Property `rdfs:subclassOf` verlinkt dabei in eine externe, bereits im Semantic Web eingebundene und semantisch etablierte Ontologie, die GND. 
+Das Property `rdfs:subclassOf` verlinkt dabei die Entität `ma:Klangbeispiel` in eine externe, bereits im Semantic Web eingebundene und semantisch etablierte Ontologie, die GND, sodass nun also auch die Entität `ma:Klangbeispiel` (freilich erst nach Publikation im Netz) in das Semantic Web integriert ist. 
 
-Neben dieser hierarchischen Relation sind auch Äquivalenzrelationen darstellbar. Insbesondere das Vokabular SKOS ("Simple Knowledge Organization System")[^c8702] hat sich etabliert, um etwa Thesauri in RDF zu überführen,[^c8703] jedoch insbesondere auch um Vokabulare und Ontologien aufeinander zu beziehen[^c8704] (ontology alignment,[^c8706] Mapping). Hierfür sind sich etwa die Properties
+Neben Integration durch hierarchische Relation (bspw. `rdfs:subclassOf`) kommen auch Äquivalenzrelationen für diesen Verlinkungsvorgang infrage. Insbesondere das Vokabular SKOS ("Simple Knowledge Organization System")[^c8702] hat sich etabliert, um etwa Thesauri in RDF zu überführen,[^c8703] jedoch insbesondere auch um Vokabulare und Ontologien aufeinander zu beziehen[^c8704] (ontology alignment,[^c8706] Mapping). Hierfür sind etwa die Properties
 
 ``
 skos:exactMatch
@@ -57,16 +59,18 @@ skos:broadMatch
 
 skos:closeMatch
 ``
-besonders geeignet. Es wird jedoch deutlich, dass die Ambivalenz dieser Propeties (ausgenommen `skos:exactMatch`) naturgemäß groß ist und daher keine endgültig befriedigende semantische Eindeutigkeit ermöglichen kann.\
+besonders geeignet. Deutlich wird aber zugleich, dass die Ambivalenz dieser Propeties (ausgenommen `skos:exactMatch`) groß ist und daher womöglich keine endgültig befriedigende semantische Eindeutigkeit ermöglichen kann.\
 
-2) Während das Mappen zu äquivalenten Termen im Falle sich bereits in Verwendung befindlicher und somit unantastbarer Vokabulare notwendig sein mag, erscheint es angesichts von Funktionsweise und Architektur des Semantic Webs im Falle des Applikationsprofils nicht erstrebenswert. Obwohl die Produktion von Doubletten (und anschließendem Mapping) im Sinne der *open world assumption* im Semantic Web nicht "falsch" ist,[^c8705] so ist sie doch eingedenk dessen Konzeption als offene, ins Netz ausgelagerte "Datenbank", in dem jeder Datensatz für jeden zugänglich und referenzierbar ist, unsinnig, ist doch Kontextualisierung durch den Rekurs auf semantisch etablierte und somit aussagekräftige Konzepte, wie bereits mehrfach betont, sogar außerordentlich wünschenswert. 
-Diese Aussagekraft erhöht sich weiter durch Wiederverwendung etablierter Konzepte und der Vermeidung von konkurrierenden Redeundanzen: "it is considered good practice to reuse terms from well-known RDF vocabularies [...] wherever possible in order to make it easier for client applications to process Linked Data. Only if these vocabularies do not provide the required terms should data publishers define new, data source-specific terminology [...]."[^c8707]So wird zu guter Letzt "[...]die Einheitlichkeit und Interoperabilität der Beschreibungen sicher[gestellt]."[^c8709]
+#### 2) Integration von etablierten externen Konzepten
 
-So ist also das Konzept `ma:Ton` bei der Einbindung ins Semantic Web nicht über die Festlegung
+Während das Mappen zu äquivalenten Termen im Falle sich bereits in Verwendung befindlicher und somit unantastbarer Vokabulare im Sinne einer bestmöglichen Integration ins Semantic Web sinnvoll sein mag, erscheint es angesichts von Funktionsweise und Architektur des Semantic Webs im Falle des Metadatenprofils als nicht erstrebenswert. Obwohl die Produktion von Doubletten (und anschließendem Mapping) im Sinne der *open world assumption* im Semantic Web nicht "falsch" ist,[^c8705] so ist sie doch eingedenk dessen Konzeption als offene, ins Netz ausgelagerte "Datenbank", in dem jeder Datensatz für jeden zugänglich und referenzierbar ist, unsinnig, ist doch Kontextualisierung durch den Rekurs auf semantisch etablierte und somit aussagekräftige Konzepte, wie bereits mehrfach betont, sogar außerordentlich wünschenswert. 
+Diese Aussagekraft erhöht sich weiter durch Wiederverwendung etablierter Konzepte und der Vermeidung von konkurrierenden Redeundanzen: "it is considered good practice to reuse terms from well-known RDF vocabularies [...] wherever possible in order to make it easier for client applications to process Linked Data. Only if these vocabularies do not provide the required terms should data publishers define new, data source-specific terminology [...]."[^c8707] Zu guter Letzt wird so "[...]die Einheitlichkeit und Interoperabilität der Beschreibungen sicher[gestellt]."[^c8709]
+
+So erfolgt also die semantische Verknüpfung des Konzepts `ma:Ton` mit dem Semantic Web nicht nach dem in #Kapitel 1)Mapping erwähnten Schema
 ``
 ma:Ton	skos:exactMatch	gnd:Ton .,
 ``
-sondern einfach durch das Konzept `gnd:Ton` zu ersetzen.
+sondern besser einfach durch Übernahme des Konzepts `gnd:Ton`.
 
 ### Vorgehensweise
 
@@ -82,12 +86,12 @@ Mit "terminologischer Kontrolle" sind im Sinne Bertrams "alle Maßnahmen [...], 
 
 Für diese Arbeit erscheinen die folgenden Schritte und Abwägungen sinnvoll:
 
-* Eine Grundbeschaffenheit des Semantic Webs liegt in seiner Qualität als Hypertext aller in ihm verwobenen Modellierungen und Ontologien. Dieser Umstand macht eine – eigentlich wünschenswerte – initiale vollständige philologische Auswertung einzelner Textteile (Vokabulare), und es muss mit einem heuristischen Ansatz vorliebgenommen werden. Dieser besteht darin, unter Zuhilfenahme geeigneter Suchwerkzeuge, fallspezifisch nach terminologischen Lösungen zu suchen. Wie dies in der Praxis gelingen kann, wird sich prozessual im Laufe der folgenden Kapitel entfalten. (Eine Ausarbeitung der generierten Erkenntnisse zur Methodik ist nicht Gegenstand dieser Arbeit, stellt aber wie erwähnt ein sehr vielversprechendes Desiderat dar!)
+* Eine Grundbeschaffenheit des Semantic Webs liegt in seiner Qualität als Hypertext[^4] aller in ihm verwobenen Modellierungen und Ontologien. Dieser Umstand macht eine – eigentlich wünschenswerte – initiale vollständige philologische Auswertung einzelner Textteile (Vokabulare), und es muss mit einem heuristischen Ansatz vorliebgenommen werden. Dieser besteht darin, unter Zuhilfenahme geeigneter Suchwerkzeuge, fallspezifisch nach terminologischen Lösungen zu suchen. Wie dies in der Praxis gelingen kann, wird sich prozessual im Laufe der folgenden Kapitel entfalten. (Eine Ausarbeitung der generierten Erkenntnisse zur Methodik ist nicht Gegenstand dieser Arbeit, stellt aber wie erwähnt ein sehr vielversprechendes Desiderat dar!)
 * Bereits mehrfach wurde auf den Wert etablierter Vokabulare hingewiesen. Unter diesen findet sich eine Reihe von Vokabularen, die als Standards, wenn nicht gar als Grundpfeiler des Semantic Webs gelten können. Diese sind insbesondere RDF, RDFS, SKOS, OWL, aber auch etwa Dublin Core. Ihre Verwendung ist gut dokumentiert, und es existiert eine vergleichbar große Menge einführender Literatur, die als Leitfaden zu Rate gezogen werden kann.[^c8713] Diese Vokabulare fanden bereits teilweise Verwendung in den vorangegangenen Kapiteln, und es wird aufgrund ihrer hohen Aussagekraft gelten, auch im Folgenden sich ihrer wann immer möglich zu bedienen.
 
 Hinsichtlich der Recherche nach domänenspezifischen Vokabularen und deren Anwendung sind verschiedene Strategien vorstellbar, die in dieser Arbeit jeweils anzuwenden sein werden:
 
-* Es erscheint naheliegend, die Verwendungsweise von Terminologie im Rahmen solcher domänenspezifischer Projekte zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Entsprechend der spartenübergreifenden Zielsetzung dieser Arbeit sind dies Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs.[^1] **<- hier müssen irgendwelche Sachen zitiert werden, in denen sich Angaben zu versch. relevanten Vokabularen finden.**
+* Es erscheint naheliegend, die Verwendungsweise von Terminologie im Rahmen solcher domänenspezifischer Projekte zu untersuchen, die ihre Daten als Linked Open Data zur Verfügung stellen. Entsprechend der spartenübergreifenden Zielsetzung dieser Arbeit sind dies Akteure aus dem gesamten Spektrum des musikbezogenen Kulturerbebereichs.[^1]
 * Einen Sucheinstieg für Vokabulare bietet das *Basel Register of Thesauri, Ontologies and Classifikations*[^2], in dem auch fachspezifische Suchen möglich sind.
 * Das Portal *Linked Open Vocabularies*[^3] ist eine Metasuchmaschine, mit der eine große Zahl von Triplestores durchsucht werden kann. Suchergebnisse können wiederum nach unterschiedlichen Kriterien (Disziplin, Konzept etc.) gefiltert werden.
 * Zumindest erwähnenswert ist die technische Möglichkeit, eigene referenzierbare und semantisch kontextualisierte Datensätze – etwa in Wikidata – zu erstellen. Ob dies auch für das hier entwickelte Metadatenprofil sinnvoll ist, ist eine ganz andere Frage.
@@ -108,7 +112,7 @@ Hinsichtlich der Recherche nach domänenspezifischen Vokabularen und deren Anwen
 
 
 
-[^c1]: Zur Schreibweise: 
+---
 
 [^c2]: Vgl. etwa die Aussage "Individual instances are the most specific concepts represented in a knowledge base." ([@gangler_semantic_nodate, S.18]).
 
@@ -305,3 +309,4 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 
 [^2]: [@noauthor_bartocorg_nodate.]
 [^3]: [@noauthor_linked_nodate-1]
+[^4]: Z. Begriff "Hypertext" siehe etwa: [@niewerth_dinge-nutzer-netze_2018, S. 92–93.]

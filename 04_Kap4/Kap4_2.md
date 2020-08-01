@@ -1,4 +1,6 @@
-Vielleicht generell: als Ende jedes Teils ein Teil "Änderungen am Vokabular" oder so, in dem alle Änderungen nochmal nachvollziebar gemacht werden? Zu aufwendig?
+## Erfassung mit externen Vokabularen
+
+kurz, was jetzt gemacht wird.
 
 ### Interpret und Aufführung
 
@@ -147,7 +149,7 @@ Das – ursprünglich immerhin recht zentrale – Anliegen dieser Arbeit, eine "
 
 ### Klangbeispiel
 
-Widererwarten stellt sich bei der Sichtung anwendbarer Vokabulare heraus, dass gerade die Verknüpfung eines Klangbeispiels mit einem Instrument offebar ein Szenario darzustellen scheint, das momentan im Semantic Web nicht abgedeckt ist. Um eine solche Verknüpfung doch umzusetzen, liegt die größte Herausforderung darin, dass Properties, die sich auf Aufnahmen Art beziehen, in der Regel mit `rdfs:range` oder `rdfs:domain` an Ereignis-Entitäten gebunden sind.[^31] Zwar lässt sich der Ereignis-Kontext laut Weigl für die Beziehung zwischen Werk und Aufnahme mit einer relativ komplex modellierten, auf der Music Ontology basierenden "Volte"[^32] oder evtl. etwas einfacher, mit *schema.org*, vermeiden[^33]. Allerdings sind auch diese Lösungen auf den Werk-Kontext beschränkt und somit für die Verknüpfung von *Musikinstrument* mit *Klangbeispiel*  ungeeignet. 
+Widererwarten stellt sich bei der Sichtung anwendbarer Vokabulare heraus, dass gerade die Verknüpfung eines Klangbeispiels mit einem Instrument offebar ein Szenario ist, das momentan im Semantic Web nicht abgedeckt ist. Um eine solche Verknüpfung doch umzusetzen, liegt die größte Herausforderung darin, dass Properties, die sich auf Aufnahmen Art beziehen, in der Regel mit `rdfs:range` oder `rdfs:domain` an Ereignis-Entitäten gebunden sind.[^31] Zwar lässt sich der Ereignis-Kontext laut Weigl für die Beziehung zwischen Werk und Aufnahme mit einer relativ komplex modellierten, auf der Music Ontology basierenden "Volte"[^32] oder evtl. etwas einfacher, mit *schema.org*, vermeiden[^33]. Allerdings sind auch diese Lösungen auf den Werk-Kontext beschränkt und somit für die Verknüpfung von *Musikinstrument* mit *Klangbeispiel*  ungeeignet. 
 
 Wikidata hält zwar mit den Properties `wdt:P4733` ("produced sound")[^35] und `wdt:P51` ("audio")[^36] Properties bereit, mit denen man Klangbeispiele verlinken kann. Allerdings beziehen sich diese auf Medien aus den *Wiki Commons*. Dennoch scheint im Verlinken in den Wikimedia-Kosmos, eine Chance zu liegen, die prinzipiell nicht ausgeschlossen werden sollte, stellt doch der dieser Kosmos eine riesige, stetig wachsende, intern wie extern verknüpfte Wissensdatenbank dar. Daher erscheint es sinnnvoll, `wdt:P51` als Verbindungsglied in diese Welt in das Applikationsprofil zu übernehmen (vgl. #Abbildung).
 
