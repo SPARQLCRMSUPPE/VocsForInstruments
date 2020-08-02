@@ -176,8 +176,10 @@ Diese Modellierung würde ein fundierteres Verständnis mathematischer Logik und
 ## "Wrapping things up" / Nachbereitung (?)
 
 * label @eng – rdfs:literal
-* domain: owl:deprecated
-* trennung von domain und ma:vokabular
+* rdfs:comment – dazu Beispiele
+* owl:version info: instabil
+* Vereinheitlichung der Schreibweisen - Vermeidung von Umlaute (wie heißt das?), Leerzeichen, Sonderzeichen
+* trennung von domain und ma:vokabular <- (?)
 * in diesem Kontext: Anpassen des namespaces / der Benennung des Vokabualrs
 
 

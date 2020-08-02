@@ -104,5 +104,4 @@ Zwei Erkenntnisse können bereits festgehalten werden:
 
 
 
-
 [^1]: Denkbar wäre es – sofern sinnvoll – noch weitere Anreicherungsmöglichkeiten in das Metadatenprofil zu integrieren: bspw. Ort und Zeit. Fraglich ist jedoch, ob diese Informationen nicht bereits im Ereignisdatensatz vorhanden sind.

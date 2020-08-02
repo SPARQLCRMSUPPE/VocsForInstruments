@@ -26,4 +26,4 @@ This work is published from:
 </p>
 
 —
-![Sneak peek of the ontology](/03_Kap3/medien_Kap3/20200512_lont.owl.svg)
+![Sneak peek of the ontology](/namespaces/Visualisierung/20200802_wumms.svg)

@@ -27,3 +27,16 @@ Denkbar:
 
 #AnreicherungStimmung
 1 Erkenntnis: das ganze mit den Stimmungen und so sollte mal als komplette Ontologie modelliert werden!!!
+
+
+
+
+Verschiedene Orte, wo's hapert (Baustellen): Stimmungen, Töne, Musiktheorie und natürl. wumms
+
+
+
+
+naja, das Verbinden von musikinstrumenten nicht so sehr über mappen sinnvoll (?), als vielleicht tatsächlich über vieldimensionale vernetzung. dafür braucht es auf musiktheoretischer eben vor allem folgende Vokabulare
+
+Stimmung
+Tonsystem
