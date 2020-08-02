@@ -298,15 +298,6 @@ wumms:TonKlingend rdf:type owl:Class ;
                   owl:versionInfo "instabil"@de .
 
 
-###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#Werk
-wumms:Werk rdf:type owl:Class ;
-           rdfs:comment """Domäne!
-
-Jede Art musikalischer Ressource oder Werk. Bsp: eine Audioaufnahme, das Singspiel \"Die Zauberflöte\", eine Partitur, Stimme etc."""@de ;
-           rdfs:label "Werk"@de ;
-           owl:versionInfo "instabil"@de .
-
-
 ###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#hoechsterTon
 wumms:hoechsterTon rdf:type owl:Class ;
                    rdfs:subClassOf wumms:Ton ;

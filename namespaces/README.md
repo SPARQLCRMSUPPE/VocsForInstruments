@@ -5,4 +5,12 @@
 In diesem Ordner:
 
 * aktuelle Fassungen der Vokabulare für die Arbeit
-* "tutenundblasen": aktuelle Ontologiefassung
+* wumms = Metadatenprofil
+* domaene = "externes" Domänenvokabular
+
+
+Im Unterordner "Namespaces":
+
+* sw_ont-Dateien = gesamtes in der MA verwendetes Vokabular
+* wumms = Metadatenprofil
+* dom = Domänenvokabular
