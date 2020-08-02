@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#> .
+@prefix : <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms/> .
 @prefix dc: <https://dublincore.org/specifications/dublin-core/dcmi-terms/#> .
 @prefix mo: <http://purl.org/ontology/mo/#> .
 @prefix wc: <https://commons.wikimedia.org/wiki/File:> .
@@ -396,8 +396,8 @@ wumms:obertonreineStimmung rdf:type owl:NamedIndividual ,
 
 
 ###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms/UrauffuehrungBWV208
-<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms/UrauffuehrungBWV208> rdf:type owl:NamedIndividual ,
-                                                                                                                           wumms:Auffuehrung .
+:UrauffuehrungBWV208 rdf:type owl:NamedIndividual ,
+                              wumms:Auffuehrung .
 
 
 ###  https://www.wikidata.org/wiki/Q97621186
