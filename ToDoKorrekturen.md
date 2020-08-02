@@ -1,12 +1,12 @@
 
 
-- [ ] [Klangbeispiel anpassen in Anwendungsmodell
+- [x] [Klangbeispiel anpassen in Anwendungsmodell
 
 - [ ] insg. die Anschlussfähigkeit für gemeinsame Entwicklung stärker betonen
 
-- [ ] ebenso Person a
+- [x] ebenso Person a
 
-- [ ] höchster /tiefster Ton falsch transponiert
+- [x] höchster /tiefster Ton falsch transponiert
 
 - [ ] *genaue Entsprechung* und *ungefähre Entsprechung* in Anwendungsmodell einpflegen
 
@@ -16,7 +16,8 @@
 ma:Stimmton ma:hat_Ton ma:a' ;
                       ma:hat_Frequenz ma:415Hz .
 
-- [ ] Stimmungskonzepte überprüfen / überarbeiten (insb. Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?)
+- [x] Stimmungskonzepte überprüfen / überarbeiten (insb. Grundstimmung / obertonreine Stimmung / relative Stimmung bleibt?)
+- [ ] "relative Stimmung" muss ersetzt werden (durch?)
 
 - [ ] Es muss eine Oberklasse "Ton" eingeführt werden – entsprechende Anpassung in Vokabular / ERM <- in Protegé schon drin
 
@@ -26,7 +27,7 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 
 - [x] ERM "bezeichnung" bei Klassifikation rausnehmen. Allgemein am Ende: "Label"? <- Anpassen in ma und MA !!!
 
-- [ ] skos:exactMatch anpassen in Grafik
+- [ ] skos:exactMatch anpassen in Grafik (4_2?)
 
 - [ ] Klären: kann man RDF statements überhaupt in MEI embedden? Wie ist das z.B. bei Weber-Gesamtausgabe? Werden die Tripel außerhalb gespeichert und nur aus der MEI Datei referenziert?
 
@@ -40,7 +41,7 @@ ma:Stimmton ma:hat_Ton ma:a' ;
 
 - [ ] Literals in Vokabular = alles mit Anführungszeichen. Ändern! (_ _)
 
-- [ ] das muss in das endgültige Vokabular eingepflegt werden.
+- [ ] **das muss in das endgültige Vokabular eingepflegt werden.**!!°!!!!!!!!!
 
 ``<wdt:musical_instrument>	<ma:hat_Stimmung>	<ma:Kammerton>	.``\
  
@@ -54,8 +55,10 @@ sowie
 
 ``<ma:Kammerton>	<rdf:type>	<rdf:statement>	.``
 
-- [ ] Alles, was domänenspezifisch ist, muss ausgelagert werden.
+- [x] Alles, was domänenspezifisch ist, muss ausgelagert werden.
 
 - [ ] Barockhorn muss irgendetwas anderes werden(?) nein! sagen, dass man da noch geografische Herkunft darndingsen könnte.
 
 - [ ] Ambitus könnte auch für Objekt wichtig sein!
+
+- [ ] deprezierte Namespaces wegschmeißen -> im Text Links in den Müllhaufen umleiten.
