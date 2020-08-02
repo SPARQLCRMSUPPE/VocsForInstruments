@@ -1,3 +1,0 @@
-- [ ] Welche Art von Validierung ist mit RDFS möglich? Wie funktioniert sie?
-- [ ] Vorgehensweise: Domänenvokabulare verwenden – eigens angelegte Sachen wie einbinden? zb. mit rdfs:subclassOf rdfs:instanceOf
-- [ ] wie das Resolving von purls hinbekommen?

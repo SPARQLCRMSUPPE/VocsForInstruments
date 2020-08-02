@@ -17,68 +17,87 @@ Diese Vorgehensweise, anhand eines gewünschten Szenarios eine Simulation in For
 Das Szenario sah vor, dass im Bereich der Domäne die folgenden Zuhammenhänge bereits vordefiniert sind:\
 
 ```
-domaene:BWV208    domaene:hatUraufführung   domaene:UrauffuehrungBWV208   .
+dom:BWV208    dom:hatUraufführung   dom:UrauffuehrungBWV208   ,
 
-domaene:BWV208    domaene:hatBesetzung    domaene:corDaCaccia   .
+		              					dom:hatBesetzu	ng    	dom:corDaCaccia   .
 
-#\ In einem externen Vokabular ist das Ereignis der Uraufführung mit dem uraufgeführten Werk verknüpft und die Besetzung ist mit dem Domänenvokabular bezeichnet. [^1]
+###\ In einem externen Vokabular ist das Ereignis der Uraufführung mit dem uraufgeführten Werk verknüpft und die Besetzung ist mit dem Domänenvokabular bezeichnet. [^1]
 ```
 \
 Eingedenk dieser gesetzten Prämisse voranschreitend ist die Modellierung mit dem Vokabular des Metadatenprofils in folgender Weise möglich:
 
 
 ```
-domaene:UrauffuehrungBWV208   rdf:type   ma:Auffuehrung(Domaene)   .
+@prefix mo: <http://purl.org/ontology/mo/#> .
+@prefix wc: <https://commons.wikimedia.org/wiki/File:> .
+@prefix wd: <https://www.wikidata.org/wiki/Property:> .
+@prefix crm: <http://purl.org/NET/cidoc-crm/core#> .
+@prefix gnd: <http://d-nb.info/gnd/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdt: <https://www.wikidata.org/wiki/> .
+@prefix mimo: <https://mimo-international.com/MIMO/doc/IFD/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wumms: <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#> .
+@prefix litmus: <https://itma.ie/litmus/ontology#> .
 
-#\ Externen Ereignis-Datensatz als Ereignis im Sinne des Metadatenprofils definiert.
 
-domaene:UrauffuehrungBWV208   mo:performer    wdt:Q97621186   .
 
-#\ Die Uraufführung fand unter Mitwirkung von Johannes Zedelmayer statt.
+dom:UrauffuehrungBWV208   rdf:type   wumms:Auffuehrung   .
 
-domaene:UrauffuehrungBWV208   mo:instrument   domaene:Barockhorn_Mitteldeutschland    .
+###\ Externen Ereignis-Datensatz als Ereignis im Sinne des Metadatenprofils definiert.
 
-#\ Die Uraufführung fand mit einem Barockhorn statt.
+dom:UrauffuehrungBWV208   mo:performer    wdt:Q97621186   .
 
-domaene:Barockhorn_Mitteldeutschland    litmus:L58i   wdt:Q97621186   .
+###\ Die Uraufführung fand unter Mitwirkung von Johannes Zedelmayer statt.
 
-#\ Ein Instrument des Typs "Barockhorn" wurde gespielt von Johannes Zedelmayer.
+dom:UrauffuehrungBWV208   mo:instrument   dom:Barockhorn_(Mitteldeutschland)    .
 
-domaene:Barockhorn_Mitteldeutschland    owl:sameAs    domaene:corDaCaccia   .
+###\ Die Uraufführung fand mit einem Barockhorn statt.
 
-#\ Der Typ "Barockhorn" entspricht dem Typ "cor da caccia".
+dom:Barockhorn_(Mitteldeutschland)    litmus:L58i   wdt:Q97621186   .
 
-domaene:Barockhorn_Mitteldeutschland    crm:P137    domaene:MIMUL_Inv.-Nr.\_1663    .
+###\ Ein Instrument des Typs "Barockhorn" wurde gespielt von Johannes Zedelmayer.
 
-#\ Ein Beispiel für den Typ "Barockhorn" ist das Großwindige Waldhorn etc.
+dom:Barockhorn_(Mitteldeutschland)    owl:sameAs    dom:corDaCaccia   .
 
-domaene:corDaCaccia   ma:hatStimmung(notierte)    ma:F_(Tonkomplex)   .
+###\ Der Typ "Barockhorn" entspricht dem Typ "cor da caccia".
 
-#\ Das Horn in BWV ist in F notiert (es handelt sich um ein F-Horn). Hier wird abermals das Problem des Mappings deutlich – tatsächlich existiert keinerlei Information, ob es sich bei MIMUL 1663 um ein Horn in F handelt. Durch Vererbung kraft des symmetrischen Property's crm:P137 ist dies nun jedoch nahegelegt.
+dom:Barockhorn_Mitteldeutschland    crm:P137    mimo:MIMUL_Inv.-Nr._1661    .
 
-domaene:corDaCaccia   ma:hatStimmungssystem   ma:obertonreineStimmung   .
+###\ Ein Beispiel für den Typ "Barockhorn" ist das Großwindige Naturwaldhorn etc.
 
-#\ Das Horn hat die Stimmung "Obertonrein". 
+mimo:MIMUL_Inv.-Nr._1661	wumms:KlangbeipsielMediumOfPerformance	wc:File:4m33s.mid	.
 
-domaene:corDaCaccia   ma:hatStimmhoehe    ma:Stimmhoehe   .
+###\ Ein Klangbeispiel des Großwindigen Naturwaldhorn findet sich in den Wikimedia Commons.
 
-ma:Stimmhoehe   rdf:subject   wdt:118819    .
+dom:corDaCaccia   wumms:hatNotierteStimmung    wumms:F_Tonkomplex   .
 
-ma:Stimmhoehe   rdf:predicate   rdf:value   .
+###\ Das Horn in BWV ist in F notiert (es handelt sich um ein F-Horn). Hier wird abermals das Problem des Mappings deutlich – tatsächlich existiert keinerlei Information, ob es sich bei MIMUL 1663 um ein Horn in F handelt. Durch Vererbung kraft des symmetrischen Property's crm:P137 ist dies nun jedoch nahegelegt.
 
-ma:Stimmhoehe   rdf:object    ma:415Hz    .
+dom:corDaCaccia   mwumms:hatStimmungssystem   wumms:obertonreineStimmung   .
 
-#\ die absolute Stimmhöhe des Horns ist a' = 415 Hz.
+###\ Das Horn hat die Stimmung "Obertonrein". 
 
-domaene:corDaCaccia   ma:hatAmbitus   ma:Ambitus    .
+dom:corDaCaccia   wumms:hatStimmhoehe    wumms:Stimmhoehe   .
 
-ma:Ambitus    ma:hat_tiefsten_Ton   ma:c'   .
+wumms:Stimmhoehe   rdf:subject   wdt:118819    .
 
-ma:Ambitus    ma:hat_tiefsten_Ton   ma:a''    .
+wumms:Stimmhoehe   rdf:predicate   rdf:value   .
 
-#\ Der Ambitus des Horns umspannt die Töne c' und a'' (notiert!)
+wumms:Stimmhoehe   rdf:object    ma:415Hz    .
 
-#\ Folgende Informationen können darüber hinaus durch das Wissen um Referenzton, Stimmungston und notierte Stimmung inferiert werden:
+###\ die absolute Stimmhöhe des Horns ist a' = 415 Hz.
+
+dom:corDaCaccia   wumms:hatAmbitus   wumms:Ambitus    .
+
+wumms:Ambitus    wumms:hatTiefstenTon   wumms:c'   .
+
+wumms:Ambitus    wumms:hatHoechstenTon   wumms:a''    .
+
+###\ Der Ambitus des Horns umspannt die Töne c' und a'' (notiert!)
+
+###\ Folgende Informationen können darüber hinaus durch das Wissen um Referenzton, Stimmungston und notierte Stimmung inferiert werden:
 ```
 
 

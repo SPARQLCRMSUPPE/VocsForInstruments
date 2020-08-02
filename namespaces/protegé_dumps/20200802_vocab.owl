@@ -368,7 +368,7 @@ wdt:Q34379 rdf:type owl:Class ;
 mimo:OAI_ULEI_M0001655 rdf:type owl:NamedIndividual ,
                                 crm:E19_Physical_Object ,
                                 <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)> ;
-                       rdfs:label "MIMUL Sig.-Nr. 1661" .
+                       rdfs:label "MIMUL_Inv.-Nr._1661" .
 
 
 ###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#f
