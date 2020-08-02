@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#> .
+@prefix : <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms/> .
 @prefix dc: <https://dublincore.org/specifications/dublin-core/dcmi-terms/#> .
 @prefix mo: <http://purl.org/ontology/mo/#> .
 @prefix wc: <https://commons.wikimedia.org/wiki/File:> .
@@ -93,6 +93,19 @@ dc:relation rdf:type owl:ObjectProperty ;
             rdfs:range crm:E19_Physical_Object .
 
 
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#hatBesetzung
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#hatBesetzung> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:domain <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> ;
+                                                                                                   rdfs:range <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#cor_da_caccia> ;
+                                                                                                   rdfs:comment "Domäne!" .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#hatUrauffuehrung
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#hatUrauffuehrung> rdf:type owl:ObjectProperty ;
+                                                                                                       rdfs:domain <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> ;
+                                                                                                       rdfs:range <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Urauffuehrung> .
+
+
 ###  https://itma.ie/litmus/ontology#L58_played_on_instrument
 litmus:L58_played_on_instrument rdf:type owl:ObjectProperty ;
                                 owl:inverseOf litmus:L58i_instrument_played_by ;
@@ -113,11 +126,6 @@ wumms:KlangbeipsielMediumOfPerformance rdf:type owl:ObjectProperty ;
                                        rdfs:comment "Verbindet Klangbeispiele mit Instrumenten (Vokabular/Objekte)."@de ;
                                        rdfs:label "KlangbeispielMediumOfPerformance"@de ;
                                        owl:versionInfo "instabil"@de .
-
-
-###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#hatBesetzung
-wumms:hatBesetzung rdf:type owl:ObjectProperty ;
-                   rdfs:comment "Domäne!" .
 
 
 ###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#hatHoechstenTon
@@ -230,15 +238,7 @@ crm:E55_Type rdf:type owl:Class ;
 ###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#cor_da_caccia
 <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#cor_da_caccia> rdf:type owl:Class ;
                                                                            rdfs:subClassOf crm:E55_Type ;
-                                                                           rdfs:comment "Domäne!"@de ;
-                                                                           owl:deprecated ""@de .
-
-
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class ;
-                                                                                            rdfs:subClassOf mus:M14_Medium_Of_Performance ;
-                                                                                            rdfs:comment "Domäne!"@de ;
-                                                                                            owl:deprecated ""@de .
+                                                                           rdfs:comment "Domäne!"@de .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#statement
@@ -252,6 +252,20 @@ rdf:statement rdf:type owl:Class .
 ###  http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
                                    rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Urauffuehrung
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Urauffuehrung> rdf:type owl:Class .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class ;
+                                                                                                                     rdfs:subClassOf mus:M14_Medium_Of_Performance ;
+                                                                                                                     rdfs:comment "Domäne!"@de .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> rdf:type owl:Class .
 
 
 ###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#Ambitus
@@ -340,19 +354,20 @@ wdt:Q34379 rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Track_No_2
-<http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Track_No_2> rdf:type owl:NamedIndividual ,
-                                                                                 wumms:Klangbeispiel .
-
-
 ###  https://commons.wikimedia.org/wiki/File:4m33s.mid
-<https://commons.wikimedia.org/wiki/File:4m33s.mid> rdf:type owl:NamedIndividual .
+<https://commons.wikimedia.org/wiki/File:4m33s.mid> rdf:type owl:NamedIndividual ,
+                                                             wumms:Klangbeispiel .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#UrauffuehrungBWV208
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#UrauffuehrungBWV208> rdf:type owl:NamedIndividual ,
+                                                                                                                   wumms:Auffuehrung .
 
 
 ###  https://mimo-international.com/MIMO/doc/IFD/#OAI_ULEI_M0001655
 mimo:OAI_ULEI_M0001655 rdf:type owl:NamedIndividual ,
                                 crm:E19_Physical_Object ,
-                                <http://www.semanticweb.org/alanriedel/ontologies/2020/4/ma#Barockhorn_(Mitteldeutschland)> ;
+                                <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)> ;
                        rdfs:label "MIMUL Sig.-Nr. 1661" .
 
 
@@ -384,11 +399,6 @@ wumms:obertonreineStimmung rdf:type owl:NamedIndividual ,
 ###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#d''
 <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#d''> rdf:type owl:NamedIndividual ,
                                                                                                            wumms:TonKlingend .
-
-
-###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms/UrauffuehrungBWV208
-<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms/UrauffuehrungBWV208> rdf:type owl:NamedIndividual ,
-                                                                                                                           wumms:Auffuehrung .
 
 
 ###  https://www.wikidata.org/wiki/Q97621186

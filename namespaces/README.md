@@ -11,6 +11,6 @@ In diesem Ordner:
 
 Im Unterordner "Namespaces":
 
-* sw_ont-Dateien = gesamtes in der MA verwendetes Vokabular
+* vocab = gesamtes in der MA verwendetes Vokabular
 * wumms = Metadatenprofil
 * dom = Domänenvokabular

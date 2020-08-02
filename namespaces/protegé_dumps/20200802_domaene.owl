@@ -21,23 +21,35 @@
 #################################################################
 
 ###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#hatBesetzung
-:hatBesetzung rdf:type owl:ObjectProperty .
+:hatBesetzung rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> ;
+              rdfs:range :cor_da_caccia .
 
 
 ###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#hatUrauffuehrung
-:hatUrauffuehrung rdf:type owl:ObjectProperty .
+:hatUrauffuehrung rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> ;
+                  rdfs:range :Urauffuehrung .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/Barockhorn_(Mitteldeutschland)
-<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/Barockhorn_(Mitteldeutschland)> rdf:type owl:Class .
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Urauffuehrung
+:Urauffuehrung rdf:type owl:Class .
 
 
-###  https://www.wikidata.org/wiki/cor_da_caccia
-wdt:cor_da_caccia rdf:type owl:Class .
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#cor_da_caccia
+:cor_da_caccia rdf:type owl:Class .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)> rdf:type owl:Class .
+
+
+###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource
+<https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> rdf:type owl:Class .
 
 
 #################################################################
@@ -45,7 +57,8 @@ wdt:cor_da_caccia rdf:type owl:Class .
 #################################################################
 
 ###  http://d-nb.info/gnd/300009178
-<http://d-nb.info/gnd/300009178> rdf:type owl:NamedIndividual ;
+<http://d-nb.info/gnd/300009178> rdf:type owl:NamedIndividual ,
+                                          <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Werk/Ressource> ;
                                  rdfs:label "BWV 208" .
 
 
@@ -54,12 +67,13 @@ wdt:cor_da_caccia rdf:type owl:Class .
 
 
 ###  https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#UrauffuehrungBWV208
-:UrauffuehrungBWV208 rdf:type owl:NamedIndividual .
+:UrauffuehrungBWV208 rdf:type owl:NamedIndividual ,
+                              :Urauffuehrung .
 
 
 ###  https://mimo-international.com/MIMO/doc/IFD/#OAI_ULEI_M0001655
 mimo:OAI_ULEI_M0001655 rdf:type owl:NamedIndividual ,
-                                <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/Barockhorn_(Mitteldeutschland)> ;
+                                <https://github.com/SPARQLCRMSUPPE/VocsForInstruments/blob/master/namespaces/domaene#Barockhorn_(Mitteldeutschland)> ;
                        rdfs:label "MIMUL Sig.-Nr. 1661" .
 
 
