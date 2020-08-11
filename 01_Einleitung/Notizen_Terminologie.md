@@ -18,3 +18,6 @@ Begriff Vokabular hier (auch wenn eigentlich Ontologie) v.a. verwendet, um zu su
 
 
 "Wie schon in XML versteht man un- ter einem Vokabular meist eine Zusammenstellung von Bezeichnern mit klar definierter Bedeutung." [@TN_libero_mab21631588, S. 48]
+
+
+"As argued by the W3C (World Wide Web Consortium), ontologies and vocabularies within the Semantic Web can be regarded as synonymous, although ontologies may denote more complex conceptualisations (W3C, 2015)." (@ziku_digital_2020, S. 5)
