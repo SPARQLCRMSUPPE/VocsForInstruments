@@ -36,9 +36,7 @@ Methodik (2 Ebenen):
 
 
 
-erstmal all die Möglichkeiten … föderierte Suche, verknüpfte Ressourcen, alles möglich heutzutage...
 
-doch wo und wie fängt man an? Am Beginn steht die terminologische Arbeit
 
 
 
@@ -52,73 +50,86 @@ Das geschieht durch Entwicklung eines Standards.
 
 
 
-[1.\ Satz]
-
 Ziel dieser Arbeit ist es, einen Ansatz für ein semantisches Framework zu entwickeln, das seine Anwender in die Lage versetzt, musikinstrumentenbezogene Ressourcen aus Einrichtungen unterschiedlicher Sparten des Kulturerbes zueinander in Beziehung zu setzen, zu verbinden und dabei zugleich – mittelbar – bereits vorhandenes Vokabular um wichtige Aspekte anreichert. 
 
-[warum ist das nötig? / Hintergrund]
+Musikinstrumente sind schwer zu fassende Phänomene, deren "Wesen" situativ und je nach Blickwinkel[^8] sehr unterschiedlich – etwa materiell, immateriell, medial oder performativ – sich ergeben kann.[^2] Hinzu kommt, dass sie (zumeist primär) in Abhängigkeit zu einem gleichermaßen immateriellen, hochgradig ambivalenten und damit für Kulturerbeinstitutionen ohnehin außerordentlich schwierig fassbaren Gegenstand – die Musik – stehen.[^1] Trotzdem spielen Musikinstrumente in verschiedenen solcher Einrichtungen eine Rolle – sei es als Museumsobjekt, als Besetzungsangabe einer Quelle, als Instrument in einer Aufnahme oder als Term in einem Vokabular etc. 
 
-Musikinstrumente sind schwer zu fassende Phänomene, deren "Wesen" etwa als materiell, immateriell, medial oder performativ sich situativ und je nach Blickwinkel sehr unterschiedlich konstruiert werden mag.[^2] Hinzu kommt, dass sie (zumeist primär) in Abhängigkeit zu einem gleichermaßen immateriellen, hochgradig ambivalenten und damit für Kulturerbeinstitutionen ohnehin außerordentlich schwierig fassbaren Gegenstand – die Musik – steht.[^1] Trotzdem spielen Musikinstrumente in verschiedenen solcher Einrichtungen eine Rolle – sei es als Museumsobjekt, als Besetzungsangabe einer Quelle, als Instrument in einer Aufnahme oder als Term in einem Vokabular. 
+Es liegt dabei auf der Hand, dass sich das Konzept "Musikinstrument" eingedenk seines eingangs beschriebenen, sparten- oder gar institutionsspezifischen Blickwinkels unterscheiden muss: Eine "Objekt-zentrierte Herangehensweise" wird womöglich ganz andere Aspekte jenes Konzepts hervorheben – etwa physische oder ereignisbezogene – als eine bibliographische.[^6] Und so mag es denn auch nicht verwundern, wenn konzeptuelle Modelle und Vokabulare verschiedener Kulturerbesparten – etwa Museen, Archive, Bibliotheken etc. – mitunter nicht unmittelbar miteinander kompatibel sind.
 
-Es liegt dabei auf der Hand, dass sich das Konzept "Musikinstrument" in Abhängigkeit zu seinem eingangs beschriebenen, sparten- oder gar institutionsspezifischen Blickwinkel, Denktradition und deren Ausdruck als Erschließungspraxis unterscheiden muss: Eine "Objekt-zentrierte Herangehensweise" wird womöglich ganz andere Aspekte jenes Konzepts hervorheben – etwa physische oder ereignisbezogene – als eine bibliographische.[^6] Und so mag es denn auch nicht verwundern, wenn konzeptuelle Modelle und Vokabulare verschiedener Kulturerbesparten – etwa Museen, Archive, Bibliotheken etc. – mitunter nicht unmittelbar miteinander kompatibel sind.
+Dabei bärge vor dem Hintergrund eines digitalisierten *GLAM*-Bereichs[^5] eine Vernetzung von Beständen, dessen Prämisse jene Kompatibilität bildet, bekanntermaßen einiges an Potential: So könnten etwa Bestandsmetadaten durch Kontextualisierung nach außen zusätzlich in Wert gesetzt werden, die Übernahme von Fremddaten zur Anreicherung eigener Datensätze erleichtert werden,[^3] neue – womöglich bestandsübergreifende – Suchmöglichkeiten und -Einstiege für den Nutzer geschaffen[^7] und Bestände virtuell zusammengeführt und sichtbarer werden.[^4] Für Forscher, etwa Editionswissenschaftler oder Digital Humanists, ergibt sich neben der Nutzung und Auswertung von hochwertigen Metadaten die Möglichkeit, eigene Forschungsdaten in diesem Austausch beizutragen. Die Aktualität und Relevanz dieses Anliegens im geisteswissenschaftlichen Bereich zeigt sich dabei etwa darin, dass mit den Projekten GND4C[^266] sowie im NFDI4Culture-Konsortium (insb. "Task Area 2")[^267] gleich zwei Projekte mit nationaler Bedeutung die Vernetzung und Standardisierung im Kulturerbebereich angehen.
 
-Dabei bärge bekanntermaßen vor dem Hintergrund eines digitalisierten *GLAM*-Bereichs[^5] eine Vernetzung von Beständen, dessen Prämisse jene Kompatibilität bildet, einiges an Potential: So könnten etwa Bestandsdaten durch Kontextualisierung nach außen zusätzlich in Wert gesetzt werden, die Übernahme von Fremddaten zur Anreicherung eigener Datensätze erleichtert werden,[^3] neue – womöglich bestandsübergreifende – Suchmöglichkeiten und -Einstiege für den Nutzer geschaffen[^7] und Bestände virtuell zusammengeführt und sichtbarer werden.[^4]
+Ein weiteres zentrales Problem im Zusammenhang mit musikalischen Quellen besteht zudem darin, dass vorhandene, meist generische Vokabulare im Bereich der Musikinstrumente mithin starke Defizite (Konsistenz, Detailtiefe, Präzision) aufweisen. Die Möglichkeit, diese um wichtige Konzepte zu ergänzen, erscheint daher ebenfalls außerordentlich fruchtbar. Der praktische Nutzen einer solchen Möglichkeit wurde im Vorfeld dieser Arbeit in zahlreichen persönlichen Gesprächen mit Vertretern verschiedener Sparten sowie Forschenden verifiziert.
 
-zackzack – ist ein Desiderat – gelingt mit Semantic Web-Technologien.
+So ergeben sich zwei Hauptanliegen für diese Arbeit:
 
+1) die Möglichkeit einer Vernetzung von musikinstrumentenbezogenen Daten verschiedener Sparten zu erproben.
+2) auszuloten, in welcher Weise eine Anreicherung der vorhandenen Vokabulare möglich ist.
 
+Einen technischen Lösungsansatz hierfür halten die sog. "Semantic Web-Technologien"[^265] bereit. Dank des ihnen zugrundeliegenden *RDF*-Modells (*Research Description Framework*) ist es bei Nutzung verschiedener etablierter Technologien des Internets möglich, im Netz gespeicherte Daten in semantische Beziehungen der Form 
 
+*Subjekt – Prädikat – Objekt*
 
+zueinander zu setzen und maschinenlesbar zu machen. Aus der Gesamtheit der an dieses semantische Netz angeschlossenen Daten, dem *Linked Data Cloud* lässt sich so ein eigenes anwendungsbezogenes Vokabular, ein sog. *Metadatenprofil*[^264] erzeugen, das imstande ist, als Schema für Vernetzung und Anreicherung musikinstrumentenbezogener Metadaten herzuhalten. Es könnte dabei als gedankliche Vorarbeit für eine Weiterentwicklung und Ausarbeitung durch die Fachcommunity fungieren.
 
+---
 
+In methodischer Hinsicht ist die Entwicklung eines solchen Profils jedoch mit einigen Herausforderungen verbunden:
 
+In RDF strukturierte Vokabulare existieren gewöhnlich als Endprodukt – Rückschlüsse auf die Modalitäten ihrer Genese (und somit methodische Ansätze für die Entwicklung eigener) sind dem Betrachter in der Regel nicht möglich. Zudem ist ihre Modellierung stark prozessual und mitunter zirkulär geprägt, was das Gießen dieses Prozesses in die chronologische Form wissenschaftlicher Stringenz in Form einer wissenschaftlichen Arbeit sehr erschwert. Da nicht jede Iteration dieser Genese umfassend im Rahmen der verschriftlichten Arbeit nachgezeichnet werden kann, wurde ein *GitHub*-Repositorium[^269] angelegt, in dem auch jeder Schritt dokumentiert und offen nachvollziehbar ist.
 
+Eine zusätzliche Herausforderung liegt in den "auszuwertenden Quellen" selbst begründet: Die Quellen, aus deren Termen sich das Metadatenprofil potentiell zusammensetzen könnte, umfasst die Gesamtheit der im Semantic Web enthaltenen. Eine philologische Auswertung ist daher schlichtweg unmöglich, und es werden alternative heuristische Lösungen gefunden werden müssen.
+Umso schwerer wiegt es da, dass es an einführender Literatur, die imstande wäre – insbesondere Nicht-Informatikern –, einen Kompass im Prozess des Modellierens und Publizierens von Linked Data an die Hand zu geben, mangelt.[^268] 
 
+Diese besonderen Rahmenbedingungen machen es erforderlich, dass sich die Arbeit in großen Teilen deduktiv vorantastet, wobei die Methodik anlassbezogen anhand der in der Praxis vorgefundenen jeweiligen Problemstellung zu entwickeln sein wird.
 
-Miteinander verbinden, dabei en passant anreichern
 
-doch wozu das ganze?
 
+Technisches 
 
+Standardbildung
+Unfertigkeit
 
-Es mag ein Allgemeinplatz darstellten, dass disparat voneinander existierende Webressourcen insbesondere dadurch in Wert gesetzt werden, indem sie aufeinander bezogen, miteinander verlinkt, werden. 
 
 
 
 
 
 
+Die iterative Qualität der Modellierung stellt 
 
 
 
 
 
+Ausgehend von einem realen Anwendungsszenario wird über 
 
 
 
-– sowohl hinsichtlich konzeptueller Modelle als auch Vokabulare –
+. Dabei 
 
 
-Die Erfassung eines Objekts – ob philosophisch oder erschließerisch – geschieht aus einer phänomenologischen Bezogenheit heraus, die sich einerseits 
+Ein Problem auch: die technische Erstellung -> wie bildet man diesen Prozess ab?
 
 
 
 
- 
 
 
 
 
 
+Methodik (2 Ebenen):
+    1. Semantic Web (<- kann man das hier abhandeln, oder sollte das ein eigenes Kapitel haben?)
+    2. verwendete Terminologie
+    3. eigentliche Methodik
+        * Vorlage, systemisch inhärente Unvollendetheit
 
-Eine solches gleichermaßen vielseitiges wie vieldeutiges 
 
 
 
 
 
 
-Die dem Ding somit innewohnende Ambivalenz 
 
 
 
@@ -126,7 +137,6 @@ Die dem Ding somit innewohnende Ambivalenz
 
 
 
-Dem Ding "Musikinstrument" kommen je nach Perspektive  
 
 
 
@@ -138,144 +148,24 @@ Dem Ding "Musikinstrument" kommen je nach Perspektive
 
 
 
-Was ist ein Musikinstrument? -> ein Objekt? Ein Medium? Welche Rolle spielt dabei das Performative? Was sind Musikinstrumente im Web? Eine digitale Repräsentation von einem Konzept "Musikinstrument" mit Metadaten <- man kann die philosophische Ebene erstmal ausklammern. 
-Aber je nach Sparte (Funktion) doch wieder anders definiert / verwendet. Chance, diese Konzepte miteinander in Beziehung zu setzen. 
 
-Was sind Musikinstrumente? 
 
 
-Bei wenig anderen Dingen 
 
 
 
 
-"Ein Editionsphilologe, ein Organologe, ein Bibliothekar, ein Informatiker und ein Musikphilosoph unterhalten sich in einer Bar. Fragt der Musikphilosoph: ,Was sind Musikinstrumente im Web?' Alle einigen  '"
 
 
-Was sind Musikinstrumente im Web? 
-Klar: sie sind digitalen Repräsentanten eines wie auch immer gearteten Konzepts "Musikinstrument", ausgedrückt etwa durch ihre Eigenschaften in Form von Metadaten. 
 
-manifestieren sich in vielfältiger Weise
 
-Dieses Konzept könnte sich dabei in Form eines Besetzungshinweises auf einem Notenblatt, als Datenbankobjekt eines Museums, als konkretes Instrument auf einer Aufnahme seine jeweilige Manifestation erfahren. Angesichts dieser Heterogenität mag es kaum verwunderlich erscheinen, dass 
 
 
 
-die verschiedenartigkeit von 
 
 
 
 
-
-
-
-
-
-
-
-
-
-Doch was soll das
-Und doch gilt auch bei dieser Frage wie so oft: "depends on who you ask." Tatsäch
-
-
-Im Museumswesen
-
-
-
-
-
-
-
-
-
-
-
-verstanden werden. Diese gleichermaßen integrative, wie unaussagekräftige Definition mag womöglich eine abstrakte technische Basis in Form
-
-
-
-
-
-
-
-
-
-
-
-zunächst einmal 
-
-
-
-
-
-
-
-
-
-"Ein Editionsphilologe, ein Museumsmensch, ein Bibliothekar und ein Informatiker unterhalten sich in einer Bar."
-
-
-
-
-
-
-
-
-Es mag ein Allgemeinplatz darstellten, dass disparat voneinander existierende Webressourcen insbesondere dadurch in Wert gesetzt werden, indem sie aufeinander bezogen, miteinander verlinkt, werden. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Was ist der Nutzen? 
-
-gibt verschiedene Effekte
-
-- FDM – FAIR-Kram
-- bessere Auszeichnung v. Quellen
-- AI
-
-letztlich hier nicht relevant: am Anfang steht eh die Modellierung
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-More accurate content descriptions.
-*   Interoperability
-*   Simple data model for aggregation
-*   *   Data aggregation by linked data.
-*   *   Semantic Web services.
-
-
- GND für Kulturdaten (GND4C)
-
-Das größte Potential der Normdaten liegt aber darin, das Rückgrat eines maschinenlesbaren, semantischen Netzes der Kultur und Wissenschaft zu bilden: inhaltliche Verbindungen zwischen Kulturgütern, Bibliotheksbeständen, Forschungsdaten und assoziierten Personen, Einrichtungen, Orten, Ereignissen, Projekten, etc. auszuweisen und maschinell auswertbar zu machen, die sonst im Verborgenen bleiben würden.
-
-Davon profitieren Kultureinrichtungen und Forschende in gleichem Maße.1 Die Vernetzung digitalen Ressourcen über semantische Bezüge leistet einen wesentlichen Beitrag zum Auf- und Ausbau leistungsfähiger Informationssysteme für die Forschung. Für die Kulturdomäne insgesamt ergeben sich durch den breiten Einsatz von Normdaten Synergien in der Generierung, Pflege, Bereitstellung und Nutzung von Daten. Die einzelnen Sammlungen gewinnen dabei an Sichtbarkeit und sind gut für den Einsatz in spartenübergreifenden Nutzungskontexten vorbereitet. @gobel_gnd_2017, S.2
 
 
 
@@ -310,3 +200,12 @@ Davon profitieren Kultureinrichtungen und Forschende in gleichem Maße.1 Die Ver
 [^5]: Akronym blabla
 [^6]: [@tomasi_modellieren_2018, S. 175.]
 [^7]: Eine sehr umfassende Auseinandersetzung mit Chancen für Einrichtungen und Nutzer findet sich in: @waibel_think_2009.
+[^8]: Eine phänomenologisch fundierte Thematisierung der Beziehung zwischen Wahrnehmungssubjekt und Musikinstrument findet sich in: [@de_souza_music_2017, S. 20–23.]
+
+[^264]: [@alma99244375602586]
+[^265]: [@noauthor_semantic_nodate]
+
+[^266]: [@gobel_gnd_2017]
+[^267]: [@altenhoner_nfdi4culture_2020]
+[^268]: Einführende Werke zum Semantic Web und einzelner Vokabulare finden sich in @allemang_semantic_2011, @TN_libero_mab21631588, sowie @noy_ontology_nodate zur Modellierung von Ontologien. @hyvonen_publishing_2012 beinhaltet zudem gute Hinweise für die Publikation von Linked Data in Kulturerbeeinrichtungen.
+[^269]: [@sparqlcrmsuppe_sparqlcrmsuppevocsforinstruments_2020]

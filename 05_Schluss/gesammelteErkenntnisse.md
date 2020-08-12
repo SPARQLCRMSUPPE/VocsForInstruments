@@ -40,3 +40,10 @@ naja, das Verbinden von musikinstrumenten nicht so sehr über mappen sinnvoll (?
 
 Stimmung
 Tonsystem
+
+
+
+
+Den Notentext MEI z.B. selbst als Linked Data-Text verstehen, und durchsuchbar machen (Ansätze in Lausanne(?)) oder etwa Spielanweisungen verlinken, 
+
+Mit ShEX validierbar machen
