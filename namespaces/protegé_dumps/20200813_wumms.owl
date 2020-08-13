@@ -38,13 +38,13 @@ crm:P137_exemplifies rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/ontology/mo/instrument
 <http://purl.org/ontology/mo/instrument> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#Auffuehrung> ;
+                                         rdfs:domain wumms:Auffuehrung ;
                                          rdfs:range wdt:Q34379 .
 
 
 ###  http://purl.org/ontology/mo/performer
 <http://purl.org/ontology/mo/performer> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#Auffuehrung> ;
+                                        rdfs:domain wumms:Auffuehrung ;
                                         rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
 
 
@@ -229,6 +229,14 @@ wumms:Ambitus rdf:type owl:Class ;
               owl:versionInfo "instabil"@de .
 
 
+###  http://purl.org/wumms#Auffuehrung
+wumms:Auffuehrung rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/ontology/mo/Performance> ;
+                  rdfs:comment "Jede Art von Ereignis, bei dem es zu einer Äußerung von Musik kam. Bsp.: die Aufführung eines Werkes, das Abspielen eines Musiktracks von einem Musikmedium, ein paar geistesabwesend gepfiffene Töne etc."@de ;
+                  rdfs:label "Auffuehrung"@de ;
+                  owl:versionInfo "instabil"@de .
+
+
 ###  http://purl.org/wumms#Klangbeispiel
 wumms:Klangbeispiel rdf:type owl:Class ;
                     rdfs:comment "Ein Audiosample, das zur Verdeutlichung einer gewünschten Sache beispielhaft tauglich ist. Bsp.: Ein Ausschnitt eines Werks, der Klang eines Instruments etc."@de ;
@@ -296,14 +304,6 @@ rdf:statement rdf:type owl:Class .
 ###  http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
                                    rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
-
-
-###  https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#Auffuehrung
-<https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#Auffuehrung> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf <http://purl.org/ontology/mo/Performance> ;
-                                                                                                          rdfs:comment "Jede Art von Ereignis, bei dem es zu einer Äußerung von Musik kam. Bsp.: die Aufführung eines Werkes, das Abspielen eines Musiktracks von einem Musikmedium, ein paar geistesabwesend gepfiffene Töne etc."@de ;
-                                                                                                          rdfs:label "Auffuehrung"@de ;
-                                                                                                          owl:versionInfo "instabil"@de .
 
 
 ###  https://www.wikidata.org/wiki/Q118819
