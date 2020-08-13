@@ -61,4 +61,6 @@ sowie
 
 - [ ] Ambitus könnte auch für Objekt wichtig sein!
 
-- [ ] deprezierte Namespaces wegschmeißen -> im Text Links in den Müllhaufen umleiten.
+- [ ] deprezierte Namespaces wegschmeißen -> im Text Links in den Müllhaufen umleiten. <- was meine ich damit??
+
+- [ ] url in purl.org anpassen

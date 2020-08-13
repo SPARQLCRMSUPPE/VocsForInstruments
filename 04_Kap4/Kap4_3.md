@@ -173,14 +173,22 @@ Diese Modellierung würde ein fundierteres Verständnis mathematischer Logik und
 
 ---
 
-## "Wrapping things up" / Nachbereitung (?)
+## Technische Nachbereitung / The Rise of*wumms:*
 
-* label @eng – rdfs:literal
-* rdfs:comment – dazu Beispiele
-* owl:version info: instabil
-* Vereinheitlichung der Schreibweisen - Vermeidung von Umlaute (wie heißt das?), Leerzeichen, Sonderzeichen
-* trennung von domain und ma:vokabular <- (?)
-* in diesem Kontext: Anpassen des namespaces / der Benennung des Vokabualrs
+* Gemäß der guten Praxis für Linked Open Data-Datensätze erhalten die Konzepte des Vokabulars mit dem Property `rdfs:label` einen Namen und eine Sprachbezeichnung ("label everything")[^25].
+* Dasselbe gilt für `rdfs:comment`.
+* Schreibweisen wurden vereinheitlicht, Sonderzeichen und Leerzeichen entfernt.
+* Das Domänenvokabular, das bislang in *ma:* ebenfalls mitgeführt wurde, wurde in das neue Vokabular *domaene:*[^26] ausgelagert.
+* Der behelfmäßig eingeführte Namespace *ma:* kann durch einen neuen, weitaus besseren Namespace ersetzt werden:
+* Jedes nennenswerte Vokabular verdient ein stattliches Akronym. Daher wird *ma:* in *wumms* (**S**e**M**antic **MU**sic instrument **W**eb) umbenannt.
+* Eine entsprechende Domain wurde auf purl.org registriert, sodass *wumms:* nun über die persistente URL purl.org/wumms im Netz für immer und ewig verankert ist und referenziert werden kann ("cool uris don't change")[^24]. Diese löst derzeit auf das Vokabular im *GitHub*-Repositorium auf.
+* Allerdings wurde *wumms:* durch den Zusatz `owl:versionInfo	"draft"` als instabiler Entwurf gekennzeichnet.
+
+
+
+
+
+
 
 
 
@@ -349,3 +357,6 @@ musical interval/range of a melody
 
 [^22i]: [@noauthor_katalog_nodate]
 [^23]: [@noauthor_rdf_nodate-17]
+[^24]: [@noauthor_hypertext_nodate]
+[^25]: [@noauthor_label_nodate-1]
+[^26]: [@noauthor_sparqlcrmsuppevocsforinstruments_nodate]
