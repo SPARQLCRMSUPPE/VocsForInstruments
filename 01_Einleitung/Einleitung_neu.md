@@ -27,107 +27,45 @@ zueinander zu setzen und maschinenlesbar zu machen. Aus der Gesamtheit der an di
 
 In methodischer Hinsicht ist die Entwicklung eines solchen Profils jedoch mit einigen Herausforderungen verbunden:
 
-In RDF strukturierte Vokabulare existieren gewöhnlich als Endprodukt – Rückschlüsse auf die Modalitäten ihrer Genese (und somit methodische Ansätze für die Entwicklung eigener) bleiben dem Betrachter in der Regel verwehrt. Zudem ist der Vorgang der Modellierung stark prozessual und mitunter zirkulär geprägt, was das Gießen dieses Prozesses in die chronologische Form wissenschaftlicher Stringenz in Form einer wissenschaftlichen Arbeit sehr erschwert. (Da nicht jede Iteration dieser Genese umfassend im Rahmen dieser verschriftlichten Arbeit nachgezeichnet werden kann, wurde ein *GitHub*-Repositorium[^269] angelegt, in dem jeder Schritt dokumentiert und offen nachvollziehbar ist.)
+In RDF strukturierte Vokabulare existieren gewöhnlich als Endprodukt – Rückschlüsse auf die Modalitäten ihrer Genese (und somit methodische Ansätze für die Entwicklung eigener) bleiben dem Betrachter in der Regel verwehrt. Zudem ist der Vorgang der Modellierung stark prozessual und mitunter zirkulär geprägt, was das Gießen dieses Prozesses in die chronologische Form wissenschaftlicher Stringenz in Form einer wissenschaftlichen Arbeit sehr erschwert. (Da nicht jede Iteration dieser Genese umfassend im Rahmen der verschriftlichten Variante dieser Arbeit nachgezeichnet werden kann, wurde im *GitHub*-Repositorium dieser Arbeit[^269] jeder Schritt dokumentiert und offen nachvollziehbar gemacht.)
 
-Eine zusätzliche Herausforderung liegt in den auszuwertenden Quellen selbst begründet: Die Quellen, aus deren Termen sich das Metadatenprofil potentiell zusammensetzen könnte, umfasst die Gesamtheit der im Semantic Web enthaltenen. Eine philologische Auswertung ist daher schlichtweg unmöglich, und es werden alternative heuristische Lösungen gefunden werden müssen.
+Eine zusätzliche Herausforderung liegt in den auszuwertenden Quellen selbst begründet: Die Quellen, aus deren Termen sich das Metadatenprofil zusammensetzen könnte, umfasst potentiell die Gesamtheit der im Semantic Web enthaltenen. Eine philologische Auswertung ist daher schlichtweg unmöglich, und es werden im Laufe der Arbeit alternative heuristische Lösungen gefunden werden müssen.
+
 Umso schwerer wiegt es da, dass es an einführender Literatur, die imstande wäre – insbesondere Nicht-Informatikern –, einen Kompass im Prozess des Modellierens und Publizierens von Linked Data an die Hand zu geben, mangelt.[^268] 
 
 Diese besonderen Rahmenbedingungen machen es erforderlich, dass sich die Arbeit in großen Teilen deduktiv vorantastet, wobei die Methodik anlassbezogen anhand der in der Praxis vorgefundenen jeweiligen Problemstellung zu entwickeln sein wird, so dass der methodische Faden im Laufe der Arbeit immer wieder aufzugreifen zu sein wird.
 
-Eine weitere methodische Besonderheit, die gewissermaßen bereits im Wesen des Semantic Webs begründet liegt, ergibt sich aus der ihm eigenen sonderbaren Verschmolzenheit von Konzepten intellektueller Wissensrepräsentation und der Umstände ihrer technischen Manifestation, was eine losgelöste Betrachtung eines einzelnen dieser beiden Bestandteile nachgerade unmöglich macht. Dennoch erscheint es angesichts des hier behandelten konkreten Anwendungsfalls sinnvoll, im Folgenden einen gewissen inhaltlichen Schwerpunkt auf die intellektuelle Modellierung zu legen und technische Belange, wo immer möglich, auszuklammern.
+Eine weitere methodische Besonderheit, die gewissermaßen bereits im Wesen des Semantic Webs begründet liegt, ergibt sich aus der ihm eigenen sonderbaren Verschmolzenheit von Konzepten intellektueller Wissensrepräsentation und der technischen Umstände ihrer digitalen Manifestation, was eine losgelöste Betrachtung eines einzelnen dieser beiden Bestandteile nachgerade unmöglich macht. Dennoch erscheint es angesichts des hier behandelten konkreten Anwendungsfalls sinnvoll, im Folgenden einen gewissen inhaltlichen Schwerpunkt auf die intellektuelle Modellierung zu legen und technische Belange, wo immer möglich, auszuklammern.
 
-Metadatenstandards werden nicht im Rahmen von studentischen Qualifikationsarbeiten verfasst, sondern entstehen etwa als wandelbare Ergebnisse langwieriger Community-getriebener diskursiver Prozesse.[^270] Das Ergebnis dieser Arbeit ist daher keineswegs das Fertigstellen einer umfassenden Ontologie der Musikinstrumente, ihrer Eigenschaften und ihrer ontologischen Beziehungen zur Welt. Vielmehr besteht ihr möglicher Sinn darin, einige Vorüberlegungen für eine potentielle anschließende Entwicklung eines ausdrucksstärkeren Vokabulars vorwegzunehmen, dabei gangbare methodische Wege zu kartieren und zuletzt einige – wenige – konkrete inhaltliche musikwissenschaftliche Vorarbeiten vorauszuschicken – welche insbesondere aber zur Illustration und zu Verifikationszwecken für die Stimmigkeit des Arbeitsansatzes bestimmt sind.
+Metadatenstandards werden nicht im Rahmen von studentischen Qualifikationsarbeiten verfasst, sondern entstehen etwa als wandelbare Ergebnisse langwieriger Community-getriebener diskursiver Prozesse.[^270] Das Ergebnis dieser Arbeit besteht daher keineswegs im Fertigstellen einer umfassenden Ontologie der Musikinstrumente, ihrer Eigenschaften und ihrer ontologischen Beziehungen in der Welt. Vielmehr liegt ihr möglicher Sinn darin, einige Vorüberlegungen für eine potentielle anschließende Entwicklung eines ausdrucksstärkeren Vokabulars vorwegzunehmen, dabei gangbare methodische Wege zu kartieren und zuletzt einige – wenige – konkrete inhaltliche musikwissenschaftliche Vorarbeiten vorauszuschicken – welche insbesondere aber zur Illustration und zu Verifikationszwecken für die Stimmigkeit des Arbeitsansatzes bestimmt sind.
 
+## Vorbemerkungen
 
+### Semantic Web: Konzept
 
+Eine erschöpfende Einführung in die paradoxerweise teils nachgerade banalen wie zugleich hermetisch komplexen Konzepte und Technologien des *Semantic Web* kann an dieser Stelle nicht erfolgen, sondern sie darf sich vielmehr auf einige für das Verständnis der folgenden Arbeit wesentliche Punkte beschränken.
 
+Das *W3C* erklärt die Grundidee des *Semantic Webs* folgendermaßen: "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."[^a28] Dabei wird das Grundprinzip des Internet – verschiedene mittels *HTML*-Links miteinander *vernetzter* Seiten –, dem *Web of Documents*[^a29], auf den Inhalt dieser Seiten übertragen und erweitert. Dabei ist das *Web of Documents* lediglich ein "[...] set of interlinked documents with heterogeneous syntax and semantics and uncontrolled content[...]":[^a31] Dieser Inhalt ist also leider nicht einheitlich und daher nicht interoperabel.[^a30] Im *Web of Data*[^a35] können jedoch auch die Inhalte einer Seite (also "Data" innerhalb eines "Documents") dank einer standardiserten "Syntax", dem sog. *Ressource Description Framework* (RDF),[^a32] in vielfältige Beziehung zum Inhalt anderer Seiten gesetzt und mit passenden Informationen wiederum innerhalb dieser verlinkt werden. Durch die Charakterisierung der Beziehungen dieser Daten zueinander ergeben sich so mithilfe von RDF Aussagen , sog. "Tripel" mit semantischem Gehalt in der Form 
 
+*Subjekt* - *Prädikat* - *Objekt*.[^a36] 
 
+Die vormals auf die recht banale Beziehung 
 
+*Seite A* - *verlinkt auf* - *Seite B* 
 
+beschränkte  Aussagekraft von HTML wird um komplexe Aussagemöglichkeiten erweitert, die kreuz und quer durch das Netz Aussagen jeder Art über "Dinge" jeder Art zu treffen imstande sind. Dabei können die "Kanten" dieser Aussagen sowohl Subjekt oder Objekt neuer Aussagen werden. 
+Dank der Verwendung von RDF und bereits etablierter Webinfrastruktur und -Standards sind Semantic Web-konform strukturierte und publizierte Daten als *Linked Data* maschinenlesbar und interoperabel.
 
 
+### Terminologie
 
+Im Kontext des Semantic Web begegnet eine Vielzahl sehr schwammiger Begriffe, die zugleich außerordentlich inkonsistent Verwendung finden. Wenngleich an dieser Stelle für einige ausführlicheren terminologischen Untersuchungen auf @alma9913393902586 verwiesen werden kann, ist es an dieser Stelle dennoch sinnvoll, nochmals kurz auf einige der in dieser Arbeit verwendeten Begriffe einzugehen.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Methodik (2 Ebenen):
-    1. Semantic Web (<- kann man das hier abhandeln, oder sollte das ein eigenes Kapitel haben?)
-    2. verwendete Terminologie
-    3. eigentliche Methodik
-        * Vorlage, systemisch inhärente Unvollendetheit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Der syntaktische Kontext der Elemente *Subjekt*, *Prädikat*, *Objekt* ergibt einen gerichteten Graphen. Der Oberbegriff für die einzelnen, nun kontextuell losgelöst gedachten Elemente lautet in dieser Arbeit gemäß Stuckenschmidt *Konzepte*.[^271] 
+* Die "Kanten" des Graphen, die also je nach Kontext *Subjekt* oder *Objekt* sein können, heißen im Folgenden *Entitäten*, wobei die *Entitäten* sowohl "Dinge", als auch "Mengen von Dingen" sein können.[^272] 
+* Etwas weniger einheitlich wird mit dem Element *Prädikat* verfahren: er wird, je nach Kontext, als *Property* oder *Relation* bezeichnet.
+* Kaum ein anderer Begriff ist in derartige Ambivalenz gehüllt, wie der Begriff "Ontologie", sodass eine Definition für diese Arbeit höchstens näherungsweise – übrigens auch in der Fachliteratur gelebte Praxis –[^275] erfolgen kann.[^280]
+Über das Begriffspaar *Ontologie* und *Vokabular* schreibt das *W3C* (*World Wide Web Consortium*): "[...] ontologies and vocabularies within the Semantic Web can be regarded as synonymous, although ontologies may denote more complex conceptualisations (W3C, 2015)."[^273] Diese Arbeit verfährt wiederum etwas anders, indem sie diese prinzipielle Synonymität aufhebt und die Begriffe anhand Funktion und Struktur qualitativ unterscheidet: Demnach handelt es sich beim Begriff *Vokabular* um "[...]die Verzeichnung aller (allgemeinen oder fachspezifischen) Benennungen zur Nutzung als Wissensordnung [...]."[^274] Ihre Funktion besteht im Augenblick ihrer Nutzung darin, kontrolliertes Vokabular vorzuhalten. Für diese spezielle Nutzung kann nach Auffassung dieser Arbeit eine Ontologie mitunter ebenfalls verwendet werden. Charakteristika von Ontologien gegenüber anderen Systemen der Wissensorganisation sind in dieser Arbeit aber viel eher die folgenden Aspekte: Zumeist wird – sofern es um Ontologien im Semantic Web-Kontext geht – die formalisierte Sprachlichkeit und Maschinenlesbarkeit[^277] bzw. die Möglichkeit automatisches Schlussfolgern ("Reasoning") zu vollziehen, erwähnt.[^279] Bertram unterstreicht zudem ihre Vieldimensionalität und inhärente größtmögliche Flexibilität als Ordnungssystem in Bezug auf Beziehungsmöglichkeiten[^276] und zuletzt impliziert die Existenz einer "light"-Variante, der sog. *lightweight ontology*[^278] ein hohes Maß an Komplexität.
 
 
 
@@ -154,3 +92,34 @@ Methodik (2 Ebenen):
 [^268]: Einführende Werke zum Semantic Web und einzelner Vokabulare finden sich in @allemang_semantic_2011, @TN_libero_mab21631588, sowie @noy_ontology_nodate zur Modellierung von Ontologien. @hyvonen_publishing_2012 beinhaltet zudem gute Hinweise für die Publikation von Linked Data in Kulturerbeeinrichtungen.
 [^269]: [@sparqlcrmsuppe_sparqlcrmsuppevocsforinstruments_2020]
 [^270]: So bspw. die Prozesse zur Standardbildung des *W3C*, vgl.: @noauthor_world_nodate
+[^271]: [@alma9913393902586, S. 10.]
+[^272]: [@fischer_lexikon_2008, S. 275.]
+[^273]: Zit. nach: @ziku_digital_2020, S. 5. Ziku zitiert ihrerseits: [@noauthor_ontologies_nodate-1.]
+[^274]: [@stock_wissensreprasentation_2008, S. 188.] Stock spricht von "Nomenklaturen" statt "Vokabularen".
+[^275]: Diese außerordentliche Ambivalenz des Begriffes wird eindrücklich durch den Umstand illustriert, dass Stuckenschmidt ebenfalls eine endgültige Definition vermeidet (immerhin lautet der Titel "Ontologien : Konzepte, Technologien und Anwendungen").
+
+
+[^276]: [@TN_libero_mab213864266, S. 261.]
+[^277]: [@busse_was_2014, S. 289.]
+[^278]: [@article, S. 1]
+[^279]: [@stock_wissensreprasentation_2008, S. 257.]
+[^280]: Sehr Interessant ist in diesem Zusammenhang der Artikel [@busse_was_2014-2], in dem eine interdisziplinäre Annäherung an den Begriff erfolgt.
+
+[^a28]: [@noauthor_w3c_nodate]
+
+[^a29]: 
+
+[^a30]: PDF, HTML, Video
+
+[^a31]: [@szeredi_lukácsy_benkő_nagy_2014, S. 21]
+
+[^a32]: 
+
+[^a34]: [@madoc34762, S. 2]
+
+[^a35]: 
+
+[^a36]: Das Verhältnis zwischen der *Wikipedia* und *Wikidata* mag an dieser Stelle zur Verdeutlichung hilfreich sein: …
+
+[^a37]: [@noauthor_why_nodate]
+
