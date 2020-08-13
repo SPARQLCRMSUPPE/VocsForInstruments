@@ -63,4 +63,6 @@ sowie
 
 - [ ] deprezierte Namespaces wegschmeißen -> im Text Links in den Müllhaufen umleiten. <- was meine ich damit??
 
-- [ ] url in purl.org anpassen
+- [ ] url in purl.org anpassen!!
+
+- [ ] Aufführung muss wieder in wumms rein, da als Klasse dort gebraucht. Bzw. Alternative? Performance?
