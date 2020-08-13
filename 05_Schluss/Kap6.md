@@ -38,7 +38,7 @@ Eingedenk dieser gesetzten Prämisse voranschreitend ist die Modellierung mit de
 @prefix wdt: <https://www.wikidata.org/wiki/> .
 @prefix mimo: <https://mimo-international.com/MIMO/doc/IFD/#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix wumms: <https://raw.githubusercontent.com/SPARQLCRMSUPPE/VocsForInstruments/master/namespaces/wumms#> .
+@prefix wumms: <http://purl.org/wumms#> .
 @prefix litmus: <https://itma.ie/litmus/ontology#> .
 
 
