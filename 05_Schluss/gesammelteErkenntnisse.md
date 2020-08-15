@@ -42,7 +42,7 @@ Stimmung
 Tonsystem
 
 
-
+Es fehlt an vielen Stellen an Vokabular / Best Practises (<- )
 
 Den Notentext MEI z.B. selbst als Linked Data-Text verstehen, und durchsuchbar machen (Ansätze in Lausanne(?)) oder etwa Spielanweisungen verlinken, 
 

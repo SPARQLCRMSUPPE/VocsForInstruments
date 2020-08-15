@@ -63,6 +63,9 @@ sowie
 
 - [ ] deprezierte Namespaces wegschmeißen -> im Text Links in den Müllhaufen umleiten. <- was meine ich damit??
 
-- [ ] url in purl.org anpassen!!
+- [x] url in purl.org anpassen!!
 
-- [ ] Aufführung muss wieder in wumms rein, da als Klasse dort gebraucht. Bzw. Alternative? Performance?
+- [x] Aufführung muss wieder in wumms rein, da als Klasse dort gebraucht. Bzw. Alternative? Performance?
+
+- [ ] wie nun also mit GND-Datensatz umgehen?
+- [ ] Klassierung? / Klassifizierung??

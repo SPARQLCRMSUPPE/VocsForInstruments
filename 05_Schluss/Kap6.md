@@ -1,6 +1,5 @@
 # Schluss
 
-## Wrap-up
 
 ## Anwendungssimulation
 
@@ -114,8 +113,81 @@ Zwei Erkenntnisse können bereits festgehalten werden:
 ## Fazit
 
 
+Ausgehend von einem exemplarischen Anwendungsszenario, dem Horn im Kontext von J. S. Bachs sog. "Jagdkantate" BWV 208, wurde die Modellierung eines Metadatenprofils, *wumms:* (**S**e**M**antic **MU**sical instrument **W**eb), das auf den Prinzipien von *Linked Open Data* basiert, vorgenommen und im Netz publiziert.[^2] Dabei galt es insbesondere zu prüfen, in wie weit es in diesem Szenario möglich ist, mit den Mitteln des *Semantic Web* musikinstrumentenbezogene Entitäten und Ressourcen aus unterschiedlichen Sparten des Kulturerbes miteinander semantisch zu verknüpfen und dabei  Anreicherungen der bisherigen Ausdrucksmöglichkeiten bei der Erschließung solcher Entitäten und Ressourcen zu schaffen. 
+Dazu wurde das Szenario zunächst in ein *Entity Relationship Modell* überführt, das die Grundlage für eine anschließende RDF-Klassierung bildete. Die Bestandteile dieses semantischen Grundgerüsts wurden im Anschluss mit etablierten Vokabularen nachmodelliert und so das Profil eng in das *Semantic Web* eingewoben. Ließen sich gewünschte Sachverhalte mit dem im *Semantic Web* vorhandenen Vokabular nicht adäquat nachbilden – dies war insbesondere im Kontext von "Stimmung" der Fall –, wurden eigene Konzepte geschaffen und durch Subklassierung unter etablierte externe Konzepte gleichfalls an das *Semantic Web* semantisch anschlussfähig.
+
+Die Ziele dieser Arbeit konnten weitestgehend erreicht werden. Die anfangs entworfenen Szenarien konnten zum Schluss erfolgreich modelliert und so eine Verbindung zwischen verschiedenen spartenspezifischen Ressourcen hergestellt werden. Sowohl methodische Grundlage in Form dieser Arbeit als auch konzeptuelle Grundlage in Form einer *lightweight ontology* sind somit für eine weitere Ausarbeitung geschaffen. 
+Dies gilt jedoch nur eingeschränkt für das objekt- und quellenseitige "Mapping": Hier weist das jetzige Modell noch Defizite auf, die im Zuge einer Weiterentwicklung anzugehen wären. Dies vermag jedoch nicht weiter zu verwundern, liegt doch das Defizitäre in der Natur eines Modells, das den Ausgangspunkt eines diskursiven Prozesses markieren soll.
+Ähnliches gilt für die Schaffung von komplexeren Inferenzierungsmöglichkeiten: Im Bereich der "Stimmungen" konnte die Sinnhaftigkeit solcher Möglichkeiten bei der automatisierten Transposition von Tönen demonstriert werden. Jedoch erforderte eine Implementierung fundiertere Informatikkenntnisse (zumindest gegenüber denen des Verfassers). Induktiv gesehen liegt somit der Schluss nahe, dass Ontologieentwicklung idealerweise ab einem gewissen Punkt als Kooperation zwischen Fachwissenschaftlern und Informatikern geschieht.
+Operative Schritte wären für eine weitere Ausarbeitung die Bildung einer entsprechenden Community und das Schaffen einer Plattform für die kooperative Weiterentwicklung. Hierfür verspricht etwa die Software *Wikibase*[^3] eine außerordentlich vielversprechende Plattform bieten zu können.
+Wünschenswert wäre schließlich die technische Möglichkeit, in RDF strukturierte Daten gegenüber dem Metadatenprofil zu validieren, wie man es etwa von in XML strukturierten Datensätzen her gewohnt sein mag. Dies ermöglichen die Sprachen *ShEX* ("Shape Expressions" – in *Wikibase* "enthalten")[^4] und *SHACL* ("Shapes Constraints Language")[^5]. Während im Zuge dieser Arbeit nicht, wie ursprünglich geplant, der Versuch unternommen werden konnte, eine Beschreibung des Metadatenprofils mit einer dieser Sprachen zu unternehmen, würde eine solche Validierungsmöglichkeit ein außerordentlich nützliches Produkt darstellen,[^6] das insbesondere auch die eine niedrigschwellige Verwendung ermöglichen könnte. 
 
 
+
+
+
+
+Auch hier gilt: learning by doing.
+
+
+viele Dinge, Szenarien gar nicht einbezogen
+
+bei gegenüberstellung deutlich gewordenn, welche darstellungsmöglichkeiten mit lod.
+**insb. auch für die eigenen bedürfnisse relativ schnell lösbar (da ich das ja jetzt hier selbst schnell gemacht hab) <- man muss nicht auf die dnb warten
+anschlussfähigkeit! <- das muss auch mehr in die Einleitung!!!!!!!**
+
+
+
+Insgesamt war immer wieder festzustellen, dass es vielerorts im *Semantic Web* noch an elementaren Ausdrucksmöglichkeiten im Bereich der Musikinstrumente im Speziellen und der Musik im Allgemeinen sehr mangelt. Dies betrifft sowohl Normdaten (etwa ein authoritatives Verzeichnis von Orgeln), Ontologien (etwa "Stimmung", Musiktheorie, Akustik) aber auch Best Practices zur Modellierung teils einfacher musikbezogener Sachverhalte (etwa Klangbeispiele). 
+Weitere Arbeit in diesen Bereichen – ob als große Ontologie, oder doch besser als viele vernetzte kleinere – birgt somit enormes Potential.
+
+Sehr deutlich wurde dabei der Mehrwert de
+
+Dabei wurde deutlich, dass die Modellierung von Ontologien und die Publikation von Linked Open Data eine gewisse Lernkurve voraussetzt. Doch demonstriert die Publikation von *wumms:*, die auch ganz ohne eine solche auskam, dass auch für einzelne Wissenschaftler oder Institutionen ohne starke Informatikabteilung diese Vorgänge durchaus leistbar sind – auch hier gilt wohl: *learning by doing*. Dabei sind die Vorteile, die sich bieten – etwa die Unabhängigkeit gegenüber den beschränkten Ausdrucksmöglichkeiten herkömmlicher etablierter Vokabulare – und die Anschlussfähigkeit in einer zunehmend vernetzten Wissenschaftswelt, deren Indikator etwa die Rolle von Linked Open Data in den NFDI und GND4C-Projekten ist, enorm.
+
+Diese Anschlussfähigkeit gilt dabei mitnichten lediglich für den geisteswissenschaftlichen-/Kulturerbebereich: Innerhalb einer Nationalen Forschungsdateninfrastruktur könnten bisherige Gräben zu weiteren Disziplinen, etwa zur Akustik, zur Materialwissenschaft etc. aufgeschüttet werden, und so weitere Schritte in Richtung einer künftig interdisziplinär vernetzten Wissenschafts- und Forschungsdatenlandschaft unternommen werden.
+
+
+
+
+
+zu einer vernetzten interdisziplinarität oder so
+
+Erkenntnisse:
+
+funktioniert prinzipiell
+könnte ein großer Zugewinn sein für Vernetzung von Beständen, wenn man die Möglichkeiten mit den jetzigen vergleicht.
+
+Lücken im relevanten Vokabular (und das gilt nicht nur für Instrumente)
+-> man sollte also weiterentwickeln. Wie? Eine große Ontologie, oder viele kleine?
+(auch erwähnen, dass interdisziplinärer Anschluss nicht nur GW, z.B. Akustik, Materialforschung, Anwendungsgebiete, die noch überhaupt nicht einfallen)
+
+wie kann weiter gehen?
+
+
+
+
+
+
+
+
+
+
+
+fazit
+
+kurze zusammenfassung – 1/2 Seite
+bewertung
+
+das funktioniert
+lücken – nicht allzusehr rechtfertigen rechtfertigungsschrift – zu thematisieren
+
+2–3 Seiten
+
+
+
+
+kurzzussammenfassung je kapitel höcht 1/2 seite
 
 
 
@@ -125,3 +197,9 @@ Zwei Erkenntnisse können bereits festgehalten werden:
 
 
 [^1]: Denkbar wäre es – sofern sinnvoll – noch weitere Anreicherungsmöglichkeiten in das Metadatenprofil zu integrieren: bspw. Ort und Zeit. Fraglich ist jedoch, ob diese Informationen nicht bereits im Ereignisdatensatz vorhanden sind.
+[^2]: 
+
+[^3]: [@pintscher_strategy_nodate]
+[^4]: [@noauthor_shape_nodate]
+[^5]: [@noauthor_shapes_nodate]
+[^6]: Hier fehlt es noch sehr an verständlichen Anleitungen und Lernmöglichkeiten für Nichtinformatiker. 

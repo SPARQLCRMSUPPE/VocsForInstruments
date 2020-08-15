@@ -34,7 +34,9 @@ Wichtig ist hierbei festzuhalten, dass das hier gemeinte Stimmungskonzept in kei
 
 Zu 2): Blasinstrumente verfügen kraft ihrer baulichen Charakteristika sowie der Methode der Tonerzeugung[^5] über eine Art "Grundton", dem sog. "Pedalton". Über diesem baut sich durch Veränderung des in Schwingung versetzten Luftstroms – das sog. "Überblasen" – eine Folge von Tönen mit einer festen Intervallstruktur auf – die sog. "Naturtonreihe".
 
-![Naturtonreihe über den "Pedalton" C](Medien_Kap4/20200726_Naturtonreihe.png)
+![Naturtonreihe über dem "Pedalton" C. Eigene Graphik, Lizenz: CC-0](Medien_Kap4/20200726_Naturtonreihe.png)
+
+**fis''!!**
 
 Dies bedeutet also, dass Blasinstrumente bereits qua Konstruktion über eine festgelegte Stimmung verfügen. Diese wird anhand jenes Pedaltons, dem "ersten Naturton" benannt: so bedeutet etwa die Bezeichnung "F-Horn" oder "Horn in F" bezogen auf ein Instrument (und also nicht einen Notentext), dass es sich beim ersten Naturton um ein *f* handelt, und dass sich die Naturtonreihe mit ihrer festgelegten Intervallik über diesem Ton aufbaut. Doch auch hier ist die Aussage "in F" keineswegs auf einen absoluten Ton mit definierter Frequenz bezogen und bleibt somit wenig aussagekräftig, sondern kann nur in Bezug zu einem Frequenz-mäßig definierten Stimmton identifiziert werden.
 Jedenfalls ergibt sich bei der Modellierung die Schwierigkeit, dass der Bezeichnung "Horn in F" je nach Bezugspunkt – Objekt oder Quelle – eine unterschiedliche Bedeutung zukommen kann, jedoch nicht muss. Tatsächlich kann diese Bezeichnung im Fall der Modellierung von Autograph und *Großwindigem Naturwaldhorn* als synonym gelten – eine Differenzierung zwischen Notation und Horn ist nicht nötig: Ein F-Horn muss in diesem Kontext allein schon deshalb gemeint sein, da nur dessen Naturtonreihe im Barock das notwendige Tonmaterial bereithalten konnte – die Notation ist also bloß eine logische Folge dieser Festlegung. Anders sieht es bei neueren Sachverhalten aus. Dort ist Notation keineswegs an den Instrumententyp gekoppelt: Für ein diatonisch spielbares Horn kann auch ein "virtuell-gestimmtes" Horn notiert werden.[^6]
@@ -171,18 +173,15 @@ Diese Modellierung würde ein fundierteres Verständnis mathematischer Logik und
 
 
 
----
-
-## Technische Nachbereitung / The Rise of*wumms:*
+## Technische Nachbereitung / The Rise of *wumms:*
 
 * Gemäß der guten Praxis für Linked Open Data-Datensätze erhalten die Konzepte des Vokabulars mit dem Property `rdfs:label` einen Namen und eine Sprachbezeichnung ("label everything")[^25].
 * Dasselbe gilt für `rdfs:comment`.
-* Schreibweisen wurden vereinheitlicht, Sonderzeichen und Leerzeichen entfernt.
+* Schreibweisen wurden vereinheitlicht, Sonderzeichen entfernt.
 * Das Domänenvokabular, das bislang in *ma:* ebenfalls mitgeführt wurde, wurde in das neue Vokabular *domaene:*[^26] ausgelagert.
-* Der behelfmäßig eingeführte Namespace *ma:* kann durch einen neuen, weitaus besseren Namespace ersetzt werden:
-* Jedes nennenswerte Vokabular verdient ein stattliches Akronym. Daher wird *ma:* in *wumms* (**S**e**M**antic **MU**sic instrument **W**eb) umbenannt.
+* Der behelfmäßig eingeführte Namespace *ma:* kann durch einen neuen, weitaus besseren Namespace ersetzt werden: Jedes nennenswerte Vokabular verdient ein stattliches Akronym. Daher wird *ma:* an dieser Stelle in *wumms* (**S**e**M**antic **MU**sical instrument **W**eb) – sogar so etwas wie ein anagrammatisches Akronym – umbenannt.
 * Eine entsprechende Domain wurde auf purl.org registriert, sodass *wumms:* nun über die persistente URL purl.org/wumms im Netz für immer und ewig verankert ist und referenziert werden kann ("cool uris don't change")[^24]. Diese löst derzeit auf das Vokabular im *GitHub*-Repositorium auf.
-* Allerdings wurde *wumms:* durch den Zusatz `owl:versionInfo	"draft"` als instabiler Entwurf gekennzeichnet.
+* Allerdings wurde *wumms:* durch den Zusatz `owl:versionInfo	"draft"` als instabiler Entwurf gekennzeichnet. Dasselbe gilt für die einzelnen Konzepte. Somit ist dem Hinweis genüge getan, die Nutzung erfolge einstweilen auf eigene Gefahr, und eine weitere, ändernde Bearbeitung ist somit statthaft.
 
 
 

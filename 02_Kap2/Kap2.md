@@ -75,13 +75,13 @@ Die kontrollierte, maschinenlesbare Darstellbarkeit dieser Eigenschaften in Bezu
 
 ## Anwendungsbeispiel
 
-hier  eigene Naturtonreihe einfügen!
+**hier  eigene Naturtonreihe einfügen!
 
-Leute + Aufnahme + 
+**Leute + Aufnahme + 
 
-aus der Perspektive von RISM – allerdings auch aus jeder anderen Perpektive (Sucheinstieg) mögl.
-
-a'=440 Hz
+**aus der Perspektive von RISM – allerdings auch aus jeder anderen Perpektive (Sucheinstieg) mögl.
+**
+**a'=440 Hz**
 
 Als einfaches "Domänenmodell"[^b8659] am Beispiel des RISM-Datensatzes exemplifiziert (wobei auch jede andere Datenbank gleichermaßen gut herhalten könnte) wäre etwa das folgende Szenario denkbar: Entweder innerhalb des Datensatzes eingeblendet, oder als Verlinkung aus dem String *cor da caccia* (mit oder ohne den beschriebenen zusätzlichen Informationen) heraus ließe sich die Kombination geeigneter Eigenschaften aufrufen. Möglich wären weitere Verlinkungen etwa zu ähnlichen Sammlungsobjekten, zu disambiguierenden Normdaten oder zu weiteren nützlichen Informationen. Umgekehrt erzielte eine Suche mit einer entsprechenden Kombination indizierter Terme – etwa über die RISM SPARQL-Schnittstelle – zumindest den erwähnten Datensatz als Treffer. Eine wesentlich differenziertere und vielfältigere Suche über Spartengrenzen hinweg wäre somit ermöglicht.
 
