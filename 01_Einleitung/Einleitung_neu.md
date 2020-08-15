@@ -22,6 +22,8 @@ Einen technischen Lösungsansatz hierfür halten die sog. "Semantic Web-Technolo
 zueinander zu setzen und maschinenlesbar zu machen. Aus der Gesamtheit der an dieses semantische Netz angeschlossenen Daten, dem *Linked Data Cloud* lässt sich so ein eigenes anwendungsbezogenes Vokabular, ein sog. *Metadatenprofil*[^264] erzeugen, das imstande ist, als Schema für Vernetzung und Anreicherung musikinstrumentenbezogener Metadaten herzuhalten. Es könnte dabei als gedankliche Vorarbeit für eine anschließende Weiterentwicklung und Ausarbeitung durch eine Fachcommunity fungieren.
 
 [weiterentwickelbar – nicht abgeschlossen]
+**insb. auch für die eigenen bedürfnisse relativ schnell lösbar (da ich das ja jetzt hier selbst schnell gemacht hab) <- man muss nicht auf die dnb warten
+anschlussfähigkeit! <- das muss auch mehr in die Einleitung!!!!!!!**
 
 ---
 

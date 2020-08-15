@@ -118,37 +118,26 @@ Dazu wurde das Szenario zunächst in ein *Entity Relationship Modell* überführ
 
 Die Ziele dieser Arbeit konnten weitestgehend erreicht werden. Die anfangs entworfenen Szenarien konnten zum Schluss erfolgreich modelliert und so eine Verbindung zwischen verschiedenen spartenspezifischen Ressourcen hergestellt werden. Sowohl methodische Grundlage in Form dieser Arbeit als auch konzeptuelle Grundlage in Form einer *lightweight ontology* sind somit für eine weitere Ausarbeitung geschaffen. 
 Dies gilt jedoch nur eingeschränkt für das objekt- und quellenseitige "Mapping": Hier weist das jetzige Modell noch Defizite auf, die im Zuge einer Weiterentwicklung anzugehen wären. Dies vermag jedoch nicht weiter zu verwundern, liegt doch das Defizitäre in der Natur eines Modells, das den Ausgangspunkt eines diskursiven Prozesses markieren soll.
+
 Ähnliches gilt für die Schaffung von komplexeren Inferenzierungsmöglichkeiten: Im Bereich der "Stimmungen" konnte die Sinnhaftigkeit solcher Möglichkeiten bei der automatisierten Transposition von Tönen demonstriert werden. Jedoch erforderte eine Implementierung fundiertere Informatikkenntnisse (zumindest gegenüber denen des Verfassers). Induktiv gesehen liegt somit der Schluss nahe, dass Ontologieentwicklung idealerweise ab einem gewissen Punkt als Kooperation zwischen Fachwissenschaftlern und Informatikern geschieht.
 Operative Schritte wären für eine weitere Ausarbeitung die Bildung einer entsprechenden Community und das Schaffen einer Plattform für die kooperative Weiterentwicklung. Hierfür verspricht etwa die Software *Wikibase*[^3] eine außerordentlich vielversprechende Plattform bieten zu können.
-Wünschenswert wäre schließlich die technische Möglichkeit, in RDF strukturierte Daten gegenüber dem Metadatenprofil zu validieren, wie man es etwa von in XML strukturierten Datensätzen her gewohnt sein mag. Dies ermöglichen die Sprachen *ShEX* ("Shape Expressions" – in *Wikibase* "enthalten")[^4] und *SHACL* ("Shapes Constraints Language")[^5]. Während im Zuge dieser Arbeit nicht, wie ursprünglich geplant, der Versuch unternommen werden konnte, eine Beschreibung des Metadatenprofils mit einer dieser Sprachen zu unternehmen, würde eine solche Validierungsmöglichkeit ein außerordentlich nützliches Produkt darstellen,[^6] das insbesondere auch die eine niedrigschwellige Verwendung ermöglichen könnte. 
 
+Wünschenswert wäre schließlich die technische Möglichkeit, in RDF strukturierte Daten gegenüber dem Metadatenprofil zu validieren, wie man es etwa von in XML strukturierten Datensätzen her gewohnt sein mag. Dies ermöglichen die Sprachen *ShEX* ("Shape Expressions" – in *Wikibase* "enthalten")[^4] und *SHACL* ("Shapes Constraints Language")[^5]. Während im Zuge dieser Arbeit nicht, wie ursprünglich geplant, der Versuch unternommen werden konnte, eine Beschreibung des Metadatenprofils mit einer dieser Sprachen zu unternehmen, würde eine solche Validierungsmöglichkeit ein außerordentlich nützliches Produkt darstellen,[^6] das insbesondere auch die eine niedrigschwellige Verwendung ermöglichen könnte.
 
-
-
-
-
-Auch hier gilt: learning by doing.
-
-
-viele Dinge, Szenarien gar nicht einbezogen
-
-bei gegenüberstellung deutlich gewordenn, welche darstellungsmöglichkeiten mit lod.
-**insb. auch für die eigenen bedürfnisse relativ schnell lösbar (da ich das ja jetzt hier selbst schnell gemacht hab) <- man muss nicht auf die dnb warten
-anschlussfähigkeit! <- das muss auch mehr in die Einleitung!!!!!!!**
-
-
+Die Entwicklungsarbeit selbst könnte dabei situativ erfolgen: Anhand eines standardisierten Grundgerüsts, dem Metadatenprofil, könnten, je nach Bedarf, weitere Ausdrucksmöglichkeiten in Form von Vokabular erschaffen und eingebunden werden werden. Durch die Auslagerung in eine Anwendercommunity könnte so optimal der akute Eigenbedarf des jeweiligen Anwenders mit dem Bedarf aller Nutzer synchronisiert werden.
 
 Insgesamt war immer wieder festzustellen, dass es vielerorts im *Semantic Web* noch an elementaren Ausdrucksmöglichkeiten im Bereich der Musikinstrumente im Speziellen und der Musik im Allgemeinen sehr mangelt. Dies betrifft sowohl Normdaten (etwa ein authoritatives Verzeichnis von Orgeln), Ontologien (etwa "Stimmung", Musiktheorie, Akustik) aber auch Best Practices zur Modellierung teils einfacher musikbezogener Sachverhalte (etwa Klangbeispiele). 
-Weitere Arbeit in diesen Bereichen – ob als große Ontologie, oder doch besser als viele vernetzte kleinere – birgt somit enormes Potential.
+Weitere Arbeit in diesen Bereichen – ob als große Ontologie, oder doch besser als viele vernetzte kleinere – birgt somit enormes Potential. Dabei ist klar, dass die hier illustrierte Darstellungstiefe keineswegs den alltäglichen Bedarf wiedergibt. Jedoch konnte demonstriert werden, dass es prinzipiell möglich ist, jedes erdenkliche benötigte Szenario im *Semantic Web* zu modellieren, wobei wiederum Dritte bei Beachtung der FAIR-Richtlinien[^7] und der Publikation von *Linked Open Data*[^8] wiederum von publizierten Daten profitieren können.
 
-Sehr deutlich wurde dabei der Mehrwert de
-
-Dabei wurde deutlich, dass die Modellierung von Ontologien und die Publikation von Linked Open Data eine gewisse Lernkurve voraussetzt. Doch demonstriert die Publikation von *wumms:*, die auch ganz ohne eine solche auskam, dass auch für einzelne Wissenschaftler oder Institutionen ohne starke Informatikabteilung diese Vorgänge durchaus leistbar sind – auch hier gilt wohl: *learning by doing*. Dabei sind die Vorteile, die sich bieten – etwa die Unabhängigkeit gegenüber den beschränkten Ausdrucksmöglichkeiten herkömmlicher etablierter Vokabulare – und die Anschlussfähigkeit in einer zunehmend vernetzten Wissenschaftswelt, deren Indikator etwa die Rolle von Linked Open Data in den NFDI und GND4C-Projekten ist, enorm.
+Dabei wurde deutlich, dass die Modellierung von Ontologien und die Publikation von Linked Open Data eine gewisse Lernkurve voraussetzt. Doch demonstriert die Publikation von *wumms:*, die auch ganz ohne eine solche auskam, dass auch für einzelne Wissenschaftler oder Institutionen ohne starke Informatikabteilung diese Vorgänge durchaus leistbar sind – auch hier galt: *learning by doing*. Dabei sind die Vorteile, die sich auch für kleinere Forscher und Einrichtungen bieten – etwa die Unabhängigkeit gegenüber den beschränkten Ausdrucksmöglichkeiten herkömmlicher etablierter Vokabulare – und die Anschlussfähigkeit in einer zunehmend vernetzten Wissenschaftswelt, deren Indikator etwa die Rolle von Linked Open Data in den Projekten *NFDI*-[^9] und *GND4C*[^10] ist, enorm.
 
 Diese Anschlussfähigkeit gilt dabei mitnichten lediglich für den geisteswissenschaftlichen-/Kulturerbebereich: Innerhalb einer Nationalen Forschungsdateninfrastruktur könnten bisherige Gräben zu weiteren Disziplinen, etwa zur Akustik, zur Materialwissenschaft etc. aufgeschüttet werden, und so weitere Schritte in Richtung einer künftig interdisziplinär vernetzten Wissenschafts- und Forschungsdatenlandschaft unternommen werden.
 
 
 
+---
+
+**muss noch: vernetzte Bestände / Anreicherung **
 
 
 zu einer vernetzten interdisziplinarität oder so
@@ -203,3 +192,8 @@ kurzzussammenfassung je kapitel höcht 1/2 seite
 [^4]: [@noauthor_shape_nodate]
 [^5]: [@noauthor_shapes_nodate]
 [^6]: Hier fehlt es noch sehr an verständlichen Anleitungen und Lernmöglichkeiten für Nichtinformatiker. 
+[^7]: [@noauthor_fair_nodate]
+[^8]: [@noauthor_5_nodate]
+[^9]: 
+
+[^10]: 
