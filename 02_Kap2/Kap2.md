@@ -25,7 +25,7 @@ Die Vieldeutigkeit des Terms *cor da caccia* lässt sich dabei auch durch eine I
 
 Tatsächlich handelt es sich bei der Frage um die Verwendung von Blechblasinstrumenten in der Musik Bachs um auch in der Musikwissenschaft umstrittene Fragestellungen.[^b8646] Doch lassen sich durch Konsultation des autographen Quellenmaterials[^bcbf9] durchaus gewisse verbindliche Aussagen treffen:
 
-![PD1.0](medien_Kap2/20200731_autograph.png)
+![PD1.0](medien_Kap2/20200731_autograph.png  **fehlt!!!!!!!**
 
 * Die Instrumente sind in F gestimmt – das in F-notierte "eingestrichene c" (c') entspricht, dies wird im Bezug zum Basso Continuo deutlich, dem klingenden "kleinen f" (f).
 * Es handelt sich aufgrund der stereotypen Stimmführung zwischen den Instrumenten keineswegs um oboenartige Instrumente, sondern um Blechblasinstrumente.

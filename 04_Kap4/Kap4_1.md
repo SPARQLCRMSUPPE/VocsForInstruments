@@ -297,7 +297,7 @@ Dies etwa im Gegensatz zur *closed world assumption* in herkömmlichen relationa
 [^c8713]: In dieser Arbeit wurden vor allem die Texte [@allemang_semantic_2011] sowie [@TN_libero_mab21631588] zu Rate gezogen.
 
 [^1]: Für eine Auswahl relevanter Vokabulare für den GLAM-Bereich s. @TN_libero_mab2 und
-@ziku_digital_2020. Für eine Auswahl musikrelevanter Vokabulare s. @lisena_controlled_nodate, @bicher_normdaten_2018, @nurmikko-fuller_building_2018, @nurmikko-fuller_collaboration_2016, @futurelearn_linked_nodate.
+@ziku_digital_2020. Für eine Auswahl musikrelevanter Vokabulare s. @lisena_controlled_nodate, @bicher_normdaten_2018, @nurmikko-fuller_building_2018, @nurmikko-fuller_collaboration_2016.
 
 
 [^2]: [@noauthor_bartocorg_nodate.]

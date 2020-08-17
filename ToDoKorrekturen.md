@@ -69,3 +69,4 @@ sowie
 
 - [ ] wie nun also mit GND-Datensatz umgehen?
 - [ ] Klassierung? / Klassifizierung??
+- [ ] Gängler lesen <- Abschnitt Semantic Web
