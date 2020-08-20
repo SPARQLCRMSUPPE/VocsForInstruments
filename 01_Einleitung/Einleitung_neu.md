@@ -15,6 +15,9 @@ So ergeben sich drei Hauptanliegen für diese Arbeit:
 1) die Möglichkeit einer Vernetzung von musikinstrumentenbezogenen Daten verschiedener Sparten zu erproben.
 2) auszuloten, in welcher Weise eine Anreicherung der vorhandenen Vokabulare möglich ist.
 3) ein Gelingen wäre ein Indikator für die Möglichkeit, fehlendes kontrolliertes Vokabular niederschwellig selbst – also von kleineren Einrichtungen und Forschern – anlegen zu können.
+4) auszuloten, wie … besser
+5) bisherige einschränkungen
+6) selbst gemachtes vokabular
 
 Technisch kann dies durch die sog. "Semantic Web-Technologien"[^e265] ermöglicht werden. Dank des ihnen zugrundeliegenden *RDF*-Modells (*Research Description Framework*) ist es bei Nutzung verschiedener etablierter Technologien des Internets möglich, im Netz gespeicherte Daten in semantische Beziehungen zueinander zu setzen und dabei interoperabel und maschinenlesbar zu machen. Aus der Gesamtheit der an dieses semantische Netz angeschlossenen Daten, dem *Linked Data Cloud*, lässt sich so ein eigenes anwendungsbezogenes Schema, ein sog. *Metadatenprofil*[^e264] erzeugen, das imstande ist, als Schema für Vernetzung und Anreicherung musikinstrumentenbezogener Metadaten herzuhalten. Es könnte dabei als gedankliche Vorarbeit für eine anschließende Weiterentwicklung und Ausarbeitung durch eine Fachcommunity fungieren. Dank der semantischen und technischen Offenheit des sog. *Semantic Web* ist dabei terminologische Anschlussfähigkeit und die Darstellung sehr spezifischer Sachverhale möglich.
 

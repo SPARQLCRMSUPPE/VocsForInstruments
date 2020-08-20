@@ -68,5 +68,9 @@ sowie
 - [x] Aufführung muss wieder in wumms rein, da als Klasse dort gebraucht. Bzw. Alternative? Performance?
 
 - [ ] wie nun also mit GND-Datensatz umgehen?
+
 - [ ] Klassierung? / Klassifizierung??
+
 - [ ] Gängler lesen <- Abschnitt Semantic Web
+
+- [ ] Bilder mit ihrem Standort im gitHub verlinken?
