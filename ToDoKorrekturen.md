@@ -74,3 +74,5 @@ sowie
 - [ ] Gängler lesen <- Abschnitt Semantic Web
 
 - [ ] Bilder mit ihrem Standort im gitHub verlinken?
+
+- [ ] nachfolgende Fußnoten: "," statt ":" nach Autor
