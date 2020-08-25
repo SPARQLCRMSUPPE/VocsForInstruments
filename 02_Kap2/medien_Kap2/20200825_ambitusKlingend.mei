@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>20200825_ambitusKlingend</title>
+            <respStmt />
+         </titleStmt>
+         <pubStmt><availability>
+               <distributor>Public Domain</distributor>
+            </availability>
+         </pubStmt>
+      </fileDesc>
+      <encodingDesc xml:id="encodingdesc-0000001389919136">
+         <appInfo xml:id="appinfo-0000000884762879">
+            <application xml:id="application-0000000330960440" isodate="2020-07-26T16:24:32" version="3.0.0-dev-623965b">
+               <name xml:id="name-0000000946978281">Verovio</name>
+               <p xml:id="p-0000000482687336">Transcoded from MusicXML</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="mdiv-0000002115992804">
+            <score xml:id="score-0000000919308631">
+               <scoreDef xml:id="scoredef-0000001203031310">
+                  <pgHead xml:id="pghead-0000001483310228" />
+                  <pgFoot xml:id="pgfoot-0000002096535367">
+                     <rend xml:id="rend-0000001995120444" halign="center" valign="bottom">Public Domain</rend>
+                  </pgFoot>
+                  <staffGrp xml:id="staffgrp-0000000651448838">
+                     <staffDef xml:id="staffdef-0000001342238661" n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" key.sig="0">
+
+                        <instrDef xml:id="instrdef-0000000974339041" midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="section-0000001430534209">
+                  <pb xml:id="pb-0000001980288826" />
+                  <measure xml:id="measure-0000002144962130" n="1">
+                     <staff xml:id="staff-0000001834930178" n="1">
+                        <layer xml:id="layer-0000000696446979" n="1">
+
+                           <note xml:id="note-0000001424250961" dur.ppq="4" dur="1" oct="3" pname="f" />
+                          
+
+
+                           <note xml:id="note-0000002118529099" dur.ppq="4" dur="1" oct="5" pname="d" />
+
+                        </layer>
+                     </staff>
+                  </measure>
+
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
