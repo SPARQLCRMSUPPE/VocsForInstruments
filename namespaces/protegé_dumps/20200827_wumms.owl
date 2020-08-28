@@ -1,0 +1,358 @@
+@prefix : <http://purl.org/wumms/> .
+@prefix dc: <https://dublincore.org/specifications/dublin-core/dcmi-terms/#> .
+@prefix mo: <http://purl.org/ontology/mo/#> .
+@prefix wc: <https://commons.wikimedia.org/wiki/File:> .
+@prefix wd: <https://www.wikidata.org/wiki/Property:> .
+@prefix crm: <http://purl.org/NET/cidoc-crm/core#> .
+@prefix gnd: <http://d-nb.info/gnd/> .
+@prefix mus: <http://data.doremus.org/ontology/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdt: <https://www.wikidata.org/wiki/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/#> .
+@prefix mimo: <https://mimo-international.com/MIMO/doc/IFD/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wumms: <http://purl.org/wumms#> .
+@prefix litmus: <https://itma.ie/litmus/ontology#> .
+@base <http://purl.org/wumms> .
+
+<http://purl.org/wumms> rdf:type owl:Ontology ;
+                         rdfs:comment "An application profile for linking music instrument related concepts all over the web."@en ;
+                         rdfs:label "wumms"@en ;
+                         owl:versionInfo "draft" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/NET/cidoc-crm/core#P137_exemplifies
+crm:P137_exemplifies rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dc:relation ;
+                     rdf:type owl:SymmetricProperty ;
+                     rdfs:domain crm:E19_Physical_Object ;
+                     rdfs:range crm:E55_Type .
+
+
+###  http://purl.org/ontology/mo/instrument
+<http://purl.org/ontology/mo/instrument> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain wumms:Auffuehrung ;
+                                         rdfs:range wdt:Q34379 .
+
+
+###  http://purl.org/ontology/mo/performer
+<http://purl.org/ontology/mo/performer> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain wumms:Auffuehrung ;
+                                        rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://purl.org/wumms#KlangbeipsielMediumOfPerformance
+wumms:KlangbeipsielMediumOfPerformance rdf:type owl:ObjectProperty ;
+                                       rdfs:domain mus:M14_Medium_Of_Performance ;
+                                       rdfs:range wumms:Klangbeispiel ;
+                                       rdfs:comment "Verbindet Klangbeispiele mit Instrumenten (Vokabular/Objekte)."@de ;
+                                       rdfs:label "KlangbeispielMediumOfPerformance"@de ;
+                                       owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hatHoechstenTon
+wumms:hatHoechstenTon rdf:type owl:ObjectProperty ;
+                      rdfs:domain wumms:Ambitus ;
+                      rdfs:range wumms:hoechsterTon ;
+                      rdfs:comment "Benennt den höchsten Ton eines Ambitus'."@de ;
+                      rdfs:label "hatHoechstenTon"@de ;
+                      owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hatNotierteStimmung
+wumms:hatNotierteStimmung rdf:type owl:ObjectProperty ;
+                          rdfs:domain wdt:Q34379 ;
+                          rdfs:range wumms:Ton ;
+                          rdfs:comment "Verbindet eine Besetzungsentität mit der Stimmung, in der sie Notiert ist. Bsp.: Klarinette in B"@de ;
+                          rdfs:label "hatNotierteStimmung"@de ;
+                          owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hatStimmungPedalton
+wumms:hatStimmungPedalton rdf:type owl:ObjectProperty ;
+                          rdfs:domain crm:E19_Physical_Object ;
+                          rdfs:range wumms:Ton ;
+                          rdfs:comment "Stellt eine Relation zwischen einem Instrument und seinem Pedalton her. Bsp: B-Klarinette. Nicht synonym mit wumms:hatNotierteStimmung!"@de ;
+                          rdfs:label "hatStimmungPedalton"@de ;
+                          owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hatStimmungssystem
+wumms:hatStimmungssystem rdf:type owl:ObjectProperty ;
+                         rdfs:domain wdt:Q34379 ;
+                         rdfs:range <http://d-nb.info/gnd/4122368-8> ;
+                         rdfs:comment "Stellt eine Relation zwischen einem Instrument und dem Stimmungssystem her, nach dem er gestimmt ist. Bsp.: Orgel hat mitteltönige Stimmung, Klavier hat die Stimmung \"präpariert\", Monochord hat pythagoreische Stimmung."@de ;
+                         rdfs:label "hatStimmungssystem"@de .
+
+
+###  http://purl.org/wumms#hatTiefstenTon
+wumms:hatTiefstenTon rdf:type owl:ObjectProperty ;
+                     rdfs:domain wumms:Ambitus ;
+                     rdfs:range wumms:tiefsterTon ;
+                     rdfs:comment "Benennt den tiefsten Ton eines Ambitus'." ;
+                     rdfs:label "hatTiefstenTon"@de ;
+                     owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hat_Ambitus
+wumms:hat_Ambitus rdf:type owl:ObjectProperty ;
+                  rdfs:domain crm:E55_Type ;
+                  rdfs:range wumms:Ambitus ;
+                  rdfs:comment "Zur Beschreibung des notierten Ambitus' eines besetzten Instruments."@de ;
+                  rdfs:label "hatAmbitus"@de ;
+                  owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hat_Stimmhoehe
+wumms:hat_Stimmhoehe rdf:type owl:ObjectProperty ;
+                     rdfs:domain wdt:Q34379 ;
+                     rdfs:range wumms:Stimmhoehe ;
+                     rdfs:comment "Stellt eine Relation zwischen einem Instrument und einem absoluten Ton gemessen in Hz her."@de ;
+                     rdfs:label "hatStimmhoehe"@de ;
+                     owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#klingt
+wumms:klingt rdf:type owl:ObjectProperty ;
+             rdfs:domain wumms:Ton ;
+             rdfs:range wumms:TonKlingend ;
+             rdfs:comment "Stellt ein Verhältnis zwischen einem einem Transponierten Ton und seinem untransponierten Gegenstück her. Bsp.: Klarinette in A – c'' klingt a'"@de ;
+             rdfs:label "klingt"@de ;
+             owl:versionInfo "instabil" .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+rdf:object rdf:type owl:ObjectProperty ;
+           rdfs:domain rdf:statement ;
+           rdfs:range wumms:Stimmhoehe .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+rdf:predicate rdf:type owl:ObjectProperty ;
+              rdfs:domain rdf:statement ;
+              rdfs:range wumms:Stimmhoehe .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+rdf:subject rdf:type owl:ObjectProperty ;
+            rdfs:domain rdf:statement ;
+            rdfs:range wumms:Stimmhoehe .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:ObjectProperty ;
+          rdfs:domain wumms:Ton ;
+          rdfs:range wdt:Q118819 .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf dc:relation ;
+           rdf:type owl:SymmetricProperty ;
+           rdfs:domain crm:E19_Physical_Object ;
+           rdfs:range crm:E55_Type .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+skos:exactMatch rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ;
+                rdfs:domain crm:E55_Type ;
+                rdfs:range mus:M14_Medium_Of_Performance .
+
+
+###  https://dublincore.org/specifications/dublin-core/dcmi-terms/#relation
+dc:relation rdf:type owl:ObjectProperty ;
+            rdfs:domain crm:E55_Type ;
+            rdfs:range crm:E19_Physical_Object .
+
+
+###  https://itma.ie/litmus/ontology#L58_played_on_instrument
+litmus:L58_played_on_instrument rdf:type owl:ObjectProperty ;
+                                owl:inverseOf litmus:L58i_instrument_played_by ;
+                                rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                rdfs:range wdt:Q34379 .
+
+
+###  https://itma.ie/litmus/ontology#L58i_instrument_played_by
+litmus:L58i_instrument_played_by rdf:type owl:ObjectProperty ;
+                                 rdfs:domain wdt:Q34379 ;
+                                 rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  https://www.wikidata.org/wiki/Property:P51
+wd:P51 rdf:type owl:ObjectProperty ;
+       rdfs:domain mus:M14_Medium_Of_Performance ;
+       rdfs:range wumms:Klangbeispiel ;
+       rdfs:label "audio" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://d-nb.info/gnd/4122368-8
+<http://d-nb.info/gnd/4122368-8> rdf:type owl:Class ;
+                                 rdfs:comment "definiert das systemische Gefüge, das festlegt, in welchem Stimmungsverhältnis Töne zueinander stehen."@de ;
+                                 rdfs:label "Stimmungssystem" ;
+                                 owl:versionInfo "instabil"@de .
+
+
+###  http://data.doremus.org/ontology/#M14_Medium_Of_Performance
+mus:M14_Medium_Of_Performance rdf:type owl:Class .
+
+
+###  http://purl.org/NET/cidoc-crm/core#E19_Physical_Object
+crm:E19_Physical_Object rdf:type owl:Class ;
+                        rdfs:subClassOf wdt:Q34379 .
+
+
+###  http://purl.org/NET/cidoc-crm/core#E55_Type
+crm:E55_Type rdf:type owl:Class ;
+             rdfs:subClassOf wdt:Q34379 .
+
+
+###  http://purl.org/ontology/mo/Performance
+<http://purl.org/ontology/mo/Performance> rdf:type owl:Class .
+
+
+###  http://purl.org/wumms#Ambitus
+wumms:Ambitus rdf:type owl:Class ;
+              rdfs:comment "Der Abstand zwischen höchstem und tiefsten Ton einer musikalischen Ressource (Stimme, Aufnahme, Werk etc.). Unterklassen: wumms:hoechsterTon, wumms:tiefsterTon"@de ;
+              rdfs:label "Ambitus"@de ;
+              owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#Auffuehrung
+wumms:Auffuehrung rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/ontology/mo/Performance> ;
+                  rdfs:comment "Jede Art von Ereignis, bei dem es zu einer Äußerung von Musik kam. Bsp.: die Aufführung eines Werkes, das Abspielen eines Musiktracks von einem Musikmedium, ein paar geistesabwesend gepfiffene Töne etc."@de ;
+                  rdfs:label "Auffuehrung"@de ;
+                  owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#Klangbeispiel
+wumms:Klangbeispiel rdf:type owl:Class ;
+                    rdfs:comment "Ein Audiosample, das zur Verdeutlichung einer gewünschten Sache beispielhaft tauglich ist. Bsp.: Ein Ausschnitt eines Werks, der Klang eines Instruments etc."@de ;
+                    rdfs:label "Klangbeispiel"@de ;
+                    owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#Stimmhoehe
+wumms:Stimmhoehe rdf:type owl:Class ;
+                 rdfs:comment "Stimmhöhe (absolute Tonhöhe) ausgedrückt durch die Definition des Verhältnisses von relativer Tonhöhe zu einer Frequenz. Bsp.: a' = 440 Hz"@de ;
+                 rdfs:label "Stimmhoehe"@de ;
+                 owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#Ton
+wumms:Ton rdf:type owl:Class ;
+          rdfs:comment "Vereint als Superklasse in sich alle Klassen und Instanzen eines abstrakten (nicht physikalischen) Konzepts von \"Ton\" im musikalischen Sinne. Bsp.: wumms:a', wumms:F_Tonkomplex, wumms:tiefsterTon."@de ;
+          rdfs:label "Ton"@de ;
+          owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#TonKlingend
+wumms:TonKlingend rdf:type owl:Class ;
+                  rdfs:subClassOf wumms:Ton ;
+                  rdfs:comment "Der tatsächliche (abstrakte) Tonwert gegenüber seinem transponierten (etwa notierten) Tonwert. Bsp.: Kb – notiert e klingt E"@de ;
+                  rdfs:label "TonKlingend"@de ;
+                  owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#hoechsterTon
+wumms:hoechsterTon rdf:type owl:Class ;
+                   rdfs:subClassOf wumms:Ton ;
+                   rdfs:comment "Der höchste Ton einer musikalischen Ressource."@de ;
+                   rdfs:label "hoechsterTon"@de ;
+                   owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#tiefsterTon
+wumms:tiefsterTon rdf:type owl:Class ;
+                  rdfs:subClassOf wumms:Ton ;
+                  rdfs:comment "Der tiefste Ton einer musikalischen Ressource."@de ;
+                  rdfs:label "tiefsterTon"@de ;
+                  owl:versionInfo "instabil"@de .
+
+
+###  http://purl.org/wumms#F_(Tonkomplex)
+<http://purl.org/wumms#F_(Tonkomplex)> rdf:type owl:Class ;
+                                       rdfs:subClassOf wumms:Ton ;
+                                       rdfs:comment """Abstrakte Kontainerklasse. Verwendung:
+1) vereint in sich alle Töne mit der Oktavidentität \"F\". Bsp.: f''', F etc.
+2) Verwendung als Objekt, um die Notation einer Ressource auszudrücken. Bsp.: \"Englischhorn (in F)\"
+3) Verwendung um die Gestimmtheit eines Instruments i. S. e. Pedaltons auszudrücken. Bsp.: D-Horn"""@de ;
+                                       rdfs:label "F_Tonkomplex"@de ;
+                                       owl:versionInfo "instabil"@de .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#statement
+rdf:statement rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  https://www.wikidata.org/wiki/Q118819
+wdt:Q118819 rdf:type owl:Class ;
+            rdfs:label "pitch" .
+
+
+###  https://www.wikidata.org/wiki/Q34379
+wdt:Q34379 rdf:type owl:Class ;
+           rdfs:subClassOf mus:M14_Medium_Of_Performance ;
+           rdfs:label "musical instrument" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/wumms#f
+wumms:f rdf:type owl:NamedIndividual ,
+                 wumms:TonKlingend .
+
+
+###  http://purl.org/wumms#obertonreineStimmung
+wumms:obertonreineStimmung rdf:type owl:NamedIndividual ,
+                                    <http://d-nb.info/gnd/4122368-8> .
+
+
+###  http://purl.org/wumms#415Hz
+<http://purl.org/wumms#415Hz> rdf:type owl:NamedIndividual ,
+                                       wdt:Q118819 .
+
+
+###  http://purl.org/wumms#a''
+<http://purl.org/wumms#a''> rdf:type owl:NamedIndividual ,
+                                     wumms:hoechsterTon .
+
+
+###  http://purl.org/wumms#c'
+<http://purl.org/wumms#c'> rdf:type owl:NamedIndividual ,
+                                    wumms:tiefsterTon .
+
+
+###  http://purl.org/wumms#d''
+<http://purl.org/wumms#d''> rdf:type owl:NamedIndividual ,
+                                     wumms:TonKlingend .
+
+
+###  https://commons.wikimedia.org/wiki/File:4m33s.mid
+<https://commons.wikimedia.org/wiki/File:4m33s.mid> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

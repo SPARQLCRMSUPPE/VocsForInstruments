@@ -48,15 +48,6 @@ crm:P137_exemplifies rdf:type owl:ObjectProperty ;
                                         rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
 
 
-###  http://purl.org/wumms#
-wumms: rdf:type owl:ObjectProperty ;
-       rdfs:domain wumms:Ambitus ;
-       rdfs:range wumms:tiefsterTon ;
-       rdfs:comment "Benennt den tiefsten Ton eines Ambitus'." ;
-       rdfs:label "hatTiefstenTon"@de ;
-       owl:versionInfo "instabil"@de .
-
-
 ###  http://purl.org/wumms#KlangbeipsielMediumOfPerformance
 wumms:KlangbeipsielMediumOfPerformance rdf:type owl:ObjectProperty ;
                                        rdfs:domain mus:M14_Medium_Of_Performance ;
@@ -99,6 +90,15 @@ wumms:hatStimmungssystem rdf:type owl:ObjectProperty ;
                          rdfs:range <http://d-nb.info/gnd/4122368-8> ;
                          rdfs:comment "Stellt eine Relation zwischen einem Instrument und dem Stimmungssystem her, nach dem er gestimmt ist. Bsp.: Orgel hat mitteltönige Stimmung, Klavier hat die Stimmung \"präpariert\", Monochord hat pythagoreische Stimmung."@de ;
                          rdfs:label "hatStimmungssystem"@de .
+
+
+###  http://purl.org/wumms#hatTiefstenTon
+wumms:hatTiefstenTon rdf:type owl:ObjectProperty ;
+                     rdfs:domain wumms:Ambitus ;
+                     rdfs:range wumms:tiefsterTon ;
+                     rdfs:comment "Benennt den tiefsten Ton eines Ambitus'." ;
+                     rdfs:label "hatTiefstenTon"@de ;
+                     owl:versionInfo "instabil"@de .
 
 
 ###  http://purl.org/wumms#hat_Ambitus
