@@ -502,13 +502,13 @@ Funktion als Kurzform aber ausgeklammert werden kann.
 
 ![Abbildung 1: Angabe der Besetzung von BWV 208 beim RISM[^35]](./media/image1.png)
 
+
+
 Zum anderen unter „Weitere Angaben und Bemerkungen" im Unterfeld
 „Besetzung" (MARC-Feld \#594\$a (freies Feld))[^36].
 
-![Besetzung2](./media/image2.png){width="5.833333333333333in"
-height="1.975805993000875in"}
+![Abbildung 2: Angabe der Besetzung von BWV 208 beim RISM](./media/image2.png)
 
-Abbildung 2: Angabe der Besetzung von BWV 208 beim RISM
 
 Bei diesen Bezeichnungen handelt es sich um ein kontrolliertes
 Vokabular.[^37] Mehreres fällt an dieser Stelle auf:
