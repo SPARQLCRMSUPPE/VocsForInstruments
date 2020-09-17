@@ -443,9 +443,6 @@ Betrachtungen wird auf weiterführende Literatur[^18] verwiesen.
     „light"-Variante, der sog. *lightweight ontology* nahegelegt wird
     (s. Kapitel 3.2.5))
 
-```{=html}
-<!-- -->
-```
 -   Die Bezeichnung *Metadatenprofil* (auch „Anwendungsprofil",
     „Applikationsprofil") impliziert -- ähnlich wie im Falle von
     „Vokabular" -- insbesondere eine funktionale Qualität für eine
@@ -503,10 +500,7 @@ Originaler Titel" (MARC-Feld \#245\$a (Title))[^34] der String „Cantata
 kommt ein sehr allgemeiner Besetzungshinweis, der hier angesichts seiner
 Funktion als Kurzform aber ausgeklammert werden kann.
 
-![Besetzung1](./media/image1.png){width="5.833333333333333in"
-height="1.1505369641294838in"}
-
-Abbildung 1: Angabe der Besetzung von BWV 208 beim RISM[^35]
+![Abbildung 1: Angabe der Besetzung von BWV 208 beim RISM[^35]](./media/image1.png)
 
 Zum anderen unter „Weitere Angaben und Bemerkungen" im Unterfeld
 „Besetzung" (MARC-Feld \#594\$a (freies Feld))[^36].
