@@ -1,45 +1,20 @@
-**[Musikinstrumente im Semantic Web]{.smallcaps}**
 
-[Entwicklung eines spartenübergreifenden Metadatenprofils]{.smallcaps}
+---
 
-Masterarbeit
+title: "Musikinstrumente im Semantic – Entwicklung eines spartenübergreifenden Metadatenprofils"
 
-an der
 
-Hochschule für Technik Wirtschaft und Kultur Leipzig
 
-Fakultät Informatik und Medien
 
-Studiengang *Bibliotheks- und Informationswissenschaft*
 
-vorgelegt von
 
-Alan K. Riedel
+author: 
+- name: Alan K. Riedel
+- affiliation: Hochschule für Technik Wirtschaft und Kultur Leipzig, Fakultät Informatik und Medien – Studiengang *Bibliotheks- und Informationswissenschaft
 
-*Leipzig 2020\
-*
+date: 2020
 
-Kurzreferat der Arbeit:
-
-Ziel dieser Arbeit ist es, einen Ansatz für ein semantisches Framework
-zu entwickeln, das seine Anwender in die Lage versetzt,
-musikinstrumentenbezogene Ressourcen aus Einrichtungen unterschiedlicher
-Sparten des Kulturerbes zueinander in Beziehung zu setzen, miteinander
-zu verbinden und dabei zugleich -- mittelbar -- bereits vorhandenes
-Vokabular um wichtige Aspekte anzureichern. Dies erfolgt -- ausgehend
-von einem relevanten Anwendungsszenario -- in Form einer Reihe
-eskalativer Modellierungen, im Zuge derer das Szenario in formale
-Sprachen aus dem Kontext des *Semantic Web* übersetzt wird. Dabei werden
-vorhandene semantische Lücken identifiziert und durch die Neuanlage und
-Publikation neuer Terminologie geschlossen. Es entstehen so eine
-Methodik und ein vorläufiges Vokabular (*www.purl.org/wumms*) als
-Grundlage für eine anschließende Community-basierte Ausarbeitung.
-
-*Riedel, Alan: Musikinstrumente im Semantic Web : Entwicklung eines
-spartenübergreifenden Metadatenprofils \| Alan Riedel. -- Leipzig, 2020.
---89 Bl. + 1 CD-ROM\
-Masterarbeit, Hochschule für Technik, Wirtschaft und Kultur Leipzig,
-2020*
+...
 
 ***„Klassifikatorische Arbeiten sind allgemein etwas anrüchig."***
 
