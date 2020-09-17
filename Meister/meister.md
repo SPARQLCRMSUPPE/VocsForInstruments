@@ -500,15 +500,16 @@ Originaler Titel" (MARC-Feld \#245\$a (Title))[^34] der String „Cantata
 kommt ein sehr allgemeiner Besetzungshinweis, der hier angesichts seiner
 Funktion als Kurzform aber ausgeklammert werden kann.
 
-![Abbildung 1: Angabe der Besetzung von BWV 208 beim RISM[^35]](./media/image1.png)
+![Besetzung1](./media/image1.png)
 
-
+*Abbildung 1: Angabe der Besetzung von BWV 208 beim RISM[^35]*
 
 Zum anderen unter „Weitere Angaben und Bemerkungen" im Unterfeld
 „Besetzung" (MARC-Feld \#594\$a (freies Feld))[^36].
 
-![Abbildung 2: Angabe der Besetzung von BWV 208 beim RISM](./media/image2.png)
+![Besetzung2](./media/image2.png)
 
+*Abbildung 2: Angabe der Besetzung von BWV 208 beim RISM*
 
 Bei diesen Bezeichnungen handelt es sich um ein kontrolliertes
 Vokabular.[^37] Mehreres fällt an dieser Stelle auf:
@@ -539,11 +540,9 @@ Musikwissenschaft umstrittene Fragestellungen.[^42] Doch lassen sich
 durch Konsultation des autographen Quellenmaterials[^43] durchaus
 gewisse verbindliche Aussagen treffen:
 
-![Ein Bild, das Text enthält. Automatisch generierte
-Beschreibung](./media/image3.png){width="6.361206255468066in"
-height="3.6222222222222222in"}
+![](./media/image3.png)
 
-Abbildung 3: Autograph des Anfangs von BWV 208
+*Abbildung 3: Autograph des Anfangs von BWV 208*
 
 -   Die Instrumente sind in F gestimmt -- das in F-notierte
     „eingestrichene *c"* (*c'*) entspricht, dies wird im Bezug zum Basso
@@ -671,13 +670,11 @@ ihrerseits wiederum -- etwa ausgehend von einem Museumsobjekt --
 aufeinander und auf die Bestände von *RISM* zeigte und zueinander in
 semantische Beziehung setzte.
 
-![Ein Bild, das Text, Karte enthält. Automatisch generierte
-Beschreibung](./media/image4.png){width="6.958333333333333in"
-height="5.219120734908136in"}
+![](./media/image4.png)
 
-Abbildung 4: Spartenverbindender Sucheinstieg und Möglichkeiten der
+*Abbildung 4: Spartenverbindender Sucheinstieg und Möglichkeiten der
 Informationsanreicherung\
-am Beispiel RISM
+am Beispiel RISM*
 
 Modellierung mit RDF
 ====================
@@ -710,14 +707,11 @@ Anschlussfähigkeit und Interoperabilität, indem sie sich nicht auf
 bestimmte gebräuchliche Datenstrukturen oder eine bestimmte Domäne
 fixiert.
 
-![Datenmodell -- Beziehungen ausgedrückt als Verbindungslinien zwischen
-den umkreisten
-Entitäten](./media/image5.png){width="6.692308617672791in"
-height="6.076923665791776in"}
+![](./media/image5.png)
 
-Abbildung 5: Datenmodell -- Beziehungen ausgedrückt als
+*Abbildung 5: Datenmodell -- Beziehungen ausgedrückt als
 Verbindungslinien zwischen den umkreisten Entitäten. (Eigene Grafik,
-CC0)
+CC0)*
 
 ### Ausführungen zum Anwendungsmodell
 
@@ -895,16 +889,12 @@ werden, da dort eindeutige Referenzierbarkeit bereits dank sog.
 Mengenverhältnisse zwischen Entitäten werden im *ERM* zudem durch
 „Kardinalitäten" miteinbezogen und dadurch fixierbar.[^79]
 
-![Entity Relationship Modell: farbige Markierung externer Entitäten.
-Entitäten sind in Rechtecken, Eigenschaften in Ovalen, Beziehungen in
-Rauten eingefasst. Schlüsseleigenschaften sind durch Unterstreichung
-gekennzeichnet.](./media/image6.png){width="8.009027777777778in"
-height="7.594086832895888in"}
+![](./media/image6.png)
 
-Abbildung 6: Entity Relationship Model: farbige Markierung externer
+*Abbildung 6: Entity Relationship Model: farbige Markierung externer
 Entitäten. Entitäten sind in Rechtecken, Eigenschaften in Ovalen,
 Beziehungen in Rauten eingefasst. Schlüsseleigenschaften sind durch
-Unterstreichung gekennzeichnet.
+Unterstreichung gekennzeichnet.*
 
 Einige wesentlichen Entwicklungen gegenüber dem Anwendungsmodell sowie
 weitere Überlegungen sind es wert, nochmals kurz erläutert und erörtert
@@ -1740,12 +1730,10 @@ Ontology*.[^170] Das Property L58[^171] („played on instrument") und das
 inverse Property L58i[^172] („instrument played by") geben den hier
 gewünschten Sachverhalt in geeigneter Weise wieder.
 
-![Ein Bild, das Text, Karte enthält. Automatisch generierte
-Beschreibung](./media/image7.png){width="5.842592957130359in"
-height="3.6203696412948383in"}
+![](./media/image7.png)
 
-Abbildung 7: Verknüpfung von Personen, Instrumenten und Aufführungen.
-(Eigene Grafik, CC0)
+*Abbildung 7: Verknüpfung von Personen, Instrumenten und Aufführungen.
+(Eigene Grafik, CC0)*
 
 ### Mapping und Klassifikation
 
@@ -1889,12 +1877,10 @@ einem „werkseitigen" Mappen ausgegangen wird -- an dieser Stelle nicht
 angebracht, soll doch das uneindeutige Domänenvokabular durch Mappen
 dismabiguiert, also exakt gemapped, werden.
 
-![Ein Bild, das Text, Karte enthält. Automatisch generierte
-Beschreibung](./media/image8.png){width="2.9298654855643043in"
-height="2.3194444444444446in"}
+![](./media/image8.png)
 
-Abbildung 8: Verknüpfung von Vokabular und Objekten über eine
-Klassifikation (Eigene Grafik, CC0)
+*Abbildung 8: Verknüpfung von Vokabular und Objekten über eine
+Klassifikation (Eigene Grafik, CC0)*
 
 ###### Klassifikation
 
@@ -2005,13 +1991,11 @@ Daher soll `owl:sameAs` „als Krücke", im Bewusstsein seiner
 Unzulänglichkeit vorläufig beibehalten werden, wäre aber im Rahmen einer
 Community-Nachbereitung zu thematisieren.
 
-![blablablub -- fett markiert: übergeordnete Klassen und deren
-Beziehungen zueinander](./media/image9.png){width="6.288888888888889in"
-height="3.088888888888889in"}
+![](./media/image9.png)
 
-Abbildung 9: Verschiedene Mappingszenarien zwischen „werkseitigem"
+*Abbildung 9: Verschiedene Mappingszenarien zwischen „werkseitigem"
 Vokabular und Objekt. Fett markiert: übergeordnete Klassen und deren
-Beziehungen zueinander. (Eigene Grafik, CC0)
+Beziehungen zueinander. (Eigene Grafik, CC0)*
 
 ##### Erkenntnisse aus der Modellierung
 
@@ -2120,13 +2104,11 @@ einer Weiterentwicklung des Metadatenprofils. Entsprechende, bereits
 vorhandene Terme können somit aus dem Applikationsprofil entfernt
 werden.
 
-![blablablub -- fett umrandet: Klassen, dünn umrundet:
-Instanzen](./media/image10.png){width="5.811111111111111in"
-height="4.222222222222222in"}
+![](./media/image10.png)
 
-Abbildung 10: Verknüpfung von Vokabular und Objekt mit einem
+*Abbildung 10: Verknüpfung von Vokabular und Objekt mit einem
 Klangbeispiel -- fett umrandet: Klassen, dünn umrandet: Instanzen.
-(Eigene Grafik, CC0)
+(Eigene Grafik, CC0)*
 
 Erfassung des Komplexes „Stimmungen"
 ------------------------------------
@@ -2250,11 +2232,10 @@ Schwingung versetzten Luftstroms -- das sog. „Überblasen" -- eine Folge
 von Tönen mit einer festen Intervallstruktur auf -- die sog.
 „Naturtonreihe".
 
-![](./media/image11.png){width="6.531944444444444in"
-height="0.7881944444444444in"}
+![](./media/image11.png)
 
-Abbildung 11: Naturtonreihe über dem „Pedalton" *c*. (Eigene Grafik,
-CC0)[^226]
+bbildung 11: Naturtonreihe über dem „Pedalton" *c*. (Eigene Grafik,
+CC0)[^226
 
 Dies bedeutet also, dass Blasinstrumente bereits qua Konstruktion über
 eine festgelegte Stimmung verfügen. Diese wird anhand jenes Pedaltons,
@@ -2300,10 +2281,9 @@ Töne spielten im vorhergehenden Kapitel bereits eine Rolle:
     prädisponierten intervallischen Aufbau der Naturtonreihe bei
     Blechblasinstrumenten erlaubt
 
-3)  ![](./media/image12.png){width="0.5388888888888889in"
-    height="0.38125in"}als Klangfrequenz (440 Hz)
+4)  als „Zeichen" („*f'*" oder  ![](./media/image12.png) )
 
-4)  als „Zeichen" („*f'*" oder )
+5)  als Klangfrequenz (440 Hz))
 
 5)  als Oktavidentität der „F-Töne", die alle Oktav-verwandten, also im
     Schwingungsverhältnis 1:2, 2:4 etc. stehenden Töne, in sich vereint.
@@ -2339,12 +2319,10 @@ können auch die bisherigen Entitäten `ma:Stimmung` sowie `ma:in_F`
 entfernt werden und die neuen beiden Properties durch `rdfs:range` auf
 `ma:Ton` und seine Unterklassen bezogen werden.
 
-![Ein Bild, das Text, Karte enthält. Automatisch generierte
-Beschreibung](./media/image13.png){width="2.832638888888889in"
-height="2.6527777777777777in"}
+![](./media/image13.png)
 
-Abbildung 12: Anknüpfungspunkte eines abstrakten Tonkonzepts. (Eigene
-Grafik, CC0)
+*Abbildung 12: Anknüpfungspunkte eines abstrakten Tonkonzepts. (Eigene
+Grafik, CC0)*
 
 #### Ton als normativ fixiertes Zeichen
 
@@ -2364,12 +2342,10 @@ Hinsicht auf den Notentext, wie er etwa im Umfeld der Entität
 
 Es ergeben sich die folgenden taxonomischen Beziehungen:
 
-![Ein Bild, das Text enthält. Automatisch generierte
-Beschreibung](./media/image14.png){width="3.5416666666666665in"
-height="2.8472222222222223in"}
+![](./media/image14.png)
 
-Abbildung 13: Taxonomische Beziehungen zwischen Tönen (Eigene Grafik,
-CC0)
+*Abbildung 13: Taxonomische Beziehungen zwischen Tönen (Eigene Grafik,
+CC0)*
 
 Dabei ist jedoch weiter zwischen Notation und „Klang" -- etwa bei
 transponierenden Instrumenten -- zu differenzieren. Dieser Faden wird an
@@ -2545,10 +2521,7 @@ Technische Nachbereitung / The Rise of *wumms:*
     genüge getan, die Nutzung erfolge einstweilen auf eigene Gefahr, und
     eine weitere, ändernde Bearbeitung ist somit statthaft.
 
-![Ein Bild, das Tisch, Luft, haltend, fliegend enthält. Automatisch
-generierte
-Beschreibung](./media/image15.png){width="7.196027996500438in"
-height="7.111111111111111in"}
+![](./media/image15.png)
 
 Abbildung 14: Visualisierung von *wumms:* Blaugrau: originäre
 *wumms:*-Konzepte, bunt: externe Komponenten von *wumms:* (Eigenes Bild,
