@@ -27,3 +27,15 @@ This work is published from:
 
 —
 ![Sneak peek of the ontology](/namespaces/Visualisierung/20200802_wumms.svg)
+
+---
+
+## Hauptstruktur des Repositoriums:
+
+- Ordner "Meister": endgültige Versionen der Arbeit bis Abgabe
+
+- Ordner "namespaces": Vokabulare und Doku ihrer Genese (Versionen) – insb. Ablageort v. *wumms:*
+
+- Ordner "literatur": Zotero-Bibliographie der Arbeit (.bib), Zotero-Zitationsschema, Richtlinien der HTWK Leipzig
+
+- Ordner "00_..." bis "05_...": Arbeitsordner für die einzelnen Abschnitte (**nicht endgültige Versionen**)
