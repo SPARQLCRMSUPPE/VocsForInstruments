@@ -20,7 +20,7 @@
 @base <http://purl.org/wumms> .
 
 <http://purl.org/wumms> rdf:type owl:Ontology ;
-                         rdfs:comment "An application profile for linking music instrument related concepts all over the web."@en ;
+                         rdfs:comment "An application profile for linking musical instrument related concepts all over the web."@en ;
                          rdfs:label "wumms"@en ;
                          owl:versionInfo "draft" .
 
